@@ -77,15 +77,39 @@ const shuffle = (array: string[]) => {
   return copy;
 };
 
-const ExamInterface: React.FC<{ variant: Variant, onSubmit: (ans: any) => void, onBack: () => void }> = ({ variant, onSubmit, onBack }) => {
-  const [step, setStep] = useState(1);
-  const [ans, setAns] = useState<any>(() => ({
-    taskI: Array(variant.taskI.sentences.length).fill(''),
-    taskII: Array(variant.taskII.items.length).fill(''),
-    taskIII: Array(variant.taskIII.items.length).fill(''),
-    taskIV: Array(variant.taskIV.comparisons.length).fill(''),
-    taskV: Array(variant.taskV.words.length).fill('')
-  }));
+const ExamInterface: React.FC<{ variant: Variant, themeId: string, onSubmit: (ans: any) => void, onBack: () => void }> = ({ variant, themeId, onSubmit, onBack }) => {
+  // PERSISTENCE KEY
+  const STORAGE_KEY = `odilxon_progress_${themeId}_${variant.id}`;
+
+  const [step, setStep] = useState(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      try { return JSON.parse(saved).step || 1; } catch (e) { return 1; }
+    }
+    return 1;
+  });
+
+  const [ans, setAns] = useState<any>(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      try { 
+        const parsed = JSON.parse(saved);
+        if (parsed.ans) return parsed.ans;
+      } catch (e) {}
+    }
+    return {
+      taskI: Array(variant.taskI.sentences.length).fill(''),
+      taskII: Array(variant.taskII.items.length).fill(''),
+      taskIII: Array(variant.taskIII.items.length).fill(''),
+      taskIV: Array(variant.taskIV.comparisons.length).fill(''),
+      taskV: Array(variant.taskV.words.length).fill('')
+    };
+  });
+
+  // Effect to save progress automatically
+  useEffect(() => {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({ ans, step }));
+  }, [ans, step, STORAGE_KEY]);
 
   const wordBank = useMemo(() => {
     const answers = variant.taskI.sentences.map(s => s.answer);
@@ -101,6 +125,12 @@ const ExamInterface: React.FC<{ variant: Variant, onSubmit: (ans: any) => void, 
   };
 
   const currentProgress = (step / 5) * 100;
+
+  const handleFinalSubmit = () => {
+    // Clear temporary progress storage before final processing
+    localStorage.removeItem(STORAGE_KEY);
+    onSubmit(ans);
+  };
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="max-w-3xl mx-auto px-4 py-8 min-h-screen">
@@ -266,7 +296,7 @@ const ExamInterface: React.FC<{ variant: Variant, onSubmit: (ans: any) => void, 
           {step < 5 ? (
             <Button onClick={() => { setStep(s => s + 1); window.scrollTo(0,0); }} className="text-xs px-6">Next <ChevronRight size={14} className="ml-1 inline"/></Button>
           ) : (
-            <Button onClick={() => onSubmit(ans)} className="text-xs bg-green-600 hover:bg-green-500">Finish</Button>
+            <Button onClick={handleFinalSubmit} className="text-xs bg-green-600 hover:bg-green-500">Finish</Button>
           )}
         </div>
       </div>
@@ -323,7 +353,6 @@ export default function App() {
     if (!questions.length) return [];
     
     try {
-      // Create new instance right before use as per guidelines
       const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
       const taskDetails = questions.map((q, i) => `[Question ${i+1}: ${q} | Answer: ${answers[i] || '[No Answer]'}]`).join("\n");
       
@@ -355,7 +384,6 @@ export default function App() {
       return parsed.results || questions.map(() => ({ score: 0, feedback: "Analysis engine returned empty result.", suggestion: "N/A" }));
     } catch (e) {
       console.error(`AI Evaluation failed for ${taskLabel}:`, e);
-      // Return fallback to prevent UI hang
       return questions.map(() => ({ score: 50, feedback: "Evaluation service temporarily unavailable. Please review manually.", suggestion: "Service error." }));
     }
   };
@@ -374,7 +402,6 @@ export default function App() {
         if (ans.taskII[i]?.toLowerCase().trim() === item.key.toLowerCase()) t2++;
       });
 
-      // Catch-all try within the promise for better stability
       const [t3Res, t4Res, t5Res] = await Promise.all([
         evaluateQualitativeDetailed("Creative Synthesis", selectedVariant.taskIII.items, ans.taskIII),
         evaluateQualitativeDetailed("Semantic Nuance", selectedVariant.taskIV.comparisons.map(c => `${c.termA} vs ${c.termB}`), ans.taskIV),
@@ -418,7 +445,6 @@ export default function App() {
       setShowReview(false);
     } catch (err) {
       console.error("Full submission logic failed:", err);
-      // Even if AI completely fails, we try to show a partial result based on objective tasks
       alert("There was an issue reaching the analysis engine. Showing partial results based on objective tasks.");
       
       const result: ExamResult = {
@@ -433,9 +459,12 @@ export default function App() {
       setLastResult(result);
       setView('results');
     } finally {
-      // CRITICAL: Always reset evaluating state
       setIsEvaluating(false);
     }
+  };
+
+  const hasProgress = (tId: string, vId: number) => {
+    return !!localStorage.getItem(`odilxon_progress_${tId}_${vId}`);
   };
 
   if (loading) return (
@@ -490,17 +519,22 @@ export default function App() {
               {THEMES.map(theme => {
                 const Icon = ICON_MAP[theme.icon] || Award;
                 const attempts = user.history.filter(h => h.themeId === theme.id).length;
+                const themeProgress = theme.variants.some(v => hasProgress(theme.id, v.id));
+
                 return (
                   <motion.div 
                     key={theme.id} 
                     whileHover={{ y: -3, scale: 1.01 }}
                     whileTap={{ scale: 0.99 }}
                     onClick={() => { setSelectedTheme(theme); setView('variants'); window.scrollTo(0,0); }} 
-                    className="glass p-5 rounded-3xl border border-white/5 hover:border-blue-500/50 transition-all cursor-pointer group shadow-sm"
+                    className={`glass p-5 rounded-3xl border transition-all cursor-pointer group shadow-sm ${themeProgress ? 'border-blue-500/50' : 'border-white/5 hover:border-blue-500/50'}`}
                   >
                     <div className="flex justify-between items-start mb-6">
                       <div className="p-3 bg-blue-500/10 rounded-xl text-blue-400 group-hover:bg-blue-500 group-hover:text-white transition-all"><Icon size={20}/></div>
-                      <div className="text-[8px] font-black uppercase text-slate-500 px-3 py-1 bg-white/5 rounded-full tracking-widest">{theme.category}</div>
+                      <div className="flex flex-col items-end gap-1">
+                        <div className="text-[8px] font-black uppercase text-slate-500 px-3 py-1 bg-white/5 rounded-full tracking-widest">{theme.category}</div>
+                        {themeProgress && <div className="text-[7px] font-black uppercase text-blue-400 px-2 py-0.5 bg-blue-500/10 rounded-full animate-pulse">Session Active</div>}
+                      </div>
                     </div>
                     <h3 className="text-lg font-black text-white mb-2 tracking-tight group-hover:text-blue-300 transition-colors">{theme.title}</h3>
                     <p className="text-slate-500 text-[11px] mb-6 leading-relaxed line-clamp-2">{theme.description}</p>
@@ -521,23 +555,27 @@ export default function App() {
             <h1 className="text-3xl font-black text-white mb-2 tracking-tighter">{selectedTheme?.title}</h1>
             <p className="text-slate-500 mb-10 text-sm leading-relaxed max-w-lg">Select a variant for specialized assessment.</p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              {selectedTheme?.variants.map(v => (
-                <div 
-                  key={v.id} 
-                  onClick={() => { setSelectedVariant(v); setView('exam'); window.scrollTo(0,0); }} 
-                  className="glass p-6 rounded-3xl text-center cursor-pointer border border-white/5 hover:border-blue-500/50 group transition-all shadow-md relative overflow-hidden"
-                >
-                  <div className="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center mx-auto mb-4 text-xl font-black text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-all shadow-sm">{v.id}</div>
-                  <h4 className="text-md font-black text-white mb-1">Variant {v.id}</h4>
-                  <p className="text-[8px] font-black uppercase text-slate-600 tracking-widest">Formal</p>
-                </div>
-              ))}
+              {selectedTheme?.variants.map(v => {
+                const variantInProgress = hasProgress(selectedTheme.id, v.id);
+                return (
+                  <div 
+                    key={v.id} 
+                    onClick={() => { setSelectedVariant(v); setView('exam'); window.scrollTo(0,0); }} 
+                    className={`glass p-6 rounded-3xl text-center cursor-pointer border group transition-all shadow-md relative overflow-hidden ${variantInProgress ? 'border-blue-500/40 bg-blue-500/5' : 'border-white/5 hover:border-blue-500/50'}`}
+                  >
+                    <div className={`w-12 h-12 rounded-2xl flex items-center justify-center mx-auto mb-4 text-xl font-black transition-all shadow-sm ${variantInProgress ? 'bg-blue-600 text-white' : 'bg-blue-500/10 text-blue-400 group-hover:bg-blue-600 group-hover:text-white'}`}>{v.id}</div>
+                    <h4 className="text-md font-black text-white mb-1">Variant {v.id}</h4>
+                    <p className="text-[8px] font-black uppercase text-slate-600 tracking-widest">{variantInProgress ? 'Resume Session' : 'Formal'}</p>
+                    {variantInProgress && <div className="absolute top-2 right-2 w-2 h-2 bg-blue-500 rounded-full animate-ping" />}
+                  </div>
+                );
+              })}
             </div>
           </motion.div>
         )}
 
-        {view === 'exam' && selectedVariant && (
-          <ExamInterface key={`exam-${selectedVariant.id}`} variant={selectedVariant} onSubmit={submitExam} onBack={() => setView('variants')} />
+        {view === 'exam' && selectedVariant && selectedTheme && (
+          <ExamInterface key={`exam-${selectedVariant.id}`} variant={selectedVariant} themeId={selectedTheme.id} onSubmit={submitExam} onBack={() => setView('variants')} />
         )}
 
         {view === 'results' && lastResult && (
