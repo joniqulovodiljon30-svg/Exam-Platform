@@ -1,3 +1,4 @@
+
 import { Theme, Variant } from './types';
 
 const createVariant = (id: number, themeTitle: string, data: any): Variant => ({
@@ -1317,6 +1318,181 @@ export const THEMES: Theme[] = [
         taskIII: ["Brand loyalty", "E-commerce", "High-street fashion", "Outlet store"],
         taskIV: [{ termA: "Luxury", termB: "Budget" }, { termA: "Department store", termB: "Specialty shop" }],
         taskV: ["Commerce", "Inventory", "Logistics", "Purchasing", "Revenue"]
+      })
+    ]
+  },
+  {
+    id: "relationships",
+    title: "THEME 16: RELATIONSHIPS",
+    category: "Lifestyle",
+    description: "Social bonds, family dynamics, conflict resolution, and modern connections.",
+    icon: "Heart",
+    variants: [
+      createVariant(1, "Family Dynamics", {
+        taskI: [
+          { text: "Strong ________ bonds are essential for early development.", answer: "maternal" },
+          { text: "They have been ________ since the argument last year.", answer: "estranged" },
+          { text: "It's natural for siblings to have some ________.", answer: "rivalry" },
+          { text: "We must ________ children in a safe and loving environment.", answer: "nurture" },
+          { text: "The ________ between the two friends was unbreakable.", answer: "bond" },
+          { text: "He has a very strict ________ in a religious family.", answer: "upbringing" },
+          { text: "They are ________ spirits with a shared passion for art.", answer: "kindred" },
+          { text: "Public displays of ________ can sometimes be awkward.", answer: "affection" },
+          { text: "The ________ of the couple was a long-term goal.", answer: "reconciliation" },
+          { text: "He lives in a ________ household with three generations.", answer: "nuclear" },
+          { text: "Extended family members are often called ________.", answer: "relatives" },
+          { text: "They share a ________ interest in historical research.", answer: "mutual" }
+        ],
+        taskII: [
+          { term: "Kinship", definition: "Blood relationship.", key: "a" },
+          { term: "Rivalry", definition: "Competition for the same objective or for superiority.", key: "b" },
+          { term: "Nurture", definition: "Care for and encourage the growth or development of.", key: "c" },
+          { term: "Estranged", definition: "No longer close or affectionate to someone.", key: "d" },
+          { term: "Bond", definition: "A relationship between people or groups based on shared feelings.", key: "e" }
+        ],
+        taskIII: ["Sibling rivalry", "Nuclear family", "Blood is thicker than water", "Close-knit"],
+        taskIV: [{ termA: "Biological", termB: "Adoptive" }, { termA: "Friendship", termB: "Romance" }],
+        taskV: ["Ancestry", "Lineage", "Matriarch", "Patriarch", "Heritage"]
+      })
+    ]
+  },
+  {
+    id: "sports",
+    title: "THEME 17: SPORTS & FITNESS",
+    category: "Leisure",
+    description: "Athletics, competitive strategy, physical health, and sportsmanship.",
+    icon: "Smile",
+    variants: [
+      createVariant(1, "The Competitive Edge", {
+        taskI: [
+          { text: "Long-distance runners need incredible physical ________.", answer: "endurance" },
+          { text: "The team remained ________ throughout the entire season.", answer: "undefeated" },
+          { text: "They failed to ________ for the final round of the Cup.", answer: "qualify" },
+          { text: "Showing good ________ is more important than winning.", answer: "sportsmanship" },
+          { text: "The coach decided to change his ________ for the game.", answer: "tactics" },
+          { text: "He managed to ________ all his rivals in the sprint.", answer: "outperform" },
+          { text: "There is a fierce ________ between the two local clubs.", answer: "rivalry" },
+          { text: "The ________ cheered loudly as the goal was scored.", answer: "spectators" },
+          { text: "He won the gold ________ at the national games.", answer: "medal" },
+          { text: "Athletes often use ________ to track their progress.", answer: "metrics" },
+          { text: "Regular training helps build muscular ________.", answer: "strength" },
+          { text: "The ________ of the game was very fast and intense.", answer: "tempo" }
+        ],
+        taskII: [
+          { term: "Amateur", definition: "A person who engages in a pursuit on an unpaid basis.", key: "a" },
+          { term: "Professional", definition: "A person engaged in a specified activity as one's main paid occupation.", key: "b" },
+          { term: "Tactics", definition: "An action or strategy carefully planned to achieve a specific end.", key: "c" },
+          { term: "Stamina", definition: "The ability to sustain prolonged physical or mental effort.", key: "d" },
+          { term: "Referee", definition: "An official who watches a game or match closely.", key: "e" }
+        ],
+        taskIII: ["Level playing field", "Keep fit", "Personal best", "Out of breath"],
+        taskIV: [{ termA: "Individual", termB: "Team" }, { termA: "Offense", termB: "Defense" }],
+        taskV: ["Athleticism", "Discipline", "Conditioning", "Agility", "Velocity"]
+      })
+    ]
+  },
+  {
+    id: "politics",
+    title: "THEME 18: POLITICS & GOVERNANCE",
+    category: "Society",
+    description: "Electoral systems, international relations, policy making, and bureaucracy.",
+    icon: "Handshake",
+    variants: [
+      createVariant(1, "Elections and Policy", {
+        taskI: [
+          { text: "The ________ asked the citizens to vote on the issue.", answer: "referendum" },
+          { text: "The party published its ________ before the election.", answer: "manifesto" },
+          { text: "They formed a ________ government to stay in power.", answer: "coalition" },
+          { text: "New ________ was introduced to combat climate change.", answer: "legislation" },
+          { text: "The ________ was frustrated by the long delay in results.", answer: "electorate" },
+          { text: "He was accused of ________ for the oil industry.", answer: "lobbying" },
+          { text: "Government ________ can be very slow and complex.", answer: "bureaucracy" },
+          { text: "The president faced ________ for abuse of power.", answer: "impeachment" },
+          { text: "International ________ were placed on the rogue state.", answer: "sanctions" },
+          { text: "Effective ________ is the key to global peace.", answer: "diplomacy" },
+          { text: "A ________ system divides power between states.", answer: "federal" },
+          { text: "The ________ is the chief executive of the city.", answer: "mayor" }
+        ],
+        taskII: [
+          { term: "Democracy", definition: "A system of government by the whole population.", key: "a" },
+          { term: "Autocracy", definition: "A system of government by one person with absolute power.", key: "b" },
+          { term: "Bureaucracy", definition: "A system of government in which most decisions are made by officials.", key: "c" },
+          { term: "Manifesto", definition: "A public declaration of policy and aims.", key: "d" },
+          { term: "Sovereignty", definition: "The authority of a state to govern itself.", key: "e" }
+        ],
+        taskIII: ["Foreign policy", "Political spectrum", "Grassroots movement", "Checks and balances"],
+        taskIV: [{ termA: "Democracy", termB: "Dictatorship" }, { termA: "Liberal", termB: "Conservative" }],
+        taskV: ["Suffrage", "Ratification", "Partisan", "Secularism", "Ideology"]
+      })
+    ]
+  },
+  {
+    id: "architecture",
+    title: "THEME 19: ARCHITECTURE & URBANIZATION",
+    category: "Society",
+    description: "Building design, urban planning, structural integrity, and historical heritage.",
+    icon: "Briefcase",
+    variants: [
+      createVariant(1, "The Built Environment", {
+        taskI: [
+          { text: "The architect presented the final ________ for the tower.", answer: "blueprint" },
+          { text: "The ________ integrity of the old bridge was questioned.", answer: "structural" },
+          { text: "The building has a very sleek and modern ________.", answer: "aesthetic" },
+          { text: "They are building a massive ________ in the city center.", answer: "skyscraper" },
+          { text: "Urban ________ is a major problem for local wildlife.", answer: "sprawl" },
+          { text: "The ________ of the house was restored to its glory.", answer: "facade" },
+          { text: "We need more ________ housing for the growing population.", answer: "affordable" },
+          { text: "The project focused on ________ urban development.", answer: "sustainable" },
+          { text: "The ________ was covered in colorful local murals.", answer: "exterior" },
+          { text: "Old warehouses are being converted into modern ________.", answer: "dwellings" },
+          { text: "The ________ process took much longer than expected.", answer: "construction" },
+          { text: "They used local stone for the ________ of the wall.", answer: "masonry" }
+        ],
+        taskII: [
+          { term: "Facade", definition: "The face of a building, especially the principal front.", key: "a" },
+          { term: "Column", definition: "An upright pillar, typically cylindrical and made of stone.", key: "b" },
+          { term: "Foundation", definition: "The lowest load-bearing part of a building, typically below ground level.", key: "c" },
+          { term: "Aesthetic", definition: "A set of principles underlying and guiding the work of a particular artist.", key: "d" },
+          { term: "Infrastructure", definition: "The basic physical and organizational structures and facilities.", key: "e" }
+        ],
+        taskIII: ["Urban planning", "Historical landmark", "Structural engineering", "Zoning laws"],
+        taskIV: [{ termA: "Interior", termB: "Exterior" }, { termA: "Modern", termB: "Gothic" }],
+        taskV: ["Avenue", "Boulevard", "Dwelling", "Renovation", "Scaffolding"]
+      })
+    ]
+  },
+  {
+    id: "ethics",
+    title: "THEME 20: PHILOSOPHY & ETHICS",
+    category: "Science",
+    description: "Moral reasoning, logical paradoxes, human values, and existential questions.",
+    icon: "Brain",
+    variants: [
+      createVariant(1, "Moral Dilemmas", {
+        taskI: [
+          { text: "He faced a difficult ________ between duty and family.", answer: "dilemma" },
+          { text: "Maintaining professional ________ is vital for a judge.", answer: "integrity" },
+          { text: "The random act of ________ touched the hearts of many.", answer: "altruism" },
+          { text: "Your ________ should guide your actions in life.", answer: "conscience" },
+          { text: "Every choice has a significant ________ in the long run.", answer: "consequence" },
+          { text: "Is truth ________ or does it depend on the person?", answer: "subjective" },
+          { text: "We have a moral ________ to help those in need.", answer: "obligation" },
+          { text: "Honesty is considered a fundamental human ________.", answer: "virtue" },
+          { text: "The ________ of the theory was logically flawed.", answer: "premise" },
+          { text: "Existential ________ is a common feeling in modern life.", answer: "dread" },
+          { text: "He lived his life according to very strict ________.", answer: "principles" },
+          { text: "Justice should be ________ and fair for everyone.", answer: "impartial" }
+        ],
+        taskII: [
+          { term: "Logic", definition: "Reasoning conducted or assessed according to strict principles of validity.", key: "a" },
+          { term: "Ethics", definition: "Moral principles that govern a person's behavior.", key: "b" },
+          { term: "Morality", definition: "Principles concerning the distinction between right and wrong.", key: "c" },
+          { term: "Altruism", definition: "The belief in or practice of selfless concern for others.", key: "d" },
+          { term: "Paradox", definition: "A seemingly absurd or self-contradictory statement.", key: "e" }
+        ],
+        taskIII: ["Moral compass", "Common good", "Ethical dilemma", "Free will"],
+        taskIV: [{ termA: "Objective", termB: "Subjective" }, { termA: "Good", termB: "Evil" }],
+        taskV: ["Axiom", "Cognition", "Determinism", "Nihilism", "Pragmatism"]
       })
     ]
   }
