@@ -80,7 +80,7 @@ const shuffle = (array: string[]) => {
 const ExamInterface: React.FC<{ variant: Variant, themeId: string, onSubmit: (ans: any) => void, onBack: () => void }> = ({ variant, themeId, onSubmit, onBack }) => {
   const STORAGE_KEY = `odilxon_progress_${themeId}_${variant.id}`;
 
-  const [step, setStep] = useState(() => {
+  const [step, setStep] = useState<number>(() => {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved) {
       try { return JSON.parse(saved).step || 1; } catch (e) { return 1; }
@@ -284,10 +284,10 @@ const ExamInterface: React.FC<{ variant: Variant, themeId: string, onSubmit: (an
           {step === 1 ? (
             <Button variant="secondary" onClick={onBack} className="text-xs px-4">Bekor qilish</Button>
           ) : (
-            <Button variant="secondary" onClick={() => setStep(s => s - 1)} className="text-xs px-4">Orqaga</Button>
+            <Button variant="secondary" onClick={() => setStep((s: number) => s - 1)} className="text-xs px-4">Orqaga</Button>
           )}
           {step < 5 ? (
-            <Button onClick={() => { setStep(s => s + 1); window.scrollTo(0,0); }} className="text-xs px-6">Keyingisi <ChevronRight size={14} className="ml-1 inline"/></Button>
+            <Button onClick={() => { setStep((s: number) => s + 1); window.scrollTo(0,0); }} className="text-xs px-6">Keyingisi <ChevronRight size={14} className="ml-1 inline"/></Button>
           ) : (
             <Button onClick={handleFinalSubmit} className="text-xs bg-green-600 hover:bg-green-500">Tugatish</Button>
           )}
@@ -304,10 +304,7 @@ export default function App() {
   const [selectedTheme, setSelectedTheme] = useState<Theme | null>(null);
   const [selectedVariant, setSelectedVariant] = useState<Variant | null>(null);
   const [lastResult, setLastResult] = useState<ExamResult | null>(null);
-  const [lastAnswers, setLastAnswers] = useState<any>(null);
-  const [qualitativeFeedback, setQualitativeFeedback] = useState<Record<string, any>>({});
   const [isEvaluating, setIsEvaluating] = useState(false);
-  const [showReview, setShowReview] = useState(false);
 
   useEffect(() => {
     const savedUser = localStorage.getItem('odilxon_user');
@@ -325,7 +322,7 @@ export default function App() {
 
   const evaluateQualitativeDetailed = async (taskLabel: string, questions: string[], answers: string[]) => {
     try {
-      const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+      const ai = new GoogleGenAI({ apiKey: (process.env.API_KEY as string) });
       const prompt = `Student responses for ${taskLabel}. Questions: ${questions.join(", ")}. Answers: ${answers.join(", ")}. 
       Evaluate 0-100, feedback, and suggestion. JSON format: { "results": [{ "score": number, "feedback": "string", "suggestion": "string" }] }`;
       
@@ -334,16 +331,15 @@ export default function App() {
         contents: prompt,
         config: { responseMimeType: "application/json" }
       });
-      return JSON.parse(response.text).results;
+      return JSON.parse(response.text || '{"results":[]}').results;
     } catch (e) {
-      return questions.map(() => ({ score: 50, feedback: "Error", suggestion: "N/A" }));
+      return questions.map(() => ({ score: 50, feedback: "Error during AI evaluation", suggestion: "N/A" }));
     }
   };
 
   const submitExam = async (ans: any) => {
     if (!selectedVariant || !selectedTheme || !user) return;
     setIsEvaluating(true);
-    setLastAnswers(ans);
 
     try {
       let t1 = 0, t2 = 0;
@@ -360,14 +356,12 @@ export default function App() {
         evaluateQualitativeDetailed("Lexical Rigor", selectedVariant.taskV.words, ans.taskV)
       ]);
 
-      setQualitativeFeedback({ taskIII: t3Res, taskIV: t4Res, taskV: t5Res });
-
       const breakdown = {
         taskI: t1,
         taskII: t2,
-        taskIII: Math.round(t3Res.reduce((a:any, b:any) => a + b.score, 0) / t3Res.length / 10 * 0.8),
-        taskIV: Math.round(t4Res.reduce((a:any, b:any) => a + b.score, 0) / t4Res.length / 10 * 0.6),
-        taskV: Math.round(t5Res.reduce((a:any, b:any) => a + b.score, 0) / t5Res.length / 10 * 1.0)
+        taskIII: Math.round(t3Res.reduce((a: number, b: any) => a + (b.score || 0), 0) / (t3Res.length || 1) / 10 * 0.8),
+        taskIV: Math.round(t4Res.reduce((a: number, b: any) => a + (b.score || 0), 0) / (t4Res.length || 1) / 10 * 0.6),
+        taskV: Math.round(t5Res.reduce((a: number, b: any) => a + (b.score || 0), 0) / (t5Res.length || 1) / 10 * 1.0)
       };
 
       const score = Object.values(breakdown).reduce((a, b) => a + b, 0);
@@ -426,7 +420,7 @@ export default function App() {
                 const Icon = ICON_MAP[theme.icon] || Award;
                 const hasSession = theme.variants.some(v => localStorage.getItem(`odilxon_progress_${theme.id}_${v.id}`));
                 return (
-                  <div key={theme.id} onClick={() => { setSelectedTheme(theme); setView('variants'); }} className={`glass p-5 rounded-3xl border ${hasSession ? 'border-blue-500' : 'border-white/5'} cursor-pointer hover:bg-white/5 transition-all`}>
+                  <div key={theme.id} onClick={() => { setSelectedTheme(theme); setView('variants'); }} className={`glass p-5 rounded-3xl border ${hasSession ? 'border-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.2)]' : 'border-white/5'} cursor-pointer hover:bg-white/5 transition-all`}>
                     <div className="flex justify-between mb-4">
                       <div className="p-2 bg-blue-500/10 rounded-lg text-blue-400"><Icon size={20}/></div>
                       {hasSession && <span className="text-[8px] font-bold bg-blue-500 px-2 py-0.5 rounded-full animate-pulse">Davom ettirish</span>}
@@ -448,7 +442,7 @@ export default function App() {
               {selectedTheme?.variants.map(v => {
                 const variantInProgress = localStorage.getItem(`odilxon_progress_${selectedTheme.id}_${v.id}`);
                 return (
-                  <div key={v.id} onClick={() => { setSelectedVariant(v); setView('exam'); }} className={`glass p-6 rounded-2xl text-center cursor-pointer border ${variantInProgress ? 'border-blue-500' : 'border-white/5'}`}>
+                  <div key={v.id} onClick={() => { setSelectedVariant(v); setView('exam'); }} className={`glass p-6 rounded-2xl text-center cursor-pointer border ${variantInProgress ? 'border-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.1)]' : 'border-white/5'}`}>
                     <div className="text-xl font-black text-blue-400 mb-1">{v.id}</div>
                     <p className="text-[8px] uppercase font-bold text-slate-500">{variantInProgress ? 'Saqlangan' : 'Variant'}</p>
                   </div>
