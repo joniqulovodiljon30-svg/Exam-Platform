@@ -26,7 +26,6 @@
             background: rgba(255, 255, 255, 0.06);
             border: 1px solid rgba(255, 255, 255, 0.15);
         }
-        /* Custom scrollbar for a cleaner mobile look */
         ::-webkit-scrollbar {
             width: 6px;
         }
@@ -37,7 +36,6 @@
             background: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
         }
-        /* Prevent elastic bounce on iOS */
         html, body {
             overscroll-behavior-y: contain;
         }
@@ -45,17 +43,21 @@
 <script type="importmap">
 {
   "imports": {
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.29.2",
     "react/": "https://esm.sh/react@^19.2.4/",
     "react": "https://esm.sh/react@^19.2.4",
-    "framer-motion": "https://esm.sh/framer-motion@^12.29.2",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.38.0"
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
   }
 }
 </script>
 </head>
 <body>
     <div id="root"></div>
+    <!-- Explicit module entry point for Vite -->
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>
