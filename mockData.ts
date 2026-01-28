@@ -1,4 +1,3 @@
-
 import { Theme, Variant } from './types';
 
 const createVariant = (id: number, themeTitle: string, data: any): Variant => ({
@@ -18,7 +17,7 @@ const createVariant = (id: number, themeTitle: string, data: any): Variant => ({
 export const THEMES: Theme[] = [
   {
     id: "media",
-    title: "THEME 1: THE MEDIA (PRINT & PRESS)",
+    title: "THEME 1: THE MEDIA",
     category: "Communication",
     description: "Newspaper collocations, materials, sections, and phrasal verbs.",
     icon: "Newspaper",
@@ -39,11 +38,11 @@ export const THEMES: Theme[] = [
           { text: "Information was ________ through various media outlets.", answer: "disseminated" }
         ],
         taskII: [
-          { term: "Tabloid", definition: "A newspaper with smaller pages and simpler style, often sensational.", key: "a" },
+          { term: "Tabloid", definition: "A newspaper with smaller pages and simpler style.", key: "a" },
           { term: "Broadsheet", definition: "A serious newspaper using large sheets of paper.", key: "b" },
-          { term: "Leaflet", definition: "A small piece of paper with information or advertising.", key: "c" },
-          { term: "Journal", definition: "A publication dealing with a specific professional subject.", key: "d" },
-          { term: "Pamphlet", definition: "A thin book with a paper cover and information on one topic.", key: "e" }
+          { term: "Leaflet", definition: "A small piece of paper with information.", key: "c" },
+          { term: "Journal", definition: "A publication dealing with a professional subject.", key: "d" },
+          { term: "Pamphlet", definition: "A thin book with a paper cover on one topic.", key: "e" }
         ],
         taskIII: ["Classified ads", "Front page", "Letter to the editor", "Gossip column"],
         taskIV: [{ termA: "Article", termB: "Headline" }, { termA: "Journalist", termB: "Editor" }],
@@ -54,22 +53,22 @@ export const THEMES: Theme[] = [
           { text: "The news finally ________ after hours of tense waiting.", answer: "broke" },
           { text: "The editor decided to ________ the story until further notice.", answer: "hold" },
           { text: "I need to ________ up on the latest current events.", answer: "read" },
-          { text: "The magazine is ________ every two weeks by the same house.", answer: "published" },
-          { text: "They are ________ a new investigative piece on local politics.", answer: "running" },
+          { text: "The magazine is ________ every two weeks.", answer: "published" },
+          { text: "They are ________ a new investigative piece.", answer: "running" },
           { text: "The story was ________ up by several national tabloids.", answer: "picked" },
-          { text: "The journalist was ________ to get the exclusive interview.", answer: "struggling" },
+          { text: "The journalist was ________ to get the interview.", answer: "struggling" },
           { text: "We need to ________ the facts before we go to print.", answer: "verify" },
-          { text: "The scandal ________ public outrage across the country.", answer: "triggered" },
-          { text: "The paper decided to ________ the controversial column.", answer: "retract" },
+          { text: "The scandal ________ public outrage.", answer: "triggered" },
+          { text: "The paper decided to ________ the column.", answer: "retract" },
           { text: "He handles the ________ for the sports section.", answer: "copy" },
-          { text: "The ________ of the magazine has increased this year.", answer: "readership" }
+          { text: "The ________ has increased this year.", answer: "readership" }
         ],
         taskII: [
-          { term: "Feature", definition: "A long article about a particular person or subject.", key: "a" },
-          { term: "Column", definition: "A regular section written by a specific person or expert.", key: "b" },
-          { term: "Supplement", definition: "A separate part added to a newspaper, often on weekends.", key: "c" },
-          { term: "Lead", definition: "The opening sentence or paragraph of a news story.", key: "d" },
-          { term: "Byline", definition: "A line giving the name of the writer of an article.", key: "e" }
+          { term: "Feature", definition: "A long article about a particular person.", key: "a" },
+          { term: "Column", definition: "A regular section written by an expert.", key: "b" },
+          { term: "Supplement", definition: "A separate part added to a newspaper.", key: "c" },
+          { term: "Lead", definition: "The opening sentence of a news story.", key: "d" },
+          { term: "Byline", definition: "A line giving the name of the writer.", key: "e" }
         ],
         taskIII: ["Run a story", "Gloss over", "Bring out", "Tune in"],
         taskIV: [{ termA: "Tabloid", termB: "Glossy" }, { termA: "Scoop", termB: "Exclusive" }],
@@ -79,23 +78,23 @@ export const THEMES: Theme[] = [
         taskI: [
           { text: "Media ________ can be a barrier to objective reporting.", answer: "bias" },
           { text: "Disinformation can easily ________ public opinion.", answer: "manipulate" },
-          { text: "The ________ estate refers to the press as an influential power.", answer: "fourth" },
-          { text: "Freedom of the ________ is a pillar of a free society.", answer: "press" },
-          { text: "A media ________ owns multiple news outlets across the globe.", answer: "conglomerate" },
-          { text: "They were accused of ________ a false narrative for clicks.", answer: "fabricating" },
-          { text: "The ________ cycle is instantaneous in the digital age.", answer: "news" },
-          { text: "Investigative ________ requires extensive research and risks.", answer: "journalism" },
-          { text: "The ________ section often contains guest opinion pieces.", answer: "oped" },
-          { text: "Clickbait is used to ________ web traffic for ads.", answer: "generate" },
-          { text: "The ________ of information is now used as a political weapon.", answer: "flow" },
-          { text: "News outlets must maintain ________ to stay credible.", answer: "integrity" }
+          { text: "The ________ estate refers to the press.", answer: "fourth" },
+          { text: "Freedom of the ________ is a pillar of society.", answer: "press" },
+          { text: "A media ________ owns multiple news outlets.", answer: "conglomerate" },
+          { text: "They were accused of ________ a false narrative.", answer: "fabricating" },
+          { text: "The ________ cycle is instantaneous today.", answer: "news" },
+          { text: "Investigative ________ requires research.", answer: "journalism" },
+          { text: "The ________ section contains opinion pieces.", answer: "oped" },
+          { text: "Clickbait is used to ________ web traffic.", answer: "generate" },
+          { text: "The ________ of information is a weapon.", answer: "flow" },
+          { text: "News outlets must maintain ________.", answer: "integrity" }
         ],
         taskII: [
-          { term: "Propaganda", definition: "Information used to promote a political cause or point of view.", key: "a" },
-          { term: "Muckraker", definition: "A person who searches for and exposes real or alleged scandal.", key: "b" },
-          { term: "Spin doctor", definition: "A spokesperson who gives a favorable interpretation of events.", key: "c" },
-          { term: "Yellow journalism", definition: "Journalism based on sensationalism and crude exaggeration.", key: "d" },
-          { term: "Sound bite", definition: "A short extract from a recorded interview chosen for its impact.", key: "e" }
+          { term: "Propaganda", definition: "Info used to promote a political cause.", key: "a" },
+          { term: "Muckraker", definition: "A person who exposes alleged scandal.", key: "b" },
+          { term: "Spin doctor", definition: "A spokesperson giving favorable interpretations.", key: "c" },
+          { term: "Yellow journalism", definition: "Journalism based on exaggeration.", key: "d" },
+          { term: "Sound bite", definition: "A short extract from a recorded interview.", key: "e" }
         ],
         taskIII: ["Character assassination", "Echo chamber", "Citizen journalism", "Checkbook journalism"],
         taskIV: [{ termA: "Privacy", termB: "Public interest" }, { termA: "Objectivity", termB: "Subjectivity" }],
@@ -112,25 +111,25 @@ export const THEMES: Theme[] = [
     variants: [
       createVariant(1, "Basic Healthcare", {
         taskI: [
-          { text: "The patient made a ________ recovery after the operation.", answer: "speedy" },
-          { text: "The doctor ________ a full course of antibiotics.", answer: "prescribed" },
-          { text: "She was ________ with a mild infection this morning.", answer: "diagnosed" },
-          { text: "You should ________ a specialist for that back pain.", answer: "consult" },
-          { text: "The nurse ________ the medicine exactly at noon.", answer: "administered" },
-          { text: "He had to ________ a simple procedure yesterday.", answer: "undergo" },
-          { text: "The wound is starting to ________ nicely after the stitches.", answer: "heal" },
-          { text: "Regular exercise helps ________ many chronic diseases.", answer: "prevent" },
-          { text: "She is ________ from a severe bout of the flu.", answer: "recovering" },
-          { text: "The medicine will ________ your symptoms within an hour.", answer: "relieve" },
-          { text: "He was ________ from the hospital earlier today.", answer: "discharged" },
-          { text: "Many people ________ from chronic seasonal allergies.", answer: "suffer" }
+          { text: "The patient made a ________ recovery.", answer: "speedy" },
+          { text: "The doctor ________ a course of antibiotics.", answer: "prescribed" },
+          { text: "She was ________ with a mild infection.", answer: "diagnosed" },
+          { text: "You should ________ a specialist.", answer: "consult" },
+          { text: "The nurse ________ the medicine.", answer: "administered" },
+          { text: "He had to ________ a simple procedure.", answer: "undergo" },
+          { text: "The wound is starting to ________.", answer: "heal" },
+          { text: "Exercise helps ________ chronic diseases.", answer: "prevent" },
+          { text: "She is ________ from the flu.", answer: "recovering" },
+          { text: "The medicine will ________ your symptoms.", answer: "relieve" },
+          { text: "He was ________ from the hospital.", answer: "discharged" },
+          { text: "Many people ________ from allergies.", answer: "suffer" }
         ],
         taskII: [
-          { term: "Symptom", definition: "A physical or mental feature indicating a condition.", key: "a" },
-          { term: "Diagnosis", definition: "Identification of the nature of an illness by examination.", key: "b" },
-          { term: "Prescription", definition: "An instruction written by a doctor for medicine.", key: "c" },
-          { term: "Infection", definition: "The state of being infected by a microorganism.", key: "d" },
-          { term: "Clinic", definition: "A place where patients are given medical treatment or advice.", key: "e" }
+          { term: "Symptom", definition: "A physical feature indicating a condition.", key: "a" },
+          { term: "Diagnosis", definition: "Identification of the nature of an illness.", key: "b" },
+          { term: "Prescription", definition: "An instruction written by a doctor.", key: "c" },
+          { term: "Infection", definition: "The state of being infected.", key: "d" },
+          { term: "Clinic", definition: "A place for medical treatment.", key: "e" }
         ],
         taskIII: ["Run a temperature", "Catch a cold", "Blood pressure", "Pain relief"],
         taskIV: [{ termA: "Doctor", termB: "Nurse" }, { termA: "Surgery", termB: "Therapy" }],
@@ -138,25 +137,25 @@ export const THEMES: Theme[] = [
       }),
       createVariant(2, "Recovery Paths", {
         taskI: [
-          { text: "It took him a month to ________ over the severe flu.", answer: "get" },
-          { text: "She ________ down with a heavy cold after the rain.", answer: "came" },
+          { text: "It took him a month to ________ over the flu.", answer: "get" },
+          { text: "She ________ down with a heavy cold.", answer: "came" },
           { text: "He ________ out after seeing the needles.", answer: "passed" },
-          { text: "The doctor is trying to help her ________ off the infection.", answer: "fight" },
-          { text: "She ________ round slowly after the heavy anesthesia.", answer: "came" },
-          { text: "The old injury ________ up again last night.", answer: "flare" },
-          { text: "He finally ________ through after the medical crisis.", answer: "pulled" },
-          { text: "I think I'm ________ down with something today.", answer: "coming" },
-          { text: "She ________ up a nasty virus at the playground.", answer: "picked" },
-          { text: "The swelling should ________ down in a few days.", answer: "go" },
-          { text: "The old man ________ away peacefully in his sleep.", answer: "passed" },
-          { text: "The painkillers didn't ________ off for several hours.", answer: "wear" }
+          { text: "The doctor is helping her ________ off the infection.", answer: "fight" },
+          { text: "She ________ round after the anesthesia.", answer: "came" },
+          { text: "The old injury ________ up again.", answer: "flare" },
+          { text: "He finally ________ through.", answer: "pulled" },
+          { text: "I think I'm ________ down with something.", answer: "coming" },
+          { text: "She ________ up a nasty virus.", answer: "picked" },
+          { text: "The swelling should ________ down.", answer: "go" },
+          { text: "The old man ________ away peacefully.", answer: "passed" },
+          { text: "The painkillers didn't ________ off yet.", answer: "wear" }
         ],
         taskII: [
-          { term: "Prognosis", definition: "The likely course of a disease or ailment.", key: "a" },
-          { term: "Remission", definition: "A temporary diminution of severity of disease.", key: "b" },
-          { term: "Relapse", definition: "A deterioration in health after temporary improvement.", key: "c" },
-          { term: "Chronic", definition: "Persisting for a long time or constantly recurring.", key: "d" },
-          { term: "Acute", definition: "Present or experienced to a severe or intense degree.", key: "e" }
+          { term: "Prognosis", definition: "The likely course of a disease.", key: "a" },
+          { term: "Remission", definition: "A temporary diminution of severity.", key: "b" },
+          { term: "Relapse", definition: "A deterioration after improvement.", key: "c" },
+          { term: "Chronic", definition: "Persisting for a long time.", key: "d" },
+          { term: "Acute", definition: "Experienced to a severe degree.", key: "e" }
         ],
         taskIII: ["On the mend", "Under the weather", "Back on your feet", "Pick up a bug"],
         taskIV: [{ termA: "Inpatient", termB: "Outpatient" }, { termA: "Benign", termB: "Malignant" }],
@@ -164,25 +163,25 @@ export const THEMES: Theme[] = [
       }),
       createVariant(3, "Health Metaphors", {
         taskI: [
-          { text: "Institutional corruption is a ________ on our society.", answer: "cancer" },
-          { text: "The harsh economic crisis was a bitter ________ to swallow.", answer: "pill" },
-          { text: "He has some deep emotional ________ from his past.", answer: "scars" },
-          { text: "The city was ________ by fear during the emergency.", answer: "paralyzed" },
-          { text: "They are only ________ the symptoms, not the cause.", answer: "treating" },
-          { text: "The banking system is currently in a ________ condition.", answer: "critical" },
-          { text: "The decision ________ out to be a fatal mistake.", answer: "turned" },
-          { text: "She has a ________ block and cannot finish her novel.", answer: "mental" },
-          { text: "Education is the only ________ to this social toxicity.", answer: "antidote" },
-          { text: "The relationship has reached a ________ stage, unfortunately.", answer: "terminal" },
-          { text: "The surgeon general is ________ on the new health policy.", answer: "operating" },
-          { text: "The news was like a ________ of fresh air for the staff.", answer: "breath" }
+          { text: "Corruption is a ________ on society.", answer: "cancer" },
+          { text: "The crisis was a bitter ________ to swallow.", answer: "pill" },
+          { text: "He has deep emotional ________.", answer: "scars" },
+          { text: "The city was ________ by fear.", answer: "paralyzed" },
+          { text: "They are only ________ the symptoms.", answer: "treating" },
+          { text: "The bank is in a ________ condition.", answer: "critical" },
+          { text: "The decision ________ out to be a mistake.", answer: "turned" },
+          { text: "She has a ________ block.", answer: "mental" },
+          { text: "Education is the only ________ to toxicity.", answer: "antidote" },
+          { text: "The relationship is at a ________ stage.", answer: "terminal" },
+          { text: "The surgeon is ________ on the policy.", answer: "operating" },
+          { text: "The news was a ________ of fresh air.", answer: "breath" }
         ],
         taskII: [
-          { term: "Epidemiology", definition: "The study of how diseases spread and can be controlled.", key: "a" },
+          { term: "Epidemiology", definition: "The study of how diseases spread.", key: "a" },
           { term: "Therapeutic", definition: "Relating to the healing of disease.", key: "b" },
-          { term: "Pathogen", definition: "A bacterium, virus, or other microorganism causing disease.", key: "c" },
-          { term: "Palliative", definition: "Relieving pain without dealing with the cause of the condition.", key: "d" },
-          { term: "Placebo", definition: "A medicine with no physical effect, given for psychological benefit.", key: "e" }
+          { term: "Pathogen", definition: "A bacterium or virus causing disease.", key: "c" },
+          { term: "Palliative", definition: "Relieving pain without dealing with the cause.", key: "d" },
+          { term: "Placebo", definition: "A medicine with no physical effect.", key: "e" }
         ],
         taskIII: ["Social cancer", "Bitter pill", "Breath of life", "Shot in the arm"],
         taskIV: [{ termA: "Prognosis", termB: "Diagnosis" }, { termA: "Epidemic", termB: "Pandemic" }],
@@ -199,25 +198,25 @@ export const THEMES: Theme[] = [
     variants: [
       createVariant(1, "Hardware & Software", {
         taskI: [
-          { text: "I need to ________ up my data to an external drive.", answer: "back" },
-          { text: "You must ________ in with your secure username.", answer: "log" },
-          { text: "The computer ________ when I tried to open the video.", answer: "froze" },
-          { text: "He spends far too many hours ________ the internet.", answer: "surfing" },
-          { text: "We need a more ________ Wi-Fi connection in this room.", answer: "stable" },
-          { text: "This legacy app is ________ with my new phone.", answer: "incompatible" },
-          { text: "The laptop is ________ by a high-end graphics card.", answer: "powered" },
-          { text: "I accidentally ________ an important work email.", answer: "deleted" },
-          { text: "They decided to ________ the system firmware.", answer: "upgrade" },
-          { text: "We need to ________ the file to the shared drive.", answer: "upload" },
-          { text: "The battery ________ quickly while recording 4K video.", answer: "drains" },
-          { text: "I can't ________ to the network in this basement.", answer: "connect" }
+          { text: "I need to ________ up my data.", answer: "back" },
+          { text: "You must ________ in with your username.", answer: "log" },
+          { text: "The computer ________ when I opened the video.", answer: "froze" },
+          { text: "He spends hours ________ the internet.", answer: "surfing" },
+          { text: "We need a ________ Wi-Fi connection.", answer: "stable" },
+          { text: "This app is ________ with my phone.", answer: "incompatible" },
+          { text: "The laptop is ________ by a good card.", answer: "powered" },
+          { text: "I accidentally ________ an email.", answer: "deleted" },
+          { text: "They decided to ________ the system.", answer: "upgrade" },
+          { text: "We need to ________ the file.", answer: "upload" },
+          { text: "The battery ________ quickly.", answer: "drains" },
+          { text: "I can't ________ to the network.", answer: "connect" }
         ],
         taskII: [
-          { term: "Hardware", definition: "The physical components of a computer system.", key: "a" },
-          { term: "Software", definition: "The programs and other operating info used by a computer.", key: "b" },
-          { term: "Browser", definition: "A program used to navigate and view websites.", key: "c" },
-          { term: "Server", definition: "A computer that manages access to a centralized resource.", key: "d" },
-          { term: "Peripheral", definition: "Any auxiliary device that connects to a computer.", key: "e" }
+          { term: "Hardware", definition: "The physical components of a system.", key: "a" },
+          { term: "Software", definition: "The programs used by a computer.", key: "b" },
+          { term: "Browser", definition: "A program used to view websites.", key: "c" },
+          { term: "Server", definition: "A computer managing central resources.", key: "d" },
+          { term: "Peripheral", definition: "Any device that connects to a computer.", key: "e" }
         ],
         taskIII: ["External drive", "Social media", "Touch screen", "Cloud storage"],
         taskIV: [{ termA: "Desktop", termB: "Laptop" }, { termA: "Download", termB: "Upload" }],
@@ -225,25 +224,25 @@ export const THEMES: Theme[] = [
       }),
       createVariant(2, "Online Interaction", {
         taskI: [
-          { text: "I'll help you ________ up the new laptop later.", answer: "set" },
-          { text: "The system will ________ down automatically at midnight.", answer: "shut" },
-          { text: "You need to ________ into your cloud account first.", answer: "sign" },
-          { text: "The hackers managed to ________ in through an open port.", answer: "break" },
-          { text: "I'll ________ up the document for the meeting.", answer: "bring" },
-          { text: "Can you ________ in the printer for me?", answer: "plug" },
-          { text: "The computer ________ off unexpectedly during the save.", answer: "went" },
-          { text: "I need to ________ up my old local files.", answer: "clean" },
-          { text: "He ________ down the job offer from the tech giant.", answer: "turned" },
-          { text: "The battery ________ out in the middle of my game.", answer: "ran" },
-          { text: "I'll ________ through the settings to fix it.", answer: "go" },
-          { text: "They are ________ a new version of the OS soon.", answer: "bringing" }
+          { text: "I'll help you ________ up the laptop.", answer: "set" },
+          { text: "The system will ________ down.", answer: "shut" },
+          { text: "You need to ________ into your account.", answer: "sign" },
+          { text: "The hackers ________ in through a port.", answer: "break" },
+          { text: "I'll ________ up the document.", answer: "bring" },
+          { text: "Can you ________ in the printer?", answer: "plug" },
+          { text: "The computer ________ off unexpectedly.", answer: "went" },
+          { text: "I need to ________ up my files.", answer: "clean" },
+          { text: "He ________ down the job offer.", answer: "turned" },
+          { text: "The battery ________ out.", answer: "ran" },
+          { text: "I'll ________ through the settings.", answer: "go" },
+          { text: "They are ________ a new version.", answer: "bringing" }
         ],
         taskII: [
-          { term: "Firewall", definition: "A system designed to prevent unauthorized access to a network.", key: "a" },
-          { term: "Encryption", definition: "The process of converting information into a secret code.", key: "b" },
-          { term: "Algorithm", definition: "A set of rules to be followed in calculations by a computer.", key: "c" },
-          { term: "Bandwidth", definition: "The capacity for data transfer of an electronic connection.", key: "d" },
-          { term: "Interface", definition: "The way a user interacts with a computer program.", key: "e" }
+          { term: "Firewall", definition: "A system preventing unauthorized access.", key: "a" },
+          { term: "Encryption", definition: "Converting info into a secret code.", key: "b" },
+          { term: "Algorithm", definition: "A set of rules for calculations.", key: "c" },
+          { term: "Bandwidth", definition: "Capacity for data transfer.", key: "d" },
+          { term: "Interface", definition: "The way a user interacts with a program.", key: "e" }
         ],
         taskIII: ["Hack into", "Log off", "Print out", "Wipe out"],
         taskIV: [{ termA: "Search engine", termB: "Browser" }, { termA: "Hardware", termB: "Software" }],
@@ -251,25 +250,25 @@ export const THEMES: Theme[] = [
       }),
       createVariant(3, "Societal Impact", {
         taskI: [
-          { text: "AI is ________ the global workforce.", answer: "reshaping" },
-          { text: "Digital ________ is a major ethical concern today.", answer: "privacy" },
-          { text: "Technology can ________ feelings of social isolation.", answer: "exacerbate" },
-          { text: "The ________ divide between generations is growing.", answer: "digital" },
-          { text: "Automation ________ many traditional entry-level jobs.", answer: "threatens" },
-          { text: "We are becoming overly ________ on gadgets for basic tasks.", answer: "reliant" },
-          { text: "The ________ of information across devices is seamless.", answer: "integration" },
-          { text: "Cyber ________ is now a national security priority.", answer: "warfare" },
-          { text: "Social media algorithms can ________ misinformation.", answer: "amplify" },
-          { text: "The ________ cycle is driven by engagement metrics.", answer: "news" },
-          { text: "The ________ of new tech is historically rapid.", answer: "adoption" },
-          { text: "We must ________ the ethical implications of AI.", answer: "address" }
+          { text: "AI is ________ the workforce.", answer: "reshaping" },
+          { text: "Digital ________ is a concern.", answer: "privacy" },
+          { text: "Tech can ________ isolation.", answer: "exacerbate" },
+          { text: "The ________ divide is growing.", answer: "digital" },
+          { text: "Automation ________ many jobs.", answer: "threatens" },
+          { text: "We are too ________ on gadgets.", answer: "reliant" },
+          { text: "The ________ of info is seamless.", answer: "integration" },
+          { text: "Cyber ________ is a priority.", answer: "warfare" },
+          { text: "Algorithms can ________ misinformation.", answer: "amplify" },
+          { text: "The ________ cycle is fast.", answer: "news" },
+          { text: "The ________ of new tech is rapid.", answer: "adoption" },
+          { text: "We must ________ ethical implications.", answer: "address" }
         ],
         taskII: [
-          { term: "Interoperability", definition: "The ability of computer systems to exchange information.", key: "a" },
-          { term: "Sustainability", definition: "The ability to be maintained at a certain rate without harm.", key: "b" },
-          { term: "Disruption", definition: "Disturbance which interrupts an event or process.", key: "c" },
-          { term: "Innovation", definition: "The action or process of innovating a new method.", key: "d" },
-          { term: "Paradigm", definition: "A typical example or pattern of something; a model.", key: "e" }
+          { term: "Interoperability", definition: "Ability of systems to exchange info.", key: "a" },
+          { term: "Sustainability", definition: "Ability to be maintained without harm.", key: "b" },
+          { term: "Disruption", definition: "Disturbance which interrupts an event.", key: "c" },
+          { term: "Innovation", definition: "The process of innovating a method.", key: "d" },
+          { term: "Paradigm", definition: "A typical example or model.", key: "e" }
         ],
         taskIII: ["Digital footprint", "Social media detox", "Tech-savvy", "Online presence"],
         taskIV: [{ termA: "Convenience", termB: "Privacy" }, { termA: "Evolution", termB: "Revolution" }],
@@ -286,25 +285,25 @@ export const THEMES: Theme[] = [
     variants: [
       createVariant(1, "Academic Routine", {
         taskI: [
-          { text: "He decided to ________ for a prestigious degree in Law.", answer: "read" },
-          { text: "Students must ________ all their core lectures.", answer: "attend" },
-          { text: "I need to ________ some thorough research for my project.", answer: "do" },
-          { text: "The professor ________ an exceptionally inspiring lecture.", answer: "delivered" },
-          { text: "You should ________ detailed notes during the class.", answer: "take" },
-          { text: "He wants to ________ a career in pediatric medicine.", answer: "pursue" },
-          { text: "I finally ________ my final paper this morning.", answer: "submitted" },
-          { text: "The university ________ many merit-based scholarship options.", answer: "offers" },
-          { text: "I hope to ________ a high grade in the midterm exam.", answer: "get" },
-          { text: "She had to ________ for the missed lab seminar.", answer: "compensate" },
-          { text: "You must ________ your sources correctly using APA style.", answer: "cite" },
-          { text: "The school ________ a very strict attendance policy.", answer: "enforces" }
+          { text: "He decided to ________ for a degree.", answer: "read" },
+          { text: "Students must ________ lectures.", answer: "attend" },
+          { text: "I need to ________ some research.", answer: "do" },
+          { text: "The professor ________ a lecture.", answer: "delivered" },
+          { text: "You should ________ notes.", answer: "take" },
+          { text: "He wants to ________ a career.", answer: "pursue" },
+          { text: "I ________ my final paper.", answer: "submitted" },
+          { text: "The uni ________ scholarships.", answer: "offers" },
+          { text: "I hope to ________ a high grade.", answer: "get" },
+          { text: "She had to ________ for the missed lab.", answer: "compensate" },
+          { text: "You must ________ your sources.", answer: "cite" },
+          { text: "The school ________ a strict policy.", answer: "enforces" }
         ],
         taskII: [
-          { term: "Curriculum", definition: "The subjects comprising a full course of study.", key: "a" },
-          { term: "Syllabus", definition: "An outline or summary of the subjects in a specific course.", key: "b" },
-          { term: "Tuition", definition: "Instruction given to a student or group.", key: "c" },
-          { term: "Thesis", definition: "A long essay or dissertation involving personal research.", key: "d" },
-          { term: "Faculty", definition: "A group of departments in a university or college.", key: "e" }
+          { term: "Curriculum", definition: "The subjects comprising a course.", key: "a" },
+          { term: "Syllabus", definition: "An outline of subjects in a course.", key: "b" },
+          { term: "Tuition", definition: "Instruction given to a student.", key: "c" },
+          { term: "Thesis", definition: "A long essay involving research.", key: "d" },
+          { term: "Faculty", definition: "A group of university departments.", key: "e" }
         ],
         taskIII: ["Academic record", "Rote learning", "Vocational training", "Higher education"],
         taskIV: [{ termA: "Sit an exam", termB: "Fail an exam" }, { termA: "Degree", termB: "Diploma" }],
@@ -312,25 +311,25 @@ export const THEMES: Theme[] = [
       }),
       createVariant(2, "Formal Education", {
         taskI: [
-          { text: "They decided to ________ a wide-scale survey.", answer: "conduct" },
-          { text: "She managed to ________ all her academic goals.", answer: "achieve" },
-          { text: "The latest findings ________ our previous theory.", answer: "corroborate" },
-          { text: "We need to ________ the qualitative data carefully.", answer: "examine" },
-          { text: "The report ________ several important social issues.", answer: "highlights" },
-          { text: "They were ________ to participate in the controlled study.", answer: "required" },
-          { text: "The online course ________ of ten distinct modules.", answer: "consists" },
-          { text: "He ________ from a top-tier university last spring.", answer: "graduated" },
-          { text: "She ________ in English Literature and History.", answer: "majored" },
-          { text: "The study ________ to show a link between diet and sleep.", answer: "aimed" },
-          { text: "We must ________ the long-term impact of the changes.", answer: "assess" },
-          { text: "The results were ________ in a peer-reviewed journal.", answer: "published" }
+          { text: "They decided to ________ a survey.", answer: "conduct" },
+          { text: "She managed to ________ her goals.", answer: "achieve" },
+          { text: "Findings ________ our theory.", answer: "corroborate" },
+          { text: "We need to ________ the data.", answer: "examine" },
+          { text: "The report ________ social issues.", answer: "highlights" },
+          { text: "They were ________ to participate.", answer: "required" },
+          { text: "The course ________ of ten modules.", answer: "consists" },
+          { text: "He ________ from university.", answer: "graduated" },
+          { text: "She ________ in History.", answer: "majored" },
+          { text: "The study ________ to show a link.", answer: "aimed" },
+          { text: "We must ________ the impact.", answer: "assess" },
+          { text: "Results were ________ in a journal.", answer: "published" }
         ],
         taskII: [
-          { term: "Pedagogy", definition: "The method and practice of teaching, especially as a subject.", key: "a" },
-          { term: "Cognitive", definition: "Relating to the mental process of knowledge acquisition.", key: "b" },
-          { term: "Didactic", definition: "Intended to teach, particularly in having moral instruction.", key: "c" },
-          { term: "Literacy", definition: "The ability to read and write fluently.", key: "d" },
-          { term: "Numeracy", definition: "The ability to understand and work with numbers.", key: "e" }
+          { term: "Pedagogy", definition: "Practice of teaching as a subject.", key: "a" },
+          { term: "Cognitive", definition: "Relating to knowledge acquisition.", key: "b" },
+          { term: "Didactic", definition: "Intended to teach moral instruction.", key: "c" },
+          { term: "Literacy", definition: "Ability to read and write fluently.", key: "d" },
+          { term: "Numeracy", definition: "Ability to understand numbers.", key: "e" }
         ],
         taskIII: ["Conduct research", "Acquire knowledge", "Deliver a presentation", "Exceed expectations"],
         taskIV: [{ termA: "Qualitative", termB: "Quantitative" }, { termA: "Theory", termB: "Evidence" }],
@@ -338,25 +337,25 @@ export const THEMES: Theme[] = [
       }),
       createVariant(3, "Professional Skills", {
         taskI: [
-          { text: "I have ________ several successful cross-team projects.", answer: "spearheaded" },
-          { text: "She ________ a team of ten highly skilled people.", answer: "managed" },
-          { text: "He ________ a significant increase in annual sales.", answer: "achieved" },
-          { text: "I have ________ strong communication and leadership skills.", answer: "developed" },
-          { text: "She ________ the new employee training program.", answer: "implemented" },
-          { text: "He ________ the company's overall online presence.", answer: "enhanced" },
-          { text: "I ________ the annual budget for the entire department.", answer: "oversaw" },
-          { text: "She ________ closely with the creative design team.", answer: "collaborated" },
-          { text: "He ________ a cost-effective solution to the problem.", answer: "devised" },
-          { text: "I ________ with major clients on a daily basis.", answer: "negotiate" },
-          { text: "She ________ the efficiency of the internal workflow.", answer: "improved" },
-          { text: "He ________ his performance targets every single year.", answer: "surpassed" }
+          { text: "I have ________ several projects.", answer: "spearheaded" },
+          { text: "She ________ a team.", answer: "managed" },
+          { text: "He ________ an increase in sales.", answer: "achieved" },
+          { text: "I have ________ leadership skills.", answer: "developed" },
+          { text: "She ________ the training.", answer: "implemented" },
+          { text: "He ________ our presence.", answer: "enhanced" },
+          { text: "I ________ the budget.", answer: "oversaw" },
+          { text: "She ________ with the team.", answer: "collaborated" },
+          { text: "He ________ a solution.", answer: "devised" },
+          { text: "I ________ with clients.", answer: "negotiate" },
+          { text: "She ________ efficiency.", answer: "improved" },
+          { text: "He ________ his targets.", answer: "surpassed" }
         ],
         taskII: [
-          { term: "Competency", definition: "The ability to do something successfully or efficiently.", key: "a" },
-          { term: "Objective", definition: "A thing aimed at or sought; a goal.", key: "b" },
-          { term: "Credential", definition: "A qualification, achievement, or aspect of background.", key: "c" },
-          { term: "Reference", definition: "A letter from a previous employer testifying to ability.", key: "d" },
-          { term: "Internship", definition: "A period of work experience offered by an organization.", key: "e" }
+          { term: "Competency", definition: "Ability to do something successfully.", key: "a" },
+          { term: "Objective", definition: "A thing aimed at or sought.", key: "b" },
+          { term: "Credential", definition: "A qualification or achievement.", key: "c" },
+          { term: "Reference", definition: "A letter testifying to ability.", key: "d" },
+          { term: "Internship", definition: "Period of work experience.", key: "e" }
         ],
         taskIII: ["Self-motivated", "Team player", "Strong work ethic", "Problem solver"],
         taskIV: [{ termA: "Skills", termB: "Qualifications" }, { termA: "Experience", termB: "Aptitude" }],
@@ -368,30 +367,30 @@ export const THEMES: Theme[] = [
     id: "work-business",
     title: "THEME 5: WORK AND BUSINESS",
     category: "Professional",
-    description: "Vocabulary related to the workplace, business terminology, and professional slang.",
+    description: "Office language and business strategy.",
     icon: "Briefcase",
     variants: [
-      createVariant(1, "The Office Environment", {
+      createVariant(1, "The Office", {
         taskI: [
-          { text: "I have to ________ several phone calls before lunch.", answer: "make" },
-          { text: "She was ________ with the task of hiring new staff.", answer: "charged" },
-          { text: "He decided to ________ in his resignation yesterday.", answer: "hand" },
-          { text: "The company is ________ for a new general manager.", answer: "scouting" },
-          { text: "We need to ________ a fair deal by this Friday.", answer: "strike" },
-          { text: "I have an exceptionally heavy ________ this month.", answer: "workload" },
-          { text: "The project is currently ________ schedule.", answer: "behind" },
-          { text: "We must ________ the deadline at any cost.", answer: "meet" },
-          { text: "She works in the ________ resources department.", answer: "human" },
-          { text: "He was ________ redundant after the merger last week.", answer: "made" },
-          { text: "The business is finally ________ a healthy profit.", answer: "turning" },
-          { text: "I have to ________ the office early for an appointment.", answer: "leave" }
+          { text: "I have to ________ calls.", answer: "make" },
+          { text: "She was ________ with hiring.", answer: "charged" },
+          { text: "He decided to ________ in his resignation.", answer: "hand" },
+          { text: "The company is ________ for a manager.", answer: "scouting" },
+          { text: "We need to ________ a deal.", answer: "strike" },
+          { text: "I have a heavy ________.", answer: "workload" },
+          { text: "We are ________ schedule.", answer: "behind" },
+          { text: "We must ________ the deadline.", answer: "meet" },
+          { text: "She works in ________ resources.", answer: "human" },
+          { text: "He was ________ redundant.", answer: "made" },
+          { text: "The business is ________ a profit.", answer: "turning" },
+          { text: "I have to ________ early.", answer: "leave" }
         ],
         taskII: [
-          { term: "Blue-collar", definition: "Relating to manual work, typically in a factory.", key: "a" },
-          { term: "White-collar", definition: "Relating to office work or clerical tasks.", key: "b" },
-          { term: "Overhead", definition: "The general costs of running a business (rent, etc).", key: "c" },
-          { term: "Turnover", definition: "The rate at which employees leave and are replaced.", key: "d" },
-          { term: "Incentive", definition: "A thing that motivates or encourages someone.", key: "e" }
+          { term: "Blue-collar", definition: "Relating to manual work.", key: "a" },
+          { term: "White-collar", definition: "Relating to office work.", key: "b" },
+          { term: "Overhead", definition: "Costs of running a business.", key: "c" },
+          { term: "Turnover", definition: "Rate at which employees leave.", key: "d" },
+          { term: "Incentive", definition: "A thing that motivates.", key: "e" }
         ],
         taskIII: ["Take a break", "Meeting deadline", "Working hard", "Office job"],
         taskIV: [{ termA: "Manager", termB: "Employee" }, { termA: "Salary", termB: "Wage" }],
@@ -399,25 +398,25 @@ export const THEMES: Theme[] = [
       }),
       createVariant(2, "Business Strategy", {
         taskI: [
-          { text: "I'll ________ up with you later to discuss the plan.", answer: "catch" },
-          { text: "The morning meeting was ________ off due to rain.", answer: "called" },
-          { text: "We need to ________ through the finer details again.", answer: "go" },
-          { text: "He ________ down the offer because the pay was low.", answer: "turned" },
-          { text: "She ________ on too much work and is now stressed.", answer: "took" },
-          { text: "They are ________ out a new plan for the department.", answer: "bringing" },
-          { text: "I need to ________ down the cost of materials.", answer: "keep" },
-          { text: "The deal ________ through at the very last minute.", answer: "fell" },
-          { text: "He ________ up for the board meeting quite late.", answer: "showed" },
-          { text: "We should ________ out a permanent solution.", answer: "find" },
-          { text: "I'll ________ into the matter as soon as possible.", answer: "look" },
-          { text: "They ________ up the parent company last year.", answer: "set" }
+          { text: "I'll ________ up with you later.", answer: "catch" },
+          { text: "The meeting was ________ off.", answer: "called" },
+          { text: "We need to ________ through details.", answer: "go" },
+          { text: "He ________ down the offer.", answer: "turned" },
+          { text: "She ________ on too much work.", answer: "took" },
+          { text: "They are ________ out a plan.", answer: "bringing" },
+          { text: "I need to ________ down costs.", answer: "keep" },
+          { text: "The deal ________ through.", answer: "fell" },
+          { text: "He ________ up late.", answer: "showed" },
+          { text: "We should ________ out a solution.", answer: "find" },
+          { text: "I'll ________ into the matter.", answer: "look" },
+          { text: "They ________ up the company.", answer: "set" }
         ],
         taskII: [
-          { term: "Stakeholder", definition: "A person with an interest or concern in a business.", key: "a" },
-          { term: "Revenue", definition: "The total income generated by a company.", key: "b" },
-          { term: "Asset", definition: "A useful or valuable thing, person, or quality.", key: "c" },
-          { term: "Liability", definition: "The state of being responsible for something by law.", key: "d" },
-          { term: "Capital", definition: "Wealth in the form of money or other assets owned.", key: "e" }
+          { term: "Stakeholder", definition: "A person with an interest in business.", key: "a" },
+          { term: "Revenue", definition: "Total income generated.", key: "b" },
+          { term: "Asset", definition: "A useful or valuable thing.", key: "c" },
+          { term: "Liability", definition: "State of being responsible by law.", key: "d" },
+          { term: "Capital", definition: "Wealth in form of money.", key: "e" }
         ],
         taskIII: ["Touch base", "Keep in the loop", "Go the extra mile", "Think outside the box"],
         taskIV: [{ termA: "Hire", termB: "Fire" }, { termA: "Asset", termB: "Liability" }],
@@ -425,25 +424,25 @@ export const THEMES: Theme[] = [
       }),
       createVariant(3, "Modern Slang", {
         taskI: [
-          { text: "We need to hit the ________ running on this project.", answer: "ground" },
-          { text: "It's a ________ situation for every party involved.", answer: "win-win" },
-          { text: "The ________ line is what matters most for the board.", answer: "bottom" },
-          { text: "Let's ________ out of the box to solve this issue.", answer: "think" },
-          { text: "He's ________ the midnight oil again to finish the report.", answer: "burning" },
-          { text: "We all need to ________ the corporate ladder to succeed.", answer: "climb" },
-          { text: "It's a dog-________-dog world in high finance.", answer: "eat" },
-          { text: "He's a ________ of all trades but master of none.", answer: "jack" },
-          { text: "We need to ________ some fresh blood to stay innovative.", answer: "bring" },
-          { text: "It was a real ________-up call for the management.", answer: "wake" },
-          { text: "They are all ________ for a piece of the pie.", answer: "fighting" },
-          { text: "There is a ________ on the horizon for the economy.", answer: "cloud" }
+          { text: "Hit the ________ running.", answer: "ground" },
+          { text: "It's a ________-win situation.", answer: "win" },
+          { text: "The ________ line matters.", answer: "bottom" },
+          { text: "Let's ________ out of the box.", answer: "think" },
+          { text: "Burning the ________ oil.", answer: "midnight" },
+          { text: "Climb the ________ ladder.", answer: "corporate" },
+          { text: "It's a dog-________-dog world.", answer: "eat" },
+          { text: "Jack of all ________.", answer: "trades" },
+          { text: "Bring in ________ blood.", answer: "fresh" },
+          { text: "It was a ________-up call.", answer: "wake" },
+          { text: "Fighting for a ________ of the pie.", answer: "piece" },
+          { text: "A ________ on the horizon.", answer: "cloud" }
         ],
         taskII: [
-          { term: "Leverage", definition: "The power to influence a person or situation.", key: "a" },
-          { term: "Synergy", definition: "The interaction of two organizations to produce a combined effect.", key: "b" },
-          { term: "Sustainability", definition: "The ability to be maintained at a certain rate.", key: "c" },
-          { term: "Infrastructure", definition: "Basic physical and organizational structures needed.", key: "d" },
-          { term: "Benchmarking", definition: "Evaluating something by comparison with a standard.", key: "e" }
+          { term: "Leverage", definition: "Power to influence a situation.", key: "a" },
+          { term: "Synergy", definition: "Combined interaction of two orgs.", key: "b" },
+          { term: "Sustainability", definition: "Ability to be maintained.", key: "c" },
+          { term: "Infrastructure", definition: "Basic physical structures.", key: "d" },
+          { term: "Benchmarking", definition: "Evaluating by comparison.", key: "e" }
         ],
         taskIII: ["Glass ceiling", "Rat race", "Cash cow", "Vulture capitalist"],
         taskIV: [{ termA: "Equity", termB: "Equality" }, { termA: "Gross", termB: "Net" }],
@@ -455,56 +454,56 @@ export const THEMES: Theme[] = [
     id: "law",
     title: "THEME 6: LAW AND ORDER",
     category: "Society",
-    description: "Legal terminology, judicial procedures, and crime-related vocabulary.",
+    description: "Legal terminology and judicial procedures.",
     icon: "Gavel",
     variants: [
-      createVariant(1, "Judicial Process", {
+      createVariant(1, "Judicial", {
         taskI: [
-          { text: "The jury reached a unanimous ________ after ten hours.", answer: "verdict" },
-          { text: "The witness was called to ________ under oath.", answer: "testify" },
-          { text: "Critical DNA ________ linked the suspect to the scene.", answer: "evidence" },
-          { text: "He was accused of being an ________ in the bank robbery.", answer: "accomplice" },
-          { text: "Harsh punishments act as a ________ for future crimes.", answer: "deterrent" },
-          { text: "The state decided to ________ the CEO for fraud.", answer: "prosecute" },
-          { text: "A ________ is a more serious crime than a misdemeanor.", answer: "felony" },
-          { text: "The ________ of the innocent man was a relief to all.", answer: "acquittal" },
-          { text: "High-profile lawsuits often result in lengthy ________.", answer: "litigation" },
-          { text: "The ________ presided over the local county court.", answer: "magistrate" },
-          { text: "Modern detectives rely heavily on ________ analysis.", answer: "forensic" },
-          { text: "The judge handed down a maximum ________ of ten years.", answer: "sentence" }
+          { text: "The jury reached a ________.", answer: "verdict" },
+          { text: "The witness will ________.", answer: "testify" },
+          { text: "Critical DNA ________.", answer: "evidence" },
+          { text: "He was an ________.", answer: "accomplice" },
+          { text: "Punishment is a ________.", answer: "deterrent" },
+          { text: "The state will ________.", answer: "prosecute" },
+          { text: "A serious ________.", answer: "felony" },
+          { text: "An ________ of the innocent.", answer: "acquittal" },
+          { text: "Lengthy ________.", answer: "litigation" },
+          { text: "The ________ presided.", answer: "magistrate" },
+          { text: "________ analysis.", answer: "forensic" },
+          { text: "The judge gave a ________.", answer: "sentence" }
         ],
         taskII: [
-          { term: "Indictment", definition: "A formal charge or accusation of a serious crime.", key: "a" },
-          { term: "Perjury", definition: "The offense of willfully telling an untruth in court.", key: "b" },
-          { term: "Subpoena", definition: "A writ ordering a person to attend a court.", key: "c" },
-          { term: "Defendant", definition: "An individual sued or accused in a court of law.", key: "d" },
-          { term: "Plaintiff", definition: "A person who brings a case against another in court.", key: "e" }
+          { term: "Indictment", definition: "Formal charge of serious crime.", key: "a" },
+          { term: "Perjury", definition: "Telling an untruth in court.", key: "b" },
+          { term: "Subpoena", definition: "Writ ordering attendance in court.", key: "c" },
+          { term: "Defendant", definition: "Individual accused in court.", key: "d" },
+          { term: "Plaintiff", definition: "Person bringing a case.", key: "e" }
         ],
         taskIII: ["Beyond reasonable doubt", "Mitigating circumstances", "Contempt of court", "Capital punishment"],
         taskIV: [{ termA: "Solicitor", termB: "Barrister" }, { termA: "Civil law", termB: "Criminal law" }],
         taskV: ["Jurisdiction", "Habeas corpus", "Amnesty", "Culpability", "Precedent"]
       }),
-      createVariant(2, "Crime and Punishment", {
+      createVariant(2, "Crime", {
         taskI: [
-          { text: "They were caught ________ with the company's funds.", answer: "embezzling" },
-          { text: "The prisoner was granted ________ by the governor.", answer: "clemency" },
-          { text: "He was issued a ________ to appear for jury duty.", answer: "summons" },
-          { text: "The lawyer prepared to ________ the expert witness.", answer: "cross-examine" },
-          { text: "The court issued an ________ to stop the construction.", answer: "injunction" },
-          { text: "The suspect was held in ________ until the trial.", answer: "custody" },
-          { text: "He committed ________ by lying about his whereabouts.", answer: "perjury" },
-          { text: "The ________ between the parties failed last night.", answer: "mediation" },
-          { text: "His legal ________ cost him thousands of dollars.", answer: "fees" },
-          { text: "A ________ is a lawyer who represents clients in court.", answer: "barrister" },
-          { text: "The police had a ________ to search the premises.", answer: "warrant" },
-          { text: "He was found ________ of second-degree murder.", answer: "guilty" }
+          { text: "They were caught ________.", answer: "embezzling" },
+          { text: "Granted ________.", answer: "clemency" },
+          { text: "Issued a ________.", answer: "summons" },
+          { text: "To ________ the witness.", answer: "cross-examine" },
+          { text: "Issued an ________.", answer: "injunction" },
+          { text: "Held in ________.", answer: "custody" },
+          { text: "Committed ________.", answer: "perjury" },
+          { text: "The ________ failed.", answer: "mediation" },
+          { text: "Legal ________.", answer: "fees" },
+          { text: "A ________ represents clients.", answer: "barrister" },
+          { text: "A ________ to search.", answer: "warrant" },
+          { text: "Found ________.", answer: "guilty" }
         ],
         taskII: [
-          { term: "Libel", definition: "A published false statement that is damaging to a person.", key: "a" },
-          { term: "Slander", definition: "The action of making a false spoken statement damaging to a person.", key: "b" },
+          { term: "Libel", definition: "Published false statement.", key: "a" },
+          { term: "Slander", definition: "Spoken false statement.", key: "b" },
           { term: "Larceny", definition: "Theft of personal property.", key: "c" },
-          { term: "Arson", definition: "The criminal act of deliberately setting fire to property.", key: "d" },
-          { term: "Battery", definition: "The physical act of hitting someone.", key: "e" }
+          { term: "Arson", definition: "Act of setting fire to property.", key: "d" },
+          { term: "Battery", definition: "Physical act of hitting someone.", key: "e" }
         ],
         taskIII: ["Serve a sentence", "Out of court settlement", "Plead guilty", "Burden of proof"],
         taskIV: [{ termA: "Theft", termB: "Robbery" }, { termA: "Burglary", termB: "Shoplifting" }],
@@ -512,25 +511,25 @@ export const THEMES: Theme[] = [
       }),
       createVariant(3, "Global Justice", {
         taskI: [
-          { text: "The UN called for ________ of the political prisoners.", answer: "amnesty" },
-          { text: "The ________ of suspects can be a complex treaty process.", answer: "extradition" },
-          { text: "The court had no ________ over international waters.", answer: "jurisdiction" },
-          { text: "The grand jury decided to ________ the senator.", answer: "indict" },
-          { text: "The execution was delayed by a last-minute ________.", answer: "reprieve" },
-          { text: "Modern ________ systems monitor city streets 24/7.", answer: "surveillance" },
-          { text: "The prison ________ was responsible for the facility.", answer: "warden" },
-          { text: "The ________ acted outside the law to seek revenge.", answer: "vigilante" },
-          { text: "Speeding is usually considered a minor ________.", answer: "misdemeanor" },
-          { text: "The victim's family sought ________ through the law.", answer: "redress" },
-          { text: "International ________ is governed by various treaties.", answer: "arbitration" },
-          { text: "The ________ arrested the suspect in the park.", answer: "constable" }
+          { text: "UN called for ________.", answer: "amnesty" },
+          { text: "Suspect ________.", answer: "extradition" },
+          { text: "No ________ over waters.", answer: "jurisdiction" },
+          { text: "To ________ the senator.", answer: "indict" },
+          { text: "Last minute ________.", answer: "reprieve" },
+          { text: "Modern ________ systems.", answer: "surveillance" },
+          { text: "The prison ________.", answer: "warden" },
+          { text: "The ________ vigilante.", answer: "acted" },
+          { text: "A minor ________.", answer: "misdemeanor" },
+          { text: "Sought ________.", answer: "redress" },
+          { text: "International ________.", answer: "arbitration" },
+          { text: "The ________ arrested.", answer: "constable" }
         ],
         taskII: [
-          { term: "Tribunal", definition: "A court of justice or some other person with power.", key: "a" },
-          { term: "Statute", definition: "A written law passed by a legislative body.", key: "b" },
-          { term: "Codex", definition: "An ancient manuscript text in book form.", key: "c" },
-          { term: "Protocol", definition: "The official procedure or system of rules governing affairs.", key: "d" },
-          { term: "Diplomatic immunity", definition: "The privilege of exemption from certain laws for diplomats.", key: "e" }
+          { term: "Tribunal", definition: "Court of justice or person with power.", key: "a" },
+          { term: "Statute", definition: "Written law passed by a body.", key: "b" },
+          { term: "Codex", definition: "Ancient manuscript in book form.", key: "c" },
+          { term: "Protocol", definition: "Official procedure governing affairs.", key: "d" },
+          { term: "Diplomatic immunity", definition: "Exemption from laws for diplomats.", key: "e" }
         ],
         taskIII: ["Rule of law", "Conflict of interest", "Due process", "Human rights violation"],
         taskIV: [{ termA: "Justice", termB: "Equity" }, { termA: "Law", termB: "Ethics" }],
@@ -540,84 +539,84 @@ export const THEMES: Theme[] = [
   },
   {
     id: "nature",
-    title: "THEME 7: THE ENVIRONMENT AND NATURE",
+    title: "THEME 7: ENVIRONMENT",
     category: "Science",
-    description: "Ecological concepts, climate change, and conservation vocabulary.",
+    description: "Ecology and conservation.",
     icon: "Leaf",
     variants: [
-      createVariant(1, "Ecology and Climate", {
+      createVariant(1, "Ecology", {
         taskI: [
-          { text: "The ________ protects us from harmful UV radiation.", answer: "ozone" },
-          { text: "Carbon ________ are at an all-time high globally.", answer: "emissions" },
-          { text: "Water in the ________ pond became dangerous to drink.", answer: "stagnant" },
-          { text: "We must switch to ________ energy sources immediately.", answer: "renewable" },
-          { text: "Plastic that isn't ________ persists for centuries.", answer: "biodegradable" },
-          { text: "The local ________ was disrupted by the oil spill.", answer: "ecosystem" },
-          { text: "Illegal ________ is destroying the Amazon rainforest.", answer: "deforestation" },
-          { text: "Many species are losing their natural ________ to urban sprawl.", answer: "habitat" },
-          { text: "The prolonged ________ led to a severe crop failure.", answer: "drought" },
-          { text: "Rising temperatures cause the ________ to melt rapidly.", answer: "glaciers" },
-          { text: "Wildlife ________ is the primary goal of the park.", answer: "preservation" },
-          { text: "The ________ includes all living organisms on Earth.", answer: "biosphere" }
+          { text: "The ________ protects us.", answer: "ozone" },
+          { text: "Carbon ________.", answer: "emissions" },
+          { text: "Water is ________.", answer: "stagnant" },
+          { text: "Switch to ________ energy.", answer: "renewable" },
+          { text: "Not ________ plastic.", answer: "biodegradable" },
+          { text: "The local ________.", answer: "ecosystem" },
+          { text: "Illegal ________.", answer: "deforestation" },
+          { text: "Losing natural ________.", answer: "habitat" },
+          { text: "Prolonged ________.", answer: "drought" },
+          { text: "Glaciers ________.", answer: "melt" },
+          { text: "Wildlife ________.", answer: "preservation" },
+          { text: "Earth's ________.", answer: "biosphere" }
         ],
         taskII: [
-          { term: "Atmosphere", definition: "The envelope of gases surrounding the earth or another planet.", key: "a" },
-          { term: "Toxicity", definition: "The quality of being toxic or poisonous.", key: "b" },
-          { term: "Sustainability", definition: "The ability to be maintained at a certain rate or level.", key: "c" },
-          { term: "Pollutant", definition: "A substance that pollutes something, especially water or the atmosphere.", key: "d" },
-          { term: "Condensation", definition: "Water which collects as droplets on a cold surface.", key: "e" }
+          { term: "Atmosphere", definition: "Envelope of gases surrounding Earth.", key: "a" },
+          { term: "Toxicity", definition: "Quality of being poisonous.", key: "b" },
+          { term: "Sustainability", definition: "Ability to be maintained.", key: "c" },
+          { term: "Pollutant", definition: "Substance that pollutes.", key: "d" },
+          { term: "Condensation", definition: "Water droplets on surface.", key: "e" }
         ],
         taskIII: ["Carbon footprint", "Global warming", "Natural resources", "Renewable energy"],
         taskIV: [{ termA: "Conservation", termB: "Preservation" }, { termA: "Climate", termB: "Weather" }],
-        taskV: ["Precipitation", "Biodiversity", "Permaculture", "Greenhouse effect", "Aquifer"]
+        taskV: ["Precipitation", "Biodiversity", "Permaculture", "Greenhouse", "Aquifer"]
       }),
-      createVariant(2, "Agriculture and Resources", {
+      createVariant(2, "Resources", {
         taskI: [
-          { text: "They used ________ energy to heat the entire town.", answer: "geothermal" },
-          { text: "Living a ________ lifestyle requires conscious choices.", answer: "sustainable" },
-          { text: "The hurricane was a natural ________ for the island.", answer: "catastrophe" },
-          { text: "Farmers rely on ________ systems during dry spells.", answer: "irrigation" },
-          { text: "The island serves as a ________ for migrating birds.", answer: "sanctuary" },
-          { text: "Excessive ________ use can harm local bee populations.", answer: "pesticide" },
-          { text: "Organic waste shouldn't end up in the ________.", answer: "landfill" },
-          { text: "The ________ of the soil led to poor harvests.", answer: "depletion" },
-          { text: "The autumn ________ was smaller than expected.", answer: "harvest" },
-          { text: "Climate change is hitting the ________ regions hardest.", answer: "arctic" },
-          { text: "She prefers buying ________ produce at the market.", answer: "organic" },
-          { text: "The forest ________ was a major local news story.", answer: "preservation" }
+          { text: "Use ________ energy.", answer: "geothermal" },
+          { text: "Living ________.", answer: "sustainable" },
+          { text: "Natural ________.", answer: "catastrophe" },
+          { text: "Use ________ systems.", answer: "irrigation" },
+          { text: "Island ________.", answer: "sanctuary" },
+          { text: "Excessive ________.", answer: "pesticide" },
+          { text: "Ends in ________.", answer: "landfill" },
+          { text: "Soil ________.", answer: "depletion" },
+          { text: "Autumn ________.", answer: "harvest" },
+          { text: "Hitting ________ regions.", answer: "arctic" },
+          { text: "Buy ________.", answer: "organic" },
+          { text: "Forest ________.", answer: "preservation" }
         ],
         taskII: [
-          { term: "Compost", definition: "Decayed organic material used as a plant fertilizer.", key: "a" },
-          { term: "Hydroponics", definition: "The process of growing plants in sand, gravel, or liquid.", key: "b" },
-          { term: "Monoculture", definition: "The cultivation of a single crop in a given area.", key: "c" },
-          { term: "Erosion", definition: "The process of eroding or being eroded by wind or water.", key: "d" },
-          { term: "Sediment", definition: "Matter that settles to the bottom of a liquid.", key: "e" }
+          { term: "Compost", definition: "Decayed organic material.", key: "a" },
+          { term: "Hydroponics", definition: "Growing plants in liquid.", key: "b" },
+          { term: "Monoculture", definition: "Cultivation of single crop.", key: "c" },
+          { term: "Erosion", definition: "Process of eroding by wind.", key: "d" },
+          { term: "Sediment", definition: "Matter settling at bottom.", key: "e" }
         ],
         taskIII: ["Intensive farming", "Organic fertilizer", "Water scarcity", "Soil fertility"],
         taskIV: [{ termA: "Flora", termB: "Fauna" }, { termA: "Herbicide", termB: "Pesticide" }],
         taskV: ["Salination", "Afforestation", "Topography", "Urbanization", "Desalination"]
       }),
-      createVariant(3, "Environmental Disasters", {
+      createVariant(3, "Disasters", {
         taskI: [
-          { text: "The city's ________ levels reached a critical low.", answer: "reservoir" },
-          { text: "Plants grow differently at high ________.", answer: "altitudes" },
-          { text: "Heavy rain caused severe ________ on the hillside.", answer: "erosion" },
-          { text: "We use a ________ bin for all our food scraps.", answer: "compost" },
-          { text: "A ________ downpour flooded the city streets.", answer: "torrential" },
-          { text: "Water ________ plants are vital for public health.", answer: "purification" },
-          { text: "The ________ gases trap heat in the atmosphere.", answer: "greenhouse" },
-          { text: "Marine ________ is the study of sea organisms.", answer: "ecology" },
-          { text: "The local ________ includes several rare bird species.", answer: "fauna" },
-          { text: "Alpine ________ is adapted to extreme cold.", answer: "flora" },
-          { text: "River ________ can block navigation over time.", answer: "sediment" },
-          { text: "Illegal ________ is a threat to the rhino population.", answer: "poaching" }
+          { text: "Low ________ level.", answer: "reservoir" },
+          { text: "High ________.", answer: "altitudes" },
+          { text: "Severe ________.", answer: "erosion" },
+          { text: "Use a ________ bin.", answer: "compost" },
+          { text: "Torrential ________.", answer: "downpour" },
+          { text: "Water ________.", answer: "purification" },
+          { text: "The ________ gases.", answer: "greenhouse" },
+          { text: "Marine ________.", answer: "ecology" },
+          { text: "The local ________.", answer: "fauna" },
+          { text: "Alpine ________.", answer: "flora" },
+          { text: "River ________.", answer: "sediment" },
+          { text: "Illegal ________.", answer: "poaching" }
         ],
         taskII: [
-          { term: "Tsunami", definition: "A long high sea wave caused by an earthquake.", key: "a" },
-          { term: "Tremor", definition: "An involuntary quivering movement; a slight earthquake.", key: "b" },
-          { term: "Avalanche", definition: "A mass of snow, ice, and rocks falling rapidly down a mountainside.", key: "c" },
-          { term: "Aftershock", definition: "A smaller earthquake following the main shock.", key: "d" },
-          { term: "Epicenter", definition: "The point on the earth's surface vertically above the focus of an earthquake.", key: "e" }
+          { term: "Tsunami", definition: "Long sea wave caused by earthquake.", key: "a" },
+          { term: "Tremor", definition: "Quivering movement; earthquake.", key: "b" },
+          { term: "Avalanche", definition: "Snow falling down mountain.", key: "c" },
+          { term: "Aftershock", definition: "Smaller quake following main shock.", key: "d" },
+          { term: "Epicenter", definition: "Surface point above focus.", key: "e" }
         ],
         taskIII: ["Oil spill", "Toxic waste", "Acid rain", "Nuclear fallout"],
         taskIV: [{ termA: "Endangered", termB: "Extinct" }, { termA: "Wild", termB: "Domesticated" }],
@@ -627,84 +626,84 @@ export const THEMES: Theme[] = [
   },
   {
     id: "travel",
-    title: "THEME 8: TRAVEL AND TOURISM",
+    title: "THEME 8: TRAVEL",
     category: "Leisure",
-    description: "Vocabulary for tourism, hospitality, transport, and global travel.",
+    description: "Tourism and transport.",
     icon: "Plane",
     variants: [
-      createVariant(1, "The Traveler's Path", {
+      createVariant(1, "Traveler", {
         taskI: [
-          { text: "I carefully planned our ten-day ________ for Europe.", answer: "itinerary" },
-          { text: "Paris remains a top ________ for honeymooners.", answer: "destination" },
-          { text: "Our flight was delayed, so we missed our ________.", answer: "transit" },
-          { text: "The country is known for its incredible ________.", answer: "hospitality" },
-          { text: "We waited for three hours at the airport ________.", answer: "terminal" },
-          { text: "Passengers must ________ the ship before noon.", answer: "embark" },
-          { text: "We took a day ________ to see the ancient ruins.", answer: "excursion" },
-          { text: "He spent a year as a ________ in South America.", answer: "backpacker" },
-          { text: "I bought a small ________ to remember the trip.", answer: "souvenir" },
-          { text: "The hotel ________ helped us book dinner tickets.", answer: "concierge" },
-          { text: "We had a long ________ in Dubai on our way home.", answer: "layover" },
-          { text: "The ________ process was quick and efficient.", answer: "embarkation" }
+          { text: "Planned the ________.", answer: "itinerary" },
+          { text: "Top ________.", answer: "destination" },
+          { text: "Missed our ________.", answer: "transit" },
+          { text: "Known for ________.", answer: "hospitality" },
+          { text: "Airport ________.", answer: "terminal" },
+          { text: "Must ________ the ship.", answer: "embark" },
+          { text: "Day ________.", answer: "excursion" },
+          { text: "Spent a year as a ________.", answer: "backpacker" },
+          { text: "Small ________.", answer: "souvenir" },
+          { text: "The ________ helped.", answer: "concierge" },
+          { text: "Long ________.", answer: "layover" },
+          { text: "Process of ________.", answer: "embarkation" }
         ],
         taskII: [
-          { term: "Customs", definition: "The place at a port or airport where officials check goods.", key: "a" },
-          { term: "Immigration", definition: "The place at an airport where government officials check passports.", key: "b" },
-          { term: "Jet lag", definition: "Extreme tiredness felt by a person after a long flight across time zones.", key: "c" },
-          { term: "Voucher", definition: "A small printed piece of paper that entitles the holder to a discount.", key: "d" },
-          { term: "Brochure", definition: "A small book or magazine containing pictures and information about a product.", key: "e" }
+          { term: "Customs", definition: "Place where officials check goods.", key: "a" },
+          { term: "Immigration", definition: "Place where officials check passports.", key: "b" },
+          { term: "Jet lag", definition: "Tiredness from crossing zones.", key: "c" },
+          { term: "Voucher", definition: "Paper entitling holder to discount.", key: "d" },
+          { term: "Brochure", definition: "Small book with info and pictures.", key: "e" }
         ],
         taskIII: ["Package holiday", "Off the beaten track", "Travel insurance", "Sightseeing tour"],
         taskIV: [{ termA: "Tourist", termB: "Traveler" }, { termA: "Hotel", termB: "Hostel" }],
-        taskV: ["Visa", "Check-in", "Boarding pass", "Expedition", "Pilgrimage"]
+        taskV: ["Visa", "Check-in", "Boarding", "Expedition", "Pilgrimage"]
       }),
-      createVariant(2, "Descriptive Travel", {
+      createVariant(2, "Descriptive", {
         taskI: [
-          { text: "The mountains provided a ________ backdrop for photos.", answer: "majestic" },
-          { text: "We enjoyed a ________ view of the city from the tower.", answer: "panoramic" },
-          { text: "The cabin had a ________ and cozy atmosphere.", answer: "rustic" },
-          { text: "The ________ drive through the valley was breath-taking.", answer: "scenic" },
-          { text: "They live in a ________ village in the Himalayas.", answer: "remote" },
-          { text: "Barcelona is a ________ and colorful city.", answer: "vibrant" },
-          { text: "The beach was ________ with white sand and clear water.", answer: "pristine" },
-          { text: "I've always wanted to visit ________ locations like Bali.", answer: "exotic" },
-          { text: "The ________ market was full of noise and smells.", answer: "bustling" },
-          { text: "We spent a ________ afternoon by the quiet lake.", answer: "tranquil" },
-          { text: "The town has many ________ little streets to explore.", answer: "quaint" },
-          { text: "The city has immense ________ significance.", answer: "historical" }
+          { text: "Majestic ________.", answer: "backdrop" },
+          { text: "Panoramic ________.", answer: "view" },
+          { text: "Rustic ________.", answer: "cabin" },
+          { text: "Scenic ________.", answer: "drive" },
+          { text: "Remote ________.", answer: "village" },
+          { text: "Vibrant ________.", answer: "city" },
+          { text: "Pristine ________.", answer: "beach" },
+          { text: "Exotic ________.", answer: "locations" },
+          { text: "Bustling ________.", answer: "market" },
+          { text: "Tranquil ________.", answer: "afternoon" },
+          { text: "Quaint ________.", answer: "streets" },
+          { text: "Historical ________.", answer: "significance" }
         ],
         taskII: [
-          { term: "Landmark", definition: "An object or feature of a landscape that is easily seen from a distance.", key: "a" },
-          { term: "Heritage", definition: "Property that is or may be inherited; an inheritance.", key: "b" },
-          { term: "Metropolis", definition: "The capital or chief city of a country or region.", key: "c" },
-          { term: "Hamlet", definition: "A small settlement, generally one smaller than a village.", key: "d" },
-          { term: "Citadel", definition: "A fortress, typically one on high ground above a city.", key: "e" }
+          { term: "Landmark", definition: "Feature easily seen from distance.", key: "a" },
+          { term: "Heritage", definition: "Property that is inherited.", key: "b" },
+          { term: "Metropolis", definition: "Capital or chief city.", key: "c" },
+          { term: "Hamlet", definition: "Small settlement.", key: "d" },
+          { term: "Citadel", definition: "Fortress on high ground.", key: "e" }
         ],
         taskIII: ["Breathtaking scenery", "Local cuisine", "Hospitality industry", "Untouched nature"],
         taskIV: [{ termA: "Voyage", termB: "Journey" }, { termA: "Trip", termB: "Tour" }],
         taskV: ["Stupendous", "Ethereal", "Serendipity", "Wanderlust", "Globetrotter"]
       }),
-      createVariant(3, "Impact and Infrastructure", {
+      createVariant(3, "Impact", {
         taskI: [
-          { text: "The rise of ________ helps protect local wildlife.", answer: "ecotourism" },
-          { text: "Cultural ________ is a side effect of mass travel.", answer: "globalization" },
-          { text: "The city needs better ________ to handle more tourists.", answer: "infrastructure" },
-          { text: "The resort offers every ________ you could imagine.", answer: "amenity" },
-          { text: "A ________ deal often includes flights and hotel.", answer: "package" },
-          { text: "You must apply for a ________ before visiting China.", answer: "visa" },
-          { text: "I need to exchange some ________ at the bank.", answer: "currency" },
-          { text: "They went through ________ without any issues.", answer: "customs" },
-          { text: "UNESCO protects sites of universal ________.", answer: "heritage" },
-          { text: "The long ________ across the Atlantic was rough.", answer: "voyage" },
-          { text: "We decided to book a luxury ________ for our anniversary.", answer: "cruise" },
-          { text: "The ________ lifestyle isn't for everyone.", answer: "nomadic" }
+          { text: "Rise of ________.", answer: "ecotourism" },
+          { text: "Cultural ________.", answer: "globalization" },
+          { text: "Need better ________.", answer: "infrastructure" },
+          { text: "Every ________.", answer: "amenity" },
+          { text: "Package ________.", answer: "deal" },
+          { text: "Apply for ________.", answer: "visa" },
+          { text: "Exchange ________.", answer: "currency" },
+          { text: "Went through ________.", answer: "customs" },
+          { text: "Universal ________.", answer: "heritage" },
+          { text: "Atlantic ________.", answer: "voyage" },
+          { text: "Luxury ________.", answer: "cruise" },
+          { text: "Lifestyle ________.", answer: "nomadic" }
         ],
         taskII: [
-          { term: "Over-tourism", definition: "The phenomenon of excessive numbers of tourists visiting a place.", key: "a" },
-          { term: "Gentrification", definition: "The process of changing the character of a neighborhood.", key: "b" },
-          { term: "Displacement", definition: "The moving of something from its place or position.", key: "c" },
-          { term: "Monetization", definition: "The action or process of earning revenue from an asset.", key: "d" },
-          { term: "Authenticity", definition: "The quality of being authentic.", key: "e" }
+          { term: "Over-tourism", definition: "Excessive numbers of tourists.", key: "a" },
+          { term: "Gentrification", definition: "Changing character of neighborhood.", key: "b" },
+          { term: "Displacement", definition: "Moving something from position.", key: "c" },
+          { term: "Monetization", definition: "Earning revenue from asset.", key: "d" },
+          { term: "Authenticity", definition: "Quality of being authentic.", key: "e" }
         ],
         taskIII: ["Sustainable tourism", "Cultural heritage", "Economic impact", "High season"],
         taskIV: [{ termA: "Inbound", termB: "Outbound" }, { termA: "Domestic", termB: "International" }],
@@ -714,84 +713,84 @@ export const THEMES: Theme[] = [
   },
   {
     id: "food",
-    title: "THEME 9: FOOD AND NUTRITION",
+    title: "THEME 9: FOOD",
     category: "Lifestyle",
-    description: "Culinary terminology, nutrition science, and kitchen collocations.",
+    description: "Culinary terminology.",
     icon: "Utensils",
     variants: [
-      createVariant(1, "Culinary Techniques", {
+      createVariant(1, "Culinary", {
         taskI: [
-          { text: "You should ________ the sauce over a low heat to thicken it.", answer: "simmer" },
-          { text: "Add a sprig of parsley to ________ the dish before serving.", answer: "garnish" },
-          { text: "It's best to ________ the steak in wine and herbs overnight.", answer: "marinate" },
-          { text: "The chef began to ________ the onions until they were translucent.", answer: "sauté" },
-          { text: "Use a grater to add some lemon ________ to the cake batter.", answer: "zest" },
-          { text: "You need to ________ the egg whites until they form stiff peaks.", answer: "whisk" },
-          { text: "It takes effort to ________ the dough by hand for ten minutes.", answer: "knead" },
-          { text: "You should ________ the vegetables briefly then plunge them in ice.", answer: "blanch" },
-          { text: "The tough cut of meat is best if you ________ it slowly.", answer: "braise" },
-          { text: "He learned how to ________ eggs in gently boiling water.", answer: "poach" },
-          { text: "Use a sharp knife to ________ the garlic into tiny pieces.", answer: "mince" },
-          { text: "The recipe asks you to ________ the carrots into matchsticks.", answer: "julienne" }
+          { text: "Let it ________.", answer: "simmer" },
+          { text: "Use to ________.", answer: "garnish" },
+          { text: "Let it ________.", answer: "marinate" },
+          { text: "To ________ onions.", answer: "sauté" },
+          { text: "Lemon ________.", answer: "zest" },
+          { text: "To ________ eggs.", answer: "whisk" },
+          { text: "To ________ dough.", answer: "knead" },
+          { text: "To ________ veg.", answer: "blanch" },
+          { text: "To ________ meat.", answer: "braise" },
+          { text: "To ________ eggs.", answer: "poach" },
+          { text: "To ________ garlic.", answer: "mince" },
+          { text: "To ________ carrots.", answer: "julienne" }
         ],
         taskII: [
-          { term: "Sauté", definition: "Fried quickly in a little hot fat.", key: "a" },
-          { term: "Blanch", definition: "To scald or parboil in water or steam.", key: "b" },
-          { term: "Infuse", definition: "To soak in liquid to extract the flavor or properties.", key: "c" },
-          { term: "Glaze", definition: "A thin liquid coating applied to food to give it a shiny surface.", key: "d" },
-          { term: "Zest", definition: "The outer colored part of the peel of citrus fruit.", key: "e" }
+          { term: "Sauté", definition: "Fried quickly in hot fat.", key: "a" },
+          { term: "Blanch", definition: "Scald in water briefly.", key: "b" },
+          { term: "Infuse", definition: "Soak to extract flavor.", key: "c" },
+          { term: "Glaze", definition: "Thin liquid coating.", key: "d" },
+          { term: "Zest", definition: "Outer part of citrus peel.", key: "e" }
         ],
         taskIII: ["Culinary excellence", "Staple food", "Balanced diet", "Nutritional value"],
         taskIV: [{ termA: "Roasting", termB: "Grilling" }, { termA: "Baking", termB: "Braising" }],
         taskV: ["Gourmet", "Appetizer", "Delicacy", "Seasoning", "Ingredients"]
       }),
-      createVariant(2, "Nutrition and Health", {
+      createVariant(2, "Nutrition", {
         taskI: [
-          { text: "Reducing your intake of ________ can help with weight loss.", answer: "calories" },
-          { text: "Exercise is known to boost your ________ significantly.", answer: "metabolism" },
-          { text: "Lean meat is an excellent source of high-quality ________.", answer: "protein" },
-          { text: "Simple ________ provide a quick energy boost but fade fast.", answer: "carbohydrates" },
-          { text: "Leafy greens are packed with essential ________ and minerals.", answer: "vitamins" },
-          { text: "A lack of certain ________ can lead to deficiency diseases.", answer: "minerals" },
-          { text: "Whole grains are much higher in ________ than white bread.", answer: "fibre" },
-          { text: "Drinking enough water is vital for proper ________.", answer: "hydration" },
-          { text: "Berries are full of ________ that protect your cells.", answer: "antioxidants" },
-          { text: "The body needs a variety of ________ to function well.", answer: "nutrients" },
-          { text: "Eating too much saturated fat can raise your ________.", answer: "cholesterol" },
-          { text: "Some people take daily ________ to improve their health.", answer: "supplements" }
+          { text: "Intake of ________.", answer: "calories" },
+          { text: "Boost ________.", answer: "metabolism" },
+          { text: "Source of ________.", answer: "protein" },
+          { text: "Simple ________.", answer: "carbohydrates" },
+          { text: "Essential ________.", answer: "vitamins" },
+          { text: "Lack of ________.", answer: "minerals" },
+          { text: "High in ________.", answer: "fibre" },
+          { text: "Proper ________.", answer: "hydration" },
+          { text: "Full of ________.", answer: "antioxidants" },
+          { text: "Variety of ________.", answer: "nutrients" },
+          { text: "High ________.", answer: "cholesterol" },
+          { text: "Daily ________.", answer: "supplements" }
         ],
         taskII: [
-          { term: "Carbohydrate", definition: "Any of a large group of organic compounds occurring in foods.", key: "a" },
-          { term: "Antioxidant", definition: "A substance that inhibits oxidation.", key: "b" },
-          { term: "Metabolism", definition: "The chemical processes that occur within a living organism.", key: "c" },
-          { term: "Fiber", definition: "Dietary material containing substances such as cellulose.", key: "d" },
-          { term: "Calorie", definition: "A unit of energy often used to measure food energy.", key: "e" }
+          { term: "Carbohydrate", definition: "Organic compounds in food.", key: "a" },
+          { term: "Antioxidant", definition: "Substance inhibiting oxidation.", key: "b" },
+          { term: "Metabolism", definition: "Chemical processes in organism.", key: "c" },
+          { term: "Fiber", definition: "Dietary material like cellulose.", key: "d" },
+          { term: "Calorie", definition: "Unit of energy measurement.", key: "e" }
         ],
         taskIII: ["Dietary requirements", "Vitamins and minerals", "Calorie deficit", "Processed food"],
-        taskIV: [{ termA: "Saturated fat", termB: "Unsaturated fat" }, { termA: "Vegan", termB: "Vegetarian" }],
-        taskV: ["Glucose", "Digestion", "Amino acid", "Probiotic", "Lactose"]
+        taskIV: [{ termA: "Saturated", termB: "Unsaturated" }, { termA: "Vegan", termB: "Vegetarian" }],
+        taskV: ["Glucose", "Digestion", "Amino", "Probiotic", "Lactose"]
       }),
-      createVariant(3, "The Food Industry", {
+      createVariant(3, "Industry", {
         taskI: [
-          { text: "The ________ was served before the main course arrived.", answer: "appetizer" },
-          { text: "The royal family hosted a grand ________ for the visitors.", answer: "banquet" },
-          { text: "The hotel serves a huge ________ breakfast every morning.", answer: "buffet" },
-          { text: "He is a ________ chef with three Michelin stars.", answer: "gourmet" },
-          { text: "Truffles are considered a rare and expensive ________.", answer: "delicacy" },
-          { text: "Always check the ________ label for potential allergens.", answer: "ingredients" },
-          { text: "Thai ________ is famous for its bold and spicy flavors.", answer: "cuisine" },
-          { text: "The waiter brought a large ________ of roasted meats.", answer: "platter" },
-          { text: "I found an old family ________ for apple pie.", answer: "recipe" },
-          { text: "Salt and pepper are the most common forms of ________.", answer: "seasoning" },
-          { text: "The formal table was set with expensive ________.", answer: "silverware" },
-          { text: "The ________ recommended a white wine for the fish.", answer: "sommelier" }
+          { text: "The ________.", answer: "appetizer" },
+          { text: "A grand ________.", answer: "banquet" },
+          { text: "A huge ________.", answer: "buffet" },
+          { text: "A ________ chef.", answer: "gourmet" },
+          { text: "Rare ________.", answer: "delicacy" },
+          { text: "The ________ label.", answer: "ingredients" },
+          { text: "Thai ________.", answer: "cuisine" },
+          { text: "Large ________.", answer: "platter" },
+          { text: "Old ________.", answer: "recipe" },
+          { text: "Salt ________.", answer: "seasoning" },
+          { text: "Expensive ________.", answer: "silverware" },
+          { text: "The ________.", answer: "sommelier" }
         ],
         taskII: [
-          { term: "Gastronomy", definition: "The practice or art of choosing, cooking, and eating good food.", key: "a" },
-          { term: "A la carte", definition: "Referring to food that can be ordered as separate items.", key: "b" },
-          { term: "Maitre d'", definition: "The head waiter of a restaurant.", key: "c" },
-          { term: "Confectionery", definition: "Sweets and chocolates considered collectively.", key: "d" },
-          { term: "Vintage", definition: "The year or place in which wine, especially high quality, was produced.", key: "e" }
+          { term: "Gastronomy", definition: "Art of choosing and eating good food.", key: "a" },
+          { term: "A la carte", definition: "Ordered as separate items.", key: "b" },
+          { term: "Maitre d'", definition: "Head waiter of restaurant.", key: "c" },
+          { term: "Confectionery", definition: "Sweets and chocolates.", key: "d" },
+          { term: "Vintage", definition: "Year or place of high quality.", key: "e" }
         ],
         taskIII: ["Fine dining", "Street food", "Farm-to-table", "Hospitality management"],
         taskIV: [{ termA: "Buffet", termB: "Set menu" }, { termA: "Waitstaff", termB: "Kitchen staff" }],
@@ -801,84 +800,84 @@ export const THEMES: Theme[] = [
   },
   {
     id: "psychology",
-    title: "THEME 10: PSYCHOLOGY AND BEHAVIOR",
+    title: "THEME 10: PSYCHOLOGY",
     category: "Science",
-    description: "Vocabulary for cognitive processes, human behavior, and emotional health.",
+    description: "Cognitive processes and behavior.",
     icon: "Brain",
     variants: [
-      createVariant(1, "Cognitive Science", {
+      createVariant(1, "Cognitive", {
         taskI: [
-          { text: "His ________ of the event was different from mine.", answer: "perception" },
-          { text: "The loud noise provided a strong ________ for the reflex.", answer: "stimulus" },
-          { text: "She struggled with the ________ of information for the test.", answer: "retrieval" },
-          { text: "Using a ________ device helped him remember the list.", answer: "mnemonic" },
-          { text: "Humans process a lot of ________ input every second.", answer: "sensory" },
-          { text: "Focusing your ________ on one task improves efficiency.", answer: "attention" },
-          { text: "His strange ________ was a cause for concern in the group.", answer: "behavior" },
-          { text: "The ________ of ideas is a key part of creativity.", answer: "association" },
-          { text: "Pavlov used ________ to train dogs to salivate.", answer: "conditioning" },
-          { text: "The brain's ________ allows it to change over time.", answer: "neuroplasticity" },
-          { text: "IQ tests are designed to measure human ________.", answer: "intelligence" },
-          { text: "The ________ process involves thinking and reasoning.", answer: "cognition" }
+          { text: "His ________.", answer: "perception" },
+          { text: "Strong ________.", answer: "stimulus" },
+          { text: "Info ________.", answer: "retrieval" },
+          { text: "Mnemonic ________.", answer: "device" },
+          { text: "Sensory ________.", answer: "input" },
+          { text: "Focus ________.", answer: "attention" },
+          { text: "Strange ________.", answer: "behavior" },
+          { text: "Idea ________.", answer: "association" },
+          { text: "Pavlov ________.", answer: "conditioning" },
+          { text: "Brain's ________.", answer: "neuroplasticity" },
+          { text: "IQ ________.", answer: "intelligence" },
+          { text: "Thinking ________.", answer: "process" }
         ],
         taskII: [
-          { term: "Cognition", definition: "The mental action or process of acquiring knowledge.", key: "a" },
-          { term: "Neurosis", definition: "A relatively mild mental illness that is not caused by organic disease.", key: "b" },
-          { term: "Psychosis", definition: "A severe mental disorder in which thought and emotions are so impaired.", key: "c" },
-          { term: "Subconscious", definition: "Concerning the part of the mind of which one is not fully aware.", key: "d" },
-          { term: "Schema", definition: "A representation of a plan or theory in the form of an outline or model.", key: "e" }
+          { term: "Cognition", definition: "Mental action of acquiring knowledge.", key: "a" },
+          { term: "Neurosis", definition: "Relatively mild mental illness.", key: "b" },
+          { term: "Psychosis", definition: "Severe impaired mental disorder.", key: "c" },
+          { term: "Subconscious", definition: "Part of mind not fully aware.", key: "d" },
+          { term: "Schema", definition: "Representation of a plan or theory.", key: "e" }
         ],
         taskIII: ["Cognitive dissonance", "Short-term memory", "Emotional intelligence", "Critical thinking"],
         taskIV: [{ termA: "Conscious", termB: "Subconscious" }, { termA: "Nature", termB: "Nurture" }],
         taskV: ["Perception", "Inference", "Stimulus", "Response", "Abstract"]
       }),
-      createVariant(2, "Emotions and Personality", {
+      createVariant(2, "Emotions", {
         taskI: [
-          { text: "Showing ________ involves understanding others' feelings.", answer: "empathy" },
-          { text: "Her ________ allowed her to bounce back from failure.", answer: "resilience" },
-          { text: "Public speaking often causes high levels of ________.", answer: "anxiety" },
-          { text: "The baby had a very calm and happy ________.", answer: "temperament" },
-          { text: "An ________ typically enjoys spending time alone.", answer: "introvert" },
-          { text: "An ________ gains energy from being around people.", answer: "extrovert" },
-          { text: "A ________ is an irrational and extreme fear of something.", answer: "phobia" },
-          { text: "Many fears are buried deep in our ________ mind.", answer: "subconscious" },
-          { text: "He lacked the ________ to finish his difficult degree.", answer: "motivation" },
-          { text: "The bird has a natural ________ to build a nest.", answer: "instinct" },
-          { text: "The story revealed the true ________ of the hero.", answer: "character" },
-          { text: "Seasonal changes can have an effect on your ________.", answer: "mood" }
+          { text: "Show ________.", answer: "empathy" },
+          { text: "Her ________.", answer: "resilience" },
+          { text: "Public ________.", answer: "anxiety" },
+          { text: "Calm ________.", answer: "temperament" },
+          { text: "An ________.", answer: "introvert" },
+          { text: "An ________.", answer: "extrovert" },
+          { text: "A ________.", answer: "phobia" },
+          { text: "The ________ mind.", answer: "subconscious" },
+          { text: "Lacked ________.", answer: "motivation" },
+          { text: "Natural ________.", answer: "instinct" },
+          { text: "True ________.", answer: "character" },
+          { text: "On your ________.", answer: "mood" }
         ],
         taskII: [
-          { term: "Empathy", definition: "The ability to understand and share the feelings of another.", key: "a" },
-          { term: "Resilience", definition: "The capacity to recover quickly from difficulties.", key: "b" },
-          { term: "Introversion", definition: "The state of or tendency toward being wholly or predominantly concerned with and interested in one's own mental life.", key: "c" },
-          { term: "Narcissism", definition: "Excessive interest in or admiration of oneself and one's physical appearance.", key: "d" },
-          { term: "Altruism", definition: "The belief in or practice of disinterested and selfless concern for the well-being of others.", key: "e" }
+          { term: "Empathy", definition: "Ability to share feelings of another.", key: "a" },
+          { term: "Resilience", definition: "Capacity to recover quickly.", key: "b" },
+          { term: "Introversion", definition: "Interested in own mental life.", key: "c" },
+          { term: "Narcissism", definition: "Excessive interest in oneself.", key: "d" },
+          { term: "Altruism", definition: "Practice of concern for others.", key: "e" }
         ],
         taskIII: ["Inner child", "Self-esteem", "Defense mechanism", "Personal growth"],
         taskIV: [{ termA: "Introvert", termB: "Extrovert" }, { termA: "Optimist", termB: "Pessimist" }],
         taskV: ["Affect", "Ambivalence", "Disorder", "Trauma", "Temperament"]
       }),
-      createVariant(3, "Social Dynamics", {
+      createVariant(3, "Social", {
         taskI: [
-          { text: "Group pressure can lead to high levels of ________.", answer: "conformity" },
-          { text: "Education is the key to reducing social ________.", answer: "prejudice" },
-          { text: "We should avoid using a ________ when describing people.", answer: "stereotype" },
-          { text: "Media has a powerful ________ on public behavior.", answer: "influence" },
-          { text: "Strong ________ is needed to guide the organization.", answer: "leadership" },
-          { text: "The random act of ________ surprised the stranger.", answer: "altruism" },
-          { text: "Violence is often a physical form of ________.", answer: "aggression" },
-          { text: "Society is often organized into a clear ________.", answer: "hierarchy" },
-          { text: "Cultural ________ is formed by shared history and values.", answer: "identity" },
-          { text: "The politician used ________ to win the voters.", answer: "persuasion" },
-          { text: "A social ________ is an unwritten rule for behavior.", answer: "norm" },
-          { text: "He was very proud of his high social ________.", answer: "status" }
+          { text: "Group ________.", answer: "conformity" },
+          { text: "Reduce ________.", answer: "prejudice" },
+          { text: "Avoid ________.", answer: "stereotype" },
+          { text: "Media ________.", answer: "influence" },
+          { text: "Strong ________.", answer: "leadership" },
+          { text: "Random ________.", answer: "altruism" },
+          { text: "Form of ________.", answer: "aggression" },
+          { text: "Clear ________.", answer: "hierarchy" },
+          { text: "Identity ________.", answer: "identity" },
+          { text: "Used ________.", answer: "persuasion" },
+          { text: "Social ________.", answer: "norm" },
+          { text: "High ________.", answer: "status" }
         ],
         taskII: [
-          { term: "Conformity", definition: "Compliance with standards, rules, or laws.", key: "a" },
-          { term: "Stereotype", definition: "A widely held but fixed and oversimplified image or idea.", key: "b" },
-          { term: "Prejudice", definition: "Preconceived opinion that is not based on reason or actual experience.", key: "c" },
-          { term: "Authority", definition: "The power or right to give orders, make decisions, and enforce obedience.", key: "d" },
-          { term: "Bias", definition: "Prejudice in favor of or against one thing, person, or group compared with another.", key: "e" }
+          { term: "Conformity", definition: "Compliance with standards or laws.", key: "a" },
+          { term: "Stereotype", definition: "Fixed oversimplified image.", key: "b" },
+          { term: "Prejudice", definition: "Preconceived opinion not based on reason.", key: "c" },
+          { term: "Authority", definition: "Power or right to give orders.", key: "d" },
+          { term: "Bias", definition: "Prejudice in favor or against one.", key: "e" }
         ],
         taskIII: ["Peer pressure", "Social stigma", "Cultural identity", "Groupthink"],
         taskIV: [{ termA: "Individualism", termB: "Collectivism" }, { termA: "Cooperation", termB: "Competition" }],
@@ -888,171 +887,171 @@ export const THEMES: Theme[] = [
   },
   {
     id: "finance",
-    title: "THEME 11: MONEY AND FINANCE",
+    title: "THEME 11: FINANCE",
     category: "Professional",
-    description: "Banking, investment, global economics, and fiscal vocabulary.",
+    description: "Banking and economics.",
     icon: "DollarSign",
     variants: [
-      createVariant(1, "Banking & Markets", {
+      createVariant(1, "Banking", {
         taskI: [
-          { text: "A severe ________ often leads to high unemployment rates.", answer: "recession" },
-          { text: "The high rate of ________ decreased the value of the currency.", answer: "inflation" },
-          { text: "The company reported a massive increase in annual ________.", answer: "revenue" },
-          { text: "Total ________ include all debts and financial obligations.", answer: "liabilities" },
-          { text: "Tangible ________ like property are generally stable investments.", answer: "assets" },
-          { text: "The board announced a quarterly ________ for all shareholders.", answer: "dividend" },
-          { text: "I need to diversify my investment ________ to reduce risk.", answer: "portfolio" },
-          { text: "He works for a leading ________ firm on Wall Street.", answer: "brokerage" },
-          { text: "High ________ ensures that assets can be converted to cash fast.", answer: "liquidity" },
-          { text: "They took out a 30-year ________ to buy their first home.", answer: "mortgage" },
-          { text: "The firm remained ________ despite the sudden market crash.", answer: "solvent" },
-          { text: "I was charged a fee for an unarranged ________ on my account.", answer: "overdraft" }
+          { text: "Severe ________.", answer: "recession" },
+          { text: "High ________.", answer: "inflation" },
+          { text: "Annual ________.", answer: "revenue" },
+          { text: "Total ________.", answer: "liabilities" },
+          { text: "Tangible ________.", answer: "assets" },
+          { text: "Board ________.", answer: "dividend" },
+          { text: "Investment ________.", answer: "portfolio" },
+          { text: "He works for ________.", answer: "brokerage" },
+          { text: "High ________.", answer: "liquidity" },
+          { text: "Took a ________.", answer: "mortgage" },
+          { text: "Remained ________.", answer: "solvent" },
+          { text: "Charged an ________.", answer: "overdraft" }
         ],
         taskII: [
-          { term: "Equity", definition: "The value of the shares issued by a company.", key: "a" },
-          { term: "Annuity", definition: "A fixed sum of money paid to someone each year.", key: "b" },
-          { term: "Audit", definition: "An official inspection of an individual's or organization's accounts.", key: "c" },
-          { term: "Deficit", definition: "The amount by which something, especially a sum of money, is too small.", key: "d" },
-          { term: "Arbitrage", definition: "The simultaneous buying and selling of securities to take advantage of differing prices.", key: "e" }
+          { term: "Equity", definition: "Value of shares issued by company.", key: "a" },
+          { term: "Annuity", definition: "Fixed sum paid each year.", key: "b" },
+          { term: "Audit", definition: "Official inspection of accounts.", key: "c" },
+          { term: "Deficit", definition: "Amount by which sum is too small.", key: "d" },
+          { term: "Arbitrage", definition: "Simultaneous buying and selling.", key: "e" }
         ],
         taskIII: ["Bull market", "Capital gains", "Venture capital", "Credit rating"],
-        taskIV: [{ termA: "Gross profit", termB: "Net profit" }, { termA: "Fixed rate", termB: "Variable rate" }],
+        taskIV: [{ termA: "Gross", termB: "Net" }, { termA: "Fixed", termB: "Variable" }],
         taskV: ["Bankruptcy", "Collateral", "Fiscal", "Hedging", "Speculation"]
       }),
-      createVariant(2, "Investment & Debt", {
+      createVariant(2, "Investment", {
         taskI: [
-          { text: "High-yield ________ can be risky but very profitable.", answer: "securities" },
-          { text: "The central bank decided to ________ interest rates.", answer: "hike" },
-          { text: "We need to ________ the budget for the upcoming quarter.", answer: "allocate" },
-          { text: "The start-up is seeking ________ to fund its expansion.", answer: "equity" },
-          { text: "He was forced to ________ his stocks during the slump.", answer: "liquidate" },
-          { text: "International ________ can affect the local exchange rate.", answer: "remittances" },
-          { text: "The bank requires ________ for such a large business loan.", answer: "collateral" },
-          { text: "They reached a ________ with their creditors last month.", answer: "settlement" },
-          { text: "Fiscal ________ is necessary to avoid a national debt crisis.", answer: "discipline" },
-          { text: "The government issued new ________ to fund infrastructure.", answer: "bonds" },
-          { text: "Many investors seek a high ________ on their investment.", answer: "return" },
-          { text: "The audit revealed several ________ in the bookkeeping.", answer: "discrepancies" }
+          { text: "Yield ________.", answer: "securities" },
+          { text: "Central ________.", answer: "hike" },
+          { text: "To ________.", answer: "allocate" },
+          { text: "Seeking ________.", answer: "equity" },
+          { text: "To ________.", answer: "liquidate" },
+          { text: "Remittances ________.", answer: "remittances" },
+          { text: "Requires ________.", answer: "collateral" },
+          { text: "Reached a ________.", answer: "settlement" },
+          { text: "Fiscal ________.", answer: "discipline" },
+          { text: "New ________.", answer: "bonds" },
+          { text: "High ________.", answer: "return" },
+          { text: "Several ________.", answer: "discrepancies" }
         ],
         taskII: [
-          { term: "Bullion", definition: "Gold or silver in bulk before coining, or valued by weight.", key: "a" },
-          { term: "Foreclosure", definition: "The action of taking possession of a mortgaged property when the mortgagor fails to keep up payments.", key: "b" },
-          { term: "Amortization", definition: "The action or process of gradually writing off the initial cost of an asset.", key: "c" },
-          { term: "Underwriting", definition: "Sign and accept liability under (an insurance policy).", key: "d" },
-          { term: "Leverage", definition: "The use of borrowed capital for an investment.", key: "e" }
+          { term: "Bullion", definition: "Gold or silver in bulk.", key: "a" },
+          { term: "Foreclosure", definition: "Taking possession of mortgaged property.", key: "b" },
+          { term: "Amortization", definition: "Gradually writing off cost.", key: "c" },
+          { term: "Underwriting", definition: "Accepting liability under policy.", key: "d" },
+          { term: "Leverage", definition: "Use of borrowed capital.", key: "e" }
         ],
         taskIII: ["Floating a company", "Insider trading", "Tax evasion", "Blue-chip stocks"],
-        taskIV: [{ termA: "Debit", termB: "Credit" }, { termA: "Current account", termB: "Savings account" }],
+        taskIV: [{ termA: "Debit", termB: "Credit" }, { termA: "Current", termB: "Savings" }],
         taskV: ["Solvency", "Expenditure", "Depreciation", "Legacy", "Incentive"]
       }),
-      createVariant(3, "Economic Trends", {
+      createVariant(3, "Economics", {
         taskI: [
-          { text: "Global ________ has transformed local manufacturing.", answer: "globalization" },
-          { text: "A ________ of workers led to an increase in wages.", answer: "shortage" },
-          { text: "The government's ________ policy affects public spending.", answer: "fiscal" },
-          { text: "The trade ________ has reached an all-time high.", answer: "surplus" },
-          { text: "Consumer ________ index is a key measure of inflation.", answer: "price" },
-          { text: "Market ________ makes short-term investing very difficult.", answer: "volatility" },
-          { text: "The ________ of the currency made exports cheaper.", answer: "devaluation" },
-          { text: "Sustainable ________ is a goal for many developing nations.", answer: "growth" },
-          { text: "The central bank oversees the country's ________ policy.", answer: "monetary" },
-          { text: "Tax ________ help encourage investment in certain areas.", answer: "rebates" },
-          { text: "The ________ of small businesses is vital for the economy.", answer: "viability" },
-          { text: "Wealth ________ remains a major social issue globally.", answer: "inequality" }
+          { text: "Global ________.", answer: "globalization" },
+          { text: "A ________.", answer: "shortage" },
+          { text: "The ________.", answer: "fiscal" },
+          { text: "A ________.", answer: "surplus" },
+          { text: "Price ________.", answer: "index" },
+          { text: "Market ________.", answer: "volatility" },
+          { text: "Currency ________.", answer: "devaluation" },
+          { text: "Growth ________.", answer: "growth" },
+          { text: "Monetary ________.", answer: "monetary" },
+          { text: "Tax ________.", answer: "rebates" },
+          { text: "Viability ________.", answer: "viability" },
+          { text: "Wealth ________.", answer: "inequality" }
         ],
         taskII: [
-          { term: "Macroeconomics", definition: "The part of economics concerned with large-scale or general economic factors.", key: "a" },
-          { term: "Tariff", definition: "A tax or duty to be paid on a particular class of imports or exports.", key: "b" },
-          { term: "Subsidy", definition: "A sum of money granted by the government to assist an industry.", key: "c" },
-          { term: "Protectionism", definition: "The theory or practice of shielding a country's domestic industries from foreign competition.", key: "d" },
-          { term: "Commodity", definition: "A raw material or primary agricultural product that can be bought and sold.", key: "e" }
+          { term: "Macroeconomics", definition: "Part concerned with large-scale factors.", key: "a" },
+          { term: "Tariff", definition: "Tax to be paid on imports.", key: "b" },
+          { term: "Subsidy", definition: "Sum granted by gov to assist.", key: "c" },
+          { term: "Protectionism", definition: "Shielding domestic industries.", key: "d" },
+          { term: "Commodity", definition: "Raw material bought and sold.", key: "e" }
         ],
-        taskIII: ["Emerging markets", "Supply and demand", "Free trade agreement", "Laissez-faire"],
-        taskIV: [{ termA: "Direct tax", termB: "Indirect tax" }, { termA: "Imports", termB: "Exports" }],
+        taskIII: ["Emerging markets", "Supply and demand", "Free trade", "Laissez-faire"],
+        taskIV: [{ termA: "Direct", termB: "Indirect" }, { termA: "Imports", termB: "Exports" }],
         taskV: ["Inflation", "Deflation", "Stagnation", "Monopoly", "Subsidiary"]
       })
     ]
   },
   {
     id: "arts",
-    title: "THEME 12: ARTS AND ENTERTAINMENT",
+    title: "THEME 12: ARTS",
     category: "Culture",
-    description: "Vocabulary for fine arts, performance, literature, and creative industry.",
+    description: "Fine arts and creativity.",
     icon: "Palette",
     variants: [
-      createVariant(1, "Fine Arts & Exhibitions", {
+      createVariant(1, "Exhibitions", {
         taskI: [
-          { text: "The ________ spent months preparing for the new exhibition.", answer: "curator" },
-          { text: "His ________ style was often misunderstood by traditionalists.", answer: "avant-garde" },
-          { text: "The museum recently acquired a rare marble ________.", answer: "sculpture" },
-          { text: "Modern ________ art often focuses on emotion over realism.", answer: "abstract" },
-          { text: "The building has a very unique and modern ________.", answer: "aesthetic" },
-          { text: "The Mona Lisa is considered a true ________ of art.", answer: "masterpiece" },
-          { text: "Linear ________ is used to create depth on a flat surface.", answer: "perspective" },
-          { text: "The artist painted a stunning ________ of the queen.", answer: "portrait" },
-          { text: "Science fiction is his favorite ________ of literature.", answer: "genre" },
-          { text: "The newspaper published a harsh ________ of the play.", answer: "critique" },
-          { text: "Oil paint is a versatile ________ for professional artists.", answer: "medium" },
-          { text: "She carefully chose a vibrant ________ of colors.", answer: "palette" }
+          { text: "Curator ________.", answer: "curator" },
+          { text: "Style ________.", answer: "avant-garde" },
+          { text: "Acquired ________.", answer: "sculpture" },
+          { text: "Modern ________.", answer: "abstract" },
+          { text: "Unique ________.", answer: "aesthetic" },
+          { text: "Art ________.", answer: "masterpiece" },
+          { text: "Linear ________.", answer: "perspective" },
+          { text: "Stunning ________.", answer: "portrait" },
+          { text: "Favorite ________.", answer: "genre" },
+          { text: "Harsh ________.", answer: "critique" },
+          { text: "Versatile ________.", answer: "medium" },
+          { text: "Vibrant ________.", answer: "palette" }
         ],
         taskII: [
-          { term: "Impressionism", definition: "A style of painting characterized by small, thin, yet visible brush strokes.", key: "a" },
-          { term: "Canvas", definition: "A strong, coarse unbleached cloth used as a surface for oil painting.", key: "b" },
-          { term: "Sketch", definition: "A rough or unfinished drawing or painting.", key: "c" },
-          { term: "Mural", definition: "A painting or other work of art executed directly on a wall.", key: "d" },
-          { term: "Gallery", definition: "A room or building for the display or sale of works of art.", key: "e" }
+          { term: "Impressionism", definition: "Style with visible brush strokes.", key: "a" },
+          { term: "Canvas", definition: "Cloth used for oil painting.", key: "b" },
+          { term: "Sketch", definition: "Rough unfinished drawing.", key: "c" },
+          { term: "Mural", definition: "Art executed on a wall.", key: "d" },
+          { term: "Gallery", definition: "Room for display or sale.", key: "e" }
         ],
         taskIII: ["Artistic integrity", "Visual arts", "Contemporary art", "Artistic license"],
         taskIV: [{ termA: "Realism", termB: "Surrealism" }, { termA: "Original", termB: "Reproduction" }],
         taskV: ["Aesthetic", "Exhibition", "Gallantry", "Installation", "Tapestry"]
       }),
-      createVariant(2, "Performance Arts", {
+      createVariant(2, "Performance", {
         taskI: [
-          { text: "The lead ________ received a standing ovation.", answer: "protagonist" },
-          { text: "The actors spent weeks in ________ before the premiere.", answer: "rehearsal" },
-          { text: "She decided to ________ for the role of the lead singer.", answer: "audition" },
-          { text: "The play's ________ was set in 19th-century London.", answer: "backdrop" },
-          { text: "The ________ of the musical was truly breathtaking.", answer: "choreography" },
-          { text: "The ________ wrote a script that challenged social norms.", answer: "playwright" },
-          { text: "The movie's ________ was full of unexpected twists.", answer: "plot" },
-          { text: "He works as a professional ________ for the city orchestra.", answer: "conductor" },
-          { text: "The theater's ________ was almost completely full.", answer: "auditorium" },
-          { text: "The ________ was written by a famous film composer.", answer: "soundtrack" },
-          { text: "The film received many ________ for its cinematography.", answer: "accolades" },
-          { text: "The ________ between the two main characters was witty.", answer: "dialogue" }
+          { text: "The ________.", answer: "protagonist" },
+          { text: "Weeks in ________.", answer: "rehearsal" },
+          { text: "To ________.", answer: "audition" },
+          { text: "Play's ________.", answer: "backdrop" },
+          { text: "Musical ________.", answer: "choreography" },
+          { text: "Playwright ________.", answer: "playwright" },
+          { text: "Movie ________.", answer: "plot" },
+          { text: "Professional ________.", answer: "conductor" },
+          { text: "Theater ________.", answer: "auditorium" },
+          { text: "Film ________.", answer: "soundtrack" },
+          { text: "Received ________.", answer: "accolades" },
+          { text: "Dialogue ________.", answer: "dialogue" }
         ],
         taskII: [
-          { term: "Prologue", definition: "A separate introductory section of a literary or musical work.", key: "a" },
-          { term: "Encore", definition: "A repeated or additional performance of an item at the end of a concert.", key: "b" },
-          { term: "Intermission", definition: "A pause or break between parts of a play, movie, or concert.", key: "c" },
-          { term: "Monologue", definition: "A long speech by one actor in a play or movie.", key: "d" },
-          { term: "Scenario", definition: "A written outline of a movie, novel, or stage work.", key: "e" }
+          { term: "Prologue", definition: "Separate introductory section.", key: "a" },
+          { term: "Encore", definition: "Repeated performance at end.", key: "b" },
+          { term: "Intermission", definition: "Pause between parts of play.", key: "c" },
+          { term: "Monologue", definition: "Long speech by one actor.", key: "d" },
+          { term: "Scenario", definition: "Written outline of work.", key: "e" }
         ],
         taskIII: ["Opening night", "Method acting", "Box office hit", "Stage fright"],
         taskIV: [{ termA: "Comedy", termB: "Tragedy" }, { termA: "Soloist", termB: "Ensemble" }],
         taskV: ["Aria", "Cadence", "Dramaturgy", "Overture", "Virtuoso"]
       }),
-      createVariant(3, "Literature & Writing", {
+      createVariant(3, "Writing", {
         taskI: [
-          { text: "The author used a ________ to hide his true identity.", answer: "pseudonym" },
-          { text: "The book is an ________ of the author's early life.", answer: "autobiography" },
-          { text: "The poet used a beautiful ________ to describe the sea.", answer: "metaphor" },
-          { text: "The ________ of the story is the struggle for freedom.", answer: "theme" },
-          { text: "The writer's ________ is very descriptive and poetic.", answer: "prose" },
-          { text: "The novel's ________ was slow but very detailed.", answer: "narrative" },
-          { text: "She spent years compiling an ________ of short stories.", answer: "anthology" },
-          { text: "The ________ of the book was very informative.", answer: "preface" },
-          { text: "He won the prize for his ________ work on history.", answer: "non-fiction" },
-          { text: "The poem's ________ was complex and irregular.", answer: "meter" },
-          { text: "The ________ of the two ideas was very clever.", answer: "juxtaposition" },
-          { text: "The story has many layers of ________.", answer: "symbolism" }
+          { text: "Used a ________.", answer: "pseudonym" },
+          { text: "Book an ________.", answer: "autobiography" },
+          { text: "Poetic ________.", answer: "metaphor" },
+          { text: "Story ________.", answer: "theme" },
+          { text: "Descriptive ________.", answer: "prose" },
+          { text: "Slow ________.", answer: "narrative" },
+          { text: "Short ________.", answer: "anthology" },
+          { text: "Book ________.", answer: "preface" },
+          { text: "Prize for ________.", answer: "non-fiction" },
+          { text: "Poem ________.", answer: "meter" },
+          { text: "Idea ________.", answer: "juxtaposition" },
+          { text: "Layered ________.", answer: "symbolism" }
         ],
         taskII: [
-          { term: "Stanza", definition: "A group of lines forming the basic recurring metrical unit in a poem.", key: "a" },
-          { term: "Alliteration", definition: "The occurrence of the same letter or sound at the beginning of adjacent words.", key: "b" },
-          { term: "Satire", definition: "The use of humor, irony, or exaggeration to expose people's stupidity.", key: "c" },
-          { term: "Epic", definition: "A long poem, typically one derived from ancient oral tradition.", key: "d" },
-          { term: "Hyperbole", definition: "Exaggerated statements or claims not meant to be taken literally.", key: "e" }
+          { term: "Stanza", definition: "Group of lines in poem.", key: "a" },
+          { term: "Alliteration", definition: "Occurrence of same letter.", key: "b" },
+          { term: "Satire", definition: "Use of humor to expose stupidity.", key: "c" },
+          { term: "Epic", definition: "Long poem from ancient tradition.", key: "d" },
+          { term: "Hyperbole", definition: "Exaggerated statements.", key: "e" }
         ],
         taskIII: ["Literary devices", "Narrative arc", "Character development", "Creative writing"],
         taskIV: [{ termA: "Fiction", termB: "Non-fiction" }, { termA: "Poetry", termB: "Prose" }],
@@ -1064,169 +1063,169 @@ export const THEMES: Theme[] = [
     id: "social-media",
     title: "THEME 13: SOCIAL MEDIA",
     category: "Communication",
-    description: "Digital presence, networking, online behavior, and viral trends.",
+    description: "Online behavior and connectivity.",
     icon: "MessageSquare",
     variants: [
-      createVariant(1, "Digital Presence & Influence", {
+      createVariant(1, "Influence", {
         taskI: [
-          { text: "The new ________ determines which posts users see first.", answer: "algorithm" },
-          { text: "The post received a high level of user ________.", answer: "engagement" },
-          { text: "The video went ________ within hours of being posted.", answer: "viral" },
-          { text: "She is a famous lifestyle ________ with millions of fans.", answer: "influencer" },
-          { text: "This new dance challenge is currently ________.", answer: "trending" },
-          { text: "Creators can ________ their content through ads.", answer: "monetize" },
-          { text: "He lost many ________ after his controversial post.", answer: "followers" },
-          { text: "Use a relevant ________ to reach a wider audience.", answer: "hashtag" },
-          { text: "Instagram is a popular ________ for photo sharing.", answer: "platform" },
-          { text: "Marketers track various ________ to measure success.", answer: "metrics" },
-          { text: "High-quality ________ is essential for growth.", answer: "content" },
-          { text: "They will ________ the gaming event live tonight.", answer: "stream" }
+          { text: "The ________.", answer: "algorithm" },
+          { text: "High ________.", answer: "engagement" },
+          { text: "Video went ________.", answer: "viral" },
+          { text: "Famous ________.", answer: "influencer" },
+          { text: "Dance is ________.", answer: "trending" },
+          { text: "To ________.", answer: "monetize" },
+          { text: "Lost many ________.", answer: "followers" },
+          { text: "Use ________.", answer: "hashtag" },
+          { text: "Popular ________.", answer: "platform" },
+          { text: "Track ________.", answer: "metrics" },
+          { text: "High ________.", answer: "content" },
+          { text: "To ________.", answer: "stream" }
         ],
         taskII: [
-          { term: "Handle", definition: "A person's username on a social media platform.", key: "a" },
-          { term: "Bio", definition: "A short piece of text that describes a user's profile.", key: "b" },
-          { term: "Feed", definition: "The constantly updated list of content on a social media site.", key: "c" },
-          { term: "Tag", definition: "To link another user's profile to a post or photo.", key: "d" },
-          { term: "DM", definition: "A private message sent directly to another user.", key: "e" }
+          { term: "Handle", definition: "Person's username.", key: "a" },
+          { term: "Bio", definition: "Short text describing user.", key: "b" },
+          { term: "Feed", definition: "Updated list of content.", key: "c" },
+          { term: "Tag", definition: "Link user to post.", key: "d" },
+          { term: "DM", definition: "Private message sent directly.", key: "e" }
         ],
         taskIII: ["Digital footprint", "Social media marketing", "User-generated content", "Online persona"],
-        taskIV: [{ termA: "Public profile", termB: "Private account" }, { termA: "Organic reach", termB: "Paid promotion" }],
+        taskIV: [{ termA: "Public", termB: "Private" }, { termA: "Organic", termB: "Paid" }],
         taskV: ["Engagement", "Monetization", "Transparency", "Authenticity", "Connectivity"]
       }),
-      createVariant(2, "Online Behavior & Ethics", {
+      createVariant(2, "Ethics", {
         taskI: [
-          { text: "Cyber ________ is a serious issue for many teenagers.", answer: "bullying" },
-          { text: "Always check your ________ settings to stay safe.", answer: "privacy" },
-          { text: "Be careful of ________ news spreading on social apps.", answer: "fake" },
-          { text: "The platform's ________ are very strict about hate speech.", answer: "guidelines" },
-          { text: "He was ________ from the group for breaking the rules.", answer: "banned" },
-          { text: "An ________ user posted several rude comments.", answer: "anonymous" },
-          { text: "Digital ________ is becoming a popular wellness trend.", answer: "detox" },
-          { text: "They were accused of ________ a false narrative.", answer: "promoting" },
-          { text: "The ________ of personal data is a major concern.", answer: "security" },
-          { text: "Always ________ sources before sharing information.", answer: "verify" },
-          { text: "She decided to ________ all the toxic accounts.", answer: "unfollow" },
-          { text: "The ________ of information can happen instantly.", answer: "leak" }
+          { text: "Cyber ________.", answer: "bullying" },
+          { text: "Privacy ________.", answer: "settings" },
+          { text: "Fake ________.", answer: "news" },
+          { text: "Platform ________.", answer: "guidelines" },
+          { text: "Banned ________.", answer: "user" },
+          { text: "An ________ user.", answer: "anonymous" },
+          { text: "Digital ________.", answer: "detox" },
+          { text: "Promoting ________.", answer: "narrative" },
+          { text: "Data ________.", answer: "security" },
+          { text: "Verify ________.", answer: "sources" },
+          { text: "Unfollow ________.", answer: "accounts" },
+          { text: "Info ________.", answer: "leak" }
         ],
         taskII: [
-          { term: "Troll", definition: "A person who post inflammatory or off-topic messages online.", key: "a" },
-          { term: "Clickbait", definition: "Content whose main purpose is to attract attention and encourage clicking.", key: "b" },
-          { term: "Doxing", definition: "The act of revealing someone's private information online.", key: "c" },
-          { term: "Shadowban", definition: "Blocking a user's content without them knowing.", key: "d" },
-          { term: "Astroturfing", definition: "Creating a false impression of widespread grassroots support.", key: "e" }
+          { term: "Troll", definition: "Person posting inflammatory messages.", key: "a" },
+          { term: "Clickbait", definition: "Content to attract attention.", key: "b" },
+          { term: "Doxing", definition: "Revealing private info online.", key: "c" },
+          { term: "Shadowban", definition: "Blocking content without knowing.", key: "d" },
+          { term: "Astroturfing", definition: "False impression of support.", key: "e" }
         ],
         taskIII: ["Privacy policy", "Community standards", "Data protection", "Ethical hacking"],
         taskIV: [{ termA: "Anonymity", termB: "Accountability" }, { termA: "Truth", termB: "Disinformation" }],
         taskV: ["Moderation", "Polarization", "Syndication", "Vulnerability", "Integrity"]
       }),
-      createVariant(3, "Networking & Connectivity", {
+      createVariant(3, "Networking", {
         taskI: [
-          { text: "LinkedIn is the best site for professional ________.", answer: "networking" },
-          { text: "The app allows you to ________ with friends globally.", answer: "connect" },
-          { text: "You can ________ interesting posts to your own profile.", answer: "repost" },
-          { text: "The ________ of social apps has changed how we talk.", answer: "ubiquity" },
-          { text: "A ________ of users complained about the new update.", answer: "multitude" },
-          { text: "The ________ of the new features was very rapid.", answer: "adoption" },
-          { text: "We need more ________ in how data is used.", answer: "transparency" },
-          { text: "The ________ between different apps is improving.", answer: "integration" },
-          { text: "Social media can ________ lonely people feel connected.", answer: "make" },
-          { text: "The ________ of the internet is felt everywhere.", answer: "impact" },
-          { text: "Users can ________ their profiles with various widgets.", answer: "customize" },
-          { text: "The ________ of the network is growing every day.", answer: "reach" }
+          { text: "Professional ________.", answer: "networking" },
+          { text: "To ________.", answer: "connect" },
+          { text: "To ________.", answer: "repost" },
+          { text: "Internet ________.", answer: "ubiquity" },
+          { text: "User ________.", answer: "multitude" },
+          { text: "New ________.", answer: "adoption" },
+          { text: "Need ________.", answer: "transparency" },
+          { text: "App ________.", answer: "integration" },
+          { text: "Feel ________.", answer: "connected" },
+          { text: "Internet ________.", answer: "impact" },
+          { text: "Profile ________.", answer: "customize" },
+          { text: "Network ________.", answer: "reach" }
         ],
         taskII: [
-          { term: "Interface", definition: "A device or program enabling a user to communicate with a computer.", key: "a" },
-          { term: "Bandwidth", definition: "The transmission capacity of a computer network.", key: "b" },
-          { term: "Latency", definition: "The delay before a transfer of data begins.", key: "c" },
-          { term: "Synchronous", definition: "Existing or occurring at the same time.", key: "d" },
-          { term: "Cloud", definition: "A network of remote servers hosted on the internet.", key: "e" }
+          { term: "Interface", definition: "Device enabling user communication.", key: "a" },
+          { term: "Bandwidth", definition: "Transmission capacity of network.", key: "b" },
+          { term: "Latency", definition: "Delay before transfer begins.", key: "c" },
+          { term: "Synchronous", definition: "Existing at same time.", key: "d" },
+          { term: "Cloud", definition: "Remote servers hosted on internet.", key: "e" }
         ],
         taskIII: ["Global connectivity", "Professional profile", "User interface", "Real-time updates"],
-        taskIV: [{ termA: "Active user", termB: "Passive observer" }, { termA: "Broadcasting", termB: "Interaction" }],
+        taskIV: [{ termA: "Active", termB: "Passive" }, { termA: "Broadcasting", termB: "Interaction" }],
         taskV: ["Interactivity", "Globalization", "Accessibility", "Convergence", "Standardization"]
       })
     ]
   },
   {
     id: "science",
-    title: "THEME 14: SCIENCE & INNOVATION",
+    title: "THEME 14: SCIENCE",
     category: "Science",
-    description: "Laboratory research, scientific methodology, and technological breakthroughs.",
+    description: "Laboratory research and scientific breakthrough.",
     icon: "Cpu",
     variants: [
-      createVariant(1, "Laboratory Procedures", {
+      createVariant(1, "Lab", {
         taskI: [
-          { text: "The researcher formulated a new ________ for the study.", answer: "hypothesis" },
-          { text: "They collected ________ data over a period of six months.", answer: "empirical" },
-          { text: "The detailed ________ of the results took several weeks.", answer: "analysis" },
-          { text: "We need to control every ________ in the experiment.", answer: "variable" },
-          { text: "The ________ group received a placebo instead of the drug.", answer: "control" },
-          { text: "The new discovery caused a ________ shift in the field.", answer: "paradigm" },
-          { text: "He is an expert in ________ physics and mechanics.", answer: "quantum" },
-          { text: "A genetic ________ can lead to unexpected traits.", answer: "mutation" },
-          { text: "She is studying ________ engineering and CRISPR tech.", answer: "genetic" },
-          { text: "The chemical ________ accelerated the entire reaction.", answer: "catalyst" },
-          { text: "Cells absorb water through the process of ________.", answer: "osmosis" },
-          { text: "The ________ of the two compounds created a new material.", answer: "synthesis" }
+          { text: "New ________.", answer: "hypothesis" },
+          { text: "Empirical ________.", answer: "data" },
+          { text: "Detailed ________.", answer: "analysis" },
+          { text: "Control ________.", answer: "variable" },
+          { text: "Control ________.", answer: "group" },
+          { text: "Paradigm ________.", answer: "shift" },
+          { text: "Quantum ________.", answer: "physics" },
+          { text: "Genetic ________.", answer: "mutation" },
+          { text: "Genetic ________.", answer: "engineering" },
+          { text: "Chemical ________.", answer: "catalyst" },
+          { text: "Cell ________.", answer: "osmosis" },
+          { text: "New ________.", answer: "synthesis" }
         ],
         taskII: [
-          { term: "Titration", definition: "A technique where a solution of known concentration is used to determine the concentration of an unknown solution.", key: "a" },
-          { term: "Centrifuge", definition: "A machine with a rapidly rotating container that applies centrifugal force to its contents.", key: "b" },
-          { term: "Pipette", definition: "A slender tube attached to or incorporating a bulb, for transferring small quantities of liquid.", key: "c" },
-          { term: "Crucible", definition: "A ceramic or metal container in which metals or other substances may be melted.", key: "d" },
-          { term: "Solvent", definition: "The liquid in which a solute is dissolved to form a solution.", key: "e" }
+          { term: "Titration", definition: "Technique to find concentration.", key: "a" },
+          { term: "Centrifuge", definition: "Machine with rotating container.", key: "b" },
+          { term: "Pipette", definition: "Tube for transferring liquid.", key: "c" },
+          { term: "Crucible", definition: "Container for melting metal.", key: "d" },
+          { term: "Solvent", definition: "Liquid in which solute dissolves.", key: "e" }
         ],
         taskIII: ["Scientific rigor", "Peer review", "Clinical trial", "Double-blind study"],
-        taskIV: [{ termA: "Inductive reasoning", termB: "Deductive reasoning" }, { termA: "Falsifiable", termB: "Verifiable" }],
+        taskIV: [{ termA: "Inductive", termB: "Deductive" }, { termA: "Falsifiable", termB: "Verifiable" }],
         taskV: ["Precision", "Accuracy", "Validity", "Reliability", "Replicability"]
       }),
-      createVariant(2, "Scientific Theory", {
+      createVariant(2, "Theory", {
         taskI: [
-          { text: "Einstein's theory of ________ changed our view of space.", answer: "relativity" },
-          { text: "The universe is in a constant state of ________.", answer: "expansion" },
-          { text: "The laws of ________ are fundamental to all physics.", answer: "thermodynamics" },
-          { text: "The ________ of evolution is supported by fossil records.", answer: "theory" },
-          { text: "Gravitational ________ pull objects toward each other.", answer: "forces" },
-          { text: "The ________ between the two particles was magnetic.", answer: "attraction" },
-          { text: "Matter is composed of tiny ________ called atoms.", answer: "particles" },
-          { text: "The ________ of energy can occur in many forms.", answer: "transformation" },
-          { text: "Light travels at a constant ________ in a vacuum.", answer: "velocity" },
-          { text: "The ________ of light occurs when it hits a mirror.", answer: "reflection" },
-          { text: "The ________ of light happens as it passes through water.", answer: "refraction" },
-          { text: "Modern ________ is the study of the entire universe.", answer: "cosmology" }
+          { text: "Theory of ________.", answer: "relativity" },
+          { text: "Constant ________.", answer: "expansion" },
+          { text: "Laws of ________.", answer: "thermodynamics" },
+          { text: "Theory of ________.", answer: "evolution" },
+          { text: "Gravitational ________.", answer: "forces" },
+          { text: "Particle ________.", answer: "attraction" },
+          { text: "Composed of ________.", answer: "particles" },
+          { text: "Energy ________.", answer: "transformation" },
+          { text: "Constant ________.", answer: "velocity" },
+          { text: "Light ________.", answer: "reflection" },
+          { text: "Light ________.", answer: "refraction" },
+          { text: "Modern ________.", answer: "cosmology" }
         ],
         taskII: [
-          { term: "Entropy", definition: "A thermodynamic quantity representing the unavailability of a system's thermal energy for conversion into mechanical work.", key: "a" },
-          { term: "Inertia", definition: "A property of matter by which it continues in its existing state of rest or uniform motion.", key: "b" },
-          { term: "Isotope", definition: "Each of two or more forms of the same element that contain equal numbers of protons but different numbers of neutrons.", key: "c" },
-          { term: "Fission", definition: "The action of dividing or splitting something into two or more parts.", key: "d" },
-          { term: "Fusion", definition: "The process or result of joining two or more things together to form a single entity.", key: "e" }
+          { term: "Entropy", definition: "Quantity of thermal unavailability.", key: "a" },
+          { term: "Inertia", definition: "Property of matter in rest.", key: "b" },
+          { term: "Isotope", definition: "Forms of same element.", key: "c" },
+          { term: "Fission", definition: "Dividing something into parts.", key: "d" },
+          { term: "Fusion", definition: "Joining things together.", key: "e" }
         ],
         taskIII: ["String theory", "Black hole", "Event horizon", "Particle accelerator"],
-        taskIV: [{ termA: "Fission", termB: "Fusion" }, { termA: "Potential energy", termB: "Kinetic energy" }],
+        taskIV: [{ termA: "Fission", termB: "Fusion" }, { termA: "Potential", termB: "Kinetic" }],
         taskV: ["Momentum", "Friction", "Viscosity", "Convection", "Radiation"]
       }),
-      createVariant(3, "Technological Innovation", {
+      createVariant(3, "Inno", {
         taskI: [
-          { text: "The new ________ chip is much faster than the old one.", answer: "silicon" },
-          { text: "They are developing a ________ to perform surgery.", answer: "robot" },
-          { text: "Renewable energy is a ________ for the future.", answer: "necessity" },
-          { text: "The ________ of the new engine is remarkably high.", answer: "efficiency" },
-          { text: "Digital ________ is a major trend in all industries.", answer: "transformation" },
-          { text: "The ________ of the new software was a success.", answer: "launch" },
-          { text: "She is an expert in ________ and micro-tech.", answer: "nanotechnology" },
-          { text: "The ________ of the new device is very user-friendly.", answer: "design" },
-          { text: "The ________ of AI will change the workforce.", answer: "advancement" },
-          { text: "We need a more ________ approach to energy use.", answer: "sustainable" },
-          { text: "The company holds several ________ for its inventions.", answer: "patents" },
-          { text: "The ________ of the two companies led to better tech.", answer: "merger" }
+          { text: "Silicon ________.", answer: "chip" },
+          { text: "Surgery ________.", answer: "robot" },
+          { text: "Renewable ________.", answer: "energy" },
+          { text: "High ________.", answer: "efficiency" },
+          { text: "Digital ________.", answer: "transformation" },
+          { text: "Software ________.", answer: "launch" },
+          { text: "Expert in ________.", answer: "nanotechnology" },
+          { text: "User ________.", answer: "design" },
+          { text: "Advancement of ________.", answer: "AI" },
+          { text: "Approach ________.", answer: "sustainable" },
+          { text: "Several ________.", answer: "patents" },
+          { text: "Company ________.", answer: "merger" }
         ],
         taskII: [
-          { term: "Algorithm", definition: "A process or set of rules to be followed in calculations.", key: "a" },
-          { term: "Prototype", definition: "A first, typical or preliminary model of something.", key: "b" },
-          { term: "Automation", definition: "The use of largely automatic equipment in a system of manufacturing.", key: "c" },
-          { term: "Interoperability", definition: "The ability of computer systems to exchange and make use of information.", key: "d" },
-          { term: "Scalability", definition: "The capacity to be changed in size or scale.", key: "e" }
+          { term: "Algorithm", definition: "Process for calculations.", key: "a" },
+          { term: "Prototype", definition: "Typical model of something.", key: "b" },
+          { term: "Automation", definition: "Use of automatic equipment.", key: "c" },
+          { term: "Interoperability", definition: "Systems exchanging info.", key: "d" },
+          { term: "Scalability", definition: "Capacity to be changed in size.", key: "e" }
         ],
         taskIII: ["Machine learning", "Smart home", "Internet of things", "Augmented reality"],
         taskIV: [{ termA: "Analog", termB: "Digital" }, { termA: "Hardware", termB: "Software" }],
@@ -1236,87 +1235,87 @@ export const THEMES: Theme[] = [
   },
   {
     id: "fashion",
-    title: "THEME 15: FASHION AND STYLE",
+    title: "THEME 15: FASHION",
     category: "Culture",
-    description: "Industry trends, clothing design, textiles, and consumer behavior.",
+    description: "Industry trends.",
     icon: "User",
     variants: [
-      createVariant(1, "Industry & Design", {
+      createVariant(1, "Design", {
         taskI: [
-          { text: "High-end ________ is only affordable for the wealthy.", answer: "couture" },
-          { text: "She loves wearing ________ clothing from the 1950s.", answer: "vintage" },
-          { text: "The models walked down the ________ with confidence.", answer: "runway" },
-          { text: "The ________ of the dress was a high-quality silk.", answer: "textile" },
-          { text: "The clothes were displayed on a life-sized ________.", answer: "mannequin" },
-          { text: "The ________ of the new coat is very slimming.", answer: "silhouette" },
-          { text: "Formal ________ is required for the charity gala.", answer: "attire" },
-          { text: "He only wears ________ suits made by a tailor.", answer: "bespoke" },
-          { text: "The ________ was made from a rare wool blend.", answer: "garment" },
-          { text: "She looked very ________ in her black cocktail dress.", answer: "chic" },
-          { text: "The current ________ is for oversized blazers.", answer: "trend" },
-          { text: "The store sells a wide range of sports ________.", answer: "apparel" }
+          { text: "High-end ________.", answer: "couture" },
+          { text: "Vintage ________.", answer: "clothing" },
+          { text: "Walked down ________.", answer: "runway" },
+          { text: "Dress ________.", answer: "textile" },
+          { text: "Life-sized ________.", answer: "mannequin" },
+          { text: "Coat ________.", answer: "silhouette" },
+          { text: "Formal ________.", answer: "attire" },
+          { text: "Bespoke ________.", answer: "suits" },
+          { text: "Garment ________.", answer: "made" },
+          { text: "Looked ________.", answer: "chic" },
+          { text: "Current ________.", answer: "trend" },
+          { text: "Sports ________.", answer: "apparel" }
         ],
         taskII: [
-          { term: "Textile", definition: "A type of cloth or woven fabric.", key: "a" },
-          { term: "Fabric", definition: "Cloth or other material produced by weaving or knitting fibers.", key: "b" },
-          { term: "Tailor", definition: "A person whose occupation is making fitted clothes.", key: "c" },
-          { term: "Embroidery", definition: "The art or pastime of embroidering cloth.", key: "d" },
-          { term: "Haut couture", definition: "Expensive, fashionable clothes produced by leading fashion houses.", key: "e" }
+          { term: "Textile", definition: "Type of cloth or fabric.", key: "a" },
+          { term: "Fabric", definition: "Material produced by weaving.", key: "b" },
+          { term: "Tailor", definition: "Person making fitted clothes.", key: "c" },
+          { term: "Embroidery", definition: "Art of embroidering cloth.", key: "d" },
+          { term: "Haut couture", definition: "Expensive fashionable clothes.", key: "e" }
         ],
         taskIII: ["Fashion statement", "Ready-to-wear", "Brand identity", "Artistic direction"],
         taskIV: [{ termA: "Retail", termB: "Wholesale" }, { termA: "Casual", termB: "Formal" }],
         taskV: ["Aesthetic", "Accessory", "Catalogue", "Collection", "Runway"]
       }),
-      createVariant(2, "Trends & Style", {
+      createVariant(2, "Style", {
         taskI: [
-          { text: "The new collection is full of ________ colors.", answer: "vibrant" },
-          { text: "She has a very ________ and unique sense of style.", answer: "eclectic" },
-          { text: "The ________ of the jewelry was exquisite.", answer: "craftsmanship" },
-          { text: "He prefers a ________ look with simple pieces.", answer: "minimalist" },
-          { text: "The ________ of the shoes was surprisingly comfortable.", answer: "fit" },
-          { text: "Accessories can help ________ a basic outfit.", answer: "elevate" },
-          { text: "The ________ of the fabric was soft and smooth.", answer: "texture" },
-          { text: "She is a true ________ who always stays ahead.", answer: "trendsetter" },
-          { text: "The ________ of the dress was inspired by nature.", answer: "pattern" },
-          { text: "He wore a ________ tie to match his pocket square.", answer: "silk" },
-          { text: "The ________ of the event was 'black tie only'.", answer: "dress-code" },
-          { text: "Sustainability is a growing ________ in fashion.", answer: "concern" }
+          { text: "Vibrant ________.", answer: "colors" },
+          { text: "Eclectic ________.", answer: "style" },
+          { text: "Jewelry ________.", answer: "craftsmanship" },
+          { text: "Minimalist ________.", answer: "look" },
+          { text: "Shoes ________.", answer: "fit" },
+          { text: "To ________.", answer: "elevate" },
+          { text: "Fabric ________.", answer: "texture" },
+          { text: "True ________.", answer: "trendsetter" },
+          { text: "Dress ________.", answer: "pattern" },
+          { text: "Silk ________.", answer: "tie" },
+          { text: "Dress ________.", answer: "code" },
+          { text: "Growing ________.", answer: "concern" }
         ],
         taskII: [
-          { term: "Vogue", definition: "The prevailing fashion or style at a particular time.", key: "a" },
-          { term: "Dapper", definition: "Neat and trim in dress and appearance (typically of a man).", key: "b" },
-          { term: "Gaudy", definition: "Extravagantly bright or showy, typically so as to be tasteless.", key: "c" },
-          { term: "Somber", definition: "Dark or dull in color or tone.", key: "d" },
-          { term: "Avant-garde", definition: "New and unusual or experimental ideas.", key: "e" }
+          { term: "Vogue", definition: "Prevailing fashion at time.", key: "a" },
+          { term: "Dapper", definition: "Neat trim in appearance.", key: "b" },
+          { term: "Gaudy", definition: "Extravagantly bright showy.", key: "c" },
+          { term: "Somber", definition: "Dark dull in color.", key: "d" },
+          { term: "Avant-garde", definition: "New unusual ideas.", key: "e" }
         ],
         taskIII: ["Wardrobe staples", "Mix and match", "Fast fashion", "Personal style"],
         taskIV: [{ termA: "Trendy", termB: "Timeless" }, { termA: "Synthetic", termB: "Natural" }],
         taskV: ["Attire", "Cosmetic", "Costume", "Garment", "Style"]
       }),
-      createVariant(3, "Retail & Consumerism", {
+      createVariant(3, "Consumer", {
         taskI: [
-          { text: "The flagship store is located in a ________ area.", answer: "prestigious" },
-          { text: "They are offering a massive ________ for the holidays.", answer: "discount" },
-          { text: "The ________ of the brand is globally recognized.", answer: "logo" },
-          { text: "Consumer ________ has shifted toward online shopping.", answer: "behavior" },
-          { text: "The ________ window was decorated for Christmas.", answer: "display" },
-          { text: "She works as a ________ buyer for a major retailer.", answer: "fashion" },
-          { text: "The ________ of the new shop was very successful.", answer: "opening" },
-          { text: "They use ________ influencers to promote the brand.", answer: "social-media" },
-          { text: "The ________ of the product was high-quality.", answer: "packaging" },
-          { text: "He decided to ________ the item because it was small.", answer: "return" },
-          { text: "The ________ was full of people during the sale.", answer: "mall" },
-          { text: "Loyal customers receive special ________ points.", answer: "reward" }
+          { text: "Flagship ________.", answer: "store" },
+          { text: "Holiday ________.", answer: "discount" },
+          { text: "Brand ________.", answer: "logo" },
+          { text: "Consumer ________.", answer: "behavior" },
+          { text: "Display ________.", answer: "window" },
+          { text: "Fashion ________.", answer: "buyer" },
+          { text: "Successful ________.", answer: "opening" },
+          { text: "Social ________.", answer: "influencers" },
+          { text: "Product ________.", answer: "packaging" },
+          { text: "To ________.", answer: "return" },
+          { text: "The ________.", answer: "mall" },
+          { text: "Special ________.", answer: "points" }
         ],
         taskII: [
           { term: "Merchandise", definition: "Goods to be bought and sold.", key: "a" },
-          { term: "Wholesale", definition: "The selling of goods in large quantities to be retailed by others.", key: "b" },
-          { term: "Franchise", definition: "An authorization granted by a government or company to an individual or group.", key: "c" },
-          { term: "Boutique", definition: "A small store selling fashionable clothes or accessories.", key: "d" },
-          { term: "Consumerism", definition: "The protection or promotion of the interests of consumers.", key: "e" }
+          { term: "Wholesale", definition: "Selling in large quantities.", key: "b" },
+          { term: "Franchise", definition: "Authorization granted by gov.", key: "c" },
+          { term: "Boutique", definition: "Small store selling clothes.", key: "d" },
+          { term: "Consumerism", definition: "Promotion of consumer interests.", key: "e" }
         ],
         taskIII: ["Brand loyalty", "E-commerce", "High-street fashion", "Outlet store"],
-        taskIV: [{ termA: "Luxury", termB: "Budget" }, { termA: "Department store", termB: "Specialty shop" }],
+        taskIV: [{ termA: "Luxury", termB: "Budget" }, { termA: "Department", termB: "Specialty" }],
         taskV: ["Commerce", "Inventory", "Logistics", "Purchasing", "Revenue"]
       })
     ]
@@ -1325,84 +1324,84 @@ export const THEMES: Theme[] = [
     id: "relationships",
     title: "THEME 16: RELATIONSHIPS",
     category: "Lifestyle",
-    description: "Social bonds, family dynamics, conflict resolution, and modern connections.",
+    description: "Social bonds.",
     icon: "Heart",
     variants: [
-      createVariant(1, "Family Dynamics", {
+      createVariant(1, "Family", {
         taskI: [
-          { text: "Strong ________ bonds are essential for early development.", answer: "maternal" },
-          { text: "They have been ________ since the argument last year.", answer: "estranged" },
-          { text: "It's natural for siblings to have some ________.", answer: "rivalry" },
-          { text: "We must ________ children in a safe and loving environment.", answer: "nurture" },
-          { text: "The ________ between the two friends was unbreakable.", answer: "bond" },
-          { text: "He has a very strict ________ in a religious family.", answer: "upbringing" },
-          { text: "They are ________ spirits with a shared passion for art.", answer: "kindred" },
-          { text: "Public displays of ________ can sometimes be awkward.", answer: "affection" },
-          { text: "The ________ of the couple was a long-term goal.", answer: "reconciliation" },
-          { text: "He lives in a ________ household with three generations.", answer: "nuclear" },
-          { text: "Extended family members are often called ________.", answer: "relatives" },
-          { text: "They share a ________ interest in historical research.", answer: "mutual" }
+          { text: "Maternal ________.", answer: "bonds" },
+          { text: "Estranged ________.", answer: "since" },
+          { text: "Sibling ________.", answer: "rivalry" },
+          { text: "To ________.", answer: "nurture" },
+          { text: "Unbreakable ________.", answer: "bond" },
+          { text: "Strict ________.", answer: "upbringing" },
+          { text: "Kindred ________.", answer: "spirits" },
+          { text: "Displays of ________.", answer: "affection" },
+          { text: "Couple ________.", answer: "reconciliation" },
+          { text: "Nuclear ________.", answer: "household" },
+          { text: "Relatives ________.", answer: "extended" },
+          { text: "Mutual ________.", answer: "interest" }
         ],
         taskII: [
           { term: "Kinship", definition: "Blood relationship.", key: "a" },
-          { term: "Rivalry", definition: "Competition for the same objective or for superiority.", key: "b" },
-          { term: "Nurture", definition: "Care for and encourage the growth or development of.", key: "c" },
-          { term: "Estranged", definition: "No longer close or affectionate to someone.", key: "d" },
-          { term: "Bond", definition: "A relationship between people or groups based on shared feelings.", key: "e" }
+          { term: "Rivalry", definition: "Competition for superiority.", key: "b" },
+          { term: "Nurture", definition: "Encourage growth of child.", key: "c" },
+          { term: "Estranged", definition: "No longer affectionate to one.", key: "d" },
+          { term: "Bond", definition: "Relationship based on shared feelings.", key: "e" }
         ],
         taskIII: ["Sibling rivalry", "Nuclear family", "Blood is thicker than water", "Close-knit"],
         taskIV: [{ termA: "Biological", termB: "Adoptive" }, { termA: "Friendship", termB: "Romance" }],
         taskV: ["Ancestry", "Lineage", "Matriarch", "Patriarch", "Heritage"]
       }),
-      createVariant(2, "Social Connections", {
+      createVariant(2, "Social", {
         taskI: [
-          { text: "Networking helps ________ new professional opportunities.", answer: "uncover" },
-          { text: "Honesty is the foundation of any ________ relationship.", answer: "genuine" },
-          { text: "They decided to ________ their differences and move on.", answer: "resolve" },
-          { text: "Public ________ often requires strong interpersonal skills.", answer: "speaking" },
-          { text: "She values ________ over superficial connections.", answer: "authenticity" },
-          { text: "Maintaining ________ with old friends can be difficult.", answer: "contact" },
-          { text: "He managed to ________ the trust of his colleagues.", answer: "earn" },
-          { text: "Empathy allows us to ________ with others' pain.", answer: "connect" },
-          { text: "They share a ________ vision for the future.", answer: "common" },
-          { text: "Peer ________ can be a strong motivator for teens.", answer: "pressure" },
-          { text: "The team developed a strong sense of ________.", answer: "unity" },
-          { text: "Social ________ is vital for mental well-being.", answer: "support" }
+          { text: "Networking ________.", answer: "opportunities" },
+          { text: "Foundation of ________.", answer: "genuine" },
+          { text: "Resolve ________.", answer: "differences" },
+          { text: "Requires ________.", answer: "skills" },
+          { text: "Values ________.", answer: "authenticity" },
+          { text: "Maintaining ________.", answer: "contact" },
+          { text: "Earn ________.", answer: "trust" },
+          { text: "Connect with ________.", answer: "pain" },
+          { text: "Common ________.", answer: "vision" },
+          { text: "Peer ________.", answer: "pressure" },
+          { text: "Sense of ________.", answer: "unity" },
+          { text: "Social ________.", answer: "support" }
         ],
         taskII: [
-          { term: "Interpersonal", definition: "Relating to relationships or communication between people.", key: "a" },
-          { term: "Reciprocity", definition: "The practice of exchanging things with others for mutual benefit.", key: "b" },
-          { term: "Altruism", definition: "The belief in or practice of selfless concern for others.", key: "c" },
-          { term: "Camaraderie", definition: "Mutual trust and friendship among people who spend a lot of time together.", key: "d" },
-          { term: "Affiliation", definition: "The state or process of affiliating or being affiliated with an organization.", key: "e" }
+          { term: "Interpersonal", definition: "Relationships between people.", key: "a" },
+          { term: "Reciprocity", definition: "Exchanging for mutual benefit.", key: "b" },
+          { term: "Altruism", definition: "Selfless concern for others.", key: "c" },
+          { term: "Camaraderie", definition: "Mutual trust among people.", key: "d" },
+          { term: "Affiliation", definition: "Process of affiliating org.", key: "e" }
         ],
         taskIII: ["Circle of friends", "Mutual acquaintance", "Networking event", "Social butterfly"],
         taskIV: [{ termA: "Acquaintance", termB: "Confidant" }, { termA: "Empathy", termB: "Sympathy" }],
         taskV: ["Solidarity", "Tolerance", "Vulnerability", "Diplomacy", "Rapport"]
       }),
-      createVariant(3, "Modern Connections", {
+      createVariant(3, "Modern", {
         taskI: [
-          { text: "The rise of dating ________ has changed how we meet.", answer: "apps" },
-          { text: "Digital ________ is becoming a popular term for ghosting.", answer: "disappearance" },
-          { text: "Online ________ can sometimes be misleading.", answer: "personas" },
-          { text: "Remote work can lead to a sense of social ________.", answer: "isolation" },
-          { text: "Always maintain a healthy ________ in your relationships.", answer: "balance" },
-          { text: "Virtual ________ are now a common part of life.", answer: "meetings" },
-          { text: "Privacy is a ________ concern in the digital age.", answer: "primary" },
-          { text: "The ________ of information can be very rapid.", answer: "spread" },
-          { text: "Cyber bullying has a deep ________ on mental health.", answer: "impact" },
-          { text: "We must ________ the ethical use of social data.", answer: "ensure" },
-          { text: "Technology should ________ our real-world bonds.", answer: "enhance" },
-          { text: "Meaningful ________ are still possible online.", answer: "connections" }
+          { text: "Rise of ________.", answer: "apps" },
+          { text: "Digital ________.", answer: "ghosting" },
+          { text: "Online ________.", answer: "personas" },
+          { text: "Sense of ________.", answer: "isolation" },
+          { text: "Maintain ________.", answer: "balance" },
+          { text: "Virtual ________.", answer: "meetings" },
+          { text: "Primary ________.", answer: "concern" },
+          { text: "Rapid ________.", answer: "spread" },
+          { text: "Impact on ________.", answer: "health" },
+          { text: "Ethical ________.", answer: "use" },
+          { text: "Enhance ________.", answer: "bonds" },
+          { text: "Meaningful ________.", answer: "connections" }
         ],
         taskII: [
-          { term: "Ghosting", definition: "The practice of ending a relationship by suddenly withdrawing all communication.", key: "a" },
-          { term: "Breadcrumbing", definition: "Sending flirtatious but noncommittal messages to keep someone interested.", key: "b" },
-          { term: "Catfishing", definition: "Luring someone into a relationship by means of a fictional online persona.", key: "c" },
-          { term: "Gaslighting", definition: "Manipulating someone into questioning their own sanity.", key: "d" },
-          { term: "Networking", definition: "The action or process of interacting with others to exchange information.", key: "e" }
+          { term: "Ghosting", definition: "Ending relationship by withdrawing.", key: "a" },
+          { term: "Breadcrumbing", definition: "Sending flirtatious noncommittal messages.", key: "b" },
+          { term: "Catfishing", definition: "Luring into relation by persona.", key: "c" },
+          { term: "Gaslighting", definition: "Manipulating someone's sanity.", key: "d" },
+          { term: "Networking", definition: "Process of interacting with others.", key: "e" }
         ],
-        taskIII: ["Digital detox", "Online etiquette", "Long-distance relationship", "Social media profile"],
+        taskIII: ["Digital detox", "Online etiquette", "Long-distance", "Social media profile"],
         taskIV: [{ termA: "Synchronous", termB: "Asynchronous" }, { termA: "Public", termB: "Private" }],
         taskV: ["Ubiquity", "Anonymity", "Interactivity", "Platform", "Community"]
       })
@@ -1410,84 +1409,84 @@ export const THEMES: Theme[] = [
   },
   {
     id: "sports",
-    title: "THEME 17: SPORTS & FITNESS",
+    title: "THEME 17: SPORTS",
     category: "Leisure",
-    description: "Athletics, competitive strategy, physical health, and sportsmanship.",
+    description: "Athletics and physical health.",
     icon: "Smile",
     variants: [
-      createVariant(1, "The Competitive Edge", {
+      createVariant(1, "Edge", {
         taskI: [
-          { text: "Long-distance runners need incredible physical ________.", answer: "endurance" },
-          { text: "The team remained ________ throughout the entire season.", answer: "undefeated" },
-          { text: "They failed to ________ for the final round of the Cup.", answer: "qualify" },
-          { text: "Showing good ________ is more important than winning.", answer: "sportsmanship" },
-          { text: "The coach decided to change his ________ for the game.", answer: "tactics" },
-          { text: "He managed to ________ all his rivals in the sprint.", answer: "outperform" },
-          { text: "There is a fierce ________ between the two local clubs.", answer: "rivalry" },
-          { text: "The ________ cheered loudly as the goal was scored.", answer: "spectators" },
-          { text: "He won the gold ________ at the national games.", answer: "medal" },
-          { text: "Athletes often use ________ to track their progress.", answer: "metrics" },
-          { text: "Regular training helps build muscular ________.", answer: "strength" },
-          { text: "The ________ of the game was very fast and intense.", answer: "tempo" }
+          { text: "Physical ________.", answer: "endurance" },
+          { text: "Remained ________.", answer: "undefeated" },
+          { text: "To ________.", answer: "qualify" },
+          { text: "Showing ________.", answer: "sportsmanship" },
+          { text: "Game ________.", answer: "tactics" },
+          { text: "To ________.", answer: "outperform" },
+          { text: "Fierce ________.", answer: "rivalry" },
+          { text: "Loud ________.", answer: "spectators" },
+          { text: "Gold ________.", answer: "medal" },
+          { text: "Track ________.", answer: "progress" },
+          { text: "Build ________.", answer: "strength" },
+          { text: "Fast ________.", answer: "tempo" }
         ],
         taskII: [
-          { term: "Amateur", definition: "A person who engages in a pursuit on an unpaid basis.", key: "a" },
-          { term: "Professional", definition: "A person engaged in a specified activity as one's main paid occupation.", key: "b" },
-          { term: "Tactics", definition: "An action or strategy carefully planned to achieve a specific end.", key: "c" },
-          { term: "Stamina", definition: "The ability to sustain prolonged physical or mental effort.", key: "d" },
-          { term: "Referee", definition: "An official who watches a game or match closely.", key: "e" }
+          { term: "Amateur", definition: "Person engaging on unpaid basis.", key: "a" },
+          { term: "Professional", definition: "Person engaged in paid occupation.", key: "b" },
+          { term: "Tactics", definition: "Carefully planned strategy.", key: "c" },
+          { term: "Stamina", definition: "Ability to sustain effort.", key: "d" },
+          { term: "Referee", definition: "Official watching game closely.", key: "e" }
         ],
         taskIII: ["Level playing field", "Keep fit", "Personal best", "Out of breath"],
         taskIV: [{ termA: "Individual", termB: "Team" }, { termA: "Offense", termB: "Defense" }],
         taskV: ["Athleticism", "Discipline", "Conditioning", "Agility", "Velocity"]
       }),
-      createVariant(2, "Athletic Spirit", {
+      createVariant(2, "Spirit", {
         taskI: [
-          { text: "The marathon requires both physical and mental ________.", answer: "toughness" },
-          { text: "He set a new world ________ for the high jump.", answer: "record" },
-          { text: "The stadium was ________ to full capacity for the final.", answer: "packed" },
-          { text: "She decided to ________ for the national swim team.", answer: "tryout" },
-          { text: "A balanced diet is ________ for peak performance.", answer: "essential" },
-          { text: "He suffered a minor ________ during the warm-up.", answer: "injury" },
-          { text: "The referee's ________ was final and uncontested.", answer: "decision" },
-          { text: "They use high-tech ________ to analyze their form.", answer: "equipment" },
-          { text: "Winning the trophy was the ________ of his career.", answer: "pinnacle" },
-          { text: "She has been ________ hard for the upcoming trials.", answer: "training" },
-          { text: "Team ________ is the key to a successful season.", answer: "spirit" },
-          { text: "He showed great ________ after losing the match.", answer: "humility" }
+          { text: "Mental ________.", answer: "toughness" },
+          { text: "World ________.", answer: "record" },
+          { text: "Full ________.", answer: "capacity" },
+          { text: "Swim ________.", answer: "tryout" },
+          { text: "Diet is ________.", answer: "essential" },
+          { text: "Minor ________.", answer: "injury" },
+          { text: "Final ________.", answer: "decision" },
+          { text: "Analyze ________.", answer: "form" },
+          { text: "Trophy ________.", answer: "pinnacle" },
+          { text: "Training ________.", answer: "hard" },
+          { text: "Successful ________.", answer: "season" },
+          { text: "Losing ________.", answer: "humility" }
         ],
         taskII: [
-          { term: "Marathon", definition: "A long-distance running race, strictly 26.2 miles.", key: "a" },
-          { term: "Gymnastics", definition: "Exercises developing or displaying physical agility and coordination.", key: "b" },
-          { term: "Tournament", definition: "A series of contests between a number of competitors.", key: "c" },
-          { term: "Champion", definition: "A person who has surpassed all rivals in a sporting contest.", key: "d" },
-          { term: "Coach", definition: "A person who trains or directs an athlete or team.", key: "e" }
+          { term: "Marathon", definition: "Long-distance running race.", key: "a" },
+          { term: "Gymnastics", definition: "Exercises developing agility.", key: "b" },
+          { term: "Tournament", definition: "Series of contests.", key: "c" },
+          { term: "Champion", definition: "Person who surpassed all rivals.", key: "d" },
+          { term: "Coach", definition: "Person directing athlete.", key: "e" }
         ],
         taskIII: ["Training camp", "Sports injury", "Win by a landslide", "Break a record"],
         taskIV: [{ termA: "Sprint", termB: "Jog" }, { termA: "Victory", termB: "Defeat" }],
         taskV: ["Perseverance", "Coordination", "Dedication", "Consistency", "Endurance"]
       }),
-      createVariant(3, "Health & Fitness", {
+      createVariant(3, "Fitness", {
         taskI: [
-          { text: "Yoga helps improve both flexibility and ________.", answer: "balance" },
-          { text: "Hydration is ________ during intense physical activity.", answer: "crucial" },
-          { text: "He goes to the ________ four times a week.", answer: "gym" },
-          { text: "Stretching is vital to ________ muscle strains.", answer: "prevent" },
-          { text: "She prefers ________ exercise like swimming or cycling.", answer: "aerobic" },
-          { text: "A good ________ routine is essential for athletes.", answer: "recovery" },
-          { text: "Protein is needed for muscle ________ and repair.", answer: "growth" },
-          { text: "Weight ________ can improve overall bone density.", answer: "training" },
-          { text: "He tracks his daily ________ using a smartwatch.", answer: "steps" },
-          { text: "Healthy eating is a ________ of any fitness plan.", answer: "cornerstone" },
-          { text: "Mental ________ is just as important as physical power.", answer: "health" },
-          { text: "She decided to ________ a local marathon for charity.", answer: "run" }
+          { text: "Flexibility and ________.", answer: "balance" },
+          { text: "Is ________.", answer: "crucial" },
+          { text: "To the ________.", answer: "gym" },
+          { text: "Vital to ________.", answer: "prevent" },
+          { text: "Prefer ________.", answer: "aerobic" },
+          { text: "A good ________.", answer: "routine" },
+          { text: "Protein for ________.", answer: "growth" },
+          { text: "Weight ________.", answer: "training" },
+          { text: "Daily ________.", answer: "steps" },
+          { text: "Cornerstone of ________.", answer: "plan" },
+          { text: "Mental ________.", answer: "health" },
+          { text: "Decided to ________.", answer: "run" }
         ],
         taskII: [
-          { term: "Cardio", definition: "Exercise that increases the heart rate and blood circulation.", key: "a" },
-          { term: "Metabolism", definition: "The chemical processes that occur within a living organism.", key: "b" },
-          { term: "Flexibility", definition: "The quality of bending easily without breaking.", key: "c" },
-          { term: "Nutrient", definition: "A substance that provides nourishment essential for growth.", key: "d" },
-          { term: "Dehydration", definition: "A harmful reduction in the amount of water in the body.", key: "e" }
+          { term: "Cardio", definition: "Exercise increasing heart rate.", key: "a" },
+          { term: "Metabolism", definition: "Chemical processes in organism.", key: "b" },
+          { term: "Flexibility", definition: "Quality of bending easily.", key: "c" },
+          { term: "Nutrient", definition: "Substance providing nourishment.", key: "d" },
+          { term: "Dehydration", definition: "Reduction in water in body.", key: "e" }
         ],
         taskIII: ["Healthy lifestyle", "Fitness tracker", "Personal trainer", "Muscle memory"],
         taskIV: [{ termA: "Aerobic", termB: "Anaerobic" }, { termA: "Strength", termB: "Agility" }],
@@ -1497,84 +1496,84 @@ export const THEMES: Theme[] = [
   },
   {
     id: "politics",
-    title: "THEME 18: POLITICS & GOVERNANCE",
+    title: "THEME 18: POLITICS",
     category: "Society",
-    description: "Electoral systems, international relations, policy making, and bureaucracy.",
+    description: "Governance and policy.",
     icon: "Handshake",
     variants: [
-      createVariant(1, "Elections and Policy", {
+      createVariant(1, "Elections", {
         taskI: [
-          { text: "The ________ asked the citizens to vote on the issue.", answer: "referendum" },
-          { text: "The party published its ________ before the election.", answer: "manifesto" },
-          { text: "They formed a ________ government to stay in power.", answer: "coalition" },
-          { text: "New ________ was introduced to combat climate change.", answer: "legislation" },
-          { text: "The ________ was frustrated by the long delay in results.", answer: "electorate" },
-          { text: "He was accused of ________ for the oil industry.", answer: "lobbying" },
-          { text: "Government ________ can be very slow and complex.", answer: "bureaucracy" },
-          { text: "The president faced ________ for abuse of power.", answer: "impeachment" },
-          { text: "International ________ were placed on the rogue state.", answer: "sanctions" },
-          { text: "Effective ________ is the key to global peace.", answer: "diplomacy" },
-          { text: "A ________ system divides power between states.", answer: "federal" },
-          { text: "The ________ is the chief executive of the city.", answer: "mayor" }
+          { text: "Issue ________.", answer: "referendum" },
+          { text: "Party ________.", answer: "manifesto" },
+          { text: "Stay in ________.", answer: "power" },
+          { text: "Combat ________.", answer: "legislation" },
+          { text: "Results ________.", answer: "electorate" },
+          { text: "Accused of ________.", answer: "lobbying" },
+          { text: "Complex ________.", answer: "bureaucracy" },
+          { text: "President faced ________.", answer: "impeachment" },
+          { text: "Rogue state ________.", answer: "sanctions" },
+          { text: "Key to ________.", answer: "diplomacy" },
+          { text: "Federal ________.", answer: "system" },
+          { text: "The ________.", answer: "mayor" }
         ],
         taskII: [
-          { term: "Democracy", definition: "A system of government by the whole population.", key: "a" },
-          { term: "Autocracy", definition: "A system of government by one person with absolute power.", key: "b" },
-          { term: "Bureaucracy", definition: "A system of government in which most decisions are made by officials.", key: "c" },
-          { term: "Manifesto", definition: "A public declaration of policy and aims.", key: "d" },
-          { term: "Sovereignty", definition: "The authority of a state to govern itself.", key: "e" }
+          { term: "Democracy", definition: "Gov system by population.", key: "a" },
+          { term: "Autocracy", definition: "Gov by one absolute person.", key: "b" },
+          { term: "Bureaucracy", definition: "Gov with decisions by officials.", key: "c" },
+          { term: "Manifesto", definition: "Public declaration of policy.", key: "d" },
+          { term: "Sovereignty", definition: "Authority to govern itself.", key: "e" }
         ],
         taskIII: ["Foreign policy", "Political spectrum", "Grassroots movement", "Checks and balances"],
         taskIV: [{ termA: "Democracy", termB: "Dictatorship" }, { termA: "Liberal", termB: "Conservative" }],
         taskV: ["Suffrage", "Ratification", "Partisan", "Secularism", "Ideology"]
       }),
-      createVariant(2, "Global Relations", {
+      createVariant(2, "Relations", {
         taskI: [
-          { text: "The two nations signed a historic peace ________.", answer: "treaty" },
-          { text: "Humanitarian ________ was sent to the conflict zone.", answer: "aid" },
-          { text: "The ________ of the border remains a sensitive issue.", answer: "security" },
-          { text: "A global ________ is needed to address ocean pollution.", answer: "effort" },
-          { text: "Diplomatic ________ were cut after the scandal.", answer: "ties" },
-          { text: "The UN works to promote global ________.", answer: "stability" },
-          { text: "Trade ________ help lower costs for consumers.", answer: "agreements" },
-          { text: "The ________ of refugees is a growing crisis.", answer: "displacement" },
-          { text: "He was appointed as the new ________ to Japan.", answer: "ambassador" },
-          { text: "The summit focused on economic ________.", answer: "cooperation" },
-          { text: "Cultural ________ help build international trust.", answer: "exchanges" },
-          { text: "The ________ of power has shifted in the region.", answer: "balance" }
+          { text: "Historic ________.", answer: "treaty" },
+          { text: "Humanitarian ________.", answer: "aid" },
+          { text: "Sensitive ________.", answer: "security" },
+          { text: "Global ________.", answer: "effort" },
+          { text: "Cut ________.", answer: "ties" },
+          { text: "Promote ________.", answer: "stability" },
+          { text: "Trade ________.", answer: "agreements" },
+          { text: "Growing ________.", answer: "displacement" },
+          { text: "New ________.", answer: "ambassador" },
+          { text: "Economic ________.", answer: "cooperation" },
+          { text: "Building ________.", answer: "trust" },
+          { text: "Shift in ________.", answer: "balance" }
         ],
         taskII: [
-          { term: "Diplomacy", definition: "The profession, activity, or skill of managing international relations.", key: "a" },
-          { term: "Treaty", definition: "A formally concluded and ratified agreement between countries.", key: "b" },
-          { term: "Embassy", definition: "The official residence or offices of an ambassador.", key: "c" },
-          { term: "Sanction", definition: "A threatened penalty for disobeying a law or rule.", key: "d" },
-          { term: "Alliance", definition: "A union or association formed for mutual benefit.", key: "e" }
+          { term: "Diplomacy", definition: "Managing international relations.", key: "a" },
+          { term: "Treaty", definition: "Ratified agreement between countries.", key: "b" },
+          { term: "Embassy", definition: "Official office of ambassador.", key: "c" },
+          { term: "Sanction", definition: "Penalty for disobeying law.", key: "d" },
+          { term: "Alliance", definition: "Union for mutual benefit.", key: "e" }
         ],
         taskIII: ["International law", "Bilateral talks", "Global summit", "Peacekeeping mission"],
         taskIV: [{ termA: "Ally", termB: "Adversary" }, { termA: "Import", termB: "Export" }],
         taskV: ["Ratification", "Jurisdiction", "Neutrality", "Hegemony", "Embargo"]
       }),
-      createVariant(3, "Civil Society", {
+      createVariant(3, "Society", {
         taskI: [
-          { text: "Freedom of ________ is a basic human right.", answer: "speech" },
-          { text: "The ________ for equal rights gained momentum.", answer: "movement" },
-          { text: "He decided to ________ for a seat in parliament.", answer: "run" },
-          { text: "Public ________ on the issue is very divided.", answer: "opinion" },
-          { text: "Transparency is vital for a healthy ________.", answer: "democracy" },
-          { text: "The new law was met with widespread ________.", answer: "protest" },
-          { text: "Citizens must ________ in the democratic process.", answer: "participate" },
-          { text: "Social ________ aims to improve the lives of all.", answer: "justice" },
-          { text: "The ________ of power is a key constitutional rule.", answer: "separation" },
-          { text: "Corruption remains a major ________ to development.", answer: "obstacle" },
-          { text: "He works for a leading non-________ organization.", answer: "governmental" },
-          { text: "The ________ of law must be upheld at all times.", answer: "rule" }
+          { text: "Freedom of ________.", answer: "speech" },
+          { text: "Gained ________.", answer: "momentum" },
+          { text: "Seat in ________.", answer: "parliament" },
+          { text: "Very ________.", answer: "opinion" },
+          { text: "Healthy ________.", answer: "democracy" },
+          { text: "Law was ________.", answer: "protest" },
+          { text: "Democratic ________.", answer: "process" },
+          { text: "Social ________.", answer: "justice" },
+          { text: "Constitutional ________.", answer: "rule" },
+          { text: "Major ________.", answer: "obstacle" },
+          { text: "Leading ________.", answer: "governmental" },
+          { text: "The ________.", answer: "rule" }
         ],
         taskII: [
-          { term: "Activism", definition: "The policy or action of using vigorous campaigning to bring about change.", key: "a" },
-          { term: "Constitution", definition: "A body of fundamental principles according to which a state is governed.", key: "b" },
-          { term: "Lobbyist", definition: "A person who takes part in an organized attempt to influence legislators.", key: "c" },
-          { term: "Parliament", definition: "The highest legislature, consisting of the sovereign, the House of Lords, and the House of Commons.", key: "d" },
-          { term: "Electorate", definition: "All the people in a country or area who are entitled to vote in an election.", key: "e" }
+          { term: "Activism", definition: "Action to bring change.", key: "a" },
+          { term: "Constitution", definition: "Principles state is governed by.", key: "b" },
+          { term: "Lobbyist", definition: "Person influencing legislators.", key: "c" },
+          { term: "Parliament", definition: "Highest legislature body.", key: "d" },
+          { term: "Electorate", definition: "People entitled to vote.", key: "e" }
         ],
         taskIII: ["Civil rights", "Political party", "Public service", "Voter turnout"],
         taskIV: [{ termA: "Candidate", termB: "Incumbent" }, { termA: "Federal", termB: "Local" }],
@@ -1584,84 +1583,84 @@ export const THEMES: Theme[] = [
   },
   {
     id: "architecture",
-    title: "THEME 19: ARCHITECTURE & URBANIZATION",
+    title: "THEME 19: ARCHITECTURE",
     category: "Society",
-    description: "Building design, urban planning, structural integrity, and historical heritage.",
+    description: "Built environment.",
     icon: "Briefcase",
     variants: [
-      createVariant(1, "The Built Environment", {
+      createVariant(1, "Environment", {
         taskI: [
-          { text: "The architect presented the final ________ for the tower.", answer: "blueprint" },
-          { text: "The ________ integrity of the old bridge was questioned.", answer: "structural" },
-          { text: "The building has a very sleek and modern ________.", answer: "aesthetic" },
-          { text: "They are building a massive ________ in the city center.", answer: "skyscraper" },
-          { text: "Urban ________ is a major problem for local wildlife.", answer: "sprawl" },
-          { text: "The ________ of the house was restored to its glory.", answer: "facade" },
-          { text: "We need more ________ housing for the growing population.", answer: "affordable" },
-          { text: "The project focused on ________ urban development.", answer: "sustainable" },
-          { text: "The ________ was covered in colorful local murals.", answer: "exterior" },
-          { text: "Old warehouses are being converted into modern ________.", answer: "dwellings" },
-          { text: "The ________ process took much longer than expected.", answer: "construction" },
-          { text: "They used local stone for the ________ of the wall.", answer: "masonry" }
+          { text: "Final ________.", answer: "blueprint" },
+          { text: "Structural ________.", answer: "integrity" },
+          { text: "Modern ________.", answer: "aesthetic" },
+          { text: "Massive ________.", answer: "skyscraper" },
+          { text: "Urban ________.", answer: "sprawl" },
+          { text: "The ________.", answer: "facade" },
+          { text: "Growing ________.", answer: "affordable" },
+          { text: "Focused on ________.", answer: "sustainable" },
+          { text: "The ________.", answer: "exterior" },
+          { text: "Modern ________.", answer: "dwellings" },
+          { text: "Construction ________.", answer: "process" },
+          { text: "The ________.", answer: "masonry" }
         ],
         taskII: [
-          { term: "Facade", definition: "The face of a building, especially the principal front.", key: "a" },
-          { term: "Column", definition: "An upright pillar, typically cylindrical and made of stone.", key: "b" },
-          { term: "Foundation", definition: "The lowest load-bearing part of a building, typically below ground level.", key: "c" },
-          { term: "Aesthetic", definition: "A set of principles underlying and guiding the work of a particular artist.", key: "d" },
-          { term: "Infrastructure", definition: "The basic physical and organizational structures and facilities.", key: "e" }
+          { term: "Facade", definition: "Principal front of building.", key: "a" },
+          { term: "Column", definition: "Upright pillar of stone.", key: "b" },
+          { term: "Foundation", definition: "Lowest part of building.", key: "c" },
+          { term: "Aesthetic", definition: "Guiding principles of artist.", key: "d" },
+          { term: "Infrastructure", definition: "Basic physical structures.", key: "e" }
         ],
         taskIII: ["Urban planning", "Historical landmark", "Structural engineering", "Zoning laws"],
         taskIV: [{ termA: "Interior", termB: "Exterior" }, { termA: "Modern", termB: "Gothic" }],
         taskV: ["Avenue", "Boulevard", "Dwelling", "Renovation", "Scaffolding"]
       }),
-      createVariant(2, "Historic Styles", {
+      createVariant(2, "Styles", {
         taskI: [
-          { text: "The cathedral is a masterpiece of ________ architecture.", answer: "gothic" },
-          { text: "The ________ of the building reflects the Victorian era.", answer: "design" },
-          { text: "They decided to ________ the ancient temple ruins.", answer: "preserve" },
-          { text: "The museum has a large collection of ________ artifacts.", answer: "historical" },
-          { text: "Classical ________ often features columns and arches.", answer: "architecture" },
-          { text: "The castle's ________ was built for defense.", answer: "wall" },
-          { text: "A large ________ was used to carry water to the city.", answer: "aqueduct" },
-          { text: "The city has a rich ________ of diverse styles.", answer: "heritage" },
-          { text: "The ________ of the church was painted by hand.", answer: "ceiling" },
-          { text: "They found a hidden ________ beneath the old house.", answer: "chamber" },
-          { text: "The palace was the ________ of the royal family.", answer: "residence" },
-          { text: "Modern ________ helps us understand old buildings.", answer: "technology" }
+          { text: "Cathedral ________.", answer: "gothic" },
+          { text: "Building ________.", answer: "design" },
+          { text: "Ruins ________.", answer: "preserve" },
+          { text: "Museum ________.", answer: "historical" },
+          { text: "Classical ________.", answer: "architecture" },
+          { text: "Defense ________.", answer: "wall" },
+          { text: "Carried ________.", answer: "aqueduct" },
+          { text: "Styles ________.", answer: "heritage" },
+          { text: "Church ________.", answer: "ceiling" },
+          { text: "Hidden ________.", answer: "chamber" },
+          { text: "Residence ________.", answer: "royal" },
+          { text: "Technology ________.", answer: "modern" }
         ],
         taskII: [
-          { term: "Gothic", definition: "A style of architecture prevalent in western Europe in the 12th-16th centuries.", key: "a" },
-          { term: "Renaissance", definition: "The period of European history between the 14th and 17th centuries.", key: "b" },
-          { term: "Baroque", definition: "A style of European architecture, music, and art of the 17th and 18th centuries.", key: "c" },
-          { term: "Victorian", definition: "Relating to the reign of Queen Victoria or the period 1837-1901.", key: "d" },
-          { term: "Neoclassical", definition: "The revival of a classical style or treatment in art, literature, or music.", key: "e" }
+          { term: "Gothic", definition: "Western Europe style 12th-16th c.", key: "a" },
+          { term: "Renaissance", definition: "Period between 14th and 17th c.", key: "b" },
+          { term: "Baroque", definition: "Style 17th and 18th c.", key: "c" },
+          { term: "Victorian", definition: "Reign of Queen Victoria.", key: "d" },
+          { term: "Neoclassical", definition: "Revival of classical style.", key: "e" }
         ],
         taskIII: ["Ancient ruins", "Cultural heritage site", "Stained glass", "Architectural style"],
         taskIV: [{ termA: "Restoration", termB: "Demolition" }, { termA: "Traditional", termB: "Contemporary" }],
         taskV: ["Ornamentation", "Preservation", "Symmetry", "Hierarchy", "Authenticity"]
       }),
-      createVariant(3, "Sustainable Cities", {
+      createVariant(3, "Sustainable", {
         taskI: [
-          { text: "Green ________ help cool buildings in the summer.", answer: "roofs" },
-          { text: "Solar ________ are a key source of clean energy.", answer: "panels" },
-          { text: "We need more ________ spaces in the city center.", answer: "pedestrian" },
-          { text: "Efficient ________ transport reduces carbon emissions.", answer: "public" },
-          { text: "Recycling ________ should be accessible to everyone.", answer: "facilities" },
-          { text: "The new park is a ________ for local biodiversity.", answer: "haven" },
-          { text: "They used ________ materials for the new library.", answer: "recycled" },
-          { text: "Urban ________ can help reduce food miles.", answer: "farming" },
-          { text: "The city aims to be ________ neutral by 2040.", answer: "carbon" },
-          { text: "Smart ________ can optimize energy use in the city.", answer: "technology" },
-          { text: "We must ________ the use of single-use plastics.", answer: "reduce" },
-          { text: "Water ________ is a major goal for the desert city.", answer: "conservation" }
+          { text: "Green ________.", answer: "roofs" },
+          { text: "Clean ________.", answer: "energy" },
+          { text: "Spaces ________.", answer: "pedestrian" },
+          { text: "Reduces ________.", answer: "emissions" },
+          { text: "Everyone ________.", answer: "facilities" },
+          { text: "Haven ________.", answer: "biodiversity" },
+          { text: "Library ________.", answer: "recycled" },
+          { text: "Farming ________.", answer: "urban" },
+          { text: "Carbon ________.", answer: "neutral" },
+          { text: "Optimize ________.", answer: "technology" },
+          { text: "Reduce ________.", answer: "reduce" },
+          { text: "Conservation ________.", answer: "water" }
         ],
         taskII: [
-          { term: "Sustainability", definition: "The ability to be maintained at a certain rate or level.", key: "a" },
-          { term: "Biodiversity", definition: "The variety of life in the world or in a particular habitat.", key: "b" },
-          { term: "Sprawl", definition: "The disorganized and unattractive expansion of an urban area.", key: "c" },
-          { term: "Infrastructure", definition: "The basic physical and organizational structures and facilities.", key: "d" },
-          { term: "Walkability", definition: "A measure of how friendly an area is to walking.", key: "e" }
+          { term: "Sustainability", definition: "Ability to be maintained.", key: "a" },
+          { term: "Biodiversity", definition: "Variety of life in world.", key: "b" },
+          { term: "Sprawl", definition: "Expansion of urban area.", key: "c" },
+          { term: "Infrastructure", definition: "Basic physical structures.", key: "d" },
+          { term: "Walkability", definition: "Measure of friendly walking.", key: "e" }
         ],
         taskIII: ["Zero-waste city", "Eco-friendly design", "Urban regeneration", "Vertical forest"],
         taskIV: [{ termA: "Renewable", termB: "Finite" }, { termA: "Compact", termB: "Spread out" }],
@@ -1671,58 +1670,58 @@ export const THEMES: Theme[] = [
   },
   {
     id: "ethics",
-    title: "THEME 20: PHILOSOPHY & ETHICS",
+    title: "THEME 20: ETHICS",
     category: "Science",
-    description: "Moral reasoning, logical paradoxes, human values, and existential questions.",
+    description: "Moral reasoning.",
     icon: "Brain",
     variants: [
-      createVariant(1, "Moral Dilemmas", {
+      createVariant(1, "Dilemmas", {
         taskI: [
-          { text: "He faced a difficult ________ between duty and family.", answer: "dilemma" },
-          { text: "Maintaining professional ________ is vital for a judge.", answer: "integrity" },
-          { text: "The random act of ________ touched the hearts of many.", answer: "altruism" },
-          { text: "Your ________ should guide your actions in life.", answer: "conscience" },
-          { text: "Every choice has a significant ________ in the long run.", answer: "consequence" },
-          { text: "Is truth ________ or does it depend on the person?", answer: "subjective" },
-          { text: "We have a moral ________ to help those in need.", answer: "obligation" },
-          { text: "Honesty is considered a fundamental human ________.", answer: "virtue" },
-          { text: "The ________ of the theory was logically flawed.", answer: "premise" },
-          { text: "Existential ________ is a common feeling in modern life.", answer: "dread" },
-          { text: "He lived his life according to very strict ________.", answer: "principles" },
-          { text: "Justice should be ________ and fair for everyone.", answer: "impartial" }
+          { text: "Difficult ________.", answer: "dilemma" },
+          { text: "Maintaining ________.", answer: "integrity" },
+          { text: "Random ________.", answer: "altruism" },
+          { text: "Guide ________.", answer: "conscience" },
+          { text: "Every ________.", answer: "consequence" },
+          { text: "Dependent ________.", answer: "subjective" },
+          { text: "Need ________.", answer: "obligation" },
+          { text: "Virtue ________.", answer: "virtue" },
+          { text: "Premise ________.", answer: "premise" },
+          { text: "Feeling ________.", answer: "dread" },
+          { text: "Principles ________.", answer: "principles" },
+          { text: "Impartial ________.", answer: "impartial" }
         ],
         taskII: [
-          { term: "Logic", definition: "Reasoning conducted or assessed according to strict principles of validity.", key: "a" },
-          { term: "Ethics", definition: "Moral principles that govern a person's behavior.", key: "b" },
-          { term: "Morality", definition: "Principles concerning the distinction between right and wrong.", key: "c" },
-          { term: "Altruism", definition: "The belief in or practice of selfless concern for others.", key: "d" },
-          { term: "Paradox", definition: "A seemingly absurd or self-contradictory statement.", key: "e" }
+          { term: "Logic", definition: "Reasoning by strict principles.", key: "a" },
+          { term: "Ethics", definition: "Moral principles governing behavior.", key: "b" },
+          { term: "Morality", definition: "Principles distinguishing right/wrong.", key: "c" },
+          { term: "Altruism", definition: "Selfless concern for others.", key: "d" },
+          { term: "Paradox", definition: "Self-contradictory statement.", key: "e" }
         ],
         taskIII: ["Moral compass", "Common good", "Ethical dilemma", "Free will"],
         taskIV: [{ termA: "Objective", termB: "Subjective" }, { termA: "Good", termB: "Evil" }],
         taskV: ["Axiom", "Cognition", "Determinism", "Nihilism", "Pragmatism"]
       }),
-      createVariant(2, "Knowledge & Reality", {
+      createVariant(2, "Reality", {
         taskI: [
-          { text: "Empiricism relies on ________ and sensory experience.", answer: "observation" },
-          { text: "He questioned the very ________ of the physical world.", answer: "reality" },
-          { text: "Rationalism holds that ________ is the primary source of knowledge.", answer: "reason" },
-          { text: "The ________ of the mind is a mystery to scientists.", answer: "consciousness" },
-          { text: "She prefers a ________ approach to solving problems.", answer: "pragmatic" },
-          { text: "The ________ of the universe is still unknown.", answer: "origin" },
-          { text: "He spent years studying the ________ of existence.", answer: "meaning" },
-          { text: "Logic helps us ________ between valid and invalid arguments.", answer: "distinguish" },
-          { text: "The ________ of the soul is a common religious belief.", answer: "immortality" },
-          { text: "We must ________ our assumptions about the world.", answer: "challenge" },
-          { text: "A ________ is a set of ideas that explain something.", answer: "theory" },
-          { text: "The ________ of information can be very complex.", answer: "processing" }
+          { text: "Observation ________.", answer: "observation" },
+          { text: " रियलिटी ________.", answer: "reality" },
+          { text: "Reason ________.", answer: "reason" },
+          { text: "Consciousness ________.", answer: "consciousness" },
+          { text: "Pragmatic ________.", answer: "pragmatic" },
+          { text: "Origin ________.", answer: "origin" },
+          { text: "Existence ________.", answer: "meaning" },
+          { text: "Arguments ________.", answer: "distinguish" },
+          { text: "Soul ________.", answer: "immortality" },
+          { text: "Challenge ________.", answer: "challenge" },
+          { text: "Theory ________.", answer: "theory" },
+          { text: "Information ________.", answer: "processing" }
         ],
         taskII: [
-          { term: "Epistemology", definition: "The theory of knowledge, especially with regard to its methods, validity, and scope.", key: "a" },
-          { term: "Metaphysics", definition: "The branch of philosophy that deals with the first principles of things.", key: "b" },
-          { term: "Skepticism", definition: "The theory that certain knowledge is impossible.", key: "c" },
-          { term: "Rationalism", definition: "The theory that reason rather than experience is the foundation of certainty in knowledge.", key: "d" },
-          { term: "Empiricism", definition: "The theory that all knowledge is derived from sense-experience.", key: "e" }
+          { term: "Epistemology", definition: "Theory of knowledge methods.", key: "a" },
+          { term: "Metaphysics", definition: "Branch dealing with first things.", key: "b" },
+          { term: "Skepticism", definition: "Theory that knowledge is impossible.", key: "c" },
+          { term: "Rationalism", definition: "Reason foundation of knowledge.", key: "d" },
+          { term: "Empiricism", definition: "Knowledge derived from experience.", key: "e" }
         ],
         taskIII: ["Absolute truth", "Human nature", "Tabula rasa", "Thought experiment"],
         taskIV: [{ termA: "Physical", termB: "Metaphysical" }, { termA: "Finite", termB: "Infinite" }],
@@ -1730,25 +1729,25 @@ export const THEMES: Theme[] = [
       }),
       createVariant(3, "Existentialism", {
         taskI: [
-          { text: "The feeling of ________ can be a source of freedom.", answer: "absurdity" },
-          { text: "We are all responsible for ________ our own meaning.", answer: "creating" },
-          { text: "She loves the ________ of the deep forest.", answer: "solitude" },
-          { text: "Existentialism focuses on the ________ individual.", answer: "subjective" },
-          { text: "Life is a ________ that we must choose to walk.", answer: "path" },
-          { text: "The ________ of the self is a key theme in his work.", answer: "discovery" },
-          { text: "We must live ________ and true to ourselves.", answer: "authentically" },
-          { text: "The ________ of choice can be very heavy.", answer: "burden" },
-          { text: "He found ________ in the beauty of the stars.", answer: "peace" },
-          { text: "Human ________ is both a gift and a curse.", answer: "existence" },
-          { text: "We should ________ the limits of our knowledge.", answer: "accept" },
-          { text: "The ________ of the future is always present.", answer: "uncertainty" }
+          { text: "Absurdity ________.", answer: "absurdity" },
+          { text: "Creating ________.", answer: "creating" },
+          { text: "Deep ________.", answer: "solitude" },
+          { text: "Subjective ________.", answer: "subjective" },
+          { text: "Life ________.", answer: "path" },
+          { text: "Discovery ________.", answer: "discovery" },
+          { text: "Authentically ________.", answer: "authentically" },
+          { text: "Heavy ________.", answer: "burden" },
+          { text: "Peace ________.", answer: "peace" },
+          { text: "Existence ________.", answer: "existence" },
+          { text: "Accept ________.", answer: "accept" },
+          { text: "Uncertainty ________.", answer: "uncertainty" }
         ],
         taskII: [
-          { term: "Existentialism", definition: "A philosophical theory that emphasizes the existence of the individual person as a free and responsible agent.", key: "a" },
-          { term: "Absurdism", definition: "The belief that human beings exist in a purposeless, chaotic universe.", key: "b" },
-          { term: "Nihilism", definition: "The rejection of all religious and moral principles.", key: "c" },
-          { term: "Authenticity", definition: "The quality of being authentic.", key: "d" },
-          { term: "Solitude", definition: "The state or situation of being alone.", key: "e" }
+          { term: "Existentialism", definition: "Individual as responsible agent.", key: "a" },
+          { term: "Absurdism", definition: "Human exist in chaotic universe.", key: "b" },
+          { term: "Nihilism", definition: "Rejection of moral principles.", key: "c" },
+          { term: "Authenticity", definition: "Quality of being authentic.", key: "d" },
+          { term: "Solitude", definition: "Situation of being alone.", key: "e" }
         ],
         taskIII: ["Sense of self", "Existential crisis", "Free agency", "Leap of faith"],
         taskIV: [{ termA: "Being", termB: "Nothingness" }, { termA: "Essence", termB: "Existence" }],
