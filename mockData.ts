@@ -143,7 +143,7 @@ export const THEMES: Theme[] = [
           { text: "He ________ out after seeing the needles.", answer: "passed" },
           { text: "The doctor is trying to help her ________ off the infection.", answer: "fight" },
           { text: "She ________ round slowly after the heavy anesthesia.", answer: "came" },
-          { text: "The old injury ________ up again last night.", answer: "flared" },
+          { text: "The old injury ________ up again last night.", answer: "flare" },
           { text: "He finally ________ through after the medical crisis.", answer: "pulled" },
           { text: "I think I'm ________ down with something today.", answer: "coming" },
           { text: "She ________ up a nasty virus at the playground.", answer: "picked" },
@@ -236,7 +236,7 @@ export const THEMES: Theme[] = [
           { text: "He ________ down the job offer from the tech giant.", answer: "turned" },
           { text: "The battery ________ out in the middle of my game.", answer: "ran" },
           { text: "I'll ________ through the settings to fix it.", answer: "go" },
-          { text: "They are ________ a new version of the OS soon.", answer: "bringing out" }
+          { text: "They are ________ a new version of the OS soon.", answer: "bringing" }
         ],
         taskII: [
           { term: "Firewall", definition: "A system designed to prevent unauthorized access to a network.", key: "a" },
@@ -433,7 +433,7 @@ export const THEMES: Theme[] = [
           { text: "We all need to ________ the corporate ladder to succeed.", answer: "climb" },
           { text: "It's a dog-________-dog world in high finance.", answer: "eat" },
           { text: "He's a ________ of all trades but master of none.", answer: "jack" },
-          { text: "We need to ________ some fresh blood to stay innovative.", answer: "bring in" },
+          { text: "We need to ________ some fresh blood to stay innovative.", answer: "bring" },
           { text: "It was a real ________-up call for the management.", answer: "wake" },
           { text: "They are all ________ for a piece of the pie.", answer: "fighting" },
           { text: "There is a ________ on the horizon for the economy.", answer: "cloud" }
@@ -1353,6 +1353,58 @@ export const THEMES: Theme[] = [
         taskIII: ["Sibling rivalry", "Nuclear family", "Blood is thicker than water", "Close-knit"],
         taskIV: [{ termA: "Biological", termB: "Adoptive" }, { termA: "Friendship", termB: "Romance" }],
         taskV: ["Ancestry", "Lineage", "Matriarch", "Patriarch", "Heritage"]
+      }),
+      createVariant(2, "Social Connections", {
+        taskI: [
+          { text: "Networking helps ________ new professional opportunities.", answer: "uncover" },
+          { text: "Honesty is the foundation of any ________ relationship.", answer: "genuine" },
+          { text: "They decided to ________ their differences and move on.", answer: "resolve" },
+          { text: "Public ________ often requires strong interpersonal skills.", answer: "speaking" },
+          { text: "She values ________ over superficial connections.", answer: "authenticity" },
+          { text: "Maintaining ________ with old friends can be difficult.", answer: "contact" },
+          { text: "He managed to ________ the trust of his colleagues.", answer: "earn" },
+          { text: "Empathy allows us to ________ with others' pain.", answer: "connect" },
+          { text: "They share a ________ vision for the future.", answer: "common" },
+          { text: "Peer ________ can be a strong motivator for teens.", answer: "pressure" },
+          { text: "The team developed a strong sense of ________.", answer: "unity" },
+          { text: "Social ________ is vital for mental well-being.", answer: "support" }
+        ],
+        taskII: [
+          { term: "Interpersonal", definition: "Relating to relationships or communication between people.", key: "a" },
+          { term: "Reciprocity", definition: "The practice of exchanging things with others for mutual benefit.", key: "b" },
+          { term: "Altruism", definition: "The belief in or practice of selfless concern for others.", key: "c" },
+          { term: "Camaraderie", definition: "Mutual trust and friendship among people who spend a lot of time together.", key: "d" },
+          { term: "Affiliation", definition: "The state or process of affiliating or being affiliated with an organization.", key: "e" }
+        ],
+        taskIII: ["Circle of friends", "Mutual acquaintance", "Networking event", "Social butterfly"],
+        taskIV: [{ termA: "Acquaintance", termB: "Confidant" }, { termA: "Empathy", termB: "Sympathy" }],
+        taskV: ["Solidarity", "Tolerance", "Vulnerability", "Diplomacy", "Rapport"]
+      }),
+      createVariant(3, "Modern Connections", {
+        taskI: [
+          { text: "The rise of dating ________ has changed how we meet.", answer: "apps" },
+          { text: "Digital ________ is becoming a popular term for ghosting.", answer: "disappearance" },
+          { text: "Online ________ can sometimes be misleading.", answer: "personas" },
+          { text: "Remote work can lead to a sense of social ________.", answer: "isolation" },
+          { text: "Always maintain a healthy ________ in your relationships.", answer: "balance" },
+          { text: "Virtual ________ are now a common part of life.", answer: "meetings" },
+          { text: "Privacy is a ________ concern in the digital age.", answer: "primary" },
+          { text: "The ________ of information can be very rapid.", answer: "spread" },
+          { text: "Cyber bullying has a deep ________ on mental health.", answer: "impact" },
+          { text: "We must ________ the ethical use of social data.", answer: "ensure" },
+          { text: "Technology should ________ our real-world bonds.", answer: "enhance" },
+          { text: "Meaningful ________ are still possible online.", answer: "connections" }
+        ],
+        taskII: [
+          { term: "Ghosting", definition: "The practice of ending a relationship by suddenly withdrawing all communication.", key: "a" },
+          { term: "Breadcrumbing", definition: "Sending flirtatious but noncommittal messages to keep someone interested.", key: "b" },
+          { term: "Catfishing", definition: "Luring someone into a relationship by means of a fictional online persona.", key: "c" },
+          { term: "Gaslighting", definition: "Manipulating someone into questioning their own sanity.", key: "d" },
+          { term: "Networking", definition: "The action or process of interacting with others to exchange information.", key: "e" }
+        ],
+        taskIII: ["Digital detox", "Online etiquette", "Long-distance relationship", "Social media profile"],
+        taskIV: [{ termA: "Synchronous", termB: "Asynchronous" }, { termA: "Public", termB: "Private" }],
+        taskV: ["Ubiquity", "Anonymity", "Interactivity", "Platform", "Community"]
       })
     ]
   },
@@ -1388,6 +1440,58 @@ export const THEMES: Theme[] = [
         taskIII: ["Level playing field", "Keep fit", "Personal best", "Out of breath"],
         taskIV: [{ termA: "Individual", termB: "Team" }, { termA: "Offense", termB: "Defense" }],
         taskV: ["Athleticism", "Discipline", "Conditioning", "Agility", "Velocity"]
+      }),
+      createVariant(2, "Athletic Spirit", {
+        taskI: [
+          { text: "The marathon requires both physical and mental ________.", answer: "toughness" },
+          { text: "He set a new world ________ for the high jump.", answer: "record" },
+          { text: "The stadium was ________ to full capacity for the final.", answer: "packed" },
+          { text: "She decided to ________ for the national swim team.", answer: "tryout" },
+          { text: "A balanced diet is ________ for peak performance.", answer: "essential" },
+          { text: "He suffered a minor ________ during the warm-up.", answer: "injury" },
+          { text: "The referee's ________ was final and uncontested.", answer: "decision" },
+          { text: "They use high-tech ________ to analyze their form.", answer: "equipment" },
+          { text: "Winning the trophy was the ________ of his career.", answer: "pinnacle" },
+          { text: "She has been ________ hard for the upcoming trials.", answer: "training" },
+          { text: "Team ________ is the key to a successful season.", answer: "spirit" },
+          { text: "He showed great ________ after losing the match.", answer: "humility" }
+        ],
+        taskII: [
+          { term: "Marathon", definition: "A long-distance running race, strictly 26.2 miles.", key: "a" },
+          { term: "Gymnastics", definition: "Exercises developing or displaying physical agility and coordination.", key: "b" },
+          { term: "Tournament", definition: "A series of contests between a number of competitors.", key: "c" },
+          { term: "Champion", definition: "A person who has surpassed all rivals in a sporting contest.", key: "d" },
+          { term: "Coach", definition: "A person who trains or directs an athlete or team.", key: "e" }
+        ],
+        taskIII: ["Training camp", "Sports injury", "Win by a landslide", "Break a record"],
+        taskIV: [{ termA: "Sprint", termB: "Jog" }, { termA: "Victory", termB: "Defeat" }],
+        taskV: ["Perseverance", "Coordination", "Dedication", "Consistency", "Endurance"]
+      }),
+      createVariant(3, "Health & Fitness", {
+        taskI: [
+          { text: "Yoga helps improve both flexibility and ________.", answer: "balance" },
+          { text: "Hydration is ________ during intense physical activity.", answer: "crucial" },
+          { text: "He goes to the ________ four times a week.", answer: "gym" },
+          { text: "Stretching is vital to ________ muscle strains.", answer: "prevent" },
+          { text: "She prefers ________ exercise like swimming or cycling.", answer: "aerobic" },
+          { text: "A good ________ routine is essential for athletes.", answer: "recovery" },
+          { text: "Protein is needed for muscle ________ and repair.", answer: "growth" },
+          { text: "Weight ________ can improve overall bone density.", answer: "training" },
+          { text: "He tracks his daily ________ using a smartwatch.", answer: "steps" },
+          { text: "Healthy eating is a ________ of any fitness plan.", answer: "cornerstone" },
+          { text: "Mental ________ is just as important as physical power.", answer: "health" },
+          { text: "She decided to ________ a local marathon for charity.", answer: "run" }
+        ],
+        taskII: [
+          { term: "Cardio", definition: "Exercise that increases the heart rate and blood circulation.", key: "a" },
+          { term: "Metabolism", definition: "The chemical processes that occur within a living organism.", key: "b" },
+          { term: "Flexibility", definition: "The quality of bending easily without breaking.", key: "c" },
+          { term: "Nutrient", definition: "A substance that provides nourishment essential for growth.", key: "d" },
+          { term: "Dehydration", definition: "A harmful reduction in the amount of water in the body.", key: "e" }
+        ],
+        taskIII: ["Healthy lifestyle", "Fitness tracker", "Personal trainer", "Muscle memory"],
+        taskIV: [{ termA: "Aerobic", termB: "Anaerobic" }, { termA: "Strength", termB: "Agility" }],
+        taskV: ["Conditioning", "Resilience", "Wellness", "Sustainability", "Intensity"]
       })
     ]
   },
@@ -1423,6 +1527,58 @@ export const THEMES: Theme[] = [
         taskIII: ["Foreign policy", "Political spectrum", "Grassroots movement", "Checks and balances"],
         taskIV: [{ termA: "Democracy", termB: "Dictatorship" }, { termA: "Liberal", termB: "Conservative" }],
         taskV: ["Suffrage", "Ratification", "Partisan", "Secularism", "Ideology"]
+      }),
+      createVariant(2, "Global Relations", {
+        taskI: [
+          { text: "The two nations signed a historic peace ________.", answer: "treaty" },
+          { text: "Humanitarian ________ was sent to the conflict zone.", answer: "aid" },
+          { text: "The ________ of the border remains a sensitive issue.", answer: "security" },
+          { text: "A global ________ is needed to address ocean pollution.", answer: "effort" },
+          { text: "Diplomatic ________ were cut after the scandal.", answer: "ties" },
+          { text: "The UN works to promote global ________.", answer: "stability" },
+          { text: "Trade ________ help lower costs for consumers.", answer: "agreements" },
+          { text: "The ________ of refugees is a growing crisis.", answer: "displacement" },
+          { text: "He was appointed as the new ________ to Japan.", answer: "ambassador" },
+          { text: "The summit focused on economic ________.", answer: "cooperation" },
+          { text: "Cultural ________ help build international trust.", answer: "exchanges" },
+          { text: "The ________ of power has shifted in the region.", answer: "balance" }
+        ],
+        taskII: [
+          { term: "Diplomacy", definition: "The profession, activity, or skill of managing international relations.", key: "a" },
+          { term: "Treaty", definition: "A formally concluded and ratified agreement between countries.", key: "b" },
+          { term: "Embassy", definition: "The official residence or offices of an ambassador.", key: "c" },
+          { term: "Sanction", definition: "A threatened penalty for disobeying a law or rule.", key: "d" },
+          { term: "Alliance", definition: "A union or association formed for mutual benefit.", key: "e" }
+        ],
+        taskIII: ["International law", "Bilateral talks", "Global summit", "Peacekeeping mission"],
+        taskIV: [{ termA: "Ally", termB: "Adversary" }, { termA: "Import", termB: "Export" }],
+        taskV: ["Ratification", "Jurisdiction", "Neutrality", "Hegemony", "Embargo"]
+      }),
+      createVariant(3, "Civil Society", {
+        taskI: [
+          { text: "Freedom of ________ is a basic human right.", answer: "speech" },
+          { text: "The ________ for equal rights gained momentum.", answer: "movement" },
+          { text: "He decided to ________ for a seat in parliament.", answer: "run" },
+          { text: "Public ________ on the issue is very divided.", answer: "opinion" },
+          { text: "Transparency is vital for a healthy ________.", answer: "democracy" },
+          { text: "The new law was met with widespread ________.", answer: "protest" },
+          { text: "Citizens must ________ in the democratic process.", answer: "participate" },
+          { text: "Social ________ aims to improve the lives of all.", answer: "justice" },
+          { text: "The ________ of power is a key constitutional rule.", answer: "separation" },
+          { text: "Corruption remains a major ________ to development.", answer: "obstacle" },
+          { text: "He works for a leading non-________ organization.", answer: "governmental" },
+          { text: "The ________ of law must be upheld at all times.", answer: "rule" }
+        ],
+        taskII: [
+          { term: "Activism", definition: "The policy or action of using vigorous campaigning to bring about change.", key: "a" },
+          { term: "Constitution", definition: "A body of fundamental principles according to which a state is governed.", key: "b" },
+          { term: "Lobbyist", definition: "A person who takes part in an organized attempt to influence legislators.", key: "c" },
+          { term: "Parliament", definition: "The highest legislature, consisting of the sovereign, the House of Lords, and the House of Commons.", key: "d" },
+          { term: "Electorate", definition: "All the people in a country or area who are entitled to vote in an election.", key: "e" }
+        ],
+        taskIII: ["Civil rights", "Political party", "Public service", "Voter turnout"],
+        taskIV: [{ termA: "Candidate", termB: "Incumbent" }, { termA: "Federal", termB: "Local" }],
+        taskV: ["Pluralism", "Secularism", "Advocacy", "Accountability", "Bureaucracy"]
       })
     ]
   },
@@ -1458,6 +1614,58 @@ export const THEMES: Theme[] = [
         taskIII: ["Urban planning", "Historical landmark", "Structural engineering", "Zoning laws"],
         taskIV: [{ termA: "Interior", termB: "Exterior" }, { termA: "Modern", termB: "Gothic" }],
         taskV: ["Avenue", "Boulevard", "Dwelling", "Renovation", "Scaffolding"]
+      }),
+      createVariant(2, "Historic Styles", {
+        taskI: [
+          { text: "The cathedral is a masterpiece of ________ architecture.", answer: "gothic" },
+          { text: "The ________ of the building reflects the Victorian era.", answer: "design" },
+          { text: "They decided to ________ the ancient temple ruins.", answer: "preserve" },
+          { text: "The museum has a large collection of ________ artifacts.", answer: "historical" },
+          { text: "Classical ________ often features columns and arches.", answer: "architecture" },
+          { text: "The castle's ________ was built for defense.", answer: "wall" },
+          { text: "A large ________ was used to carry water to the city.", answer: "aqueduct" },
+          { text: "The city has a rich ________ of diverse styles.", answer: "heritage" },
+          { text: "The ________ of the church was painted by hand.", answer: "ceiling" },
+          { text: "They found a hidden ________ beneath the old house.", answer: "chamber" },
+          { text: "The palace was the ________ of the royal family.", answer: "residence" },
+          { text: "Modern ________ helps us understand old buildings.", answer: "technology" }
+        ],
+        taskII: [
+          { term: "Gothic", definition: "A style of architecture prevalent in western Europe in the 12th-16th centuries.", key: "a" },
+          { term: "Renaissance", definition: "The period of European history between the 14th and 17th centuries.", key: "b" },
+          { term: "Baroque", definition: "A style of European architecture, music, and art of the 17th and 18th centuries.", key: "c" },
+          { term: "Victorian", definition: "Relating to the reign of Queen Victoria or the period 1837-1901.", key: "d" },
+          { term: "Neoclassical", definition: "The revival of a classical style or treatment in art, literature, or music.", key: "e" }
+        ],
+        taskIII: ["Ancient ruins", "Cultural heritage site", "Stained glass", "Architectural style"],
+        taskIV: [{ termA: "Restoration", termB: "Demolition" }, { termA: "Traditional", termB: "Contemporary" }],
+        taskV: ["Ornamentation", "Preservation", "Symmetry", "Hierarchy", "Authenticity"]
+      }),
+      createVariant(3, "Sustainable Cities", {
+        taskI: [
+          { text: "Green ________ help cool buildings in the summer.", answer: "roofs" },
+          { text: "Solar ________ are a key source of clean energy.", answer: "panels" },
+          { text: "We need more ________ spaces in the city center.", answer: "pedestrian" },
+          { text: "Efficient ________ transport reduces carbon emissions.", answer: "public" },
+          { text: "Recycling ________ should be accessible to everyone.", answer: "facilities" },
+          { text: "The new park is a ________ for local biodiversity.", answer: "haven" },
+          { text: "They used ________ materials for the new library.", answer: "recycled" },
+          { text: "Urban ________ can help reduce food miles.", answer: "farming" },
+          { text: "The city aims to be ________ neutral by 2040.", answer: "carbon" },
+          { text: "Smart ________ can optimize energy use in the city.", answer: "technology" },
+          { text: "We must ________ the use of single-use plastics.", answer: "reduce" },
+          { text: "Water ________ is a major goal for the desert city.", answer: "conservation" }
+        ],
+        taskII: [
+          { term: "Sustainability", definition: "The ability to be maintained at a certain rate or level.", key: "a" },
+          { term: "Biodiversity", definition: "The variety of life in the world or in a particular habitat.", key: "b" },
+          { term: "Sprawl", definition: "The disorganized and unattractive expansion of an urban area.", key: "c" },
+          { term: "Infrastructure", definition: "The basic physical and organizational structures and facilities.", key: "d" },
+          { term: "Walkability", definition: "A measure of how friendly an area is to walking.", key: "e" }
+        ],
+        taskIII: ["Zero-waste city", "Eco-friendly design", "Urban regeneration", "Vertical forest"],
+        taskIV: [{ termA: "Renewable", termB: "Finite" }, { termA: "Compact", termB: "Spread out" }],
+        taskV: ["Resilience", "Equitability", "Density", "Integration", "Permeability"]
       })
     ]
   },
@@ -1493,6 +1701,58 @@ export const THEMES: Theme[] = [
         taskIII: ["Moral compass", "Common good", "Ethical dilemma", "Free will"],
         taskIV: [{ termA: "Objective", termB: "Subjective" }, { termA: "Good", termB: "Evil" }],
         taskV: ["Axiom", "Cognition", "Determinism", "Nihilism", "Pragmatism"]
+      }),
+      createVariant(2, "Knowledge & Reality", {
+        taskI: [
+          { text: "Empiricism relies on ________ and sensory experience.", answer: "observation" },
+          { text: "He questioned the very ________ of the physical world.", answer: "reality" },
+          { text: "Rationalism holds that ________ is the primary source of knowledge.", answer: "reason" },
+          { text: "The ________ of the mind is a mystery to scientists.", answer: "consciousness" },
+          { text: "She prefers a ________ approach to solving problems.", answer: "pragmatic" },
+          { text: "The ________ of the universe is still unknown.", answer: "origin" },
+          { text: "He spent years studying the ________ of existence.", answer: "meaning" },
+          { text: "Logic helps us ________ between valid and invalid arguments.", answer: "distinguish" },
+          { text: "The ________ of the soul is a common religious belief.", answer: "immortality" },
+          { text: "We must ________ our assumptions about the world.", answer: "challenge" },
+          { text: "A ________ is a set of ideas that explain something.", answer: "theory" },
+          { text: "The ________ of information can be very complex.", answer: "processing" }
+        ],
+        taskII: [
+          { term: "Epistemology", definition: "The theory of knowledge, especially with regard to its methods, validity, and scope.", key: "a" },
+          { term: "Metaphysics", definition: "The branch of philosophy that deals with the first principles of things.", key: "b" },
+          { term: "Skepticism", definition: "The theory that certain knowledge is impossible.", key: "c" },
+          { term: "Rationalism", definition: "The theory that reason rather than experience is the foundation of certainty in knowledge.", key: "d" },
+          { term: "Empiricism", definition: "The theory that all knowledge is derived from sense-experience.", key: "e" }
+        ],
+        taskIII: ["Absolute truth", "Human nature", "Tabula rasa", "Thought experiment"],
+        taskIV: [{ termA: "Physical", termB: "Metaphysical" }, { termA: "Finite", termB: "Infinite" }],
+        taskV: ["Dualism", "Monism", "Syllogism", "Phenomenology", "Existentialism"]
+      }),
+      createVariant(3, "Existentialism", {
+        taskI: [
+          { text: "The feeling of ________ can be a source of freedom.", answer: "absurdity" },
+          { text: "We are all responsible for ________ our own meaning.", answer: "creating" },
+          { text: "She loves the ________ of the deep forest.", answer: "solitude" },
+          { text: "Existentialism focuses on the ________ individual.", answer: "subjective" },
+          { text: "Life is a ________ that we must choose to walk.", answer: "path" },
+          { text: "The ________ of the self is a key theme in his work.", answer: "discovery" },
+          { text: "We must live ________ and true to ourselves.", answer: "authentically" },
+          { text: "The ________ of choice can be very heavy.", answer: "burden" },
+          { text: "He found ________ in the beauty of the stars.", answer: "peace" },
+          { text: "Human ________ is both a gift and a curse.", answer: "existence" },
+          { text: "We should ________ the limits of our knowledge.", answer: "accept" },
+          { text: "The ________ of the future is always present.", answer: "uncertainty" }
+        ],
+        taskII: [
+          { term: "Existentialism", definition: "A philosophical theory that emphasizes the existence of the individual person as a free and responsible agent.", key: "a" },
+          { term: "Absurdism", definition: "The belief that human beings exist in a purposeless, chaotic universe.", key: "b" },
+          { term: "Nihilism", definition: "The rejection of all religious and moral principles.", key: "c" },
+          { term: "Authenticity", definition: "The quality of being authentic.", key: "d" },
+          { term: "Solitude", definition: "The state or situation of being alone.", key: "e" }
+        ],
+        taskIII: ["Sense of self", "Existential crisis", "Free agency", "Leap of faith"],
+        taskIV: [{ termA: "Being", termB: "Nothingness" }, { termA: "Essence", termB: "Existence" }],
+        taskV: ["Aesthetics", "Anguish", "Duality", "Transcendent", "Immanence"]
       })
     ]
   }
