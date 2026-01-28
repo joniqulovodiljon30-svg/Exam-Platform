@@ -1,4 +1,3 @@
-
 import { Theme, Variant } from './types';
 
 const createVariant = (id: number, themeTitle: string, data: any): Variant => ({
@@ -18,1389 +17,1390 @@ const createVariant = (id: number, themeTitle: string, data: any): Variant => ({
 export const THEMES: Theme[] = [
   {
     id: "media",
-    title: "THEME 1: THE MEDIA (PRINT & PRESS)",
+    title: "THEME 1: THE MEDIA & JOURNALISM",
     category: "Communication",
-    description: "Newspaper collocations, materials, sections, and phrasal verbs.",
+    description: "In-depth analysis of press ethics, sensationalism, and digital dissemination.",
     icon: "Newspaper",
     variants: [
-      createVariant(1, "Press Terminology", {
+      createVariant(1, "Press Ethics & Scrutiny", {
         taskI: [
-          { text: "The morning ________ usually arrives at 7 AM.", answer: "newspaper" },
-          { text: "I enjoy reading the ________ column for advice on relationships.", answer: "agony" },
-          { text: "The journalist refused to ________ their confidential source.", answer: "divulge" },
-          { text: "Tabloids often focus on ________ gossip and scandals.", answer: "celebrity" },
-          { text: "The story was ________ on the front page of every paper.", answer: "featured" },
-          { text: "A ________ is a serious, large-format newspaper.", answer: "broadsheet" },
-          { text: "The government tried to ________ the sensitive report.", answer: "suppress" },
-          { text: "He works as a foreign ________ for a global news agency.", answer: "correspondent" },
-          { text: "The paper has a massive ________ in the capital city.", answer: "circulation" },
-          { text: "The ________ section is full of job advertisements.", answer: "classified" },
-          { text: "I check the TV ________ to see what is on tonight.", answer: "listings" },
-          { text: "Information was ________ through various media outlets.", answer: "disseminated" }
+          { text: "The publication was accused of heavy ________ when reporting on the election.", answer: "bias" },
+          { text: "Whistleblowers often risk their careers to ________ systemic corruption.", answer: "expose" },
+          { text: "The editor refused to ________ the identity of the confidential informant.", answer: "divulge" },
+          { text: "Tabloids frequently resort to ________ to drive up their circulation numbers.", answer: "sensationalism" },
+          { text: "A ________ is expected to provide unbiased, factual reporting on current events.", answer: "broadsheet" },
+          { text: "The government's attempt to ________ the report was met with public outcry.", answer: "suppress" },
+          { text: "Journalistic ________ is paramount when dealing with sensitive political data.", answer: "integrity" },
+          { text: "The news agency has a global ________ of foreign correspondents.", answer: "network" },
+          { text: "Information was rapidly ________ through various social media channels.", answer: "disseminated" },
+          { text: "The ________ section of the paper often reflects the board's political stance.", answer: "editorial" },
+          { text: "Constant ________ from the paparazzi can be detrimental to a celebrity's mental health.", answer: "scrutiny" },
+          { text: "Digital ________ has drastically altered the landscape of traditional print media.", answer: "disruption" }
         ],
         taskII: [
-          { term: "Tabloid", definition: "A newspaper with smaller pages and simpler style, often sensational.", key: "a" },
-          { term: "Broadsheet", definition: "A serious newspaper using large sheets of paper.", key: "b" },
-          { term: "Leaflet", definition: "A small piece of paper with information or advertising.", key: "c" },
-          { term: "Journal", definition: "A publication dealing with a specific professional subject.", key: "d" },
-          { term: "Pamphlet", definition: "A thin book with a paper cover and information on one topic.", key: "e" }
+          { term: "Sensationalism", definition: "The use of exciting or shocking stories at the expense of accuracy.", key: "a" },
+          { term: "Broadsheet", definition: "A newspaper with a large format, typically considered more serious.", key: "b" },
+          { term: "Libel", definition: "A published false statement that is damaging to a person's reputation.", key: "c" },
+          { term: "Pundit", definition: "An expert in a particular subject who is frequently called on to give opinions.", key: "d" },
+          { term: "Syndication", definition: "The transfer of something for publication in multiple newspapers or stations.", key: "e" }
         ],
-        taskIII: ["Classified ads", "Front page", "Letter to the editor", "Gossip column"],
-        taskIV: [{ termA: "Article", termB: "Headline" }, { termA: "Journalist", termB: "Editor" }],
-        taskV: ["Paparazzi", "Circulation", "Editorial", "Censorship", "Subscription"]
+        taskIII: ["Unbiased reporting", "Investigative journalism", "Character assassination", "Propaganda machine"],
+        taskIV: [{ termA: "Objectivity", termB: "Subjectivity" }, { termA: "Tabloid", termB: "Journal" }],
+        taskV: ["Censorship", "Dissemination", "Muckraker", "Infotainment", "Whistleblower"]
       }),
-      createVariant(2, "Media Actions", {
+      createVariant(2, "The Digital Paradigm", {
         taskI: [
-          { text: "The news finally ________ after hours of tense waiting.", answer: "broke" },
-          { text: "The editor decided to ________ the story until further notice.", answer: "hold" },
-          { text: "I need to ________ up on the latest current events.", answer: "read" },
-          { text: "The magazine is ________ every two weeks by the same house.", answer: "published" },
-          { text: "They are ________ a new investigative piece on local politics.", answer: "running" },
-          { text: "The story was ________ up by several national tabloids.", answer: "picked" },
-          { text: "The journalist was ________ to get the exclusive interview.", answer: "struggling" },
-          { text: "We need to ________ the facts before we go to print.", answer: "verify" },
-          { text: "The scandal ________ public outrage across the country.", answer: "triggered" },
-          { text: "The paper decided to ________ the controversial column.", answer: "retract" },
-          { text: "He handles the ________ for the sports section.", answer: "copy" },
-          { text: "The ________ of the magazine has increased this year.", answer: "readership" }
+          { text: "Algorithms can ________ create echo chambers that polarize public opinion.", answer: "inadvertently" },
+          { text: "The speed of news ________ in the digital age often compromises accuracy.", answer: "transmission" },
+          { text: "Media ________ own a vast majority of local news outlets.", answer: "conglomerates" },
+          { text: "Citizen journalism has ________ the way local events are recorded.", answer: "revolutionized" },
+          { text: "Many users are now ________ to clickbait headlines designed for ad revenue.", answer: "susceptible" },
+          { text: "The ________ of information is no longer controlled by a few gatekeepers.", answer: "flow" },
+          { text: "Fact-checking organizations strive to ________ misinformation online.", answer: "combat" },
+          { text: "The ________ of digital media has led to a decline in print subscriptions.", answer: "ascendancy" },
+          { text: "Journalists must ________ the ethical implications of using AI in writing.", answer: "grapple" },
+          { text: "Social media platforms have become the primary ________ for news consumption.", answer: "conduits" },
+          { text: "Public trust in the media has ________ significantly over the last decade.", answer: "eroded" },
+          { text: "The ________ of news cycles means stories are forgotten within days.", answer: "transience" }
         ],
         taskII: [
-          { term: "Feature", definition: "A long article about a particular person or subject.", key: "a" },
-          { term: "Column", definition: "A regular section written by a specific person or expert.", key: "b" },
-          { term: "Supplement", definition: "A separate part added to a newspaper, often on weekends.", key: "c" },
-          { term: "Lead", definition: "The opening sentence or paragraph of a news story.", key: "d" },
-          { term: "Byline", definition: "A line giving the name of the writer of an article.", key: "e" }
+          { term: "Clickbait", definition: "Content whose main purpose is to attract attention and encourage clicks.", key: "a" },
+          { term: "Gatekeeper", definition: "An attendant at a gate who controls who is allowed to enter or leave.", key: "b" },
+          { term: "Disinformation", definition: "False information which is intended to mislead public opinion.", key: "c" },
+          { term: "Echo chamber", definition: "An environment where a person only encounters information that reflects their own.", key: "d" },
+          { term: "Viral", definition: "Relating to or involving an image or video that is circulated rapidly.", key: "e" }
         ],
-        taskIII: ["Run a story", "Gloss over", "Bring out", "Tune in"],
-        taskIV: [{ termA: "Tabloid", termB: "Glossy" }, { termA: "Scoop", termB: "Exclusive" }],
-        taskV: ["Libel", "Defamation", "Syndication", "Sensationalism", "Copywriter"]
+        taskIII: ["Digital footprint", "Verification process", "Media literacy", "Algorithm bias"],
+        taskIV: [{ termA: "Analog", termB: "Digital" }, { termA: "Scoop", termB: "Exclusive" }],
+        taskV: ["Monetization", "Engagement", "Accessibility", "Transparency", "Authenticity"]
       }),
-      createVariant(3, "Journalistic Ethics", {
+      createVariant(3, "Global Communication", {
         taskI: [
-          { text: "Media ________ can be a barrier to objective reporting.", answer: "bias" },
-          { text: "Disinformation can easily ________ public opinion.", answer: "manipulate" },
-          { text: "The ________ estate refers to the press as an influential power.", answer: "fourth" },
-          { text: "Freedom of the ________ is a pillar of a free society.", answer: "press" },
-          { text: "A media ________ owns multiple news outlets across the globe.", answer: "conglomerate" },
-          { text: "They were accused of ________ a false narrative for clicks.", answer: "fabricating" },
-          { text: "The ________ cycle is instantaneous in the digital age.", answer: "news" },
-          { text: "Investigative ________ requires extensive research and risks.", answer: "journalism" },
-          { text: "The ________ section often contains guest opinion pieces.", answer: "oped" },
-          { text: "Clickbait is used to ________ web traffic for ads.", answer: "generate" },
-          { text: "The ________ of information is now used as a political weapon.", answer: "flow" },
-          { text: "News outlets must maintain ________ to stay credible.", answer: "integrity" }
+          { text: "Freedom of the press is often ________ in authoritarian regimes.", answer: "curtailed" },
+          { text: "The ________ of global news agencies ensures a wide reach for major stories.", answer: "interconnectivity" },
+          { text: "Language barriers can often ________ the accurate reporting of local issues.", answer: "hinder" },
+          { text: "Transnational media corporations ________ the global information market.", answer: "dominate" },
+          { text: "The ________ of cultural values through media is a form of soft power.", answer: "diffusion" },
+          { text: "International correspondents must often navigate ________ political landscapes.", answer: "volatile" },
+          { text: "The ________ of news reporting varies greatly between different cultures.", answer: "cadence" },
+          { text: "Global media events can foster a sense of ________ solidarity.", answer: "transnational" },
+          { text: "The ________ of the internet has made it harder to censor information.", answer: "ubiquity" },
+          { text: "Journalists in conflict zones face ________ dangers while reporting.", answer: "unprecedented" },
+          { text: "The ________ of perspectives is essential for a healthy democracy.", answer: "plurality" },
+          { text: "Technological ________ has allowed for real-time global broadcasting.", answer: "innovation" }
         ],
         taskII: [
-          { term: "Propaganda", definition: "Information used to promote a political cause or point of view.", key: "a" },
-          { term: "Muckraker", definition: "A person who searches for and exposes real or alleged scandal.", key: "b" },
-          { term: "Spin doctor", definition: "A spokesperson who gives a favorable interpretation of events.", key: "c" },
-          { term: "Yellow journalism", definition: "Journalism based on sensationalism and crude exaggeration.", key: "d" },
-          { term: "Sound bite", definition: "A short extract from a recorded interview chosen for its impact.", key: "e" }
+          { term: "Soft power", definition: "A persuasive approach to international relations, involving cultural influence.", key: "a" },
+          { term: "Hegemony", definition: "Leadership or dominance, especially by one country or social group.", key: "b" },
+          { term: "Diffusion", definition: "The spreading of something more widely.", key: "c" },
+          { term: "Ubiquity", definition: "The state of being everywhere at once.", key: "d" },
+          { term: "Pluralism", definition: "A system in which two or more states or groups coexist.", key: "e" }
         ],
-        taskIII: ["Character assassination", "Echo chamber", "Citizen journalism", "Checkbook journalism"],
-        taskIV: [{ termA: "Privacy", termB: "Public interest" }, { termA: "Objectivity", termB: "Subjectivity" }],
-        taskV: ["Gatekeeper", "Infotainment", "Syndicate", "Plagiarism", "Masthead"]
+        taskIII: ["Global village", "Cultural imperialism", "Press freedom index", "Cross-cultural communication"],
+        taskIV: [{ termA: "Global", termB: "Local" }, { termA: "Mainstream", termB: "Alternative" }],
+        taskV: ["Diplomacy", "Sovereignty", "Standardization", "Globalization", "Convergence"]
       })
     ]
   },
   {
     id: "medical",
-    title: "THEME 2: MEDICAL LANGUAGE",
+    title: "THEME 2: ADVANCED MEDICINE",
     category: "Science",
-    description: "Health collocations, metaphors, and phrasal verbs related to illness.",
+    description: "Clinical diagnostic terminology, pathology, and healthcare ethics.",
     icon: "Stethoscope",
     variants: [
-      createVariant(1, "Basic Healthcare", {
+      createVariant(1, "Diagnostic Precision", {
         taskI: [
-          { text: "The patient made a ________ recovery after the operation.", answer: "speedy" },
-          { text: "The doctor ________ a full course of antibiotics.", answer: "prescribed" },
-          { text: "She was ________ with a mild infection this morning.", answer: "diagnosed" },
-          { text: "You should ________ a specialist for that back pain.", answer: "consult" },
-          { text: "The nurse ________ the medicine exactly at noon.", answer: "administered" },
-          { text: "He had to ________ a simple procedure yesterday.", answer: "undergo" },
-          { text: "The wound is starting to ________ nicely after the stitches.", answer: "heal" },
-          { text: "Regular exercise helps ________ many chronic diseases.", answer: "prevent" },
-          { text: "She is ________ from a severe bout of the flu.", answer: "recovering" },
-          { text: "The medicine will ________ your symptoms within an hour.", answer: "relieve" },
-          { text: "He was ________ from the hospital earlier today.", answer: "discharged" },
-          { text: "Many people ________ from chronic seasonal allergies.", answer: "suffer" }
+          { text: "The patient's condition began to ________ rapidly despite intervention.", answer: "deteriorate" },
+          { text: "A definitive ________ was only possible after the MRI results.", answer: "diagnosis" },
+          { text: "The physician ________ a regimen of immunosuppressants.", answer: "prescribed" },
+          { text: "Early ________ of symptoms is crucial for successful treatment.", answer: "detection" },
+          { text: "The study focused on the clinical ________ of the new vaccine.", answer: "efficacy" },
+          { text: "Chronic pain can significantly ________ a patient's quality of life.", answer: "impair" },
+          { text: "The ________ of the disease remains a subject of ongoing research.", answer: "etiology" },
+          { text: "Palliative care aims to ________ suffering in terminal patients.", answer: "alleviate" },
+          { text: "The patient was ________ with a rare autoimmune disorder.", answer: "afflicted" },
+          { text: "Medical ________ requires strict adherence to ethical guidelines.", answer: "research" },
+          { text: "The ________ of the surgical procedure was complicated by the patient's age.", answer: "execution" },
+          { text: "Effective communication between doctor and patient is ________ for compliance.", answer: "paramount" }
         ],
         taskII: [
-          { term: "Symptom", definition: "A physical or mental feature indicating a condition.", key: "a" },
-          { term: "Diagnosis", definition: "Identification of the nature of an illness by examination.", key: "b" },
-          { term: "Prescription", definition: "An instruction written by a doctor for medicine.", key: "c" },
-          { term: "Infection", definition: "The state of being infected by a microorganism.", key: "d" },
-          { term: "Clinic", definition: "A place where patients are given medical treatment or advice.", key: "e" }
-        ],
-        taskIII: ["Run a temperature", "Catch a cold", "Blood pressure", "Pain relief"],
-        taskIV: [{ termA: "Doctor", termB: "Nurse" }, { termA: "Surgery", termB: "Therapy" }],
-        taskV: ["Pills", "Antibiotics", "Medication", "Immunity", "Hygiene"]
-      }),
-      createVariant(2, "Recovery Paths", {
-        taskI: [
-          { text: "It took him a month to ________ over the severe flu.", answer: "get" },
-          { text: "She ________ down with a heavy cold after the rain.", answer: "came" },
-          { text: "He ________ out after seeing the needles.", answer: "passed" },
-          { text: "The doctor is trying to help her ________ off the infection.", answer: "fight" },
-          { text: "She ________ round slowly after the heavy anesthesia.", answer: "came" },
-          { text: "The old injury ________ up again last night.", answer: "flare" },
-          { text: "He finally ________ through after the medical crisis.", answer: "pulled" },
-          { text: "I think I'm ________ down with something today.", answer: "coming" },
-          { text: "She ________ up a nasty virus at the playground.", answer: "picked" },
-          { text: "The swelling should ________ down in a few days.", answer: "go" },
-          { text: "The old man ________ away peacefully in his sleep.", answer: "passed" },
-          { text: "The painkillers didn't ________ off for several hours.", answer: "wear" }
-        ],
-        taskII: [
-          { term: "Prognosis", definition: "The likely course of a disease or ailment.", key: "a" },
-          { term: "Remission", definition: "A temporary diminution of severity of disease.", key: "b" },
-          { term: "Relapse", definition: "A deterioration in health after temporary improvement.", key: "c" },
-          { term: "Chronic", definition: "Persisting for a long time or constantly recurring.", key: "d" },
-          { term: "Acute", definition: "Present or experienced to a severe or intense degree.", key: "e" }
-        ],
-        taskIII: ["On the mend", "Under the weather", "Back on your feet", "Pick up a bug"],
-        taskIV: [{ termA: "Inpatient", termB: "Outpatient" }, { termA: "Benign", termB: "Malignant" }],
-        taskV: ["Convalescence", "Remedy", "Condition", "Fatigue", "Relapse"]
-      }),
-      createVariant(3, "Health Metaphors", {
-        taskI: [
-          { text: "Institutional corruption is a ________ on our society.", answer: "cancer" },
-          { text: "The harsh economic crisis was a bitter ________ to swallow.", answer: "pill" },
-          { text: "He has some deep emotional ________ from his past.", answer: "scars" },
-          { text: "The city was ________ by fear during the emergency.", answer: "paralyzed" },
-          { text: "They are only ________ the symptoms, not the cause.", answer: "treating" },
-          { text: "The banking system is currently in a ________ condition.", answer: "critical" },
-          { text: "The decision ________ out to be a fatal mistake.", answer: "turned" },
-          { text: "She has a ________ block and cannot finish her novel.", answer: "mental" },
-          { text: "Education is the only ________ to this social toxicity.", answer: "antidote" },
-          { text: "The relationship has reached a ________ stage, unfortunately.", answer: "terminal" },
-          { text: "The surgeon general is ________ on the new health policy.", answer: "operating" },
-          { text: "The news was like a ________ of fresh air for the staff.", answer: "breath" }
-        ],
-        taskII: [
-          { term: "Epidemiology", definition: "The study of how diseases spread and can be controlled.", key: "a" },
-          { term: "Therapeutic", definition: "Relating to the healing of disease.", key: "b" },
-          { term: "Pathogen", definition: "A bacterium, virus, or other microorganism causing disease.", key: "c" },
+          { term: "Etiology", definition: "The cause, set of causes, or manner of causation of a disease.", key: "a" },
+          { term: "Prognosis", definition: "The likely course of a disease or ailment.", key: "b" },
+          { term: "Efficacy", definition: "The ability to produce a desired or intended result.", key: "c" },
           { term: "Palliative", definition: "Relieving pain without dealing with the cause of the condition.", key: "d" },
-          { term: "Placebo", definition: "A medicine with no physical effect, given for psychological benefit.", key: "e" }
+          { term: "Remission", definition: "A temporary diminution of severity of disease or pain.", key: "e" }
         ],
-        taskIII: ["Social cancer", "Bitter pill", "Breath of life", "Shot in the arm"],
-        taskIV: [{ termA: "Prognosis", termB: "Diagnosis" }, { termA: "Epidemic", termB: "Pandemic" }],
-        taskV: ["Efficacy", "Morbidity", "Pathology", "Immunotherapy", "Placebo"]
+        taskIII: ["Holistic approach", "Clinical trial", "Differential diagnosis", "Preventative medicine"],
+        taskIV: [{ termA: "Acute", termB: "Chronic" }, { termA: "Benign", termB: "Malignant" }],
+        taskV: ["Pathology", "Epidemiology", "Immunotherapy", "Morbidity", "Convalescence"]
+      }),
+      createVariant(2, "Pathological Analysis", {
+        taskI: [
+          { text: "The virus ________ at an exponential rate within the host.", answer: "replicated" },
+          { text: "Researchers are searching for the ________ that triggers the immune response.", answer: "antigen" },
+          { text: "Genetic ________ can predispose individuals to certain cancers.", answer: "mutations" },
+          { text: "The ________ of the epidemic was traced back to a local market.", answer: "outbreak" },
+          { text: "Antibiotic ________ is a growing threat to global health.", answer: "resistance" },
+          { text: "The body's ________ system works to neutralize foreign pathogens.", answer: "immune" },
+          { text: "Pathological ________ of tissue samples revealed malignant cells.", answer: "examination" },
+          { text: "The ________ of toxins in the liver can lead to organ failure.", answer: "accumulation" },
+          { text: "Pharmacological ________ is necessary to manage complex conditions.", answer: "intervention" },
+          { text: "The ________ of symptoms often coincides with the onset of fever.", answer: "exacerbation" },
+          { text: "Successful treatment requires a ________ understanding of the underlying biology.", answer: "comprehensive" },
+          { text: "Medical ________ has led to the development of life-saving technologies.", answer: "innovation" }
+        ],
+        taskII: [
+          { term: "Antigen", definition: "A toxin or other foreign substance which induces an immune response.", key: "a" },
+          { term: "Pathogen", definition: "A bacterium, virus, or other microorganism that can cause disease.", key: "b" },
+          { term: "Mutation", definition: "The changing of the structure of a gene.", key: "c" },
+          { term: "Exacerbation", definition: "A worsening of a clinical condition.", key: "d" },
+          { term: "Phagocytosis", definition: "The ingestion of bacteria or other material by phagocytes.", key: "e" }
+        ],
+        taskIII: ["Genetic engineering", "Viral replication", "Immune deficiency", "Toxic shock"],
+        taskIV: [{ termA: "Symptomatic", termB: "Asymptomatic" }, { termA: "Endemic", termB: "Pandemic" }],
+        taskV: ["Metastasis", "Virulence", "Incubation", "Susceptibility", "Prevalence"]
+      }),
+      createVariant(3, "Healthcare Ethics", {
+        taskI: [
+          { text: "Informed ________ is a legal and ethical requirement for surgery.", answer: "consent" },
+          { text: "The principle of ________ dictates that doctors must act in the patient's best interest.", answer: "beneficence" },
+          { text: "Patient ________ must be protected at all times.", answer: "confidentiality" },
+          { text: "Ethical ________ often arise in the allocation of scarce medical resources.", answer: "dilemmas" },
+          { text: "The ________ of human subjects in research is strictly regulated.", answer: "protection" },
+          { text: "Medical ________ involves the study of moral values in healthcare.", answer: "ethics" },
+          { text: "The ________ of life is a central theme in bioethical debates.", answer: "sanctity" },
+          { text: "Healthcare providers have a ________ to provide equal care to all patients.", answer: "duty" },
+          { text: "The ________ of the physician-patient relationship is based on trust.", answer: "integrity" },
+          { text: "Advances in biotechnology ________ new ethical questions every day.", answer: "pose" },
+          { text: "The ________ of universal healthcare is a major political issue.", answer: "implementation" },
+          { text: "Physicians must ________ the potential risks and benefits of any treatment.", answer: "weigh" }
+        ],
+        taskII: [
+          { term: "Beneficence", definition: "The quality of being kind or helpful or generous.", key: "a" },
+          { term: "Autonomy", definition: "The right or condition of self-government.", key: "b" },
+          { term: "Equity", definition: "The quality of being fair and impartial.", key: "c" },
+          { term: "Justice", definition: "The quality of being just; righteousness, equitableness, or moral rightness.", key: "d" },
+          { term: "Non-maleficence", definition: "The ethical principle of doing no harm.", key: "e" }
+        ],
+        taskIII: ["Euthanasia debate", "Resource allocation", "Hippocratic Oath", "Medical malpractice"],
+        taskIV: [{ termA: "Moral", termB: "Legal" }, { termA: "Public health", termB: "Individual rights" }],
+        taskV: ["Accountability", "Transparency", "Vulnerability", "Dignity", "Integrity"]
       })
     ]
   },
   {
     id: "tech",
-    title: "THEME 3: TECHNOLOGY",
+    title: "THEME 3: CUTTING-EDGE TECHNOLOGY",
     category: "Science",
-    description: "Vocabulary for digital life, devices, and the impact of the internet.",
+    description: "Artificial intelligence, cybersecurity, and the societal impact of automation.",
     icon: "Cpu",
     variants: [
-      createVariant(1, "Hardware & Software", {
+      createVariant(1, "The AI Revolution", {
         taskI: [
-          { text: "I need to ________ up my data to an external drive.", answer: "back" },
-          { text: "You must ________ in with your secure username.", answer: "log" },
-          { text: "The computer ________ when I tried to open the video.", answer: "froze" },
-          { text: "He spends far too many hours ________ the internet.", answer: "surfing" },
-          { text: "We need a more ________ Wi-Fi connection in this room.", answer: "stable" },
-          { text: "This legacy app is ________ with my new phone.", answer: "incompatible" },
-          { text: "The laptop is ________ by a high-end graphics card.", answer: "powered" },
-          { text: "I accidentally ________ an important work email.", answer: "deleted" },
-          { text: "They decided to ________ the system firmware.", answer: "upgrade" },
-          { text: "We need to ________ the file to the shared drive.", answer: "upload" },
-          { text: "The battery ________ quickly while recording 4K video.", answer: "drains" },
-          { text: "I can't ________ to the network in this basement.", answer: "connect" }
+          { text: "Machine learning ________ enable computers to learn from massive datasets.", answer: "algorithms" },
+          { text: "Artificial Intelligence has the potential to ________ various industries.", answer: "disrupt" },
+          { text: "The ________ of autonomous vehicles raises significant safety concerns.", answer: "deployment" },
+          { text: "Natural Language Processing allows machines to ________ human speech.", answer: "decipher" },
+          { text: "Neural ________ are modeled after the human brain's architecture.", answer: "networks" },
+          { text: "The ________ of AI into everyday life is happening rapidly.", answer: "integration" },
+          { text: "Ethical ________ surrounding AI include bias and privacy.", answer: "considerations" },
+          { text: "Generative models can ________ highly realistic images and text.", answer: "synthesize" },
+          { text: "The ________ of superintelligence is a subject of intense debate.", answer: "feasibility" },
+          { text: "AI systems require robust ________ to ensure they operate safely.", answer: "safeguards" },
+          { text: "The ________ of information through AI can be exceptionally efficient.", answer: "processing" },
+          { text: "Technological ________ is a theoretical point in the future where AI surpasses human intelligence.", answer: "singularity" }
         ],
         taskII: [
-          { term: "Hardware", definition: "The physical components of a computer system.", key: "a" },
-          { term: "Software", definition: "The programs and other operating info used by a computer.", key: "b" },
-          { term: "Browser", definition: "A program used to navigate and view websites.", key: "c" },
-          { term: "Server", definition: "A computer that manages access to a centralized resource.", key: "d" },
-          { term: "Peripheral", definition: "Any auxiliary device that connects to a computer.", key: "e" }
+          { term: "Algorithm", definition: "A set of rules to be followed in calculations by a computer.", key: "a" },
+          { term: "Neural Network", definition: "A computer system modeled on the human brain.", key: "b" },
+          { term: "Singularity", definition: "A hypothetical point in time at which technological growth becomes uncontrollable.", key: "c" },
+          { term: "Deployment", definition: "The action of bringing resources into effective action.", key: "d" },
+          { term: "Synthesize", definition: "To combine elements into a whole.", key: "e" }
         ],
-        taskIII: ["External drive", "Social media", "Touch screen", "Cloud storage"],
-        taskIV: [{ termA: "Desktop", termB: "Laptop" }, { termA: "Download", termB: "Upload" }],
-        taskV: ["Gadget", "Connection", "System", "Device", "Storage"]
+        taskIII: ["Deep learning", "Algorithmic bias", "Facial recognition", "Predictive analytics"],
+        taskIV: [{ termA: "Human intelligence", termB: "Artificial intelligence" }, { termA: "Automation", termB: "Augmentation" }],
+        taskV: ["Heuristics", "Architecture", "Scalability", "Optimization", "Inference"]
       }),
-      createVariant(2, "Online Interaction", {
+      createVariant(2, "Cybersecurity & Cryptography", {
         taskI: [
-          { text: "I'll help you ________ up the new laptop later.", answer: "set" },
-          { text: "The system will ________ down automatically at midnight.", answer: "shut" },
-          { text: "You need to ________ into your cloud account first.", answer: "sign" },
-          { text: "The hackers managed to ________ in through an open port.", answer: "break" },
-          { text: "I'll ________ up the document for the meeting.", answer: "bring" },
-          { text: "Can you ________ in the printer for me?", answer: "plug" },
-          { text: "The computer ________ off unexpectedly during the save.", answer: "went" },
-          { text: "I need to ________ up my old local files.", answer: "clean" },
-          { text: "He ________ down the job offer from the tech giant.", answer: "turned" },
-          { text: "The battery ________ out in the middle of my game.", answer: "ran" },
-          { text: "I'll ________ through the settings to fix it.", answer: "go" },
-          { text: "They are ________ a new version of the OS soon.", answer: "bringing" }
+          { text: "Encryption is essential for protecting sensitive data from ________.", answer: "interception" },
+          { text: "Cyber ________ are becoming increasingly sophisticated and frequent.", answer: "attacks" },
+          { text: "Multi-factor ________ adds an extra layer of security to accounts.", answer: "authentication" },
+          { text: "Vulnerability ________ involves searching for weaknesses in a system.", answer: "scanning" },
+          { text: "A ________ acts as a barrier between a trusted and untrusted network.", answer: "firewall" },
+          { text: "The ________ of digital assets is a major priority for businesses.", answer: "security" },
+          { text: "Blockchain technology provides a decentralized and ________ ledger.", answer: "immutable" },
+          { text: "Phishing scams use ________ emails to steal personal information.", answer: "deceptive" },
+          { text: "The ________ of a system depends on its weakest link.", answer: "integrity" },
+          { text: "Cyber ________ is the practice of protecting systems and networks.", answer: "hygiene" },
+          { text: "Ransomware ________ can cripple large organizations.", answer: "infiltrations" },
+          { text: "Zero-day ________ are weaknesses that are not yet known to the software vendor.", answer: "vulnerabilities" }
         ],
         taskII: [
-          { term: "Firewall", definition: "A system designed to prevent unauthorized access to a network.", key: "a" },
-          { term: "Encryption", definition: "The process of converting information into a secret code.", key: "b" },
-          { term: "Algorithm", definition: "A set of rules to be followed in calculations by a computer.", key: "c" },
-          { term: "Bandwidth", definition: "The capacity for data transfer of an electronic connection.", key: "d" },
-          { term: "Interface", definition: "The way a user interacts with a computer program.", key: "e" }
+          { term: "Encryption", definition: "The process of converting information into a secret code.", key: "a" },
+          { term: "Authentication", definition: "The process of proving that something is genuine.", key: "b" },
+          { term: "Immutable", definition: "Unchanging over time or unable to be changed.", key: "c" },
+          { term: "Phishing", definition: "The fraudulent practice of sending emails masquerading as reputable companies.", key: "d" },
+          { term: "Vulnerability", definition: "The quality or state of being exposed to the possibility of being attacked.", key: "e" }
         ],
-        taskIII: ["Hack into", "Log off", "Print out", "Wipe out"],
-        taskIV: [{ termA: "Search engine", termB: "Browser" }, { termA: "Hardware", termB: "Software" }],
-        taskV: ["Automation", "Artificial", "Intelligence", "Database", "Bandwidth"]
+        taskIII: ["Data breach", "End-to-end encryption", "Social engineering", "Cyber warfare"],
+        taskIV: [{ termA: "Encryption", termB: "Decryption" }, { termA: "White-hat", termB: "Black-hat" }],
+        taskV: ["Penetration", "Redundancy", "Protocol", "Surveillance", "Anonymity"]
       }),
-      createVariant(3, "Societal Impact", {
+      createVariant(3, "The Internet of Things (IoT)", {
         taskI: [
-          { text: "AI is ________ the global workforce.", answer: "reshaping" },
-          { text: "Digital ________ is a major ethical concern today.", answer: "privacy" },
-          { text: "Technology can ________ feelings of social isolation.", answer: "exacerbate" },
-          { text: "The ________ divide between generations is growing.", answer: "digital" },
-          { text: "Automation ________ many traditional entry-level jobs.", answer: "threatens" },
-          { text: "We are becoming overly ________ on gadgets for basic tasks.", answer: "reliant" },
-          { text: "The ________ of information across devices is seamless.", answer: "integration" },
-          { text: "Cyber ________ is now a national security priority.", answer: "warfare" },
-          { text: "Social media algorithms can ________ misinformation.", answer: "amplify" },
-          { text: "The ________ cycle is driven by engagement metrics.", answer: "news" },
-          { text: "The ________ of new tech is historically rapid.", answer: "adoption" },
-          { text: "We must ________ the ethical implications of AI.", answer: "address" }
+          { text: "Smart devices ________ with each other to create a seamless ecosystem.", answer: "interoperate" },
+          { text: "The ________ of IoT devices has led to concerns about data privacy.", answer: "proliferation" },
+          { text: "Connected sensors can ________ real-time data for analysis.", answer: "collect" },
+          { text: "The ________ of 5G networks will accelerate the adoption of IoT.", answer: "implementation" },
+          { text: "Edge computing allows for data ________ closer to the source.", answer: "processing" },
+          { text: "The ________ of the power grid is being improved through smart technology.", answer: "resilience" },
+          { text: "IoT applications ________ from smart homes to industrial automation.", answer: "range" },
+          { text: "The ________ of massive datasets generated by IoT is a major challenge.", answer: "management" },
+          { text: "Security ________ in IoT devices can expose users to cyber threats.", answer: "flaws" },
+          { text: "The ________ of the digital and physical worlds is a key feature of IoT.", answer: "convergence" },
+          { text: "Smart cities use IoT to ________ urban services and infrastructure.", answer: "optimize" },
+          { text: "The ________ of IoT technology requires robust connectivity.", answer: "sustainability" }
         ],
         taskII: [
-          { term: "Interoperability", definition: "The ability of computer systems to exchange information.", key: "a" },
-          { term: "Sustainability", definition: "The ability to be maintained at a certain rate without harm.", key: "b" },
-          { term: "Disruption", definition: "Disturbance which interrupts an event or process.", key: "c" },
-          { term: "Innovation", definition: "The action or process of innovating a new method.", key: "d" },
-          { term: "Paradigm", definition: "A typical example or pattern of something; a model.", key: "e" }
+          { term: "Proliferation", definition: "Rapid increase in numbers.", key: "a" },
+          { term: "Interoperability", definition: "The ability of computer systems to exchange and make use of information.", key: "b" },
+          { term: "Convergence", definition: "The process of moving toward union or uniformity.", key: "c" },
+          { term: "Optimization", definition: "The action of making the best or most effective use of a situation.", key: "d" },
+          { term: "Latency", definition: "The delay before a transfer of data begins.", key: "e" }
         ],
-        taskIII: ["Digital footprint", "Social media detox", "Tech-savvy", "Online presence"],
-        taskIV: [{ termA: "Convenience", termB: "Privacy" }, { termA: "Evolution", termB: "Revolution" }],
-        taskV: ["Scalability", "Cybersecurity", "Blockchain", "Infrastructure", "Ecosystem"]
+        taskIII: ["Connected home", "Industrial automation", "Smart grid", "Wearable technology"],
+        taskIV: [{ termA: "Centralized", termB: "Decentralized" }, { termA: "Edge", termB: "Cloud" }],
+        taskV: ["Bandwidth", "Scalability", "Reliability", "Infrastructure", "Ecosystem"]
       })
     ]
   },
   {
     id: "study",
-    title: "THEME 4: STUDY & LEARNING",
+    title: "THEME 4: ACADEMIC RIGOR",
     category: "Education",
-    description: "Academic verbs, learning habits, and formal education vocabulary.",
+    description: "Pedagogy, cognitive acquisition, and the ethics of academic research.",
     icon: "BookOpen",
     variants: [
-      createVariant(1, "Academic Routine", {
+      createVariant(1, "Pedagogical Approaches", {
         taskI: [
-          { text: "He decided to ________ for a prestigious degree in Law.", answer: "read" },
-          { text: "Students must ________ all their core lectures.", answer: "attend" },
-          { text: "I need to ________ some thorough research for my project.", answer: "do" },
-          { text: "The professor ________ an exceptionally inspiring lecture.", answer: "delivered" },
-          { text: "You should ________ detailed notes during the class.", answer: "take" },
-          { text: "He wants to ________ a career in pediatric medicine.", answer: "pursue" },
-          { text: "I finally ________ my final paper this morning.", answer: "submitted" },
-          { text: "The university ________ many merit-based scholarship options.", answer: "offers" },
-          { text: "I hope to ________ a high grade in the midterm exam.", answer: "get" },
-          { text: "She had to ________ for the missed lab seminar.", answer: "compensate" },
-          { text: "You must ________ your sources correctly using APA style.", answer: "cite" },
-          { text: "The school ________ a very strict attendance policy.", answer: "enforces" }
+          { text: "Modern ________ emphasizes student-centered learning and critical thinking.", answer: "pedagogy" },
+          { text: "Differentiated instruction aims to ________ the diverse needs of learners.", answer: "address" },
+          { text: "Formative ________ provides ongoing feedback to improve learning outcomes.", answer: "assessment" },
+          { text: "The ________ of educational technology has transformed the classroom.", answer: "integration" },
+          { text: "Inquiry-based learning encourages students to ________ and investigate.", answer: "explore" },
+          { text: "The ________ of a curriculum should reflect current academic standards.", answer: "content" },
+          { text: "Scaffolding is a technique used to ________ students as they learn new skills.", answer: "support" },
+          { text: "Metacognition involves thinking about one's own ________ processes.", answer: "learning" },
+          { text: "Collaborative learning fosters a sense of ________ and teamwork.", answer: "community" },
+          { text: "The ________ of inclusive education is a global priority.", answer: "promotion" },
+          { text: "Teachers must ________ their teaching styles to suit different environments.", answer: "adapt" },
+          { text: "Academic ________ is essential for student success in higher education.", answer: "rigor" }
         ],
         taskII: [
-          { term: "Curriculum", definition: "The subjects comprising a full course of study.", key: "a" },
-          { term: "Syllabus", definition: "An outline or summary of the subjects in a specific course.", key: "b" },
-          { term: "Tuition", definition: "Instruction given to a student or group.", key: "c" },
-          { term: "Thesis", definition: "A long essay or dissertation involving personal research.", key: "d" },
-          { term: "Faculty", definition: "A group of departments in a university or college.", key: "e" }
+          { term: "Pedagogy", definition: "The method and practice of teaching.", key: "a" },
+          { term: "Curriculum", definition: "The subjects comprising a course of study in a school or college.", key: "b" },
+          { term: "Metacognition", definition: "Awareness and understanding of one's own thought processes.", key: "c" },
+          { term: "Formative", definition: "Serving to form something, especially having a profound influence.", key: "d" },
+          { term: "Inquiry", definition: "An act of asking for information.", key: "e" }
         ],
-        taskIII: ["Academic record", "Rote learning", "Vocational training", "Higher education"],
-        taskIV: [{ termA: "Sit an exam", termB: "Fail an exam" }, { termA: "Degree", termB: "Diploma" }],
-        taskV: ["Seminar", "Lecture", "Assignment", "Literacy", "Scholarship"]
+        // Fixed: removed incorrect escaped quotes which caused parsing errors for taskIV and taskV
+        taskIII: ["Flipped classroom", "Project-based learning", "Critical pedagogy", "Holistic education"],
+        taskIV: [{ termA: "Formative", termB: "Summative" }, { termA: "Pedagogy", termB: "Andragogy" }],
+        taskV: ["Didactic", "Cognitive", "Synthesis", "Evaluation", "Assessment"]
       }),
-      createVariant(2, "Formal Education", {
+      createVariant(2, "Research Methodology", {
         taskI: [
-          { text: "They decided to ________ a wide-scale survey.", answer: "conduct" },
-          { text: "She managed to ________ all her academic goals.", answer: "achieve" },
-          { text: "The latest findings ________ our previous theory.", answer: "corroborate" },
-          { text: "We need to ________ the qualitative data carefully.", answer: "examine" },
-          { text: "The report ________ several important social issues.", answer: "highlights" },
-          { text: "They were ________ to participate in the controlled study.", answer: "required" },
-          { text: "The online course ________ of ten distinct modules.", answer: "consists" },
-          { text: "He ________ from a top-tier university last spring.", answer: "graduated" },
-          { text: "She ________ in English Literature and History.", answer: "majored" },
-          { text: "The study ________ to show a link between diet and sleep.", answer: "aimed" },
-          { text: "We must ________ the long-term impact of the changes.", answer: "assess" },
-          { text: "The results were ________ in a peer-reviewed journal.", answer: "published" }
+          { text: "A rigorous ________ is essential for the validity of scientific findings.", answer: "methodology" },
+          { text: "Quantitative research involves the ________ of numerical data.", answer: "analysis" },
+          { text: "Qualitative ________ focuses on understanding human experiences and perspectives.", answer: "research" },
+          { text: "The ________ of a hypothesis requires empirical evidence.", answer: "testing" },
+          { text: "Researchers must ensure their study is ________ and unbiased.", answer: "objective" },
+          { text: "Sample ________ is a critical step in the research process.", answer: "selection" },
+          { text: "The ________ of data should be conducted with high precision.", answer: "collection" },
+          { text: "Statistical ________ is used to determine the significance of results.", answer: "analysis" },
+          { text: "Ethical approval is ________ for research involving human participants.", answer: "mandatory" },
+          { text: "The ________ of the findings should be supported by the data.", answer: "interpretation" },
+          { text: "Peer ________ ensures the quality and credibility of academic publications.", answer: "review" },
+          { text: "Replicability is a ________ of scientific research.", answer: "cornerstone" }
         ],
         taskII: [
-          { term: "Pedagogy", definition: "The method and practice of teaching, especially as a subject.", key: "a" },
-          { term: "Cognitive", definition: "Relating to the mental process of knowledge acquisition.", key: "b" },
-          { term: "Didactic", definition: "Intended to teach, particularly in having moral instruction.", key: "c" },
-          { term: "Literacy", definition: "The ability to read and write fluently.", key: "d" },
-          { term: "Numeracy", definition: "The ability to understand and work with numbers.", key: "e" }
+          { term: "Methodology", definition: "A system of methods used in a particular area of study or activity.", key: "a" },
+          { term: "Quantitative", definition: "Relating to, measuring, or measured by the quantity of something.", key: "b" },
+          { term: "Qualitative", definition: "Relating to, measuring, or measured by the quality of something.", key: "c" },
+          { term: "Empirical", definition: "Based on, concerned with, or verifiable by observation or experience.", key: "d" },
+          { term: "Significance", definition: "The quality of being worthy of attention; importance.", key: "e" }
         ],
-        taskIII: ["Conduct research", "Acquire knowledge", "Deliver a presentation", "Exceed expectations"],
-        taskIV: [{ termA: "Qualitative", termB: "Quantitative" }, { termA: "Theory", termB: "Evidence" }],
-        taskV: ["Plagiarism", "Assessment", "Criterion", "Methodology", "Synthesis"]
+        taskIII: ["Double-blind study", "Case study analysis", "Longitudinal research", "Meta-analysis"],
+        taskIV: [{ termA: "Variable", termB: "Constant" }, { termA: "Theory", termB: "Fact" }],
+        taskV: ["Validity", "Reliability", "Inference", "Hypothesis", "Correlation"]
       }),
-      createVariant(3, "Professional Skills", {
+      createVariant(3, "Academic Integrity", {
         taskI: [
-          { text: "I have ________ several successful cross-team projects.", answer: "spearheaded" },
-          { text: "She ________ a team of ten highly skilled people.", answer: "managed" },
-          { text: "He ________ a significant increase in annual sales.", answer: "achieved" },
-          { text: "I have ________ strong communication and leadership skills.", answer: "developed" },
-          { text: "She ________ the new employee training program.", answer: "implemented" },
-          { text: "He ________ the company's overall online presence.", answer: "enhanced" },
-          { text: "I ________ the annual budget for the entire department.", answer: "oversaw" },
-          { text: "She ________ closely with the creative design team.", answer: "collaborated" },
-          { text: "He ________ a cost-effective solution to the problem.", answer: "devised" },
-          { text: "I ________ with major clients on a daily basis.", answer: "negotiate" },
-          { text: "She ________ the efficiency of the internal workflow.", answer: "improved" },
-          { text: "He ________ his performance targets every single year.", answer: "surpassed" }
+          { text: "Plagiarism is a serious ________ of academic integrity.", answer: "violation" },
+          { text: "Students must properly ________ all sources used in their work.", answer: "cite" },
+          { text: "Academic ________ involves being honest and responsible in research.", answer: "honesty" },
+          { text: "The ________ of academic records is essential for institutional credibility.", answer: "integrity" },
+          { text: "Institutions have strict policies to ________ academic misconduct.", answer: "prevent" },
+          { text: "Collaboration is encouraged, but students must ________ their own work.", answer: "produce" },
+          { text: "The ________ of research ethics is a fundamental part of academic training.", answer: "study" },
+          { text: "Intellectual ________ must be respected at all times.", answer: "property" },
+          { text: "Falsifying data is a ________ form of academic fraud.", answer: "grave" },
+          { text: "The ________ of academic standards is necessary to maintain the value of degrees.", answer: "upholding" },
+          { text: "Students should seek ________ if they are unsure about citation rules.", answer: "guidance" },
+          { text: "Academic ________ allows for the free exchange of ideas.", answer: "freedom" }
         ],
         taskII: [
-          { term: "Competency", definition: "The ability to do something successfully or efficiently.", key: "a" },
-          { term: "Objective", definition: "A thing aimed at or sought; a goal.", key: "b" },
-          { term: "Credential", definition: "A qualification, achievement, or aspect of background.", key: "c" },
-          { term: "Reference", definition: "A letter from a previous employer testifying to ability.", key: "d" },
-          { term: "Internship", definition: "A period of work experience offered by an organization.", key: "e" }
+          { term: "Plagiarism", definition: "The practice of taking someone else's work or ideas and passing them off as one's own.", key: "a" },
+          { term: "Citation", definition: "A quotation from or reference to a book, paper, or author.", key: "b" },
+          { term: "Integrity", definition: "The quality of being honest and having strong moral principles.", key: "c" },
+          { term: "Honesty", definition: "The quality of being honest.", key: "d" },
+          { term: "Misconduct", definition: "Unacceptable or improper behavior.", key: "e" }
         ],
-        taskIII: ["Self-motivated", "Team player", "Strong work ethic", "Problem solver"],
-        taskIV: [{ termA: "Skills", termB: "Qualifications" }, { termA: "Experience", termB: "Aptitude" }],
-        taskV: ["Tenure", "Expertise", "Reliability", "Ambition", "Versatility"]
+        taskIII: ["Intellectual property", "Honor code", "Academic probation", "Peer evaluation"],
+        taskIV: [{ termA: "Paraphrase", termB: "Quote" }, { termA: "Original", termB: "Copy" }],
+        taskV: ["Authenticity", "Transparency", "Accountability", "Ethics", "Verification"]
       })
     ]
   },
   {
     id: "work-business",
-    title: "THEME 5: WORK AND BUSINESS",
+    title: "THEME 5: CORPORATE STRATEGY",
     category: "Professional",
-    description: "Vocabulary related to the workplace, business terminology, and professional slang.",
+    description: "Fiscal management, market volatility, and organizational psychology.",
     icon: "Briefcase",
     variants: [
-      createVariant(1, "The Office Environment", {
+      createVariant(1, "Organizational Dynamics", {
         taskI: [
-          { text: "I have to ________ several phone calls before lunch.", answer: "make" },
-          { text: "She was ________ with the task of hiring new staff.", answer: "charged" },
-          { text: "He decided to ________ in his resignation yesterday.", answer: "hand" },
-          { text: "The company is ________ for a new general manager.", answer: "scouting" },
-          { text: "We need to ________ a fair deal by this Friday.", answer: "strike" },
-          { text: "I have an exceptionally heavy ________ this month.", answer: "workload" },
-          { text: "The project is currently ________ schedule.", answer: "behind" },
-          { text: "We must ________ the deadline at any cost.", answer: "meet" },
-          { text: "She works in the ________ resources department.", answer: "human" },
-          { text: "He was ________ redundant after the merger last week.", answer: "made" },
-          { text: "The business is finally ________ a healthy profit.", answer: "turning" },
-          { text: "I have to ________ the office early for an appointment.", answer: "leave" }
+          { text: "Effective ________ is the cornerstone of any successful corporation.", answer: "leadership" },
+          { text: "Corporate ________ has shifted toward more flexible and remote models.", answer: "culture" },
+          { text: "Employee ________ is a key metric for measuring organizational health.", answer: "retention" },
+          { text: "Strategic ________ involves setting long-term goals and objectives.", answer: "planning" },
+          { text: "The ________ of a company often reflects its core values.", answer: "hierarchy" },
+          { text: "Change ________ is necessary to navigate periods of transition.", answer: "management" },
+          { text: "Diversity and inclusion initiatives foster a more ________ workplace.", answer: "equitable" },
+          { text: "Performance ________ provide regular feedback to employees.", answer: "appraisals" },
+          { text: "Conflict ________ skills are essential for managers.", answer: "resolution" },
+          { text: "The ________ of internal communication can affect overall efficiency.", answer: "clarity" },
+          { text: "Corporate social ________ is becoming increasingly important for consumers.", answer: "responsibility" },
+          { text: "Team ________ activities help improve collaboration and trust.", answer: "building" }
         ],
         taskII: [
-          { term: "Blue-collar", definition: "Relating to manual work, typically in a factory.", key: "a" },
-          { term: "White-collar", definition: "Relating to office work or clerical tasks.", key: "b" },
-          { term: "Overhead", definition: "The general costs of running a business (rent, etc).", key: "c" },
-          { term: "Turnover", definition: "The rate at which employees leave and are replaced.", key: "d" },
-          { term: "Incentive", definition: "A thing that motivates or encourages someone.", key: "e" }
+          { term: "Leadership", definition: "The action of leading a group of people or an organization.", key: "a" },
+          { term: "Retention", definition: "The continued possession, use, or control of something.", key: "b" },
+          { term: "Equitable", definition: "Fair and impartial.", key: "c" },
+          { term: "Appraisal", definition: "An act of assessing something or someone.", key: "d" },
+          { term: "Resolution", definition: "The action of solving a problem, dispute, or contentious matter.", key: "e" }
         ],
-        taskIII: ["Take a break", "Meeting deadline", "Working hard", "Office job"],
-        taskIV: [{ termA: "Manager", termB: "Employee" }, { termA: "Salary", termB: "Wage" }],
-        taskV: ["Profit", "Loss", "Contract", "Promotion", "Staff"]
+        taskIII: ["Corporate culture", "Employee engagement", "Vertical integration", "Horizontal management"],
+        taskIV: [{ termA: "Manager", termB: "Leader" }, { termA: "Centralized", termB: "Decentralized" }],
+        taskV: ["Accountability", "Transparency", "Vulnerability", "Resilience", "Integrity"]
       }),
-      createVariant(2, "Business Strategy", {
+      createVariant(2, "Fiscal Management", {
         taskI: [
-          { text: "I'll ________ up with you later to discuss the plan.", answer: "catch" },
-          { text: "The morning meeting was ________ off due to rain.", answer: "called" },
-          { text: "We need to ________ through the finer details again.", answer: "go" },
-          { text: "He ________ down the offer because the pay was low.", answer: "turned" },
-          { text: "She ________ on too much work and is now stressed.", answer: "took" },
-          { text: "They are ________ out a new plan for the department.", answer: "bringing" },
-          { text: "I need to ________ down the cost of materials.", answer: "keep" },
-          { text: "The deal ________ through at the very last minute.", answer: "fell" },
-          { text: "He ________ up for the board meeting quite late.", answer: "showed" },
-          { text: "We should ________ out a permanent solution.", answer: "find" },
-          { text: "I'll ________ into the matter as soon as possible.", answer: "look" },
-          { text: "They ________ up the parent company last year.", answer: "set" }
+          { text: "Budget ________ involves dividing resources among different departments.", answer: "allocation" },
+          { text: "Fiscal ________ is necessary to ensure long-term stability.", answer: "discipline" },
+          { text: "The company reported a significant increase in ________ revenue.", answer: "annual" },
+          { text: "Market ________ makes financial forecasting extremely difficult.", answer: "volatility" },
+          { text: "Diversification of the ________ helps mitigate financial risk.", answer: "portfolio" },
+          { text: "The ________ of a company includes its cash and properties.", answer: "assets" },
+          { text: "Total ________ represent the company's financial obligations.", answer: "liabilities" },
+          { text: "Audit ________ ensure the accuracy of financial reports.", answer: "procedures" },
+          { text: "Capital ________ is needed to fund new projects and expansions.", answer: "expenditure" },
+          { text: "The ________ of dividends is determined by the board of directors.", answer: "distribution" },
+          { text: "Economic ________ can lead to a decrease in consumer spending.", answer: "recessions" },
+          { text: "Financial ________ is the study of money and investments.", answer: "analysis" }
         ],
         taskII: [
-          { term: "Stakeholder", definition: "A person with an interest or concern in a business.", key: "a" },
-          { term: "Revenue", definition: "The total income generated by a company.", key: "b" },
-          { term: "Asset", definition: "A useful or valuable thing, person, or quality.", key: "c" },
-          { term: "Liability", definition: "The state of being responsible for something by law.", key: "d" },
-          { term: "Capital", definition: "Wealth in the form of money or other assets owned.", key: "e" }
+          { term: "Allocation", definition: "The action or process of allocating or distributing something.", key: "a" },
+          { term: "Volatility", definition: "Liability to change rapidly and unpredictably.", key: "b" },
+          { term: "Portfolio", definition: "A range of investments held by a person or organization.", key: "c" },
+          { term: "Asset", definition: "A useful or valuable thing, person, or quality.", key: "d" },
+          { term: "Liability", definition: "The state of being responsible for something, especially by law.", key: "e" }
         ],
-        taskIII: ["Touch base", "Keep in the loop", "Go the extra mile", "Think outside the box"],
-        taskIV: [{ termA: "Hire", termB: "Fire" }, { termA: "Asset", termB: "Liability" }],
-        taskV: ["Dividend", "Acquisition", "Strategy", "Liabilities", "Investment"]
+        taskIII: ["Capital gains", "Net profit margin", "Fiscal policy", "Monetary policy"],
+        taskIV: [{ termA: "Revenue", termB: "Profit" }, { termA: "Gross", termB: "Net" }],
+        taskV: ["Bankruptcy", "Liquidity", "Solvency", "Inflation", "Deflation"]
       }),
-      createVariant(3, "Modern Slang", {
+      createVariant(3, "Global Commerce", {
         taskI: [
-          { text: "We need to hit the ________ running on this project.", answer: "ground" },
-          { text: "It's a ________ situation for every party involved.", answer: "win-win" },
-          { text: "The ________ line is what matters most for the board.", answer: "bottom" },
-          { text: "Let's ________ out of the box to solve this issue.", answer: "think" },
-          { text: "He's ________ the midnight oil again to finish the report.", answer: "burning" },
-          { text: "We all need to ________ the corporate ladder to succeed.", answer: "climb" },
-          { text: "It's a dog-________-dog world in high finance.", answer: "eat" },
-          { text: "He's a ________ of all trades but master of none.", answer: "jack" },
-          { text: "We need to ________ some fresh blood to stay innovative.", answer: "bring" },
-          { text: "It was a real ________-up call for the management.", answer: "wake" },
-          { text: "They are all ________ for a piece of the pie.", answer: "fighting" },
-          { text: "There is a ________ on the horizon for the economy.", answer: "cloud" }
+          { text: "Globalization has ________ the interconnectedness of world economies.", answer: "proliferated" },
+          { text: "International trade ________ help reduce barriers to commerce.", answer: "agreements" },
+          { text: "Market ________ involves entering a new geographical area.", answer: "expansion" },
+          { text: "Supply chain ________ can disrupt global manufacturing.", answer: "disruptions" },
+          { text: "The ________ of a local brand can be a complex process.", answer: "globalization" },
+          { text: "Exchange rate ________ affect the profitability of exports.", answer: "fluctuations" },
+          { text: "Multinational corporations ________ a vast majority of global wealth.", answer: "control" },
+          { text: "Cultural ________ is essential for successful international business.", answer: "sensitivity" },
+          { text: "The ________ of universal standards facilitates global trade.", answer: "adoption" },
+          { text: "Global ________ can foster a sense of international cooperation.", answer: "commerce" },
+          { text: "Trade ________ are often used to protect domestic industries.", answer: "tariffs" },
+          { text: "The ________ of the global market is constantly evolving.", answer: "landscape" }
         ],
         taskII: [
-          { term: "Leverage", definition: "The power to influence a person or situation.", key: "a" },
-          { term: "Synergy", definition: "The interaction of two organizations to produce a combined effect.", key: "b" },
-          { term: "Sustainability", definition: "The ability to be maintained at a certain rate.", key: "c" },
-          { term: "Infrastructure", definition: "Basic physical and organizational structures needed.", key: "d" },
-          { term: "Benchmarking", definition: "Evaluating something by comparison with a standard.", key: "e" }
+          { term: "Proliferate", definition: "Increase rapidly in numbers; multiply.", key: "a" },
+          { term: "Expansion", definition: "The action of becoming larger or more extensive.", key: "b" },
+          { term: "Fluctuation", definition: "An irregular rising and falling in number or amount.", key: "c" },
+          { term: "Sensitivity", definition: "The quality or condition of being sensitive.", key: "d" },
+          { term: "Tariff", definition: "A tax or duty to be paid on a particular class of imports or exports.", key: "e" }
         ],
-        taskIII: ["Glass ceiling", "Rat race", "Cash cow", "Vulture capitalist"],
-        taskIV: [{ termA: "Equity", termB: "Equality" }, { termA: "Gross", termB: "Net" }],
-        taskV: ["Merger", "Remuneration", "Subcontractor", "Volatility", "Scalability"]
+        taskIII: ["Emerging markets", "Free trade zone", "Outsourcing strategy", "Joint venture"],
+        taskIV: [{ termA: "Imports", termB: "Exports" }, { termA: "Multinational", termB: "Transnational" }],
+        taskV: ["Hegemony", "Sovereignty", "Sanction", "Embargo", "Ratification"]
       })
     ]
   },
   {
     id: "law",
-    title: "THEME 6: LAW AND ORDER",
+    title: "THEME 6: JURISPRUDENCE & JUSTICE",
     category: "Society",
-    description: "Legal terminology, judicial procedures, and crime-related vocabulary.",
+    description: "Judicial procedures, legislative drafting, and international law.",
     icon: "Gavel",
     variants: [
-      createVariant(1, "Judicial Process", {
+      createVariant(1, "Judicial Procedures", {
         taskI: [
-          { text: "The jury reached a unanimous ________ after ten hours.", answer: "verdict" },
-          { text: "The witness was called to ________ under oath.", answer: "testify" },
-          { text: "Critical DNA ________ linked the suspect to the scene.", answer: "evidence" },
-          { text: "He was accused of being an ________ in the bank robbery.", answer: "accomplice" },
-          { text: "Harsh punishments act as a ________ for future crimes.", answer: "deterrent" },
-          { text: "The state decided to ________ the CEO for fraud.", answer: "prosecute" },
-          { text: "A ________ is a more serious crime than a misdemeanor.", answer: "felony" },
-          { text: "The ________ of the innocent man was a relief to all.", answer: "acquittal" },
-          { text: "High-profile lawsuits often result in lengthy ________.", answer: "litigation" },
-          { text: "The ________ presided over the local county court.", answer: "magistrate" },
-          { text: "Modern detectives rely heavily on ________ analysis.", answer: "forensic" },
-          { text: "The judge handed down a maximum ________ of ten years.", answer: "sentence" }
+          { text: "The ________ of the court is final and cannot be appealed.", answer: "judgment" },
+          { text: "Due ________ is a fundamental right guaranteed by the constitution.", answer: "process" },
+          { text: "The ________ presided over the complex civil lawsuit.", answer: "magistrate" },
+          { text: "A ________ is a written law passed by a legislative body.", answer: "statute" },
+          { text: "The ________ of the jury must be unanimous in criminal cases.", answer: "verdict" },
+          { text: "Legal ________ involves the study of previous court decisions.", answer: "precedent" },
+          { text: "The ________ presented a compelling case against the defendant.", answer: "prosecutor" },
+          { text: "A ________ is a formal charge or accusation of a serious crime.", answer: "indictment" },
+          { text: "The ________ system is designed to ensure a fair trial.", answer: "adversarial" },
+          { text: "Expert ________ can be critical in complex forensic cases.", answer: "testimony" },
+          { text: "The ________ of the innocent man was a victory for justice.", answer: "exoneration" },
+          { text: "Legal ________ can be a barrier to justice for the poor.", answer: "fees" }
         ],
         taskII: [
-          { term: "Indictment", definition: "A formal charge or accusation of a serious crime.", key: "a" },
-          { term: "Perjury", definition: "The offense of willfully telling an untruth in court.", key: "b" },
-          { term: "Subpoena", definition: "A writ ordering a person to attend a court.", key: "c" },
-          { term: "Defendant", definition: "An individual sued or accused in a court of law.", key: "d" },
-          { term: "Plaintiff", definition: "A person who brings a case against another in court.", key: "e" }
+          { term: "Statute", definition: "A written law passed by a legislative body.", key: "a" },
+          { term: "Precedent", definition: "An earlier event or action that is regarded as an example.", key: "b" },
+          { term: "Indictment", definition: "A formal charge or accusation of a serious crime.", key: "c" },
+          { term: "Exoneration", definition: "The action of officially absolving someone from blame.", key: "d" },
+          { term: "Testimony", definition: "A formal written or spoken statement, especially one given in a court of law.", key: "e" }
         ],
-        taskIII: ["Beyond reasonable doubt", "Mitigating circumstances", "Contempt of court", "Capital punishment"],
+        taskIII: ["Habeas corpus", "Burden of proof", "Contempt of court", "Capital punishment"],
         taskIV: [{ termA: "Solicitor", termB: "Barrister" }, { termA: "Civil law", termB: "Criminal law" }],
-        taskV: ["Jurisdiction", "Habeas corpus", "Amnesty", "Culpability", "Precedent"]
+        taskV: ["Jurisdiction", "Litigation", "Arbitration", "Mediation", "Subpoena"]
       }),
-      createVariant(2, "Crime and Punishment", {
+      createVariant(2, "Legislative Drafting", {
         taskI: [
-          { text: "They were caught ________ with the company's funds.", answer: "embezzling" },
-          { text: "The prisoner was granted ________ by the governor.", answer: "clemency" },
-          { text: "He was issued a ________ to appear for jury duty.", answer: "summons" },
-          { text: "The lawyer prepared to ________ the expert witness.", answer: "cross-examine" },
-          { text: "The court issued an ________ to stop the construction.", answer: "injunction" },
-          { text: "The suspect was held in ________ until the trial.", answer: "custody" },
-          { text: "He committed ________ by lying about his whereabouts.", answer: "perjury" },
-          { text: "The ________ between the parties failed last night.", answer: "mediation" },
-          { text: "His legal ________ cost him thousands of dollars.", answer: "fees" },
-          { text: "A ________ is a lawyer who represents clients in court.", answer: "barrister" },
-          { text: "The police had a ________ to search the premises.", answer: "warrant" },
-          { text: "He was found ________ of second-degree murder.", answer: "guilty" }
+          { text: "The ________ of new laws requires careful consideration of societal impact.", answer: "drafting" },
+          { text: "A ________ is a proposed law presented to parliament for discussion.", answer: "bill" },
+          { text: "The ________ of a treaty involves formal approval by the state.", answer: "ratification" },
+          { text: "Legislative ________ are often used to refine the language of a bill.", answer: "amendments" },
+          { text: "The ________ of a law is as important as its writing.", answer: "enforcement" },
+          { text: "Regulatory ________ ensure that businesses comply with environmental laws.", answer: "frameworks" },
+          { text: "The ________ of powers is a key principle of modern governance.", answer: "separation" },
+          { text: "A ________ is a public declaration of policy and aims.", answer: "manifesto" },
+          { text: "The ________ of a statute can lead to legal disputes.", answer: "ambiguity" },
+          { text: "Public ________ is often sought before passing major legislation.", answer: "consultation" },
+          { text: "The ________ of a law should be clear and concise.", answer: "language" },
+          { text: "Constitutional ________ is the study of a country's founding principles.", answer: "law" }
         ],
         taskII: [
-          { term: "Libel", definition: "A published false statement that is damaging to a person.", key: "a" },
-          { term: "Slander", definition: "The action of making a false spoken statement damaging to a person.", key: "b" },
-          { term: "Larceny", definition: "Theft of personal property.", key: "c" },
-          { term: "Arson", definition: "The criminal act of deliberately setting fire to property.", key: "d" },
-          { term: "Battery", definition: "The physical act of hitting someone.", key: "e" }
+          { term: "Drafting", definition: "The action of writing a first version of a document.", key: "a" },
+          { term: "Ratification", definition: "The action of signing or giving formal consent to a treaty.", key: "b" },
+          { term: "Amendment", definition: "A minor change or addition designed to improve a text.", key: "c" },
+          { term: "Framework", definition: "A basic structure underlying a system, concept, or text.", key: "d" },
+          { term: "Manifesto", definition: "A public declaration of policy and aims.", key: "e" }
         ],
-        taskIII: ["Serve a sentence", "Out of court settlement", "Plead guilty", "Burden of proof"],
-        taskIV: [{ termA: "Theft", termB: "Robbery" }, { termA: "Burglary", termB: "Shoplifting" }],
-        taskV: ["Rehabilitation", "Retribution", "Exoneration", "Extradition", "Incarceration"]
+        taskIII: ["Checks and balances", "Rule of law", "Public interest", "Judicial review"],
+        taskIV: [{ termA: "Legislative", termB: "Executive" }, { termA: "Statutory", termB: "Regulatory" }],
+        taskV: ["Sovereignty", "Protocol", "Nullification", "Mandate", "Jurisprudence"]
       }),
-      createVariant(3, "Global Justice", {
+      createVariant(3, "International Law", {
         taskI: [
-          { text: "The UN called for ________ of the political prisoners.", answer: "amnesty" },
-          { text: "The ________ of suspects can be a complex treaty process.", answer: "extradition" },
-          { text: "The court had no ________ over international waters.", answer: "jurisdiction" },
-          { text: "The grand jury decided to ________ the senator.", answer: "indict" },
-          { text: "The execution was delayed by a last-minute ________.", answer: "reprieve" },
-          { text: "Modern ________ systems monitor city streets 24/7.", answer: "surveillance" },
-          { text: "The prison ________ was responsible for the facility.", answer: "warden" },
-          { text: "The ________ acted outside the law to seek revenge.", answer: "vigilante" },
-          { text: "Speeding is usually considered a minor ________.", answer: "misdemeanor" },
-          { text: "The victim's family sought ________ through the law.", answer: "redress" },
-          { text: "International ________ is governed by various treaties.", answer: "arbitration" },
-          { text: "The ________ arrested the suspect in the park.", answer: "constable" }
+          { text: "The ________ of human rights is a cornerstone of international law.", answer: "protection" },
+          { text: "Treaties are ________ agreements between sovereign states.", answer: "binding" },
+          { text: "The ________ of suspects can be a complex legal process.", answer: "extradition" },
+          { text: "International ________ is used to resolve disputes between nations.", answer: "arbitration" },
+          { text: "The ________ has no jurisdiction over the internal affairs of a state.", answer: "court" },
+          { text: "Diplomatic ________ protects ambassadors from local laws.", answer: "immunity" },
+          { text: "The UN works to promote global ________ and security.", answer: "peace" },
+          { text: "Economic ________ are often used to pressure rogue states.", answer: "sanctions" },
+          { text: "The ________ of a treaty requires the consent of all parties.", answer: "amendment" },
+          { text: "Humanitarian ________ is sent to conflict zones to help civilians.", answer: "aid" },
+          { text: "The ________ of sovereignty is a fundamental principle of the UN.", answer: "respect" },
+          { text: "International ________ is governed by various conventions and protocols.", answer: "maritime" }
         ],
         taskII: [
-          { term: "Tribunal", definition: "A court of justice or some other person with power.", key: "a" },
-          { term: "Statute", definition: "A written law passed by a legislative body.", key: "b" },
-          { term: "Codex", definition: "An ancient manuscript text in book form.", key: "c" },
-          { term: "Protocol", definition: "The official procedure or system of rules governing affairs.", key: "d" },
-          { term: "Diplomatic immunity", definition: "The privilege of exemption from certain laws for diplomats.", key: "e" }
+          { term: "Extradition", definition: "The action of extraditing a person accused or convicted of a crime.", key: "a" },
+          { term: "Arbitration", definition: "The use of an arbitrator to settle a dispute.", key: "b" },
+          { term: "Immunity", definition: "Exemption from an obligation or penalty.", key: "c" },
+          { term: "Sanction", definition: "A threatened penalty for disobeying a law or rule.", key: "d" },
+          { term: "Sovereignty", definition: "The authority of a state to govern itself or another state.", key: "e" }
         ],
-        taskIII: ["Rule of law", "Conflict of interest", "Due process", "Human rights violation"],
-        taskIV: [{ termA: "Justice", termB: "Equity" }, { termA: "Law", termB: "Ethics" }],
-        taskV: ["Sovereignty", "Treaty", "Sanction", "Ratification", "Nullification"]
+        taskIII: ["Universal jurisdiction", "War crimes tribunal", "Geneva Convention", "Diplomatic protocol"],
+        taskIV: [{ termA: "Bilateral", termB: "Multilateral" }, { termA: "Ally", termB: "Adversary" }],
+        taskV: ["Amnesty", "Hegemony", "Sanctity", "Redress", "Expatriation"]
       })
     ]
   },
   {
     id: "nature",
-    title: "THEME 7: THE ENVIRONMENT AND NATURE",
+    title: "THEME 7: ECOLOGICAL SUSTAINABILITY",
     category: "Science",
-    description: "Ecological concepts, climate change, and conservation vocabulary.",
+    description: "Biodiversity loss, climate mitigation, and regenerative agriculture.",
     icon: "Leaf",
     variants: [
-      createVariant(1, "Ecology and Climate", {
+      createVariant(1, "Climate Mitigation", {
         taskI: [
-          { text: "The ________ protects us from harmful UV radiation.", answer: "ozone" },
-          { text: "Carbon ________ are at an all-time high globally.", answer: "emissions" },
-          { text: "Water in the ________ pond became dangerous to drink.", answer: "stagnant" },
-          { text: "We must switch to ________ energy sources immediately.", answer: "renewable" },
-          { text: "Plastic that isn't ________ persists for centuries.", answer: "biodegradable" },
-          { text: "The local ________ was disrupted by the oil spill.", answer: "ecosystem" },
-          { text: "Illegal ________ is destroying the Amazon rainforest.", answer: "deforestation" },
-          { text: "Many species are losing their natural ________ to urban sprawl.", answer: "habitat" },
-          { text: "The prolonged ________ led to a severe crop failure.", answer: "drought" },
-          { text: "Rising temperatures cause the ________ to melt rapidly.", answer: "glaciers" },
-          { text: "Wildlife ________ is the primary goal of the park.", answer: "preservation" },
-          { text: "The ________ includes all living organisms on Earth.", answer: "biosphere" }
+          { text: "Carbon ________ is the process of capturing and storing atmospheric CO2.", answer: "sequestration" },
+          { text: "The ________ of renewable energy is vital to meet climate goals.", answer: "acceleration" },
+          { text: "Greenhouse gas ________ must be drastically reduced globally.", answer: "emissions" },
+          { text: "Climate ________ involves adjusting to the changes already underway.", answer: "adaptation" },
+          { text: "The ________ of the polar ice caps is a visible sign of global warming.", answer: "melting" },
+          { text: "Carbon ________ schemes allow businesses to compensate for their emissions.", answer: "offset" },
+          { text: "The ________ of fossil fuels is the primary driver of climate change.", answer: "combustion" },
+          { text: "Sustainable ________ is necessary to protect the planet for future generations.", answer: "development" },
+          { text: "The ________ of biodiversity is an urgent ecological crisis.", answer: "loss" },
+          { text: "Technological ________ can help decarbonize various industries.", answer: "innovation" },
+          { text: "The ________ of environmental policies requires international cooperation.", answer: "implementation" },
+          { text: "Public ________ is essential to drive large-scale climate action.", answer: "awareness" }
         ],
         taskII: [
-          { term: "Atmosphere", definition: "The envelope of gases surrounding the earth or another planet.", key: "a" },
-          { term: "Toxicity", definition: "The quality of being toxic or poisonous.", key: "b" },
-          { term: "Sustainability", definition: "The ability to be maintained at a certain rate or level.", key: "c" },
-          { term: "Pollutant", definition: "A substance that pollutes something, especially water or the atmosphere.", key: "d" },
-          { term: "Condensation", definition: "Water which collects as droplets on a cold surface.", key: "e" }
+          { term: "Sequestration", definition: "The action of sequestering or being sequestered.", key: "a" },
+          { term: "Emissions", definition: "The production and discharge of something, especially gas or radiation.", key: "b" },
+          { term: "Adaptation", definition: "The action or process of adapting or being adapted.", key: "c" },
+          { term: "Combustion", definition: "The process of burning something.", key: "d" },
+          { term: "Decarbonize", definition: "To reduce the amount of gaseous carbon compounds released.", key: "e" }
         ],
-        taskIII: ["Carbon footprint", "Global warming", "Natural resources", "Renewable energy"],
-        taskIV: [{ termA: "Conservation", termB: "Preservation" }, { termA: "Climate", termB: "Weather" }],
-        taskV: ["Precipitation", "Biodiversity", "Permaculture", "Greenhouse effect", "Aquifer"]
+        taskIII: ["Carbon footprint", "Global warming potential", "Renewable energy source", "Net zero goal"],
+        taskIV: [{ termA: "Mitigation", termB: "Adaptation" }, { termA: "Renewable", termB: "Finite" }],
+        taskV: ["Atmosphere", "Biosphere", "Ecosystem", "Sustainability", "Resilience"]
       }),
-      createVariant(2, "Agriculture and Resources", {
+      createVariant(2, "Regenerative Agriculture", {
         taskI: [
-          { text: "They used ________ energy to heat the entire town.", answer: "geothermal" },
-          { text: "Living a ________ lifestyle requires conscious choices.", answer: "sustainable" },
-          { text: "The hurricane was a natural ________ for the island.", answer: "catastrophe" },
-          { text: "Farmers rely on ________ systems during dry spells.", answer: "irrigation" },
-          { text: "The island serves as a ________ for migrating birds.", answer: "sanctuary" },
-          { text: "Excessive ________ use can harm local bee populations.", answer: "pesticide" },
-          { text: "Organic waste shouldn't end up in the ________.", answer: "landfill" },
-          { text: "The ________ of the soil led to poor harvests.", answer: "depletion" },
-          { text: "The autumn ________ was smaller than expected.", answer: "harvest" },
-          { text: "Climate change is hitting the ________ regions hardest.", answer: "arctic" },
-          { text: "She prefers buying ________ produce at the market.", answer: "organic" },
-          { text: "The forest ________ was a major local news story.", answer: "preservation" }
+          { text: "Regenerative ________ focuses on improving soil health and biodiversity.", answer: "agriculture" },
+          { text: "Cover ________ help prevent soil erosion and improve fertility.", answer: "cropping" },
+          { text: "Rotational ________ allows pastures to recover and sequester carbon.", answer: "grazing" },
+          { text: "The ________ of synthetic fertilizers can harm local ecosystems.", answer: "overuse" },
+          { text: "Agroforestry ________ trees into agricultural landscapes.", answer: "integrates" },
+          { text: "Soil ________ is a major threat to global food security.", answer: "degradation" },
+          { text: "Organic ________ avoids the use of harmful pesticides and herbicides.", answer: "farming" },
+          { text: "The ________ of water resources is critical for sustainable agriculture.", answer: "management" },
+          { text: "Farmers are ________ adopting regenerative practices to build resilience.", answer: "increasingly" },
+          { text: "The ________ of food production should be transparent and sustainable.", answer: "cycle" },
+          { text: "Biodiverse ________ systems are more resilient to pests and diseases.", answer: "cropping" },
+          { text: "The ________ of small-scale farmers is vital for local food systems.", answer: "support" }
         ],
         taskII: [
-          { term: "Compost", definition: "Decayed organic material used as a plant fertilizer.", key: "a" },
-          { term: "Hydroponics", definition: "The process of growing plants in sand, gravel, or liquid.", key: "b" },
-          { term: "Monoculture", definition: "The cultivation of a single crop in a given area.", key: "c" },
-          { term: "Erosion", definition: "The process of eroding or being eroded by wind or water.", key: "d" },
-          { term: "Sediment", definition: "Matter that settles to the bottom of a liquid.", key: "e" }
+          { term: "Regenerative", definition: "Of, relating to, or characterized by regeneration.", key: "a" },
+          { term: "Erosion", definition: "The gradual destruction or diminution of something.", key: "b" },
+          { term: "Biodiversity", definition: "The variety of life in the world or in a particular habitat.", key: "c" },
+          { term: "Resilience", definition: "The capacity to recover quickly from difficulties.", key: "d" },
+          { term: "Sustainability", definition: "The ability to be maintained at a certain rate or level.", key: "e" }
         ],
-        taskIII: ["Intensive farming", "Organic fertilizer", "Water scarcity", "Soil fertility"],
-        taskIV: [{ termA: "Flora", termB: "Fauna" }, { termA: "Herbicide", termB: "Pesticide" }],
-        taskV: ["Salination", "Afforestation", "Topography", "Urbanization", "Desalination"]
+        taskIII: ["Soil health", "Carbon sink", "Permaculture design", "No-till farming"],
+        taskIV: [{ termA: "Intensive", termB: "Extensive" }, { termA: "Organic", termB: "Conventional" }],
+        taskV: ["Fertility", "Irrigation", "Pesticide", "Herbicide", "Depletion"]
       }),
-      createVariant(3, "Environmental Disasters", {
+      createVariant(3, "Conservation Biology", {
         taskI: [
-          { text: "The city's ________ levels reached a critical low.", answer: "reservoir" },
-          { text: "Plants grow differently at high ________.", answer: "altitudes" },
-          { text: "Heavy rain caused severe ________ on the hillside.", answer: "erosion" },
-          { text: "We use a ________ bin for all our food scraps.", answer: "compost" },
-          { text: "A ________ downpour flooded the city streets.", answer: "torrential" },
-          { text: "Water ________ plants are vital for public health.", answer: "purification" },
-          { text: "The ________ gases trap heat in the atmosphere.", answer: "greenhouse" },
-          { text: "Marine ________ is the study of sea organisms.", answer: "ecology" },
-          { text: "The local ________ includes several rare bird species.", answer: "fauna" },
-          { text: "Alpine ________ is adapted to extreme cold.", answer: "flora" },
-          { text: "River ________ can block navigation over time.", answer: "sediment" },
-          { text: "Illegal ________ is a threat to the rhino population.", answer: "poaching" }
+          { text: "Wildlife ________ aim to protect endangered species and their habitats.", answer: "corridors" },
+          { text: "Habitat ________ is a major cause of biodiversity loss.", answer: "fragmentation" },
+          { text: "The ________ of invasive species can disrupt local ecosystems.", answer: "introduction" },
+          { text: "Conservation ________ focus on the protection of entire landscapes.", answer: "efforts" },
+          { text: "The ________ of environmental laws is necessary to prevent poaching.", answer: "enforcement" },
+          { text: "Ecological ________ involves repairing damaged ecosystems.", answer: "restoration" },
+          { text: "Genetic ________ is essential for the long-term survival of a species.", answer: "diversity" },
+          { text: "The ________ of natural resources should be sustainable and fair.", answer: "use" },
+          { text: "Public ________ plays a key role in the success of conservation projects.", answer: "engagement" },
+          { text: "The ________ of protected areas is a global priority.", answer: "establishment" },
+          { text: "Conservationists work to ________ the impact of human activities on nature.", answer: "mitigate" },
+          { text: "The ________ of the biosphere depends on the health of its ecosystems.", answer: "integrity" }
         ],
         taskII: [
-          { term: "Tsunami", definition: "A long high sea wave caused by an earthquake.", key: "a" },
-          { term: "Tremor", definition: "An involuntary quivering movement; a slight earthquake.", key: "b" },
-          { term: "Avalanche", definition: "A mass of snow, ice, and rocks falling rapidly down a mountainside.", key: "c" },
-          { term: "Aftershock", definition: "A smaller earthquake following the main shock.", key: "d" },
-          { term: "Epicenter", definition: "The point on the earth's surface vertically above the focus of an earthquake.", key: "e" }
+          { term: "Fragmentation", definition: "The process or state of breaking or being broken into small parts.", key: "a" },
+          { term: "Restoration", definition: "The action of returning something to its former condition.", key: "b" },
+          { term: "Diversity", definition: "A range of different things.", key: "c" },
+          { term: "Mitigate", definition: "Make less severe, serious, or painful.", key: "d" },
+          { term: "Integrity", definition: "The state of being whole and undivided.", key: "e" }
         ],
-        taskIII: ["Oil spill", "Toxic waste", "Acid rain", "Nuclear fallout"],
-        taskIV: [{ termA: "Endangered", termB: "Extinct" }, { termA: "Wild", termB: "Domesticated" }],
-        taskV: ["Metamorphism", "Seismology", "Vulnerability", "Resilience", "Displacement"]
+        taskIII: ["Keystone species", "Invasive species", "Ecological niche", "Trophic cascade"],
+        taskIV: [{ termA: "Endangered", termB: "Extinct" }, { termA: "Wild", termB: "Captive" }],
+        taskV: ["Preservation", "Sustainability", "Vulnerability", "Resilience", "Displacement"]
       })
     ]
   },
   {
     id: "travel",
-    title: "THEME 8: TRAVEL AND TOURISM",
+    title: "THEME 8: GLOBAL TOURISM",
     category: "Leisure",
-    description: "Vocabulary for tourism, hospitality, transport, and global travel.",
+    description: "Socio-economic impacts of tourism, gentrification, and eco-travel.",
     icon: "Plane",
     variants: [
-      createVariant(1, "The Traveler's Path", {
+      createVariant(1, "The Socio-Economic Impact", {
         taskI: [
-          { text: "I carefully planned our ten-day ________ for Europe.", answer: "itinerary" },
-          { text: "Paris remains a top ________ for honeymooners.", answer: "destination" },
-          { text: "Our flight was delayed, so we missed our ________.", answer: "transit" },
-          { text: "The country is known for its incredible ________.", answer: "hospitality" },
-          { text: "We waited for three hours at the airport ________.", answer: "terminal" },
-          { text: "Passengers must ________ the ship before noon.", answer: "embark" },
-          { text: "We took a day ________ to see the ancient ruins.", answer: "excursion" },
-          { text: "He spent a year as a ________ in South America.", answer: "backpacker" },
-          { text: "I bought a small ________ to remember the trip.", answer: "souvenir" },
-          { text: "The hotel ________ helped us book dinner tickets.", answer: "concierge" },
-          { text: "We had a long ________ in Dubai on our way home.", answer: "layover" },
-          { text: "The ________ process was quick and efficient.", answer: "embarkation" }
+          { text: "Tourism can provide a significant ________ boost to developing nations.", answer: "economic" },
+          { text: "Mass tourism can lead to the ________ of local cultures and traditions.", answer: "commodification" },
+          { text: "Gentrification often occurs in areas with a high ________ of tourists.", answer: "concentration" },
+          { text: "The ________ of tourism infrastructure can displace local residents.", answer: "expansion" },
+          { text: "Sustainable tourism aims to ________ the negative impacts of travel.", answer: "minimize" },
+          { text: "Cultural ________ is a side effect of global travel and communication.", answer: "homogenization" },
+          { text: "The ________ of local businesses is vital for a sustainable tourism industry.", answer: "support" },
+          { text: "Over-tourism can ________ local resources and infrastructure.", answer: "strain" },
+          { text: "The ________ of the tourism industry varies depending on the season.", answer: "profitability" },
+          { text: "Tourists should strive to ________ the local customs and etiquette.", answer: "respect" },
+          { text: "The ________ of tourism policies requires collaboration between various stakeholders.", answer: "implementation" },
+          { text: "Public ________ is necessary to promote responsible travel behavior.", answer: "awareness" }
         ],
         taskII: [
-          { term: "Customs", definition: "The place at a port or airport where officials check goods.", key: "a" },
-          { term: "Immigration", definition: "The place at an airport where government officials check passports.", key: "b" },
-          { term: "Jet lag", definition: "Extreme tiredness felt by a person after a long flight across time zones.", key: "c" },
-          { term: "Voucher", definition: "A small printed piece of paper that entitles the holder to a discount.", key: "d" },
-          { term: "Brochure", definition: "A small book or magazine containing pictures and information about a product.", key: "e" }
-        ],
-        taskIII: ["Package holiday", "Off the beaten track", "Travel insurance", "Sightseeing tour"],
-        taskIV: [{ termA: "Tourist", termB: "Traveler" }, { termA: "Hotel", termB: "Hostel" }],
-        taskV: ["Visa", "Check-in", "Boarding pass", "Expedition", "Pilgrimage"]
-      }),
-      createVariant(2, "Descriptive Travel", {
-        taskI: [
-          { text: "The mountains provided a ________ backdrop for photos.", answer: "majestic" },
-          { text: "We enjoyed a ________ view of the city from the tower.", answer: "panoramic" },
-          { text: "The cabin had a ________ and cozy atmosphere.", answer: "rustic" },
-          { text: "The ________ drive through the valley was breath-taking.", answer: "scenic" },
-          { text: "They live in a ________ village in the Himalayas.", answer: "remote" },
-          { text: "Barcelona is a ________ and colorful city.", answer: "vibrant" },
-          { text: "The beach was ________ with white sand and clear water.", answer: "pristine" },
-          { text: "I've always wanted to visit ________ locations like Bali.", answer: "exotic" },
-          { text: "The ________ market was full of noise and smells.", answer: "bustling" },
-          { text: "We spent a ________ afternoon by the quiet lake.", answer: "tranquil" },
-          { text: "The town has many ________ little streets to explore.", answer: "quaint" },
-          { text: "The city has immense ________ significance.", answer: "historical" }
-        ],
-        taskII: [
-          { term: "Landmark", definition: "An object or feature of a landscape that is easily seen from a distance.", key: "a" },
-          { term: "Heritage", definition: "Property that is or may be inherited; an inheritance.", key: "b" },
-          { term: "Metropolis", definition: "The capital or chief city of a country or region.", key: "c" },
-          { term: "Hamlet", definition: "A small settlement, generally one smaller than a village.", key: "d" },
-          { term: "Citadel", definition: "A fortress, typically one on high ground above a city.", key: "e" }
-        ],
-        taskIII: ["Breathtaking scenery", "Local cuisine", "Hospitality industry", "Untouched nature"],
-        taskIV: [{ termA: "Voyage", termB: "Journey" }, { termA: "Trip", termB: "Tour" }],
-        taskV: ["Stupendous", "Ethereal", "Serendipity", "Wanderlust", "Globetrotter"]
-      }),
-      createVariant(3, "Impact and Infrastructure", {
-        taskI: [
-          { text: "The rise of ________ helps protect local wildlife.", answer: "ecotourism" },
-          { text: "Cultural ________ is a side effect of mass travel.", answer: "globalization" },
-          { text: "The city needs better ________ to handle more tourists.", answer: "infrastructure" },
-          { text: "The resort offers every ________ you could imagine.", answer: "amenity" },
-          { text: "A ________ deal often includes flights and hotel.", answer: "package" },
-          { text: "You must apply for a ________ before visiting China.", answer: "visa" },
-          { text: "I need to exchange some ________ at the bank.", answer: "currency" },
-          { text: "They went through ________ without any issues.", answer: "customs" },
-          { text: "UNESCO protects sites of universal ________.", answer: "heritage" },
-          { text: "The long ________ across the Atlantic was rough.", answer: "voyage" },
-          { text: "We decided to book a luxury ________ for our anniversary.", answer: "cruise" },
-          { text: "The ________ lifestyle isn't for everyone.", answer: "nomadic" }
-        ],
-        taskII: [
-          { term: "Over-tourism", definition: "The phenomenon of excessive numbers of tourists visiting a place.", key: "a" },
+          { term: "Commodification", definition: "The action or process of treating something as a mere commodity.", key: "a" },
           { term: "Gentrification", definition: "The process of changing the character of a neighborhood.", key: "b" },
-          { term: "Displacement", definition: "The moving of something from its place or position.", key: "c" },
-          { term: "Monetization", definition: "The action or process of earning revenue from an asset.", key: "d" },
-          { term: "Authenticity", definition: "The quality of being authentic.", key: "e" }
+          { term: "Homogenization", definition: "The process of making things uniform or similar.", key: "c" },
+          { term: "Concentration", definition: "The action or power of focusing one's attention or mental effort.", key: "d" },
+          { term: "Infrastructure", definition: "The basic physical and organizational structures and facilities.", key: "e" }
         ],
-        taskIII: ["Sustainable tourism", "Cultural heritage", "Economic impact", "High season"],
+        taskIII: ["Social displacement", "Cultural heritage site", "Economic dependency", "Sustainable travel"],
         taskIV: [{ termA: "Inbound", termB: "Outbound" }, { termA: "Domestic", termB: "International" }],
-        taskV: ["Revenue", "Accessibility", "Saturation", "Degradation", "Seasonality"]
+        taskV: ["Accessibility", "Vulnerability", "Authenticity", "Saturation", "Degradation"]
+      }),
+      createVariant(2, "Ecotourism & Ethics", {
+        taskI: [
+          { text: "Ecotourism focuses on ________ travel to natural areas.", answer: "responsible" },
+          { text: "Conservation ________ are often funded through ecotourism revenue.", answer: "projects" },
+          { text: "The ________ of environmental impacts is a key goal of eco-travel.", answer: "minimization" },
+          { text: "Tourists can ________ in local conservation and community projects.", answer: "participate" },
+          { text: "The ________ of ecotourism labels can sometimes be misleading.", answer: "use" },
+          { text: "Sustainable ________ practices help protect fragile ecosystems.", answer: "travel" },
+          { text: "The ________ of cultural heritage is a major priority for ecotourism.", answer: "preservation" },
+          { text: "Eco-travelers should ________ their carbon footprint.", answer: "minimize" },
+          { text: "The ________ of ethical guidelines is necessary to ensure the integrity of ecotourism.", answer: "establishment" },
+          { text: "Local communities should ________ from the revenue generated through tourism.", answer: "benefit" },
+          { text: "The ________ of the tourism industry depends on the health of the planet.", answer: "sustainability" },
+          { text: "Public ________ is essential to promote the benefits of eco-travel.", answer: "engagement" }
+        ],
+        taskII: [
+          { term: "Ecotourism", definition: "Tourism directed toward exotic, often threatened, natural environments.", key: "a" },
+          { term: "Minimization", definition: "The action or process of reducing something to the smallest possible amount.", key: "b" },
+          { term: "Revenue", definition: "The total income generated by a company.", key: "c" },
+          { term: "Integrity", definition: "The quality of being honest and having strong moral principles.", key: "d" },
+          { term: "Engagement", definition: "The action of engaging or being engaged.", key: "e" }
+        ],
+        taskIII: ["Biodiversity conservation", "Carbon offsetting", "Ethical travel guide", "Community-based tourism"],
+        taskIV: [{ termA: "Eco", termB: "Mass" }, { termA: "Conservation", termB: "Preservation" }],
+        taskV: ["Fragility", "Resilience", "Transparency", "Accountability", "Authenticity"]
+      }),
+      createVariant(3, "The Future of Travel", {
+        taskI: [
+          { text: "Technological ________ will drastically change the way we travel.", answer: "innovation" },
+          { text: "Hyperloop technology aims to ________ travel times between cities.", answer: "reduce" },
+          { text: "Space tourism is a ________ frontier for the travel industry.", answer: "nascent" },
+          { text: "The ________ of sustainable travel options is becoming more common.", answer: "availability" },
+          { text: "Digital ________ is a major trend in the hospitality sector.", answer: "transformation" },
+          { text: "The ________ of autonomous vehicles will impact transportation.", answer: "deployment" },
+          { text: "Smart ________ use technology to optimize tourism services.", answer: "cities" },
+          { text: "The ________ of the global travel market is constantly shifting.", answer: "landscape" },
+          { text: "Travelers are ________ seeking more personalized and unique experiences.", answer: "increasingly" },
+          { text: "The ________ of the travel industry depends on its ability to adapt.", answer: "resilience" },
+          { text: "Artificial Intelligence can ________ personalized travel itineraries.", answer: "generate" },
+          { text: "The ________ of a global pandemic showed the vulnerability of the travel sector.", answer: "impact" }
+        ],
+        taskII: [
+          { term: "Nascent", definition: "Just coming into existence and beginning to display signs of future potential.", key: "a" },
+          { term: "Transformation", definition: "A thorough or dramatic change in form or appearance.", key: "b" },
+          { term: "Deployment", definition: "The action of bringing resources into effective action.", key: "c" },
+          { term: "Resilience", definition: "The capacity to recover quickly from difficulties.", key: "d" },
+          { term: "Landscape", definition: "The visible features of an area of countryside or land.", key: "e" }
+        ],
+        taskIII: ["Space exploration", "Autonomous transport", "Virtual reality travel", "Personalized itinerary"],
+        taskIV: [{ termA: "Physical", termB: "Virtual" }, { termA: "Evolution", termB: "Revolution" }],
+        taskV: ["Innovation", "Scalability", "Accessibility", "Saturation", "Connectivity"]
       })
     ]
   },
   {
     id: "food",
-    title: "THEME 9: FOOD AND NUTRITION",
+    title: "THEME 9: GASTRONOMY & NUTRITION",
     category: "Lifestyle",
-    description: "Culinary terminology, nutrition science, and kitchen collocations.",
+    description: "Culinary heritage, nutrition science, and the global food industry.",
     icon: "Utensils",
     variants: [
-      createVariant(1, "Culinary Techniques", {
+      createVariant(1, "Culinary Heritage", {
         taskI: [
-          { text: "You should ________ the sauce over a low heat to thicken it.", answer: "simmer" },
-          { text: "Add a sprig of parsley to ________ the dish before serving.", answer: "garnish" },
-          { text: "It's best to ________ the steak in wine and herbs overnight.", answer: "marinate" },
-          { text: "The chef began to ________ the onions until they were translucent.", answer: "sauté" },
-          { text: "Use a grater to add some lemon ________ to the cake batter.", answer: "zest" },
-          { text: "You need to ________ the egg whites until they form stiff peaks.", answer: "whisk" },
-          { text: "It takes effort to ________ the dough by hand for ten minutes.", answer: "knead" },
-          { text: "You should ________ the vegetables briefly then plunge them in ice.", answer: "blanch" },
-          { text: "The tough cut of meat is best if you ________ it slowly.", answer: "braise" },
-          { text: "He learned how to ________ eggs in gently boiling water.", answer: "poach" },
-          { text: "Use a sharp knife to ________ the garlic into tiny pieces.", answer: "mince" },
-          { text: "The recipe asks you to ________ the carrots into matchsticks.", answer: "julienne" }
+          { text: "Traditional ________ is a vital part of a country's cultural identity.", answer: "cuisine" },
+          { text: "The ________ of ancient recipes is necessary to protect culinary heritage.", answer: "preservation" },
+          { text: "Culinary ________ often involve a combination of diverse flavors and techniques.", answer: "traditions" },
+          { text: "Local ingredients are the ________ of any authentic dish.", answer: "cornerstone" },
+          { text: "The ________ of international cuisines is a side effect of globalization.", answer: "diffusion" },
+          { text: "Food festivals celebrate the ________ and creativity of culinary arts.", answer: "diversity" },
+          { text: "The ________ of the farm-to-table movement promotes local food systems.", answer: "growth" },
+          { text: "Traditional cooking methods are often passed down through ________.", answer: "generations" },
+          { text: "The ________ of the food industry is influenced by global trends.", answer: "landscape" },
+          { text: "Gourmet dining offers a unique and ________ experience for foodies.", answer: "exquisite" },
+          { text: "The ________ of food production should be transparent and ethical.", answer: "cycle" },
+          { text: "Public ________ is essential to promote the benefits of healthy eating.", answer: "awareness" }
         ],
         taskII: [
-          { term: "Sauté", definition: "Fried quickly in a little hot fat.", key: "a" },
-          { term: "Blanch", definition: "To scald or parboil in water or steam.", key: "b" },
-          { term: "Infuse", definition: "To soak in liquid to extract the flavor or properties.", key: "c" },
-          { term: "Glaze", definition: "A thin liquid coating applied to food to give it a shiny surface.", key: "d" },
-          { term: "Zest", definition: "The outer colored part of the peel of citrus fruit.", key: "e" }
+          { term: "Cuisine", definition: "A style or method of cooking, especially as characteristic of a particular country.", key: "a" },
+          { term: "Preservation", definition: "The action of preserving something.", key: "b" },
+          { term: "Diffusion", definition: "The spreading of something more widely.", key: "c" },
+          { term: "Exquisite", definition: "Extremely beautiful and, typically, delicate.", key: "d" },
+          { term: "Gastronomy", definition: "The practice or art of choosing, cooking, and eating good food.", key: "e" }
         ],
-        taskIII: ["Culinary excellence", "Staple food", "Balanced diet", "Nutritional value"],
-        taskIV: [{ termA: "Roasting", termB: "Grilling" }, { termA: "Baking", termB: "Braising" }],
-        taskV: ["Gourmet", "Appetizer", "Delicacy", "Seasoning", "Ingredients"]
+        taskIII: ["Farm-to-table", "Culinary arts", "Traditional recipe", "Slow food movement"],
+        taskIV: [{ termA: "Gourmet", termB: "Fast food" }, { termA: "Authentic", termB: "Fusion" }],
+        taskV: ["Delicacy", "Ingredients", "Seasoning", "Appetizer", "Banquet"]
       }),
-      createVariant(2, "Nutrition and Health", {
+      createVariant(2, "Nutrition Science", {
         taskI: [
-          { text: "Reducing your intake of ________ can help with weight loss.", answer: "calories" },
-          { text: "Exercise is known to boost your ________ significantly.", answer: "metabolism" },
-          { text: "Lean meat is an excellent source of high-quality ________.", answer: "protein" },
-          { text: "Simple ________ provide a quick energy boost but fade fast.", answer: "carbohydrates" },
-          { text: "Leafy greens are packed with essential ________ and minerals.", answer: "vitamins" },
-          { text: "A lack of certain ________ can lead to deficiency diseases.", answer: "minerals" },
-          { text: "Whole grains are much higher in ________ than white bread.", answer: "fibre" },
-          { text: "Drinking enough water is vital for proper ________.", answer: "hydration" },
-          { text: "Berries are full of ________ that protect your cells.", answer: "antioxidants" },
-          { text: "The body needs a variety of ________ to function well.", answer: "nutrients" },
-          { text: "Eating too much saturated fat can raise your ________.", answer: "cholesterol" },
-          { text: "Some people take daily ________ to improve their health.", answer: "supplements" }
+          { text: "Nutritional ________ focuses on the study of nutrients and their impact on health.", answer: "science" },
+          { text: "A ________ diet is essential for maintaining optimal well-being.", answer: "balanced" },
+          { text: "The ________ of metabolism varies greatly between individuals.", answer: "rate" },
+          { text: "Micronutrients like ________ and minerals are vital for bodily functions.", answer: "vitamins" },
+          { text: "The ________ of calories should be appropriate for one's activity level.", answer: "intake" },
+          { text: "Fiber is necessary for proper ________ and gut health.", answer: "digestion" },
+          { text: "Antioxidants help ________ cells from damage caused by free radicals.", answer: "protect" },
+          { text: "The ________ of processed foods is linked to various health issues.", answer: "consumption" },
+          { text: "Public health ________ aim to promote healthy eating habits.", answer: "initiatives" },
+          { text: "The ________ of nutritional information can be complex and confusing.", answer: "interpretation" },
+          { text: "Nutritional ________ are often needed for people with specific deficiencies.", answer: "supplements" },
+          { text: "The ________ of a healthy lifestyle requires long-term commitment.", answer: "adoption" }
         ],
         taskII: [
-          { term: "Carbohydrate", definition: "Any of a large group of organic compounds occurring in foods.", key: "a" },
-          { term: "Antioxidant", definition: "A substance that inhibits oxidation.", key: "b" },
-          { term: "Metabolism", definition: "The chemical processes that occur within a living organism.", key: "c" },
-          { term: "Fiber", definition: "Dietary material containing substances such as cellulose.", key: "d" },
-          { term: "Calorie", definition: "A unit of energy often used to measure food energy.", key: "e" }
+          { term: "Metabolism", definition: "The chemical processes that occur within a living organism.", key: "a" },
+          { term: "Nutrient", definition: "A substance that provides nourishment essential for growth.", key: "b" },
+          { term: "Antioxidant", definition: "A substance that inhibits oxidation.", key: "c" },
+          { term: "Digestion", definition: "The process of breaking down food by mechanical and enzymatic action.", key: "d" },
+          { term: "Well-being", definition: "The state of being comfortable, healthy, or happy.", key: "e" }
         ],
-        taskIII: ["Dietary requirements", "Vitamins and minerals", "Calorie deficit", "Processed food"],
-        taskIV: [{ termA: "Saturated fat", termB: "Unsaturated fat" }, { termA: "Vegan", termB: "Vegetarian" }],
-        taskV: ["Glucose", "Digestion", "Amino acid", "Probiotic", "Lactose"]
+        taskIII: ["Dietary requirement", "Calorie deficit", "Glycemic index", "Amino acid"],
+        taskIV: [{ termA: "Saturated", termB: "Unsaturated" }, { termA: "Vitamin", termB: "Mineral" }],
+        taskV: ["Glucose", "Hydration", "Fiber", "Cholesterol", "Probiotic"]
       }),
       createVariant(3, "The Food Industry", {
         taskI: [
-          { text: "The ________ was served before the main course arrived.", answer: "appetizer" },
-          { text: "The royal family hosted a grand ________ for the visitors.", answer: "banquet" },
-          { text: "The hotel serves a huge ________ breakfast every morning.", answer: "buffet" },
-          { text: "He is a ________ chef with three Michelin stars.", answer: "gourmet" },
-          { text: "Truffles are considered a rare and expensive ________.", answer: "delicacy" },
-          { text: "Always check the ________ label for potential allergens.", answer: "ingredients" },
-          { text: "Thai ________ is famous for its bold and spicy flavors.", answer: "cuisine" },
-          { text: "The waiter brought a large ________ of roasted meats.", answer: "platter" },
-          { text: "I found an old family ________ for apple pie.", answer: "recipe" },
-          { text: "Salt and pepper are the most common forms of ________.", answer: "seasoning" },
-          { text: "The formal table was set with expensive ________.", answer: "silverware" },
-          { text: "The ________ recommended a white wine for the fish.", answer: "sommelier" }
+          { text: "The global ________ industry is a major driver of world economies.", answer: "food" },
+          { text: "Food ________ systems ensure that food is safe and high-quality.", answer: "security" },
+          { text: "The ________ of food production has reached an industrial scale.", answer: "efficiency" },
+          { text: "Waste ________ is a major challenge for the food sector.", answer: "management" },
+          { text: "The ________ of sustainable food options is becoming more common.", answer: "availability" },
+          { text: "Consumer ________ has shifted toward healthier and more ethical choices.", answer: "behavior" },
+          { text: "The ________ of international standards facilitates global food trade.", answer: "adoption" },
+          { text: "Food ________ can provide information about ingredients and nutrients.", answer: "labeling" },
+          { text: "The ________ of food supply chains can lead to price fluctuations.", answer: "instability" },
+          { text: "Innovative technology is used to ________ food production and processing.", answer: "optimize" },
+          { text: "The ________ of the food industry depends on its ability to adapt to changes.", answer: "sustainability" },
+          { text: "Public ________ is essential to promote responsible food consumption.", answer: "engagement" }
         ],
         taskII: [
-          { term: "Gastronomy", definition: "The practice or art of choosing, cooking, and eating good food.", key: "a" },
-          { term: "A la carte", definition: "Referring to food that can be ordered as separate items.", key: "b" },
-          { term: "Maitre d'", definition: "The head waiter of a restaurant.", key: "c" },
-          { term: "Confectionery", definition: "Sweets and chocolates considered collectively.", key: "d" },
-          { term: "Vintage", definition: "The year or place in which wine, especially high quality, was produced.", key: "e" }
+          { term: "Efficiency", definition: "The state or quality of being efficient.", key: "a" },
+          { term: "Availability", definition: "The quality of being able to be used or obtained.", key: "b" },
+          { term: "Adoption", definition: "The action or fact of choosing to take up, follow, or use something.", key: "c" },
+          { term: "Labeling", definition: "The action of attaching a label to something.", key: "d" },
+          { term: "Optimization", definition: "The action of making the best or most effective use of a situation.", key: "e" }
         ],
-        taskIII: ["Fine dining", "Street food", "Farm-to-table", "Hospitality management"],
-        taskIV: [{ termA: "Buffet", termB: "Set menu" }, { termA: "Waitstaff", termB: "Kitchen staff" }],
-        taskV: ["Pantry", "Utensils", "Crockery", "Beverage", "Gourmand"]
+        taskIII: ["Global food chain", "Sustainable agriculture", "Food waste management", "Consumer behavior analysis"],
+        taskIV: [{ termA: "Retail", termB: "Wholesale" }, { termA: "Local", termB: "Global" }],
+        taskV: ["Revenue", "Accessibility", "Inventory", "Logistics", "Transparency"]
       })
     ]
   },
   {
     id: "psychology",
-    title: "THEME 10: PSYCHOLOGY AND BEHAVIOR",
+    title: "THEME 10: COGNITIVE PSYCHOLOGY",
     category: "Science",
-    description: "Vocabulary for cognitive processes, human behavior, and emotional health.",
+    description: "Behavioral economics, neuroplasticity, and human development.",
     icon: "Brain",
     variants: [
-      createVariant(1, "Cognitive Science", {
+      createVariant(1, "Behavioral Economics", {
         taskI: [
-          { text: "His ________ of the event was different from mine.", answer: "perception" },
-          { text: "The loud noise provided a strong ________ for the reflex.", answer: "stimulus" },
-          { text: "She struggled with the ________ of information for the test.", answer: "retrieval" },
-          { text: "Using a ________ device helped him remember the list.", answer: "mnemonic" },
-          { text: "Humans process a lot of ________ input every second.", answer: "sensory" },
-          { text: "Focusing your ________ on one task improves efficiency.", answer: "attention" },
-          { text: "His strange ________ was a cause for concern in the group.", answer: "behavior" },
-          { text: "The ________ of ideas is a key part of creativity.", answer: "association" },
-          { text: "Pavlov used ________ to train dogs to salivate.", answer: "conditioning" },
-          { text: "The brain's ________ allows it to change over time.", answer: "neuroplasticity" },
-          { text: "IQ tests are designed to measure human ________.", answer: "intelligence" },
-          { text: "The ________ process involves thinking and reasoning.", answer: "cognition" }
+          { text: "Behavioral ________ combines psychology and economics to explain human decision-making.", answer: "economics" },
+          { text: "The ________ of cognitive biases can lead to irrational choices.", answer: "presence" },
+          { text: "Heuristics are mental ________ that help us make decisions fast.", answer: "shortcuts" },
+          { text: "The ________ of information can affect how it is perceived.", answer: "framing" },
+          { text: "Loss ________ is the tendency to prefer avoiding losses over acquiring gains.", answer: "aversion" },
+          { text: "The ________ effect describes our tendency to overvalue things we own.", answer: "endowment" },
+          { text: "Sunk ________ fallacy involves continuing a behavior due to previous investment.", answer: "cost" },
+          { text: "Public ________ can be used to influence consumer behavior.", answer: "nudges" },
+          { text: "The ________ of individual behavior is essential for economic modeling.", answer: "study" },
+          { text: "Social ________ can significantly impact personal choices.", answer: "norms" },
+          { text: "The ________ of rationality is a key theme in behavioral economics.", answer: "limit" },
+          { text: "Researchers use ________ to test economic theories in controlled settings.", answer: "experiments" }
         ],
         taskII: [
-          { term: "Cognition", definition: "The mental action or process of acquiring knowledge.", key: "a" },
-          { term: "Neurosis", definition: "A relatively mild mental illness that is not caused by organic disease.", key: "b" },
-          { term: "Psychosis", definition: "A severe mental disorder in which thought and emotions are so impaired.", key: "c" },
-          { term: "Subconscious", definition: "Concerning the part of the mind of which one is not fully aware.", key: "d" },
-          { term: "Schema", definition: "A representation of a plan or theory in the form of an outline or model.", key: "e" }
+          { term: "Heuristic", definition: "A mental shortcut that allows people to solve problems and make judgments quickly.", key: "a" },
+          { term: "Aversion", definition: "A strong dislike or disinclination.", key: "b" },
+          { term: "Endowment", definition: "The action of endowing something or someone.", key: "c" },
+          { term: "Nudge", definition: "A light touch or push.", key: "d" },
+          { term: "Rationality", definition: "The quality of being based on or in accordance with reason or logic.", key: "e" }
         ],
-        taskIII: ["Cognitive dissonance", "Short-term memory", "Emotional intelligence", "Critical thinking"],
-        taskIV: [{ termA: "Conscious", termB: "Subconscious" }, { termA: "Nature", termB: "Nurture" }],
-        taskV: ["Perception", "Inference", "Stimulus", "Response", "Abstract"]
+        taskIII: ["Cognitive bias", "Game theory", "Choice architecture", "Consumer psychology"],
+        taskIV: [{ termA: "Rational", termB: "Irrational" }, { termA: "Heuristic", termB: "Algorithm" }],
+        taskV: ["Perception", "Inference", "Stimulus", "Incentive", "Paradigm"]
       }),
-      createVariant(2, "Emotions and Personality", {
+      createVariant(2, "Neuroplasticity", {
         taskI: [
-          { text: "Showing ________ involves understanding others' feelings.", answer: "empathy" },
-          { text: "Her ________ allowed her to bounce back from failure.", answer: "resilience" },
-          { text: "Public speaking often causes high levels of ________.", answer: "anxiety" },
-          { text: "The baby had a very calm and happy ________.", answer: "temperament" },
-          { text: "An ________ typically enjoys spending time alone.", answer: "introvert" },
-          { text: "An ________ gains energy from being around people.", answer: "extrovert" },
-          { text: "A ________ is an irrational and extreme fear of something.", answer: "phobia" },
-          { text: "Many fears are buried deep in our ________ mind.", answer: "subconscious" },
-          { text: "He lacked the ________ to finish his difficult degree.", answer: "motivation" },
-          { text: "The bird has a natural ________ to build a nest.", answer: "instinct" },
-          { text: "The story revealed the true ________ of the hero.", answer: "character" },
-          { text: "Seasonal changes can have an effect on your ________.", answer: "mood" }
+          { text: "Neuroplasticity is the brain's ________ to reorganize itself by forming new neural connections.", answer: "ability" },
+          { text: "The ________ of the human brain is highly adaptable.", answer: "architecture" },
+          { text: "Learning a new skill can ________ structural changes in the brain.", answer: "induce" },
+          { text: "Recovery from brain ________ often relies on neuroplasticity.", answer: "injury" },
+          { text: "Cognitive ________ involves training the brain to improve its functions.", answer: "rehabilitation" },
+          { text: "The ________ of neural pathways depends on regular use and stimulation.", answer: "strength" },
+          { text: "Environmental ________ can have a positive impact on brain health.", answer: "enrichment" },
+          { text: "The ________ of neurogenesis continues throughout adulthood.", answer: "process" },
+          { text: "Synaptic ________ is the process by which extra neurons and synaptic connections are eliminated.", answer: "pruning" },
+          { text: "The brain's ________ allows it to compensate for lost functions.", answer: "resilience" },
+          { text: "Mental ________ can help protect the brain from cognitive decline.", answer: "exercise" },
+          { text: "The ________ of neuroplasticity has revolutionized our understanding of the brain.", answer: "discovery" }
         ],
         taskII: [
-          { term: "Empathy", definition: "The ability to understand and share the feelings of another.", key: "a" },
-          { term: "Resilience", definition: "The capacity to recover quickly from difficulties.", key: "b" },
-          { term: "Introversion", definition: "The state of or tendency toward being wholly or predominantly concerned with and interested in one's own mental life.", key: "c" },
-          { term: "Narcissism", definition: "Excessive interest in or admiration of oneself and one's physical appearance.", key: "d" },
-          { term: "Altruism", definition: "The belief in or practice of disinterested and selfless concern for the well-being of others.", key: "e" }
+          { term: "Neuroplasticity", definition: "The ability of the brain to form and reorganize synaptic connections.", key: "a" },
+          { term: "Induce", definition: "Succeed in persuading or influencing someone to do something.", key: "b" },
+          { term: "Rehabilitation", definition: "The action of restoring someone to health or normal life through training.", key: "c" },
+          { term: "Neurogenesis", definition: "The growth and development of nervous tissue.", key: "d" },
+          { term: "Resilience", definition: "The capacity to recover quickly from difficulties.", key: "e" }
         ],
-        taskIII: ["Inner child", "Self-esteem", "Defense mechanism", "Personal growth"],
-        taskIV: [{ termA: "Introvert", termB: "Extrovert" }, { termA: "Optimist", termB: "Pessimist" }],
-        taskV: ["Affect", "Ambivalence", "Disorder", "Trauma", "Temperament"]
+        taskIII: ["Neural pathway", "Cognitive reserve", "Brain development", "Synaptic connection"],
+        taskIV: [{ termA: "Structural", termB: "Functional" }, { termA: "Nature", termB: "Nurture" }],
+        taskV: ["Cognition", "Perception", "Inference", "Architecture", "Complexity"]
       }),
-      createVariant(3, "Social Dynamics", {
+      createVariant(3, "Human Development", {
         taskI: [
-          { text: "Group pressure can lead to high levels of ________.", answer: "conformity" },
-          { text: "Education is the key to reducing social ________.", answer: "prejudice" },
-          { text: "We should avoid using a ________ when describing people.", answer: "stereotype" },
-          { text: "Media has a powerful ________ on public behavior.", answer: "influence" },
-          { text: "Strong ________ is needed to guide the organization.", answer: "leadership" },
-          { text: "The random act of ________ surprised the stranger.", answer: "altruism" },
-          { text: "Violence is often a physical form of ________.", answer: "aggression" },
-          { text: "Society is often organized into a clear ________.", answer: "hierarchy" },
-          { text: "Cultural ________ is formed by shared history and values.", answer: "identity" },
-          { text: "The politician used ________ to win the voters.", answer: "persuasion" },
-          { text: "A social ________ is an unwritten rule for behavior.", answer: "norm" },
-          { text: "He was very proud of his high social ________.", answer: "status" }
+          { text: "Developmental ________ focuses on the study of human growth across the lifespan.", answer: "psychology" },
+          { text: "Early ________ experiences are critical for social and emotional development.", answer: "childhood" },
+          { text: "The ________ between nature and nurture is a central theme in development.", answer: "interaction" },
+          { text: "Adolescence is a period of significant ________ and psychological change.", answer: "biological" },
+          { text: "Cognitive ________ involves the gradual acquisition of knowledge and skills.", answer: "acquisition" },
+          { text: "Attachment ________ explains the importance of early bonds with caregivers.", answer: "theory" },
+          { text: "The ________ of social skills is essential for successful integration.", answer: "development" },
+          { text: "Aging is a ________ process that involves both growth and decline.", answer: "continuous" },
+          { text: "The ________ of developmental milestones can vary between individuals.", answer: "timing" },
+          { text: "Educational ________ should be tailored to the developmental stage of the learner.", answer: "interventions" },
+          { text: "The ________ of the family environment can significantly impact development.", answer: "quality" },
+          { text: "Research in development ________ inform social policies and practices.", answer: "should" }
         ],
         taskII: [
-          { term: "Conformity", definition: "Compliance with standards, rules, or laws.", key: "a" },
-          { term: "Stereotype", definition: "A widely held but fixed and oversimplified image or idea.", key: "b" },
-          { term: "Prejudice", definition: "Preconceived opinion that is not based on reason or actual experience.", key: "c" },
-          { term: "Authority", definition: "The power or right to give orders, make decisions, and enforce obedience.", key: "d" },
-          { term: "Bias", definition: "Prejudice in favor of or against one thing, person, or group compared with another.", key: "e" }
+          { term: "Developmental", definition: "Concerned with the development of someone or something.", key: "a" },
+          { term: "Interaction", definition: "Reciprocal action or influence.", key: "b" },
+          { term: "Acquisition", definition: "An asset or object bought or obtained.", key: "c" },
+          { term: "Attachment", definition: "An extra part or extension that is or can be attached to something.", key: "d" },
+          { term: "Milestone", definition: "A significant stage or event in the development of something.", key: "e" }
         ],
-        taskIII: ["Peer pressure", "Social stigma", "Cultural identity", "Groupthink"],
-        taskIV: [{ termA: "Individualism", termB: "Collectivism" }, { termA: "Cooperation", termB: "Competition" }],
-        taskV: ["Ostracism", "Hierarchy", "Ideology", "Intervention", "Normative"]
+        taskIII: ["Cognitive development", "Social emotional learning", "Identity formation", "Lifespan perspective"],
+        taskIV: [{ termA: "Childhood", termB: "Adolescence" }, { termA: "Growth", termB: "Maturation" }],
+        taskV: ["Ambivalence", "Disorder", "Trauma", "Temperament", "Cognition"]
       })
     ]
   },
   {
     id: "finance",
-    title: "THEME 11: MONEY AND FINANCE",
+    title: "THEME 11: FISCAL GOVERNANCE",
     category: "Professional",
-    description: "Banking, investment, global economics, and fiscal vocabulary.",
+    description: "Macroeconomic stability, hedge funds, and sovereign debt analysis.",
     icon: "DollarSign",
     variants: [
-      createVariant(1, "Banking & Markets", {
+      createVariant(1, "Macroeconomic Stability", {
         taskI: [
-          { text: "A severe ________ often leads to high unemployment rates.", answer: "recession" },
-          { text: "The high rate of ________ decreased the value of the currency.", answer: "inflation" },
-          { text: "The company reported a massive increase in annual ________.", answer: "revenue" },
-          { text: "Total ________ include all debts and financial obligations.", answer: "liabilities" },
-          { text: "Tangible ________ like property are generally stable investments.", answer: "assets" },
-          { text: "The board announced a quarterly ________ for all shareholders.", answer: "dividend" },
-          { text: "I need to diversify my investment ________ to reduce risk.", answer: "portfolio" },
-          { text: "He works for a leading ________ firm on Wall Street.", answer: "brokerage" },
-          { text: "High ________ ensures that assets can be converted to cash fast.", answer: "liquidity" },
-          { text: "They took out a 30-year ________ to buy their first home.", answer: "mortgage" },
-          { text: "The firm remained ________ despite the sudden market crash.", answer: "solvent" },
-          { text: "I was charged a fee for an unarranged ________ on my account.", answer: "overdraft" }
-        ],
-        taskII: [
-          { term: "Equity", definition: "The value of the shares issued by a company.", key: "a" },
-          { term: "Annuity", definition: "A fixed sum of money paid to someone each year.", key: "b" },
-          { term: "Audit", definition: "An official inspection of an individual's or organization's accounts.", key: "c" },
-          { term: "Deficit", definition: "The amount by which something, especially a sum of money, is too small.", key: "d" },
-          { term: "Arbitrage", definition: "The simultaneous buying and selling of securities to take advantage of differing prices.", key: "e" }
-        ],
-        taskIII: ["Bull market", "Capital gains", "Venture capital", "Credit rating"],
-        taskIV: [{ termA: "Gross profit", termB: "Net profit" }, { termA: "Fixed rate", termB: "Variable rate" }],
-        taskV: ["Bankruptcy", "Collateral", "Fiscal", "Hedging", "Speculation"]
-      }),
-      createVariant(2, "Investment & Debt", {
-        taskI: [
-          { text: "High-yield ________ can be risky but very profitable.", answer: "securities" },
-          { text: "The central bank decided to ________ interest rates.", answer: "hike" },
-          { text: "We need to ________ the budget for the upcoming quarter.", answer: "allocate" },
-          { text: "The start-up is seeking ________ to fund its expansion.", answer: "equity" },
-          { text: "He was forced to ________ his stocks during the slump.", answer: "liquidate" },
-          { text: "International ________ can affect the local exchange rate.", answer: "remittances" },
-          { text: "The bank requires ________ for such a large business loan.", answer: "collateral" },
-          { text: "They reached a ________ with their creditors last month.", answer: "settlement" },
-          { text: "Fiscal ________ is necessary to avoid a national debt crisis.", answer: "discipline" },
-          { text: "The government issued new ________ to fund infrastructure.", answer: "bonds" },
-          { text: "Many investors seek a high ________ on their investment.", answer: "return" },
-          { text: "The audit revealed several ________ in the bookkeeping.", answer: "discrepancies" }
-        ],
-        taskII: [
-          { term: "Bullion", definition: "Gold or silver in bulk before coining, or valued by weight.", key: "a" },
-          { term: "Foreclosure", definition: "The action of taking possession of a mortgaged property when the mortgagor fails to keep up payments.", key: "b" },
-          { term: "Amortization", definition: "The action or process of gradually writing off the initial cost of an asset.", key: "c" },
-          { term: "Underwriting", definition: "Sign and accept liability under (an insurance policy).", key: "d" },
-          { term: "Leverage", definition: "The use of borrowed capital for an investment.", key: "e" }
-        ],
-        taskIII: ["Floating a company", "Insider trading", "Tax evasion", "Blue-chip stocks"],
-        taskIV: [{ termA: "Debit", termB: "Credit" }, { termA: "Current account", termB: "Savings account" }],
-        taskV: ["Solvency", "Expenditure", "Depreciation", "Legacy", "Incentive"]
-      }),
-      createVariant(3, "Economic Trends", {
-        taskI: [
-          { text: "Global ________ has transformed local manufacturing.", answer: "globalization" },
-          { text: "A ________ of workers led to an increase in wages.", answer: "shortage" },
-          { text: "The government's ________ policy affects public spending.", answer: "fiscal" },
-          { text: "The trade ________ has reached an all-time high.", answer: "surplus" },
-          { text: "Consumer ________ index is a key measure of inflation.", answer: "price" },
-          { text: "Market ________ makes short-term investing very difficult.", answer: "volatility" },
-          { text: "The ________ of the currency made exports cheaper.", answer: "devaluation" },
+          { text: "Fiscal policy aims to manage the country's ________ and spending.", answer: "revenue" },
+          { text: "Monetary policy is controlled by the ________ bank to regulate money supply.", answer: "central" },
+          { text: "The high rate of ________ can erode the purchasing power of consumers.", answer: "inflation" },
+          { text: "A trade ________ occurs when a country exports more than it imports.", answer: "surplus" },
+          { text: "Economic ________ is necessary for long-term prosperity.", answer: "stability" },
+          { text: "The government's ________ of resources can impact overall growth.", answer: "allocation" },
+          { text: "The ________ of the national debt is a major political issue.", answer: "management" },
+          { text: "Tax ________ help encourage investment in certain sectors.", answer: "rebates" },
+          { text: "The ________ of the currency can affect the exchange rate.", answer: "valuation" },
           { text: "Sustainable ________ is a goal for many developing nations.", answer: "growth" },
-          { text: "The central bank oversees the country's ________ policy.", answer: "monetary" },
-          { text: "Tax ________ help encourage investment in certain areas.", answer: "rebates" },
-          { text: "The ________ of small businesses is vital for the economy.", answer: "viability" },
-          { text: "Wealth ________ remains a major social issue globally.", answer: "inequality" }
+          { text: "Market ________ makes short-term investing very difficult.", answer: "volatility" },
+          { text: "The ________ of the economy depends on its ability to adapt.", answer: "resilience" }
         ],
         taskII: [
-          { term: "Macroeconomics", definition: "The part of economics concerned with large-scale or general economic factors.", key: "a" },
-          { term: "Tariff", definition: "A tax or duty to be paid on a particular class of imports or exports.", key: "b" },
-          { term: "Subsidy", definition: "A sum of money granted by the government to assist an industry.", key: "c" },
-          { term: "Protectionism", definition: "The theory or practice of shielding a country's domestic industries from foreign competition.", key: "d" },
-          { term: "Commodity", definition: "A raw material or primary agricultural product that can be bought and sold.", key: "e" }
+          { term: "Macroeconomic", definition: "Relating to the branch of economics concerned with large-scale factors.", key: "a" },
+          { term: "Inflation", definition: "A general increase in prices and fall in the purchasing value of money.", key: "b" },
+          { term: "Surplus", definition: "An amount of something left over when requirements have been met.", key: "c" },
+          { term: "Allocation", definition: "The action or process of allocating or distributing something.", key: "d" },
+          { term: "Volatility", definition: "Liability to change rapidly and unpredictably.", key: "e" }
         ],
-        taskIII: ["Emerging markets", "Supply and demand", "Free trade agreement", "Laissez-faire"],
-        taskIV: [{ termA: "Direct tax", termB: "Indirect tax" }, { termA: "Imports", termB: "Exports" }],
-        taskV: ["Inflation", "Deflation", "Stagnation", "Monopoly", "Subsidiary"]
+        taskIII: ["Gross Domestic Product", "Consumer Price Index", "Interest rate hike", "Economic recession"],
+        taskIV: [{ termA: "Fiscal", termB: "Monetary" }, { termA: "Surplus", termB: "Deficit" }],
+        taskV: ["Bankruptcy", "Liquidity", "Solvency", "Inflation", "Deflation"]
+      }),
+      createVariant(2, "Investment Strategy", {
+        taskI: [
+          { text: "Hedge funds use various ________ to generate high returns.", answer: "strategies" },
+          { text: "Diversification of the ________ helps mitigate financial risk.", answer: "portfolio" },
+          { text: "High-yield ________ can be risky but very profitable.", answer: "securities" },
+          { text: "The start-up is seeking ________ to fund its expansion.", answer: "equity" },
+          { text: "Venture ________ provide funding to early-stage companies.", answer: "capitalists" },
+          { text: "The ________ of dividends is determined by the board.", answer: "distribution" },
+          { text: "Market ________ involves entering a new geographical area.", answer: "expansion" },
+          { text: "Asset ________ is the process of dividing resources among investments.", answer: "allocation" },
+          { text: "Financial ________ is necessary to assess the viability of projects.", answer: "analysis" },
+          { text: "The ________ of a system depends on its weakest link.", answer: "integrity" },
+          { text: "Investors seek a high ________ on their investment.", answer: "return" },
+          { text: "Risk ________ is essential for long-term investing.", answer: "management" }
+        ],
+        taskII: [
+          { term: "Strategy", definition: "A plan of action or policy designed to achieve a major or overall aim.", key: "a" },
+          { term: "Portfolio", definition: "A range of investments held by a person or organization.", key: "b" },
+          { term: "Equity", definition: "The value of the shares issued by a company.", key: "c" },
+          { term: "Capitalist", definition: "A person who invests capital in a business, especially a large one.", key: "d" },
+          { term: "Analysis", definition: "Detailed examination of the elements or structure of something.", key: "e" }
+        ],
+        taskIII: ["Insider trading", "Bull market", "Capital gains", "Brokerage fee"],
+        taskIV: [{ termA: "Active", termB: "Passive" }, { termA: "Asset", termB: "Liability" }],
+        taskV: ["Dividend", "Acquisition", "Volatility", "Liquidity", "Hedging"]
+      }),
+      createVariant(3, "Sovereign Debt", {
+        taskI: [
+          { text: "Sovereign debt ________ can have a devastating impact on a country's economy.", answer: "crises" },
+          { text: "The government's ________ to repay its debt is essential for credibility.", answer: "ability" },
+          { text: "International ________ can provide financial aid to struggling nations.", answer: "organizations" },
+          { text: "A ________ is a formal charge or accusation of a serious crime.", answer: "indictment" },
+          { text: "The ________ of the national budget requires fiscal discipline.", answer: "management" },
+          { text: "Sovereign credit ________ help investors assess the risk of lending.", answer: "ratings" },
+          { text: "The ________ of a state to govern its internal affairs is its sovereignty.", answer: "authority" },
+          { text: "Debt ________ involves negotiating new terms for repayment.", answer: "restructuring" },
+          { text: "Financial ________ is needed to prevent global economic instability.", answer: "cooperation" },
+          { text: "The ________ of a treaty involves formal approval by the state.", answer: "ratification" },
+          { text: "The ________ of the global market is constantly evolving.", answer: "landscape" },
+          { text: "Economic ________ are often used to pressure rogue states.", answer: "sanctions" }
+        ],
+        taskII: [
+          { term: "Crisis", definition: "A time of intense difficulty, trouble, or danger.", key: "a" },
+          { term: "Credibility", definition: "The quality of being trusted and believed in.", key: "b" },
+          { term: "Rating", definition: "A classification or ranking of someone or something.", key: "c" },
+          { term: "Sovereignty", definition: "The authority of a state to govern itself.", key: "d" },
+          { term: "Restructuring", definition: "Organize something differently of a company or system.", key: "e" }
+        ],
+        taskIII: ["National debt limit", "Fiscal austerity", "Budget deficit", "Economic stimulus"],
+        taskIV: [{ termA: "Public", termB: "Private" }, { termA: "Internal", termB: "External" }],
+        taskV: ["Bankruptcy", "Ratification", "Hegemony", "Sanction", "Embargo"]
       })
     ]
   },
   {
     id: "arts",
-    title: "THEME 12: ARTS AND ENTERTAINMENT",
+    title: "THEME 12: AESTHETIC PHILOSOPHY",
     category: "Culture",
-    description: "Vocabulary for fine arts, performance, literature, and creative industry.",
+    description: "Visual semantics, curation ethics, and postmodern literary theory.",
     icon: "Palette",
     variants: [
-      createVariant(1, "Fine Arts & Exhibitions", {
+      createVariant(1, "Visual Semantics", {
         taskI: [
-          { text: "The ________ spent months preparing for the new exhibition.", answer: "curator" },
-          { text: "His ________ style was often misunderstood by traditionalists.", answer: "avant-garde" },
-          { text: "The museum recently acquired a rare marble ________.", answer: "sculpture" },
-          { text: "Modern ________ art often focuses on emotion over realism.", answer: "abstract" },
-          { text: "The building has a very unique and modern ________.", answer: "aesthetic" },
-          { text: "The Mona Lisa is considered a true ________ of art.", answer: "masterpiece" },
-          { text: "Linear ________ is used to create depth on a flat surface.", answer: "perspective" },
-          { text: "The artist painted a stunning ________ of the queen.", answer: "portrait" },
-          { text: "Science fiction is his favorite ________ of literature.", answer: "genre" },
-          { text: "The newspaper published a harsh ________ of the play.", answer: "critique" },
-          { text: "Oil paint is a versatile ________ for professional artists.", answer: "medium" },
-          { text: "She carefully chose a vibrant ________ of colors.", answer: "palette" }
+          { text: "Visual ________ involves the study of how images convey meaning.", answer: "semantics" },
+          { text: "The artist used ________ to represent complex ideas and emotions.", answer: "symbolism" },
+          { text: "The ________ of the painting was influence by the artist's experiences.", answer: "composition" },
+          { text: "Modern art often ________ traditional conventions of realism.", answer: "challenges" },
+          { text: "The ________ of colors can evoke strong emotional responses.", answer: "palette" },
+          { text: "Abstract art focuses on ________ and emotion over realistic representation.", answer: "form" },
+          { text: "The ________ between light and shadow creates a sense of depth.", answer: "contrast" },
+          { text: "Visual ________ is the ability to interpret and create meaning from images.", answer: "literacy" },
+          { text: "The ________ of the image can affect how it is perceived.", answer: "context" },
+          { text: "Artistic ________ allows for the free expression of ideas.", answer: "freedom" },
+          { text: "The ________ of a masterpiece is often a subject of intense study.", answer: "analysis" },
+          { text: "The ________ between different artistic styles can lead to innovation.", answer: "interaction" }
         ],
         taskII: [
-          { term: "Impressionism", definition: "A style of painting characterized by small, thin, yet visible brush strokes.", key: "a" },
-          { term: "Canvas", definition: "A strong, coarse unbleached cloth used as a surface for oil painting.", key: "b" },
-          { term: "Sketch", definition: "A rough or unfinished drawing or painting.", key: "c" },
-          { term: "Mural", definition: "A painting or other work of art executed directly on a wall.", key: "d" },
-          { term: "Gallery", definition: "A room or building for the display or sale of works of art.", key: "e" }
+          { term: "Semantics", definition: "The branch of linguistics and logic concerned with meaning.", key: "a" },
+          { term: "Symbolism", definition: "The use of symbols to represent ideas or qualities.", key: "b" },
+          { term: "Composition", definition: "The nature of something's ingredients or constituents.", key: "c" },
+          { term: "Contrast", definition: "The state of being strikingly different from something else.", key: "d" },
+          { term: "Literacy", definition: "The ability to read and write.", key: "e" }
         ],
-        taskIII: ["Artistic integrity", "Visual arts", "Contemporary art", "Artistic license"],
-        taskIV: [{ termA: "Realism", termB: "Surrealism" }, { termA: "Original", termB: "Reproduction" }],
-        taskV: ["Aesthetic", "Exhibition", "Gallantry", "Installation", "Tapestry"]
+        taskIII: ["Artistic expression", "Visual metaphor", "Abstract expressionism", "Postmodern art"],
+        taskIV: [{ termA: "Objective", termB: "Subjective" }, { termA: "Realism", termB: "Abstaction" }],
+        taskV: ["Aesthetic", "Iconography", "Installation", "Tapestry", "Gallery"]
       }),
-      createVariant(2, "Performance Arts", {
+      createVariant(2, "Curation Ethics", {
         taskI: [
-          { text: "The lead ________ received a standing ovation.", answer: "protagonist" },
-          { text: "The actors spent weeks in ________ before the premiere.", answer: "rehearsal" },
-          { text: "She decided to ________ for the role of the lead singer.", answer: "audition" },
-          { text: "The play's ________ was set in 19th-century London.", answer: "backdrop" },
-          { text: "The ________ of the musical was truly breathtaking.", answer: "choreography" },
-          { text: "The ________ wrote a script that challenged social norms.", answer: "playwright" },
-          { text: "The movie's ________ was full of unexpected twists.", answer: "plot" },
-          { text: "He works as a professional ________ for the city orchestra.", answer: "conductor" },
-          { text: "The theater's ________ was almost completely full.", answer: "auditorium" },
-          { text: "The ________ was written by a famous film composer.", answer: "soundtrack" },
-          { text: "The film received many ________ for its cinematography.", answer: "accolades" },
-          { text: "The ________ between the two main characters was witty.", answer: "dialogue" }
+          { text: "The ________ of an exhibition requires careful consideration of cultural sensitivities.", answer: "curation" },
+          { text: "Museums have a ________ to protect and preserve cultural heritage.", answer: "responsibility" },
+          { text: "The ________ of artifacts should be conducted with high ethical standards.", answer: "acquisition" },
+          { text: "Repatriation involves returning ________ to their country of origin.", answer: "artifacts" },
+          { text: "The ________ of human remains in museums is a controversial issue.", answer: "display" },
+          { text: "Curatorial ________ involves being honest and transparent about the history of items.", answer: "integrity" },
+          { text: "The ________ between different stakeholders is essential for ethical curation.", answer: "collaboration" },
+          { text: "Public ________ is necessary to promote the benefits of museums.", answer: "engagement" },
+          { text: "The ________ of cultural values through art is a form of soft power.", answer: "diffusion" },
+          { text: "Museums should strive to provide an ________ and diverse experience.", answer: "inclusive" },
+          { text: "The ________ of artifacts depends on their condition and significance.", answer: "valuation" },
+          { text: "Ethical ________ often arise in the management of museum collections.", answer: "dilemmas" }
         ],
         taskII: [
-          { term: "Prologue", definition: "A separate introductory section of a literary or musical work.", key: "a" },
-          { term: "Encore", definition: "A repeated or additional performance of an item at the end of a concert.", key: "b" },
-          { term: "Intermission", definition: "A pause or break between parts of a play, movie, or concert.", key: "c" },
-          { term: "Monologue", definition: "A long speech by one actor in a play or movie.", key: "d" },
-          { term: "Scenario", definition: "A written outline of a movie, novel, or stage work.", key: "e" }
+          { term: "Curation", definition: "The action or process of selecting, organizing, and looking after items.", key: "a" },
+          { term: "Artifact", definition: "An object made by a human being, typically one of cultural or historical interest.", key: "b" },
+          { term: "Repatriation", definition: "The return of someone to their own country.", key: "c" },
+          { term: "Integrity", definition: "The quality of being honest and having strong moral principles.", key: "d" },
+          { term: "Engagement", definition: "The action of engaging or being engaged.", key: "e" }
         ],
-        taskIII: ["Opening night", "Method acting", "Box office hit", "Stage fright"],
-        taskIV: [{ termA: "Comedy", termB: "Tragedy" }, { termA: "Soloist", termB: "Ensemble" }],
-        taskV: ["Aria", "Cadence", "Dramaturgy", "Overture", "Virtuoso"]
+        taskIII: ["Cultural heritage preservation", "Ethical curation guide", "Museum management", "Artistic integrity"],
+        taskIV: [{ termA: "Original", termB: "Reproduction" }, { termA: "Private", termB: "Public" }],
+        taskV: ["Aesthetic", "Provenance", "Restoration", "Exhibition", "Gallantry"]
       }),
-      createVariant(3, "Literature & Writing", {
+      createVariant(3, "Postmodern Theory", {
         taskI: [
-          { text: "The author used a ________ to hide his true identity.", answer: "pseudonym" },
-          { text: "The book is an ________ of the author's early life.", answer: "autobiography" },
-          { text: "The poet used a beautiful ________ to describe the sea.", answer: "metaphor" },
-          { text: "The ________ of the story is the struggle for freedom.", answer: "theme" },
-          { text: "The writer's ________ is very descriptive and poetic.", answer: "prose" },
-          { text: "The novel's ________ was slow but very detailed.", answer: "narrative" },
-          { text: "She spent years compiling an ________ of short stories.", answer: "anthology" },
-          { text: "The ________ of the book was very informative.", answer: "preface" },
-          { text: "He won the prize for his ________ work on history.", answer: "non-fiction" },
-          { text: "The poem's ________ was complex and irregular.", answer: "meter" },
-          { text: "The ________ of the two ideas was very clever.", answer: "juxtaposition" },
-          { text: "The story has many layers of ________.", answer: "symbolism" }
+          { text: "Postmodernism ________ traditional grand narratives and structures.", answer: "rejects" },
+          { text: "Intertextuality is the ________ between different literary works.", answer: "relationship" },
+          { text: "The ________ of reality is a central theme in postmodern theory.", answer: "subjectivity" },
+          { text: "Metafiction is a form of writing that ________ about its own construction.", answer: "reflects" },
+          { text: "The ________ between high and low culture is blurred in postmodernism.", answer: "distinction" },
+          { text: "Deconstruction involves ________ the underlying assumptions of a text.", answer: "analyzing" },
+          { text: "The ________ of the individual is often seen as fragmented in postmodernity.", answer: "identity" },
+          { text: "Hyperreality describes a state where the ________ is indistinguishable from reality.", answer: "simulated" },
+          { text: "The ________ of absolute truth is challenged in postmodern thought.", answer: "existence" },
+          { text: "Pastiche is a work of art that ________ the style of another work.", answer: "imitates" },
+          { text: "The ________ of language in constructing meaning is a major focus of theory.", answer: "role" },
+          { text: "Postmodern ________ often incorporates humor, irony, and parody.", answer: "literature" }
         ],
         taskII: [
-          { term: "Stanza", definition: "A group of lines forming the basic recurring metrical unit in a poem.", key: "a" },
-          { term: "Alliteration", definition: "The occurrence of the same letter or sound at the beginning of adjacent words.", key: "b" },
-          { term: "Satire", definition: "The use of humor, irony, or exaggeration to expose people's stupidity.", key: "c" },
-          { term: "Epic", definition: "A long poem, typically one derived from ancient oral tradition.", key: "d" },
-          { term: "Hyperbole", definition: "Exaggerated statements or claims not meant to be taken literally.", key: "e" }
+          { term: "Deconstruction", definition: "A method of critical analysis of philosophical and literary language.", key: "a" },
+          { term: "Intertextuality", definition: "The relationship between literary texts.", key: "b" },
+          { term: "Metafiction", definition: "Fiction in which the author self-consciously alludes to the artificiality.", key: "c" },
+          { term: "Pastiche", definition: "An artistic work in a style that imitates that of another work.", key: "d" },
+          { term: "Hyperreality", definition: "An inability of consciousness to distinguish reality from a simulation.", key: "e" }
         ],
-        taskIII: ["Literary devices", "Narrative arc", "Character development", "Creative writing"],
-        taskIV: [{ termA: "Fiction", termB: "Non-fiction" }, { termA: "Poetry", termB: "Prose" }],
+        taskIII: ["Post-structuralism", "Narrative arc", "Literary device", "Critical theory"],
+        taskIV: [{ termA: "Modernism", termB: "Postmodernism" }, { termA: "Fiction", termB: "Non-fiction" }],
         taskV: ["Allegory", "Climax", "Diction", "Protagonist", "Rhetoric"]
       })
     ]
   },
   {
     id: "social-media",
-    title: "THEME 13: SOCIAL MEDIA",
+    title: "THEME 13: DIGITAL SOCIOLOGY",
     category: "Communication",
-    description: "Digital presence, networking, online behavior, and viral trends.",
+    description: "Algorithmic governance, echo chambers, and the erosion of digital privacy.",
     icon: "MessageSquare",
     variants: [
-      createVariant(1, "Digital Presence & Influence", {
+      createVariant(1, "Algorithmic Governance", {
         taskI: [
-          { text: "The new ________ determines which posts users see first.", answer: "algorithm" },
-          { text: "The post received a high level of user ________.", answer: "engagement" },
-          { text: "The video went ________ within hours of being posted.", answer: "viral" },
-          { text: "She is a famous lifestyle ________ with millions of fans.", answer: "influencer" },
-          { text: "This new dance challenge is currently ________.", answer: "trending" },
-          { text: "Creators can ________ their content through ads.", answer: "monetize" },
-          { text: "He lost many ________ after his controversial post.", answer: "followers" },
-          { text: "Use a relevant ________ to reach a wider audience.", answer: "hashtag" },
-          { text: "Instagram is a popular ________ for photo sharing.", answer: "platform" },
-          { text: "Marketers track various ________ to measure success.", answer: "metrics" },
-          { text: "High-quality ________ is essential for growth.", answer: "content" },
-          { text: "They will ________ the gaming event live tonight.", answer: "stream" }
+          { text: "Algorithms ________ control the flow of information on social media platforms.", answer: "significantly" },
+          { text: "The ________ of data-driven governance raises ethical concerns.", answer: "rise" },
+          { text: "Personalized ________ can inadvertently create polarized echo chambers.", answer: "feeds" },
+          { text: "The ________ of user behavior through AI is exceptionally detailed.", answer: "tracking" },
+          { text: "Transparency in how algorithms ________ is necessary for accountability.", answer: "operate" },
+          { text: "The ________ of digital platforms has led to a shift in political power.", answer: "ascendancy" },
+          { text: "Algorithmic ________ can perpetuate existing social inequalities.", answer: "bias" },
+          { text: "The ________ of misinformation is accelerated through viral algorithms.", answer: "spread" },
+          { text: "Users are ________ to the subtle influence of recommendation systems.", answer: "susceptible" },
+          { text: "The ________ of public discourse is increasingly mediated by AI.", answer: "nature" },
+          { text: "Data ________ is a major priority for digital platforms.", answer: "security" },
+          { text: "The ________ of the digital landscape is constantly evolving.", answer: "architecture" }
         ],
         taskII: [
-          { term: "Handle", definition: "A person's username on a social media platform.", key: "a" },
-          { term: "Bio", definition: "A short piece of text that describes a user's profile.", key: "b" },
-          { term: "Feed", definition: "The constantly updated list of content on a social media site.", key: "c" },
-          { term: "Tag", definition: "To link another user's profile to a post or photo.", key: "d" },
-          { term: "DM", definition: "A private message sent directly to another user.", key: "e" }
+          { term: "Algorithm", definition: "A process or set of rules to be followed in calculations.", key: "a" },
+          { term: "Bias", definition: "Prejudice in favor of or against one thing, person, or group.", key: "b" },
+          { term: "Ascendancy", definition: "Occupation of a position of dominant power or influence.", key: "c" },
+          { term: "Discourse", definition: "Written or spoken communication or debate.", key: "d" },
+          { term: "Architecture", definition: "The complex or carefully designed structure of something.", key: "e" }
         ],
-        taskIII: ["Digital footprint", "Social media marketing", "User-generated content", "Online persona"],
-        taskIV: [{ termA: "Public profile", termB: "Private account" }, { termA: "Organic reach", termB: "Paid promotion" }],
-        taskV: ["Engagement", "Monetization", "Transparency", "Authenticity", "Connectivity"]
+        taskIII: ["Algorithmic transparency", "Data privacy policy", "User engagement metric", "Digital ecosystem"],
+        taskIV: [{ termA: "Human", termB: "Algorithm" }, { termA: "Public", termB: "Private" }],
+        taskV: ["Monetization", "Engagement", "Accessibility", "Transparency", "Authenticity"]
       }),
-      createVariant(2, "Online Behavior & Ethics", {
+      createVariant(2, "Digital Privacy", {
         taskI: [
-          { text: "Cyber ________ is a serious issue for many teenagers.", answer: "bullying" },
-          { text: "Always check your ________ settings to stay safe.", answer: "privacy" },
-          { text: "Be careful of ________ news spreading on social apps.", answer: "fake" },
-          { text: "The platform's ________ are very strict about hate speech.", answer: "guidelines" },
-          { text: "He was ________ from the group for breaking the rules.", answer: "banned" },
-          { text: "An ________ user posted several rude comments.", answer: "anonymous" },
-          { text: "Digital ________ is becoming a popular wellness trend.", answer: "detox" },
-          { text: "They were accused of ________ a false narrative.", answer: "promoting" },
-          { text: "The ________ of personal data is a major concern.", answer: "security" },
-          { text: "Always ________ sources before sharing information.", answer: "verify" },
-          { text: "She decided to ________ all the toxic accounts.", answer: "unfollow" },
-          { text: "The ________ of information can happen instantly.", answer: "leak" }
+          { text: "The ________ of personal data is a fundamental human right.", answer: "protection" },
+          { text: "Digital surveillance has become a ________ part of modern life.", answer: "pervasive" },
+          { text: "Encryption is essential for ________ sensitive communication.", answer: "securing" },
+          { text: "The ________ of data breaches can have severe consequences.", answer: "impact" },
+          { text: "Privacy settings should be ________ and easy to manage.", answer: "transparent" },
+          { text: "The ________ of user information for ad revenue is a major concern.", answer: "exploitation" },
+          { text: "Data ________ laws are necessary to regulate digital platforms.", answer: "privacy" },
+          { text: "The ________ of anonymity online is being challenged by tracking tech.", answer: "eroding" },
+          { text: "Users must ________ the ethical implications of sharing data.", answer: "consider" },
+          { text: "Digital ________ is the practice of protecting systems and networks.", answer: "hygiene" },
+          { text: "The ________ of personal information should be carefully managed.", answer: "flow" },
+          { text: "The ________ of digital rights is a growing movement.", answer: "promotion" }
         ],
         taskII: [
-          { term: "Troll", definition: "A person who post inflammatory or off-topic messages online.", key: "a" },
-          { term: "Clickbait", definition: "Content whose main purpose is to attract attention and encourage clicking.", key: "b" },
-          { term: "Doxing", definition: "The act of revealing someone's private information online.", key: "c" },
-          { term: "Shadowban", definition: "Blocking a user's content without them knowing.", key: "d" },
-          { term: "Astroturfing", definition: "Creating a false impression of widespread grassroots support.", key: "e" }
+          { term: "Pervasive", definition: "Spreading widely throughout an area or a group of people.", key: "a" },
+          { term: "Surveillance", definition: "Close observation, especially of a suspected spy or criminal.", key: "b" },
+          { term: "Encryption", definition: "The process of converting information into a secret code.", key: "c" },
+          { term: "Exploitation", definition: "The action or fact of treating someone unfairly.", key: "d" },
+          { term: "Hygiene", definition: "Conditions or practices conducive to maintaining health.", key: "e" }
         ],
-        taskIII: ["Privacy policy", "Community standards", "Data protection", "Ethical hacking"],
-        taskIV: [{ termA: "Anonymity", termB: "Accountability" }, { termA: "Truth", termB: "Disinformation" }],
+        taskIII: ["Data protection regulation", "Online anonymity", "Privacy advocacy", "Social engineering"],
+        taskIV: [{ termA: "Anonymity", termB: "Accountability" }, { termA: "Public", termB: "Private" }],
+        taskV: ["Transparency", "Accessibility", "Vulnerability", "Integrity", "Connectivity"]
+      }),
+      createVariant(3, "The Echo Chamber", {
+        taskI: [
+          { text: "Echo chambers ________ existing beliefs and polarize opinions.", answer: "reinforce" },
+          { text: "The ________ of misinformation is faster within closed networks.", answer: "spread" },
+          { text: "Users are often ________ to information that challenges their views.", answer: "resistant" },
+          { text: "Social media ________ can inadvertently create polarized groups.", answer: "platforms" },
+          { text: "The ________ of critical thinking is necessary to combat echo chambers.", answer: "promotion" },
+          { text: "Diversity of ________ is essential for a healthy democracy.", answer: "perspectives" },
+          { text: "The ________ of digital communication has led to a shift in social dynamics.", answer: "nature" },
+          { text: "Algorithmic ________ can perpetuate existing social divisions.", answer: "bias" },
+          { text: "The ________ of public discourse is increasingly fragmented.", answer: "quality" },
+          { text: "Digital literacy ________ can help users navigate online information.", answer: "programs" },
+          { text: "The ________ of a balanced news consumption is a major challenge.", answer: "maintenance" },
+          { text: "The ________ of echo chambers on political outcomes is significant.", answer: "impact" }
+        ],
+        taskII: [
+          { term: "Reinforce", definition: "Strengthen or support.", key: "a" },
+          { term: "Polarize", definition: "Restrict the vibrations of to one direction.", key: "b" },
+          { term: "Perspective", definition: "A particular attitude toward or way regarding something.", key: "c" },
+          { term: "Discourse", definition: "Written or spoken communication or debate.", key: "d" },
+          { term: "Maintenance", definition: "The process of maintaining or preserving someone or something.", key: "e" }
+        ],
+        taskIII: ["Confirmation bias", "Digital literacy", "Public discourse", "Social media filter"],
+        taskIV: [{ termA: "Inbound", termB: "Outbound" }, { termA: "Truth", termB: "Fake" }],
         taskV: ["Moderation", "Polarization", "Syndication", "Vulnerability", "Integrity"]
-      }),
-      createVariant(3, "Networking & Connectivity", {
-        taskI: [
-          { text: "LinkedIn is the best site for professional ________.", answer: "networking" },
-          { text: "The app allows you to ________ with friends globally.", answer: "connect" },
-          { text: "You can ________ interesting posts to your own profile.", answer: "repost" },
-          { text: "The ________ of social apps has changed how we talk.", answer: "ubiquity" },
-          { text: "A ________ of users complained about the new update.", answer: "multitude" },
-          { text: "The ________ of the new features was very rapid.", answer: "adoption" },
-          { text: "We need more ________ in how data is used.", answer: "transparency" },
-          { text: "The ________ between different apps is improving.", answer: "integration" },
-          { text: "Social media can ________ lonely people feel connected.", answer: "make" },
-          { text: "The ________ of the internet is felt everywhere.", answer: "impact" },
-          { text: "Users can ________ their profiles with various widgets.", answer: "customize" },
-          { text: "The ________ of the network is growing every day.", answer: "reach" }
-        ],
-        taskII: [
-          { term: "Interface", definition: "A device or program enabling a user to communicate with a computer.", key: "a" },
-          { term: "Bandwidth", definition: "The transmission capacity of a computer network.", key: "b" },
-          { term: "Latency", definition: "The delay before a transfer of data begins.", key: "c" },
-          { term: "Synchronous", definition: "Existing or occurring at the same time.", key: "d" },
-          { term: "Cloud", definition: "A network of remote servers hosted on the internet.", key: "e" }
-        ],
-        taskIII: ["Global connectivity", "Professional profile", "User interface", "Real-time updates"],
-        taskIV: [{ termA: "Active user", termB: "Passive observer" }, { termA: "Broadcasting", termB: "Interaction" }],
-        taskV: ["Interactivity", "Globalization", "Accessibility", "Convergence", "Standardization"]
       })
     ]
   },
   {
     id: "science",
-    title: "THEME 14: SCIENCE & INNOVATION",
+    title: "THEME 14: SCIENTIFIC INNOVATION",
     category: "Science",
-    description: "Laboratory research, scientific methodology, and technological breakthroughs.",
+    description: "Quantum mechanics, genetic modification, and theoretical cosmology.",
     icon: "Cpu",
     variants: [
-      createVariant(1, "Laboratory Procedures", {
+      createVariant(1, "Quantum Mechanics", {
         taskI: [
-          { text: "The researcher formulated a new ________ for the study.", answer: "hypothesis" },
-          { text: "They collected ________ data over a period of six months.", answer: "empirical" },
-          { text: "The detailed ________ of the results took several weeks.", answer: "analysis" },
-          { text: "We need to control every ________ in the experiment.", answer: "variable" },
-          { text: "The ________ group received a placebo instead of the drug.", answer: "control" },
-          { text: "The new discovery caused a ________ shift in the field.", answer: "paradigm" },
-          { text: "He is an expert in ________ physics and mechanics.", answer: "quantum" },
-          { text: "A genetic ________ can lead to unexpected traits.", answer: "mutation" },
-          { text: "She is studying ________ engineering and CRISPR tech.", answer: "genetic" },
-          { text: "The chemical ________ accelerated the entire reaction.", answer: "catalyst" },
-          { text: "Cells absorb water through the process of ________.", answer: "osmosis" },
-          { text: "The ________ of the two compounds created a new material.", answer: "synthesis" }
+          { text: "Quantum ________ allows for particles to be in multiple states simultaneously.", answer: "superposition" },
+          { text: "Entanglement describes a state where particles are ________ linked.", answer: "intrinsically" },
+          { text: "The ________ of quantum computing is a subject of intense research.", answer: "feasibility" },
+          { text: "Heisenberg's ________ principle states that certain pairs of physical properties cannot be known exactly.", answer: "uncertainty" },
+          { text: "Quantum ________ involves the study of the smallest particles in the universe.", answer: "physics" },
+          { text: "The ________ of quantum mechanics has revolutionized our understanding of reality.", answer: "discovery" },
+          { text: "Researchers are searching for a ________ to unify quantum mechanics and general relativity.", answer: "theory" },
+          { text: "The ________ of quantum communication is exceptionally secure.", answer: "nature" },
+          { text: "Schrödinger's ________ is a famous thought experiment in quantum physics.", answer: "cat" },
+          { text: "The ________ between the two particles was instantaneous.", answer: "connection" },
+          { text: "Quantum ________ is the study of how information can be processed using quantum systems.", answer: "information" },
+          { text: "The ________ of the new tech depends on its ability to scale.", answer: "scalability" }
         ],
         taskII: [
-          { term: "Titration", definition: "A technique where a solution of known concentration is used to determine the concentration of an unknown solution.", key: "a" },
-          { term: "Centrifuge", definition: "A machine with a rapidly rotating container that applies centrifugal force to its contents.", key: "b" },
-          { term: "Pipette", definition: "A slender tube attached to or incorporating a bulb, for transferring small quantities of liquid.", key: "c" },
-          { term: "Crucible", definition: "A ceramic or metal container in which metals or other substances may be melted.", key: "d" },
-          { term: "Solvent", definition: "The liquid in which a solute is dissolved to form a solution.", key: "e" }
-        ],
-        taskIII: ["Scientific rigor", "Peer review", "Clinical trial", "Double-blind study"],
-        taskIV: [{ termA: "Inductive reasoning", termB: "Deductive reasoning" }, { termA: "Falsifiable", termB: "Verifiable" }],
-        taskV: ["Precision", "Accuracy", "Validity", "Reliability", "Replicability"]
-      }),
-      createVariant(2, "Scientific Theory", {
-        taskI: [
-          { text: "Einstein's theory of ________ changed our view of space.", answer: "relativity" },
-          { text: "The universe is in a constant state of ________.", answer: "expansion" },
-          { text: "The laws of ________ are fundamental to all physics.", answer: "thermodynamics" },
-          { text: "The ________ of evolution is supported by fossil records.", answer: "theory" },
-          { text: "Gravitational ________ pull objects toward each other.", answer: "forces" },
-          { text: "The ________ between the two particles was magnetic.", answer: "attraction" },
-          { text: "Matter is composed of tiny ________ called atoms.", answer: "particles" },
-          { text: "The ________ of energy can occur in many forms.", answer: "transformation" },
-          { text: "Light travels at a constant ________ in a vacuum.", answer: "velocity" },
-          { text: "The ________ of light occurs when it hits a mirror.", answer: "reflection" },
-          { text: "The ________ of light happens as it passes through water.", answer: "refraction" },
-          { text: "Modern ________ is the study of the entire universe.", answer: "cosmology" }
-        ],
-        taskII: [
-          { term: "Entropy", definition: "A thermodynamic quantity representing the unavailability of a system's thermal energy for conversion into mechanical work.", key: "a" },
-          { term: "Inertia", definition: "A property of matter by which it continues in its existing state of rest or uniform motion.", key: "b" },
-          { term: "Isotope", definition: "Each of two or more forms of the same element that contain equal numbers of protons but different numbers of neutrons.", key: "c" },
-          { term: "Fission", definition: "The action of dividing or splitting something into two or more parts.", key: "d" },
-          { term: "Fusion", definition: "The process or result of joining two or more things together to form a single entity.", key: "e" }
-        ],
-        taskIII: ["String theory", "Black hole", "Event horizon", "Particle accelerator"],
-        taskIV: [{ termA: "Fission", termB: "Fusion" }, { termA: "Potential energy", termB: "Kinetic energy" }],
-        taskV: ["Momentum", "Friction", "Viscosity", "Convection", "Radiation"]
-      }),
-      createVariant(3, "Technological Innovation", {
-        taskI: [
-          { text: "The new ________ chip is much faster than the old one.", answer: "silicon" },
-          { text: "They are developing a ________ to perform surgery.", answer: "robot" },
-          { text: "Renewable energy is a ________ for the future.", answer: "necessity" },
-          { text: "The ________ of the new engine is remarkably high.", answer: "efficiency" },
-          { text: "Digital ________ is a major trend in all industries.", answer: "transformation" },
-          { text: "The ________ of the new software was a success.", answer: "launch" },
-          { text: "She is an expert in ________ and micro-tech.", answer: "nanotechnology" },
-          { text: "The ________ of the new device is very user-friendly.", answer: "design" },
-          { text: "The ________ of AI will change the workforce.", answer: "advancement" },
-          { text: "We need a more ________ approach to energy use.", answer: "sustainable" },
-          { text: "The company holds several ________ for its inventions.", answer: "patents" },
-          { text: "The ________ of the two companies led to better tech.", answer: "merger" }
-        ],
-        taskII: [
-          { term: "Algorithm", definition: "A process or set of rules to be followed in calculations.", key: "a" },
-          { term: "Prototype", definition: "A first, typical or preliminary model of something.", key: "b" },
-          { term: "Automation", definition: "The use of largely automatic equipment in a system of manufacturing.", key: "c" },
-          { term: "Interoperability", definition: "The ability of computer systems to exchange and make use of information.", key: "d" },
+          { term: "Superposition", definition: "The action of placing one thing on or above another.", key: "a" },
+          { term: "Entanglement", definition: "The action or fact of entangling or being entangled.", key: "b" },
+          { term: "Uncertainty", definition: "The state of being uncertain.", key: "c" },
+          { term: "Feasibility", definition: "The state or degree of being easily or conveniently done.", key: "d" },
           { term: "Scalability", definition: "The capacity to be changed in size or scale.", key: "e" }
         ],
-        taskIII: ["Machine learning", "Smart home", "Internet of things", "Augmented reality"],
-        taskIV: [{ termA: "Analog", termB: "Digital" }, { termA: "Hardware", termB: "Software" }],
-        taskV: ["Bandwidth", "Connectivity", "Infrastructure", "Innovation", "Redundancy"]
+        taskIII: ["Wave-particle duality", "Quantum entanglement", "Uncertainty principle", "String theory"],
+        taskIV: [{ termA: "Classical", termB: "Quantum" }, { termA: "Particle", termB: "Wave" }],
+        taskV: ["Superposition", "Architecture", "Complexity", "Optimization", "Inference"]
+      }),
+      createVariant(2, "Genetic Modification", {
+        taskI: [
+          { text: "CRISPR-Cas9 is a revolutionary tool for ________ editing.", answer: "genome" },
+          { text: "Genetic ________ has the potential to cure various hereditary diseases.", answer: "modification" },
+          { text: "The ________ of genetically modified organisms is strictly regulated.", answer: "use" },
+          { text: "Ethical ________ surrounding gene editing include off-target effects.", answer: "considerations" },
+          { text: "The ________ of new traits into a species is a complex process.", answer: "introduction" },
+          { text: "Bioethical ________ are needed to guide the development of genetic technologies.", answer: "frameworks" },
+          { text: "The ________ of genetic information should be transparent and ethical.", answer: "management" },
+          { text: "Genetic ________ can provide valuable information about a person's health.", answer: "testing" },
+          { text: "The ________ of the new technology is constantly evolving.", answer: "landscape" },
+          { text: "Successful gene therapy requires a ________ understanding of the underlying biology.", answer: "comprehensive" },
+          { text: "The ________ of genetic modification on ecosystems is a major concern.", answer: "impact" },
+          { text: "Public ________ is essential to drive the ethical development of genetics.", answer: "engagement" }
+        ],
+        taskII: [
+          { term: "Genome", definition: "The haploid set of chromosomes in a gamete or microorganism.", key: "a" },
+          { term: "Modification", definition: "The action of modifying something.", key: "b" },
+          { term: "Hereditary", definition: "Conferred by or based on inheritance.", key: "c" },
+          { term: "Framework", definition: "A basic structure underlying a system, concept, or text.", key: "d" },
+          { term: "Engagement", definition: "The action of engaging or being engaged.", key: "e" }
+        ],
+        taskIII: ["Genetic engineering", "Germline editing", "Ethical framework", "Gene therapy trial"],
+        taskIV: [{ termA: "Inherent", termB: "Acquired" }, { termA: "Natural", termB: "Synthetic" }],
+        taskV: ["Mutation", "Inheritance", "Sovereignty", "Sanctity", "Authenticity"]
+      }),
+      createVariant(3, "Theoretical Cosmology", {
+        taskI: [
+          { text: "The Big Bang ________ is the prevailing model for the origin of the universe.", answer: "theory" },
+          { text: "Cosmic ________ describes the rapid expansion of the early universe.", answer: "inflation" },
+          { text: "Dark matter and dark energy ________ for a vast majority of the universe's mass.", answer: "account" },
+          { text: "The ________ of the cosmic microwave background provides evidence for the Big Bang.", answer: "discovery" },
+          { text: "Theoretical ________ focuses on the study of the entire universe.", answer: "cosmology" },
+          { text: "The ________ of black holes is a subject of intense research.", answer: "nature" },
+          { text: "Researchers are searching for a ________ to unify gravity and quantum mechanics.", answer: "theory" },
+          { text: "The ________ of space-time is influenced by gravity.", answer: "curvature" },
+          { text: "The ________ of the universe depends on its density.", answer: "fate" },
+          { text: "Modern ________ use massive telescopes and satellites to observe the cosmos.", answer: "observatories" },
+          { text: "The ________ of gravitational waves has opened a new window into the universe.", answer: "detection" },
+          { text: "The ________ of information through light and other radiation is exceptionally fast.", answer: "transmission" }
+        ],
+        taskII: [
+          { term: "Theory", definition: "A system of ideas intended to explain something.", key: "a" },
+          { term: "Inflation", definition: "The action of inflating something or the condition of being inflated.", key: "b" },
+          { term: "Cosmology", definition: "The science of the origin and development of the universe.", key: "c" },
+          { term: "Curvature", definition: "The fact of being curved or the degree to which something is curved.", key: "d" },
+          { term: "Detection", definition: "The action or process of identifying the presence of something.", key: "e" }
+        ],
+        taskIII: ["Event horizon", "Cosmic microwave background", "Gravitational wave", "Multiverse theory"],
+        taskIV: [{ termA: "Static", termB: "Dynamic" }, { termA: "Visible", termB: "Dark" }],
+        taskV: ["Momentum", "Radiation", "Symmetry", "Hierarchy", "Authenticity"]
       })
     ]
   },
   {
     id: "fashion",
-    title: "THEME 15: FASHION AND STYLE",
+    title: "THEME 15: THE FASHION INDUSTRY",
     category: "Culture",
-    description: "Industry trends, clothing design, textiles, and consumer behavior.",
+    description: "Haute couture, fast fashion ethics, and consumer behavior analysis.",
     icon: "User",
     variants: [
-      createVariant(1, "Industry & Design", {
+      createVariant(1, "Haute Couture & Design", {
         taskI: [
-          { text: "High-end ________ is only affordable for the wealthy.", answer: "couture" },
-          { text: "She loves wearing ________ clothing from the 1950s.", answer: "vintage" },
-          { text: "The models walked down the ________ with confidence.", answer: "runway" },
-          { text: "The ________ of the dress was a high-quality silk.", answer: "textile" },
-          { text: "The clothes were displayed on a life-sized ________.", answer: "mannequin" },
-          { text: "The ________ of the new coat is very slimming.", answer: "silhouette" },
-          { text: "Formal ________ is required for the charity gala.", answer: "attire" },
-          { text: "He only wears ________ suits made by a tailor.", answer: "bespoke" },
-          { text: "The ________ was made from a rare wool blend.", answer: "garment" },
-          { text: "She looked very ________ in her black cocktail dress.", answer: "chic" },
-          { text: "The current ________ is for oversized blazers.", answer: "trend" },
-          { text: "The store sells a wide range of sports ________.", answer: "apparel" }
+          { text: "Haute couture involves the creation of exclusive, ________ clothing.", answer: "bespoke" },
+          { text: "The ________ of the design reflects the artist's creative vision.", answer: "integrity" },
+          { text: "Paris is considered the global ________ for high-end fashion.", answer: "epicenter" },
+          { text: "Fine textiles like silk and ________ are essential for couture.", answer: "cashmere" },
+          { text: "The ________ of the runway show is meticulously planned.", answer: "choreography" },
+          { text: "Artistic ________ allows for the free expression of fashion ideas.", answer: "freedom" },
+          { text: "The ________ of a masterpiece is often a subject of intense study.", answer: "analysis" },
+          { text: "Traditional ________ is a vital part of the couture process.", answer: "craftsmanship" },
+          { text: "The ________ between different fashion styles can lead to innovation.", answer: "interaction" },
+          { text: "High-end fashion ________ a small but influential market.", answer: "targets" },
+          { text: "The ________ of a brand is built through quality and consistency.", answer: "prestige" },
+          { text: "The ________ of the new collection was a resounding success.", answer: "launch" }
         ],
         taskII: [
-          { term: "Textile", definition: "A type of cloth or woven fabric.", key: "a" },
-          { term: "Fabric", definition: "Cloth or other material produced by weaving or knitting fibers.", key: "b" },
-          { term: "Tailor", definition: "A person whose occupation is making fitted clothes.", key: "c" },
-          { term: "Embroidery", definition: "The art or pastime of embroidering cloth.", key: "d" },
-          { term: "Haut couture", definition: "Expensive, fashionable clothes produced by leading fashion houses.", key: "e" }
+          { term: "Bespoke", definition: "Made for a particular customer or user.", key: "a" },
+          { term: "Epicenter", definition: "The point on the earth's surface vertically above the focus of an earthquake.", key: "b" },
+          { term: "Integrity", definition: "The quality of being honest and having strong moral principles.", key: "c" },
+          { term: "Craftsmanship", definition: "Skill in a particular craft.", key: "d" },
+          { term: "Prestige", definition: "Widespread respect and admiration felt for someone or something.", key: "e" }
         ],
-        taskIII: ["Fashion statement", "Ready-to-wear", "Brand identity", "Artistic direction"],
-        taskIV: [{ termA: "Retail", termB: "Wholesale" }, { termA: "Casual", termB: "Formal" }],
+        taskIII: ["Artistic direction", "Visual semantics", "Traditional embroidery", "Couture atelier"],
+        taskIV: [{ termA: "Bespoke", termB: "Retail" }, { termA: "Original", termB: "Copy" }],
         taskV: ["Aesthetic", "Accessory", "Catalogue", "Collection", "Runway"]
       }),
-      createVariant(2, "Trends & Style", {
+      createVariant(2, "Fast Fashion Ethics", {
         taskI: [
-          { text: "The new collection is full of ________ colors.", answer: "vibrant" },
-          { text: "She has a very ________ and unique sense of style.", answer: "eclectic" },
-          { text: "The ________ of the jewelry was exquisite.", answer: "craftsmanship" },
-          { text: "He prefers a ________ look with simple pieces.", answer: "minimalist" },
-          { text: "The ________ of the shoes was surprisingly comfortable.", answer: "fit" },
-          { text: "Accessories can help ________ a basic outfit.", answer: "elevate" },
-          { text: "The ________ of the fabric was soft and smooth.", answer: "texture" },
-          { text: "She is a true ________ who always stays ahead.", answer: "trendsetter" },
-          { text: "The ________ of the dress was inspired by nature.", answer: "pattern" },
-          { text: "He wore a ________ tie to match his pocket square.", answer: "silk" },
-          { text: "The ________ of the event was 'black tie only'.", answer: "dress-code" },
-          { text: "Sustainability is a growing ________ in fashion.", answer: "concern" }
+          { text: "Fast fashion is characterized by the ________ production of cheap clothing.", answer: "rapid" },
+          { text: "The environmental ________ of the fashion industry is exceptionally high.", answer: "impact" },
+          { text: "Labor ________ in developing nations are a major ethical concern.", answer: "conditions" },
+          { text: "Sustainable fashion ________ to reduce the negative impacts of the industry.", answer: "strives" },
+          { text: "Consumer ________ has shifted toward more ethical and transparent brands.", answer: "behavior" },
+          { text: "The ________ of textile waste in landfills is a major problem.", answer: "accumulation" },
+          { text: "Ethical ________ are often fund through fair trade premiums.", answer: "initiatives" },
+          { text: "Transparency in the ________ is necessary for consumer trust.", answer: "supply-chain" },
+          { text: "The ________ of sustainable materials is becoming more common.", answer: "adoption" },
+          { text: "Fashion ________ can provide valuable information about a person's values.", answer: "choices" },
+          { text: "The ________ of the fashion industry depends on its ability to adapt.", answer: "sustainability" },
+          { text: "Public ________ is essential to promote responsible fashion consumption.", answer: "awareness" }
         ],
         taskII: [
-          { term: "Vogue", definition: "The prevailing fashion or style at a particular time.", key: "a" },
-          { term: "Dapper", definition: "Neat and trim in dress and appearance (typically of a man).", key: "b" },
-          { term: "Gaudy", definition: "Extravagantly bright or showy, typically so as to be tasteless.", key: "c" },
-          { term: "Somber", definition: "Dark or dull in color or tone.", key: "d" },
-          { term: "Avant-garde", definition: "New and unusual or experimental ideas.", key: "e" }
+          { term: "Accumulation", definition: "The acquisition or gradual gathering of something.", key: "a" },
+          { term: "Transparency", definition: "The quality of being done in an open way.", key: "b" },
+          { term: "Sustainability", definition: "The ability to be maintained at a certain rate or level.", key: "c" },
+          { term: "Condition", definition: "The state of something with regard to its appearance.", key: "d" },
+          { term: "Exploitation", definition: "The action or fact of treating someone unfairly.", key: "e" }
         ],
-        taskIII: ["Wardrobe staples", "Mix and match", "Fast fashion", "Personal style"],
-        taskIV: [{ termA: "Trendy", termB: "Timeless" }, { termA: "Synthetic", termB: "Natural" }],
-        taskV: ["Attire", "Cosmetic", "Costume", "Garment", "Style"]
+        taskIII: ["Circular economy", "Fair trade agreement", "Textile recycling", "Consumer behavior analysis"],
+        taskIV: [{ termA: "Slow", termB: "Fast" }, { termA: "Synthetic", termB: "Natural" }],
+        taskV: ["Revenue", "Accessibility", "Saturation", "Degradation", "Accountability"]
       }),
-      createVariant(3, "Retail & Consumerism", {
+      createVariant(3, "Consumer Behavior", {
         taskI: [
-          { text: "The flagship store is located in a ________ area.", answer: "prestigious" },
-          { text: "They are offering a massive ________ for the holidays.", answer: "discount" },
-          { text: "The ________ of the brand is globally recognized.", answer: "logo" },
-          { text: "Consumer ________ has shifted toward online shopping.", answer: "behavior" },
-          { text: "The ________ window was decorated for Christmas.", answer: "display" },
-          { text: "She works as a ________ buyer for a major retailer.", answer: "fashion" },
-          { text: "The ________ of the new shop was very successful.", answer: "opening" },
-          { text: "They use ________ influencers to promote the brand.", answer: "social-media" },
-          { text: "The ________ of the product was high-quality.", answer: "packaging" },
-          { text: "He decided to ________ the item because it was small.", answer: "return" },
-          { text: "The ________ was full of people during the sale.", answer: "mall" },
-          { text: "Loyal customers receive special ________ points.", answer: "reward" }
+          { text: "Consumer behavior is ________ by various psychological and social factors.", answer: "influenced" },
+          { text: "Brand ________ is built through positive customer experiences.", answer: "loyalty" },
+          { text: "Market ________ involves dividing a broad market into subsets.", answer: "segmentation" },
+          { text: "Digital ________ is a major priority for modern retailers.", answer: "transformation" },
+          { text: "The ________ of social media has changed how we shop.", answer: "ascendancy" },
+          { text: "Personalized ________ can inadvertently create polarized groups.", answer: "feeds" },
+          { text: "Data ________ is necessary for accurate market analysis.", answer: "security" },
+          { text: "Transparency in how data ________ is necessary for accountability.", answer: "operate" },
+          { text: "The ________ of digital platforms has led to a shift in consumer power.", answer: "rise" },
+          { text: "Social ________ can significantly impact personal choices.", answer: "norms" },
+          { text: "The ________ of the global market is constantly evolving.", answer: "landscape" },
+          { text: "Public ________ is essential to drive the ethical development of retail.", answer: "engagement" }
         ],
         taskII: [
-          { term: "Merchandise", definition: "Goods to be bought and sold.", key: "a" },
-          { term: "Wholesale", definition: "The selling of goods in large quantities to be retailed by others.", key: "b" },
-          { term: "Franchise", definition: "An authorization granted by a government or company to an individual or group.", key: "c" },
-          { term: "Boutique", definition: "A small store selling fashionable clothes or accessories.", key: "d" },
-          { term: "Consumerism", definition: "The protection or promotion of the interests of consumers.", key: "e" }
+          { term: "Influence", definition: "The capacity to have an effect on the character.", key: "a" },
+          { term: "Loyalty", definition: "The quality of being loyal.", key: "b" },
+          { term: "Segmentation", definition: "Division into separate parts or sections.", key: "c" },
+          { term: "Ascendancy", definition: "Occupation of a position of dominant power or influence.", key: "d" },
+          { term: "Engagement", definition: "The action of engaging or being engaged.", key: "e" }
         ],
-        taskIII: ["Brand loyalty", "E-commerce", "High-street fashion", "Outlet store"],
-        taskIV: [{ termA: "Luxury", termB: "Budget" }, { termA: "Department store", termB: "Specialty shop" }],
-        taskV: ["Commerce", "Inventory", "Logistics", "Purchasing", "Revenue"]
+        taskIII: ["Market research", "Consumer trend", "Brand positioning", "Purchase decision"],
+        taskIV: [{ termA: "Rational", termB: "Irrational" }, { termA: "Public", termB: "Private" }],
+        taskV: ["Monetization", "Transparency", "Vulnerability", "Integrity", "Connectivity"]
       })
     ]
   },
   {
     id: "relationships",
-    title: "THEME 16: RELATIONSHIPS",
+    title: "THEME 16: SOCIAL PSYCHOLOGY",
     category: "Lifestyle",
-    description: "Social bonds, family dynamics, conflict resolution, and modern connections.",
+    description: "Interpersonal dynamics, conflict resolution, and the erosion of social cohesion.",
     icon: "Heart",
     variants: [
-      createVariant(1, "Family Dynamics", {
+      createVariant(1, "Interpersonal Dynamics", {
         taskI: [
-          { text: "Strong ________ bonds are essential for early development.", answer: "maternal" },
-          { text: "They have been ________ since the argument last year.", answer: "estranged" },
-          { text: "It's natural for siblings to have some ________.", answer: "rivalry" },
-          { text: "We must ________ children in a safe and loving environment.", answer: "nurture" },
-          { text: "The ________ between the two friends was unbreakable.", answer: "bond" },
-          { text: "He has a very strict ________ in a religious family.", answer: "upbringing" },
-          { text: "They are ________ spirits with a shared passion for art.", answer: "kindred" },
-          { text: "Public displays of ________ can sometimes be awkward.", answer: "affection" },
-          { text: "The ________ of the couple was a long-term goal.", answer: "reconciliation" },
-          { text: "He lives in a ________ household with three generations.", answer: "nuclear" },
-          { text: "Extended family members are often called ________.", answer: "relatives" },
-          { text: "They share a ________ interest in historical research.", answer: "mutual" }
+          { text: "Interpersonal ________ involves the study of relationships between individuals.", answer: "psychology" },
+          { text: "Empathy is the ________ to understand and share others' feelings.", answer: "ability" },
+          { text: "Conflict ________ skills are essential for healthy relationships.", answer: "resolution" },
+          { text: "Effective communication requires ________ and active listening.", answer: "clarity" },
+          { text: "Trust is the ________ of any meaningful connection.", answer: "foundation" },
+          { text: "Social ________ is vital for mental and emotional well-being.", answer: "support" },
+          { text: "The ________ of a relationship depends on the effort of both parties.", answer: "quality" },
+          { text: "Vulnerability allows for ________ and deeper bonds.", answer: "authenticity" },
+          { text: "Shared ________ and interests can strengthen social connections.", answer: "values" },
+          { text: "The ________ of social norms can lead to social ostracism.", answer: "violation" },
+          { text: "Human ________ is a complex process that involves both growth and change.", answer: "development" },
+          { text: "The ________ of digital communication has altered social dynamics.", answer: "nature" }
         ],
         taskII: [
-          { term: "Kinship", definition: "Blood relationship.", key: "a" },
-          { term: "Rivalry", definition: "Competition for the same objective or for superiority.", key: "b" },
-          { term: "Nurture", definition: "Care for and encourage the growth or development of.", key: "c" },
-          { term: "Estranged", definition: "No longer close or affectionate to someone.", key: "d" },
-          { term: "Bond", definition: "A relationship between people or groups based on shared feelings.", key: "e" }
+          { term: "Resolution", definition: "The action of solving a problem.", key: "a" },
+          { term: "Foundation", definition: "The lowest load-bearing part of a building.", key: "b" },
+          { term: "Authenticity", definition: "The quality of being authentic.", key: "c" },
+          { term: "Ostracism", definition: "Exclusion from a society or group.", key: "d" },
+          { term: "Cohesion", definition: "The action or fact of forming a united whole.", key: "e" }
         ],
-        taskIII: ["Sibling rivalry", "Nuclear family", "Blood is thicker than water", "Close-knit"],
-        taskIV: [{ termA: "Biological", termB: "Adoptive" }, { termA: "Friendship", termB: "Romance" }],
-        taskV: ["Ancestry", "Lineage", "Matriarch", "Patriarch", "Heritage"]
-      }),
-      createVariant(2, "Social Connections", {
-        taskI: [
-          { text: "Networking helps ________ new professional opportunities.", answer: "uncover" },
-          { text: "Honesty is the foundation of any ________ relationship.", answer: "genuine" },
-          { text: "They decided to ________ their differences and move on.", answer: "resolve" },
-          { text: "Public ________ often requires strong interpersonal skills.", answer: "speaking" },
-          { text: "She values ________ over superficial connections.", answer: "authenticity" },
-          { text: "Maintaining ________ with old friends can be difficult.", answer: "contact" },
-          { text: "He managed to ________ the trust of his colleagues.", answer: "earn" },
-          { text: "Empathy allows us to ________ with others' pain.", answer: "connect" },
-          { text: "They share a ________ vision for the future.", answer: "common" },
-          { text: "Peer ________ can be a strong motivator for teens.", answer: "pressure" },
-          { text: "The team developed a strong sense of ________.", answer: "unity" },
-          { text: "Social ________ is vital for mental well-being.", answer: "support" }
-        ],
-        taskII: [
-          { term: "Interpersonal", definition: "Relating to relationships or communication between people.", key: "a" },
-          { term: "Reciprocity", definition: "The practice of exchanging things with others for mutual benefit.", key: "b" },
-          { term: "Altruism", definition: "The belief in or practice of selfless concern for others.", key: "c" },
-          { term: "Camaraderie", definition: "Mutual trust and friendship among people who spend a lot of time together.", key: "d" },
-          { term: "Affiliation", definition: "The state or process of affiliating or being affiliated with an organization.", key: "e" }
-        ],
-        taskIII: ["Circle of friends", "Mutual acquaintance", "Networking event", "Social butterfly"],
-        taskIV: [{ termA: "Acquaintance", termB: "Confidant" }, { termA: "Empathy", termB: "Sympathy" }],
+        taskIII: ["Social exchange theory", "Conflict management", "Interpersonal communication", "Social support network"],
+        taskIV: [{ termA: "Empathy", termB: "Sympathy" }, { termA: "Formal", termB: "Informal" }],
         taskV: ["Solidarity", "Tolerance", "Vulnerability", "Diplomacy", "Rapport"]
       }),
-      createVariant(3, "Modern Connections", {
+      createVariant(2, "The Erosion of Social Cohesion", {
         taskI: [
-          { text: "The rise of dating ________ has changed how we meet.", answer: "apps" },
-          { text: "Digital ________ is becoming a popular term for ghosting.", answer: "disappearance" },
-          { text: "Online ________ can sometimes be misleading.", answer: "personas" },
-          { text: "Remote work can lead to a sense of social ________.", answer: "isolation" },
-          { text: "Always maintain a healthy ________ in your relationships.", answer: "balance" },
-          { text: "Virtual ________ are now a common part of life.", answer: "meetings" },
-          { text: "Privacy is a ________ concern in the digital age.", answer: "primary" },
-          { text: "The ________ of information can be very rapid.", answer: "spread" },
-          { text: "Cyber bullying has a deep ________ on mental health.", answer: "impact" },
-          { text: "We must ________ the ethical use of social data.", answer: "ensure" },
-          { text: "Technology should ________ our real-world bonds.", answer: "enhance" },
-          { text: "Meaningful ________ are still possible online.", answer: "connections" }
+          { text: "Social ________ describes the bonds that hold a society together.", answer: "cohesion" },
+          { text: "Polarization can ________ social cohesion and lead to conflict.", answer: "erode" },
+          { text: "The ________ of public discourse is essential for a healthy democracy.", answer: "quality" },
+          { text: "Digital echo chambers can ________ existing social divisions.", answer: "reinforce" },
+          { text: "Economic ________ can lead to a decrease in social trust.", answer: "inequality" },
+          { text: "The ________ of traditional communities has altered the social landscape.", answer: "fragmentation" },
+          { text: "Public trust in institutions has ________ significantly over the last decade.", answer: "eroded" },
+          { text: "Diversity of ________ is essential for a healthy and vibrant society.", answer: "perspectives" },
+          { text: "Social media algorithms can inadvertent ________ misinformation.", answer: "amplify" },
+          { text: "The ________ of social isolation is a major concern in modern life.", answer: "rise" },
+          { text: "Public health ________ aim to promote the well-being of the entire community.", answer: "initiatives" },
+          { text: "The ________ of social justice is a global priority.", answer: "promotion" }
         ],
         taskII: [
-          { term: "Ghosting", definition: "The practice of ending a relationship by suddenly withdrawing all communication.", key: "a" },
-          { term: "Breadcrumbing", definition: "Sending flirtatious but noncommittal messages to keep someone interested.", key: "b" },
-          { term: "Catfishing", definition: "Luring someone into a relationship by means of a fictional online persona.", key: "c" },
-          { term: "Gaslighting", definition: "Manipulating someone into questioning their own sanity.", key: "d" },
-          { term: "Networking", definition: "The action or process of interacting with others to exchange information.", key: "e" }
+          { term: "Cohesion", definition: "The action or fact of forming a united whole.", key: "a" },
+          { term: "Polarization", definition: "The division of two sharply contrasting groups or sets of opinions.", key: "b" },
+          { term: "Inequality", definition: "Difference in size, degree, circumstances, etc.; lack of equality.", key: "c" },
+          { term: "Fragmentation", definition: "The process or state of breaking or being broken into small or separate parts.", key: "d" },
+          { term: "Initiative", definition: "The ability to assess and initiate things independently.", key: "e" }
+        ],
+        taskIII: ["Social capital", "Cultural identity", "Economic inequality", "Civil discourse"],
+        taskIV: [{ termA: "Harmony", termB: "Conflict" }, { termA: "Unity", termB: "Division" }],
+        taskV: ["Solidarity", "Tolerance", "Vulnerability", "Diplomacy", "Rapport"]
+      }),
+      createVariant(3, "Modern Relationships", {
+        taskI: [
+          { text: "The rise of digital platforms has ________ the way we interact.", answer: "transformed" },
+          { text: "Online ________ can sometimes be misleading and deceptive.", answer: "personas" },
+          { text: "Ghosting is a ________ practice in modern dating.", answer: "common" },
+          { text: "Remote work can lead to a sense of social ________.", answer: "isolation" },
+          { text: "Maintaining ________ in your digital life is vital for mental health.", answer: "boundaries" },
+          { text: "Virtual ________ are now a common part of our professional lives.", answer: "meetings" },
+          { text: "The ________ of information can happen instantly online.", answer: "spread" },
+          { text: "Digital ________ is becoming a popular term for ghosting.", answer: "disappearance" },
+          { text: "The ________ of privacy is a major concern for many users.", answer: "erosion" },
+          { text: "Technology can ________ feelings of social connection but also isolation.", answer: "exacerbate" },
+          { text: "We must ________ the ethical use of social data by digital platforms.", answer: "ensure" },
+          { text: "Meaningful ________ are still possible in the digital age.", answer: "connections" }
+        ],
+        taskII: [
+          { term: "Transformation", definition: "A thorough or dramatic change in form or appearance.", key: "a" },
+          { term: "Boundary", definition: "A line that marks the limits of an area.", key: "b" },
+          { term: "Isolation", definition: "The process or fact of isolating or being isolated.", key: "c" },
+          { term: "Exacerbate", definition: "Make (a problem, bad situation, or negative feeling) worse.", key: "d" },
+          { term: "Persona", definition: "The aspect of someone's character that is presented to or perceived by others.", key: "e" }
         ],
         taskIII: ["Digital detox", "Online etiquette", "Long-distance relationship", "Social media profile"],
         taskIV: [{ termA: "Synchronous", termB: "Asynchronous" }, { termA: "Public", termB: "Private" }],
@@ -1410,348 +1410,348 @@ export const THEMES: Theme[] = [
   },
   {
     id: "sports",
-    title: "THEME 17: SPORTS & FITNESS",
+    title: "THEME 17: COMPETITIVE KINETICS",
     category: "Leisure",
-    description: "Athletics, competitive strategy, physical health, and sportsmanship.",
+    description: "Athletic conditioning, strategic game theory, and sports psychology.",
     icon: "Smile",
     variants: [
-      createVariant(1, "The Competitive Edge", {
+      createVariant(1, "Athletic Conditioning", {
         taskI: [
-          { text: "Long-distance runners need incredible physical ________.", answer: "endurance" },
-          { text: "The team remained ________ throughout the entire season.", answer: "undefeated" },
-          { text: "They failed to ________ for the final round of the Cup.", answer: "qualify" },
-          { text: "Showing good ________ is more important than winning.", answer: "sportsmanship" },
-          { text: "The coach decided to change his ________ for the game.", answer: "tactics" },
-          { text: "He managed to ________ all his rivals in the sprint.", answer: "outperform" },
-          { text: "There is a fierce ________ between the two local clubs.", answer: "rivalry" },
-          { text: "The ________ cheered loudly as the goal was scored.", answer: "spectators" },
-          { text: "He won the gold ________ at the national games.", answer: "medal" },
-          { text: "Athletes often use ________ to track their progress.", answer: "metrics" },
-          { text: "Regular training helps build muscular ________.", answer: "strength" },
-          { text: "The ________ of the game was very fast and intense.", answer: "tempo" }
+          { text: "Peak performance requires a rigorous ________ of physical training and nutrition.", answer: "regimen" },
+          { text: "Muscular ________ is essential for explosive movements and speed.", answer: "power" },
+          { text: "Flexibility and ________ help prevent injuries and improve overall form.", answer: "balance" },
+          { text: "The ________ of a training plan should be tailored to the individual's goals.", answer: "intensity" },
+          { text: "Athletes must ________ their progress through various performance metrics.", answer: "monitor" },
+          { text: "Rest and ________ are vital for muscle repair and long-term success.", answer: "recovery" },
+          { text: "A balanced diet provides the ________ needed for peak performance.", answer: "nutrients" },
+          { text: "Hydration is ________ during intense physical activity to prevent fatigue.", answer: "critical" },
+          { text: "The ________ of the new training equipment was a success.", answer: "launch" },
+          { text: "Mental ________ is just as important as physical strength in competitive sports.", answer: "toughness" },
+          { text: "The ________ of a healthy lifestyle requires long-term commitment.", answer: "adoption" },
+          { text: "Public ________ is essential to promote the benefits of physical activity.", answer: "awareness" }
         ],
         taskII: [
-          { term: "Amateur", definition: "A person who engages in a pursuit on an unpaid basis.", key: "a" },
-          { term: "Professional", definition: "A person engaged in a specified activity as one's main paid occupation.", key: "b" },
-          { term: "Tactics", definition: "An action or strategy carefully planned to achieve a specific end.", key: "c" },
-          { term: "Stamina", definition: "The ability to sustain prolonged physical or mental effort.", key: "d" },
-          { term: "Referee", definition: "An official who watches a game or match closely.", key: "e" }
+          { term: "Regimen", definition: "A prescribed course of medical treatment, way of life, or diet.", key: "a" },
+          { term: "Intensity", definition: "The quality of being intense.", key: "b" },
+          { term: "Monitor", definition: "Observe and check the progress or quality of (something).", key: "c" },
+          { term: "Toughness", definition: "The state of being strong enough to withstand adverse conditions.", key: "d" },
+          { term: "Conditioning", definition: "The process of training to become physically fit.", key: "e" }
         ],
-        taskIII: ["Level playing field", "Keep fit", "Personal best", "Out of breath"],
+        taskIII: ["Aerobic capacity", "Muscle memory", "Personal training", "Fitness tracker"],
         taskIV: [{ termA: "Individual", termB: "Team" }, { termA: "Offense", termB: "Defense" }],
         taskV: ["Athleticism", "Discipline", "Conditioning", "Agility", "Velocity"]
       }),
-      createVariant(2, "Athletic Spirit", {
+      createVariant(2, "Strategic Game Theory", {
         taskI: [
-          { text: "The marathon requires both physical and mental ________.", answer: "toughness" },
-          { text: "He set a new world ________ for the high jump.", answer: "record" },
-          { text: "The stadium was ________ to full capacity for the final.", answer: "packed" },
-          { text: "She decided to ________ for the national swim team.", answer: "tryout" },
-          { text: "A balanced diet is ________ for peak performance.", answer: "essential" },
-          { text: "He suffered a minor ________ during the warm-up.", answer: "injury" },
-          { text: "The referee's ________ was final and uncontested.", answer: "decision" },
-          { text: "They use high-tech ________ to analyze their form.", answer: "equipment" },
-          { text: "Winning the trophy was the ________ of his career.", answer: "pinnacle" },
-          { text: "She has been ________ hard for the upcoming trials.", answer: "training" },
-          { text: "Team ________ is the key to a successful season.", answer: "spirit" },
-          { text: "He showed great ________ after losing the match.", answer: "humility" }
+          { text: "Game ________ is used to analyze the strategic decisions of players.", answer: "theory" },
+          { text: "Tactical ________ involves planning the best course of action during a game.", answer: "analysis" },
+          { text: "The ________ of a game can change rapidly due to a single decision.", answer: "tempo" },
+          { text: "Coaches must ________ their strategies to suit the strengths of their team.", answer: "adapt" },
+          { text: "The ________ of the opponent's behavior is essential for success.", answer: "study" },
+          { text: "Fierce ________ can drive athletes to reach their full potential.", answer: "rivalry" },
+          { text: "Sportsmanship ________ the importance of fair play and respect.", answer: "emphasizes" },
+          { text: "The ________ of a game is influenced by various psychological factors.", answer: "outcome" },
+          { text: "Team ________ activities help improve communication and trust.", answer: "building" },
+          { text: "Innovative technology is used to ________ performance and game strategy.", answer: "optimize" },
+          { text: "The ________ of the sports industry depends on its ability to evolve.", answer: "sustainability" },
+          { text: "Public ________ is essential to drive the ethical development of sports.", answer: "engagement" }
         ],
         taskII: [
-          { term: "Marathon", definition: "A long-distance running race, strictly 26.2 miles.", key: "a" },
-          { term: "Gymnastics", definition: "Exercises developing or displaying physical agility and coordination.", key: "b" },
-          { term: "Tournament", definition: "A series of contests between a number of competitors.", key: "c" },
-          { term: "Champion", definition: "A person who has surpassed all rivals in a sporting contest.", key: "d" },
-          { term: "Coach", definition: "A person who trains or directs an athlete or team.", key: "e" }
+          { term: "Theory", definition: "A system of ideas intended to explain something.", key: "a" },
+          { term: "Tempo", definition: "The speed at which a passage of music is or should be played.", key: "b" },
+          { term: "Rivalry", definition: "Competition for the same objective or for superiority.", key: "c" },
+          { term: "Emphasize", definition: "Give special importance or prominence to (something) in speaking or writing.", key: "d" },
+          { term: "Optimization", definition: "The action of making the best or most effective use of a situation.", key: "e" }
         ],
-        taskIII: ["Training camp", "Sports injury", "Win by a landslide", "Break a record"],
-        taskIV: [{ termA: "Sprint", termB: "Jog" }, { termA: "Victory", termB: "Defeat" }],
+        taskIII: ["Strategic planning", "Game management", "Competitive edge", "Tactical maneuver"],
+        taskIV: [{ termA: "Win", termB: "Lose" }, { termA: "Ally", termB: "Adversary" }],
         taskV: ["Perseverance", "Coordination", "Dedication", "Consistency", "Endurance"]
       }),
-      createVariant(3, "Health & Fitness", {
+      createVariant(3, "Sports Psychology", {
         taskI: [
-          { text: "Yoga helps improve both flexibility and ________.", answer: "balance" },
-          { text: "Hydration is ________ during intense physical activity.", answer: "crucial" },
-          { text: "He goes to the ________ four times a week.", answer: "gym" },
-          { text: "Stretching is vital to ________ muscle strains.", answer: "prevent" },
-          { text: "She prefers ________ exercise like swimming or cycling.", answer: "aerobic" },
-          { text: "A good ________ routine is essential for athletes.", answer: "recovery" },
-          { text: "Protein is needed for muscle ________ and repair.", answer: "growth" },
-          { text: "Weight ________ can improve overall bone density.", answer: "training" },
-          { text: "He tracks his daily ________ using a smartwatch.", answer: "steps" },
-          { text: "Healthy eating is a ________ of any fitness plan.", answer: "cornerstone" },
-          { text: "Mental ________ is just as important as physical power.", answer: "health" },
-          { text: "She decided to ________ a local marathon for charity.", answer: "run" }
+          { text: "Sports psychology focuses on the ________ factors that impact performance.", answer: "mental" },
+          { text: "Focus and ________ are essential for peak performance under pressure.", answer: "concentration" },
+          { text: "Motivation ________ an athlete's drive and determination to succeed.", answer: "influences" },
+          { text: "Visualization is a technique used to mentally ________ for a performance.", answer: "prepare" },
+          { text: "Self-confidence is a key ________ of athletic success.", answer: "predictor" },
+          { text: "Stress ________ techniques help athletes manage anxiety and pressure.", answer: "management" },
+          { text: "The ________ of mental toughness is essential for long-term success.", answer: "development" },
+          { text: "Emotional ________ is the ability to manage one's emotions during a game.", answer: "regulation" },
+          { text: "Team ________ activities help foster a sense of unity and shared goals.", answer: "building" },
+          { text: "The ________ of a positive mindset can significantly impact performance.", answer: "maintenance" },
+          { text: "Athletes must ________ the mental challenges of competition.", answer: "overcome" },
+          { text: "Sports psychology ________ are often needed for high-performing athletes.", answer: "interventions" }
         ],
         taskII: [
-          { term: "Cardio", definition: "Exercise that increases the heart rate and blood circulation.", key: "a" },
-          { term: "Metabolism", definition: "The chemical processes that occur within a living organism.", key: "b" },
-          { term: "Flexibility", definition: "The quality of bending easily without breaking.", key: "c" },
-          { term: "Nutrient", definition: "A substance that provides nourishment essential for growth.", key: "d" },
-          { term: "Dehydration", definition: "A harmful reduction in the amount of water in the body.", key: "e" }
+          { term: "Predictor", definition: "A person or thing that predicts that something will happen.", key: "a" },
+          { term: "Regulation", definition: "A rule or directive made and maintained by an authority.", key: "b" },
+          { term: "Intervention", definition: "The action or process of intervening.", key: "c" },
+          { term: "Maintenance", definition: "The process of maintaining or preserving someone or something.", key: "d" },
+          { term: "Resilience", definition: "The capacity to recover quickly from difficulties.", key: "e" }
         ],
-        taskIII: ["Healthy lifestyle", "Fitness tracker", "Personal trainer", "Muscle memory"],
-        taskIV: [{ termA: "Aerobic", termB: "Anaerobic" }, { termA: "Strength", termB: "Agility" }],
+        taskIII: ["Mental resilience", "Focus technique", "Peak performance mindset", "Goal setting strategy"],
+        taskIV: [{ termA: "Intrinsic", termB: "Extrinsic" }, { termA: "Nature", termB: "Nurture" }],
         taskV: ["Conditioning", "Resilience", "Wellness", "Sustainability", "Intensity"]
       })
     ]
   },
   {
     id: "politics",
-    title: "THEME 18: POLITICS & GOVERNANCE",
+    title: "THEME 18: BUREAUCRATIC SYSTEMS",
     category: "Society",
-    description: "Electoral systems, international relations, policy making, and bureaucracy.",
+    description: "Sovereign governance, legislative drafting, and geopolitical strategy.",
     icon: "Handshake",
     variants: [
-      createVariant(1, "Elections and Policy", {
+      createVariant(1, "Sovereign Governance", {
         taskI: [
-          { text: "The ________ asked the citizens to vote on the issue.", answer: "referendum" },
-          { text: "The party published its ________ before the election.", answer: "manifesto" },
-          { text: "They formed a ________ government to stay in power.", answer: "coalition" },
-          { text: "New ________ was introduced to combat climate change.", answer: "legislation" },
-          { text: "The ________ was frustrated by the long delay in results.", answer: "electorate" },
-          { text: "He was accused of ________ for the oil industry.", answer: "lobbying" },
-          { text: "Government ________ can be very slow and complex.", answer: "bureaucracy" },
-          { text: "The president faced ________ for abuse of power.", answer: "impeachment" },
-          { text: "International ________ were placed on the rogue state.", answer: "sanctions" },
-          { text: "Effective ________ is the key to global peace.", answer: "diplomacy" },
-          { text: "A ________ system divides power between states.", answer: "federal" },
-          { text: "The ________ is the chief executive of the city.", answer: "mayor" }
+          { text: "Governance involves the ________ through which a society is controlled.", answer: "processes" },
+          { text: "The ________ of a state to govern itself is its sovereignty.", answer: "authority" },
+          { text: "A democracy is a system of government by the entire ________.", answer: "population" },
+          { text: "Transparency is vital for the ________ of a healthy democracy.", answer: "maintenance" },
+          { text: "The ________ of powers is a key constitutional principle.", answer: "separation" },
+          { text: "Public trust in government institutions has ________ over the last decade.", answer: "eroded" },
+          { text: "The ________ of resources should be fair and equitable for all citizens.", answer: "allocation" },
+          { text: "Political ________ can lead to a shift in government power.", answer: "instability" },
+          { text: "The ________ of new policies requires collaboration between various stakeholders.", answer: "implementation" },
+          { text: "Constitutional ________ is the study of a country's founding principles.", answer: "law" },
+          { text: "The ________ of public discourse is essential for an informed electorate.", answer: "quality" },
+          { text: "Good governance ________ that all citizens are treated equally under the law.", answer: "ensures" }
         ],
         taskII: [
-          { term: "Democracy", definition: "A system of government by the whole population.", key: "a" },
-          { term: "Autocracy", definition: "A system of government by one person with absolute power.", key: "b" },
-          { term: "Bureaucracy", definition: "A system of government in which most decisions are made by officials.", key: "c" },
-          { term: "Manifesto", definition: "A public declaration of policy and aims.", key: "d" },
-          { term: "Sovereignty", definition: "The authority of a state to govern itself.", key: "e" }
+          { term: "Governance", definition: "The action or manner of governing.", key: "a" },
+          { term: "Sovereignty", definition: "The authority of a state to govern itself.", key: "b" },
+          { term: "Transparency", definition: "The quality of being done in an open way.", key: "c" },
+          { term: "Allocation", definition: "The action or process of allocating or distributing something.", key: "d" },
+          { term: "Stability", definition: "The state of being stable.", key: "e" }
         ],
-        taskIII: ["Foreign policy", "Political spectrum", "Grassroots movement", "Checks and balances"],
-        taskIV: [{ termA: "Democracy", termB: "Dictatorship" }, { termA: "Liberal", termB: "Conservative" }],
+        taskIII: ["Civil society", "Public administration", "Voter turnout", "Check and balance"],
+        taskIV: [{ termA: "Federal", termB: "Local" }, { termA: "Legislative", termB: "Executive" }],
         taskV: ["Suffrage", "Ratification", "Partisan", "Secularism", "Ideology"]
       }),
-      createVariant(2, "Global Relations", {
+      createVariant(2, "Legislative Drafting", {
         taskI: [
-          { text: "The two nations signed a historic peace ________.", answer: "treaty" },
-          { text: "Humanitarian ________ was sent to the conflict zone.", answer: "aid" },
-          { text: "The ________ of the border remains a sensitive issue.", answer: "security" },
-          { text: "A global ________ is needed to address ocean pollution.", answer: "effort" },
-          { text: "Diplomatic ________ were cut after the scandal.", answer: "ties" },
-          { text: "The UN works to promote global ________.", answer: "stability" },
-          { text: "Trade ________ help lower costs for consumers.", answer: "agreements" },
-          { text: "The ________ of refugees is a growing crisis.", answer: "displacement" },
-          { text: "He was appointed as the new ________ to Japan.", answer: "ambassador" },
-          { text: "The summit focused on economic ________.", answer: "cooperation" },
-          { text: "Cultural ________ help build international trust.", answer: "exchanges" },
-          { text: "The ________ of power has shifted in the region.", answer: "balance" }
+          { text: "Legislative drafting is the process of ________ clear and effective laws.", answer: "writing" },
+          { text: "A ________ is a proposed law presented to the legislature for discussion.", answer: "bill" },
+          { text: "The ________ of a bill involves various stages of review and debate.", answer: "ratification" },
+          { text: "Drafting ________ ensure that laws are technically sound and accurate.", answer: "protocols" },
+          { text: "The ________ of a statute can lead to legal disputes and confusion.", answer: "ambiguity" },
+          { text: "Public ________ is often sought before major legislation is passed.", answer: "consultation" },
+          { text: "The ________ of a law should be accessible and easy to understand.", answer: "language" },
+          { text: "Constitutional ________ inform the drafting of all new legislation.", answer: "principles" },
+          { text: "The ________ of a law's impact should be assessed during the drafting stage.", answer: "valuation" },
+          { text: "Legislative ________ are often used to refine the language of a bill.", answer: "amendments" },
+          { text: "Drafting ________ involves being honest and transparent about the intent of the law.", answer: "integrity" },
+          { text: "Effective drafting ________ that the law can be enforced correctly.", answer: "ensures" }
         ],
         taskII: [
-          { term: "Diplomacy", definition: "The profession, activity, or skill of managing international relations.", key: "a" },
-          { term: "Treaty", definition: "A formally concluded and ratified agreement between countries.", key: "b" },
-          { term: "Embassy", definition: "The official residence or offices of an ambassador.", key: "c" },
-          { term: "Sanction", definition: "A threatened penalty for disobeying a law or rule.", key: "d" },
-          { term: "Alliance", definition: "A union or association formed for mutual benefit.", key: "e" }
+          { term: "Drafting", definition: "The action of writing a first version of a document.", key: "a" },
+          { term: "Ratification", definition: "The action of signing or giving formal consent to a treaty.", key: "b" },
+          { term: "Ambiguity", definition: "The quality of being open to more than one interpretation.", key: "c" },
+          { term: "Consultation", definition: "The action or process of formally consulting or discussing.", key: "d" },
+          { term: "Amendment", definition: "A minor change or addition designed to improve a text.", key: "e" }
         ],
-        taskIII: ["International law", "Bilateral talks", "Global summit", "Peacekeeping mission"],
-        taskIV: [{ termA: "Ally", termB: "Adversary" }, { termA: "Import", termB: "Export" }],
+        taskIII: ["Statutory law", "Constitutional amendment", "Regulatory framework", "Public policy"],
+        taskIV: [{ termA: "Bill", termB: "Act" }, { termA: "Draft", termB: "Final" }],
         taskV: ["Ratification", "Jurisdiction", "Neutrality", "Hegemony", "Embargo"]
       }),
-      createVariant(3, "Civil Society", {
+      createVariant(3, "Geopolitical Strategy", {
         taskI: [
-          { text: "Freedom of ________ is a basic human right.", answer: "speech" },
-          { text: "The ________ for equal rights gained momentum.", answer: "movement" },
-          { text: "He decided to ________ for a seat in parliament.", answer: "run" },
-          { text: "Public ________ on the issue is very divided.", answer: "opinion" },
-          { text: "Transparency is vital for a healthy ________.", answer: "democracy" },
-          { text: "The new law was met with widespread ________.", answer: "protest" },
-          { text: "Citizens must ________ in the democratic process.", answer: "participate" },
-          { text: "Social ________ aims to improve the lives of all.", answer: "justice" },
-          { text: "The ________ of power is a key constitutional rule.", answer: "separation" },
-          { text: "Corruption remains a major ________ to development.", answer: "obstacle" },
-          { text: "He works for a leading non-________ organization.", answer: "governmental" },
-          { text: "The ________ of law must be upheld at all times.", answer: "rule" }
+          { text: "Geopolitical strategy involves the study of ________ and its impact on politics.", answer: "geography" },
+          { text: "Sovereign ________ are formed to protect national interests.", answer: "alliances" },
+          { text: "The ________ of power in the global landscape is constantly shifting.", answer: "balance" },
+          { text: "International ________ is used to settle disputes between sovereign nations.", answer: "diplomacy" },
+          { text: "Economic ________ can be used to influence the behavior of other states.", answer: "sanctions" },
+          { text: "A ________ of energy resources can impact geopolitical stability.", answer: "shortage" },
+          { text: "The ________ of a state to protect its borders is its security.", answer: "ability" },
+          { text: "Geopolitical ________ can have significant impacts on global trade.", answer: "volatile" },
+          { text: "The ________ of a global pandemic showed the vulnerability of world systems.", answer: "impact" },
+          { text: "Strategic ________ involves setting long-term goals for national security.", answer: "planning" },
+          { text: "The ________ of international law is essential for global order.", answer: "promotion" },
+          { text: "Geopolitical ________ inform the decision-making of world leaders.", answer: "analyses" }
         ],
         taskII: [
-          { term: "Activism", definition: "The policy or action of using vigorous campaigning to bring about change.", key: "a" },
-          { term: "Constitution", definition: "A body of fundamental principles according to which a state is governed.", key: "b" },
-          { term: "Lobbyist", definition: "A person who takes part in an organized attempt to influence legislators.", key: "c" },
-          { term: "Parliament", definition: "The highest legislature, consisting of the sovereign, the House of Lords, and the House of Commons.", key: "d" },
-          { term: "Electorate", definition: "All the people in a country or area who are entitled to vote in an election.", key: "e" }
+          { term: "Geopolitical", definition: "Relating to politics, especially international relations.", key: "a" },
+          { term: "Alliance", definition: "A union or association formed for mutual benefit.", key: "b" },
+          { term: "Diplomacy", definition: "The profession of managing international relations.", key: "c" },
+          { term: "Sanction", definition: "A threatened penalty for disobeying a law or rule.", key: "d" },
+          { term: "Analysis", definition: "Detailed examination of the elements of something.", key: "e" }
         ],
-        taskIII: ["Civil rights", "Political party", "Public service", "Voter turnout"],
-        taskIV: [{ termA: "Candidate", termB: "Incumbent" }, { termA: "Federal", termB: "Local" }],
-        taskV: ["Pluralism", "Secularism", "Advocacy", "Accountability", "Bureaucracy"]
+        taskIII: ["Foreign policy analysis", "Soft power strategy", "Hegemonic stability theory", "Global security framework"],
+        taskIV: [{ termA: "Unilateral", termB: "Bilateral" }, { termA: "Ally", termB: "Adversary" }],
+        taskV: ["Sovereignty", "Pluralism", "Secularism", "Advocacy", "Accountability"]
       })
     ]
   },
   {
     id: "architecture",
-    title: "THEME 19: ARCHITECTURE & URBANIZATION",
+    title: "THEME 19: ARCHITECTURAL SEMANTICS",
     category: "Society",
-    description: "Building design, urban planning, structural integrity, and historical heritage.",
+    description: "Structural engineering, Bauhaus principles, and urban revitalization.",
     icon: "Briefcase",
     variants: [
-      createVariant(1, "The Built Environment", {
+      createVariant(1, "Bauhaus Principles", {
         taskI: [
-          { text: "The architect presented the final ________ for the tower.", answer: "blueprint" },
-          { text: "The ________ integrity of the old bridge was questioned.", answer: "structural" },
-          { text: "The building has a very sleek and modern ________.", answer: "aesthetic" },
-          { text: "They are building a massive ________ in the city center.", answer: "skyscraper" },
-          { text: "Urban ________ is a major problem for local wildlife.", answer: "sprawl" },
-          { text: "The ________ of the house was restored to its glory.", answer: "facade" },
-          { text: "We need more ________ housing for the growing population.", answer: "affordable" },
-          { text: "The project focused on ________ urban development.", answer: "sustainable" },
-          { text: "The ________ was covered in colorful local murals.", answer: "exterior" },
-          { text: "Old warehouses are being converted into modern ________.", answer: "dwellings" },
-          { text: "The ________ process took much longer than expected.", answer: "construction" },
-          { text: "They used local stone for the ________ of the wall.", answer: "masonry" }
+          { text: "Bauhaus ________ emphasizes the unity of art, craft, and technology.", answer: "philosophy" },
+          { text: "The ________ of 'form follows function' is a central tenet of Bauhaus.", answer: "principle" },
+          { text: "Minimalism ________ the beauty of simple lines and geometric shapes.", answer: "celebrates" },
+          { text: "Modern ________ has been significantly influenced by Bauhaus ideas.", answer: "design" },
+          { text: "The ________ of new materials allowed for more creative expression.", answer: "use" },
+          { text: "Bauhaus ________ often features flat roofs and large windows.", answer: "architecture" },
+          { text: "The ________ between different artistic disciplines led to innovation.", answer: "interaction" },
+          { text: "Functional ________ is a key focus of Bauhaus design.", answer: "beauty" },
+          { text: "The ________ of the Bauhaus school in Germany had a global impact.", answer: "establishment" },
+          { text: "Artistic ________ allows for the free expression of architectural ideas.", answer: "freedom" },
+          { text: "The ________ of a masterpiece is often a subject of intense study.", answer: "analysis" },
+          { text: "Bauhaus principles continue to ________ contemporary design.", answer: "inform" }
         ],
         taskII: [
-          { term: "Facade", definition: "The face of a building, especially the principal front.", key: "a" },
-          { term: "Column", definition: "An upright pillar, typically cylindrical and made of stone.", key: "b" },
-          { term: "Foundation", definition: "The lowest load-bearing part of a building, typically below ground level.", key: "c" },
-          { term: "Aesthetic", definition: "A set of principles underlying and guiding the work of a particular artist.", key: "d" },
-          { term: "Infrastructure", definition: "The basic physical and organizational structures and facilities.", key: "e" }
+          { term: "Philosophy", definition: "The study of the fundamental nature of knowledge, reality, and existence.", key: "a" },
+          { term: "Principle", definition: "A fundamental truth or proposition that serves as the foundation.", key: "b" },
+          { term: "Minimalism", definition: "A style or technique characterized by extreme spareness and simplicity.", key: "c" },
+          { term: "Functional", definition: "Of or having a special activity, purpose, or task; relating to the way in which something works or operates.", key: "d" },
+          { term: "Architecture", definition: "The complex or carefully designed structure of something.", key: "e" }
         ],
-        taskIII: ["Urban planning", "Historical landmark", "Structural engineering", "Zoning laws"],
-        taskIV: [{ termA: "Interior", termB: "Exterior" }, { termA: "Modern", termB: "Gothic" }],
+        taskIII: ["Form follows function", "Modernist movement", "Industrial design", "Artistic integrity"],
+        taskIV: [{ termA: "Ornate", termB: "Minimalist" }, { termA: "Traditional", termB: "Modern" }],
         taskV: ["Avenue", "Boulevard", "Dwelling", "Renovation", "Scaffolding"]
       }),
-      createVariant(2, "Historic Styles", {
+      createVariant(2, "Urban Revitalization", {
         taskI: [
-          { text: "The cathedral is a masterpiece of ________ architecture.", answer: "gothic" },
-          { text: "The ________ of the building reflects the Victorian era.", answer: "design" },
-          { text: "They decided to ________ the ancient temple ruins.", answer: "preserve" },
-          { text: "The museum has a large collection of ________ artifacts.", answer: "historical" },
-          { text: "Classical ________ often features columns and arches.", answer: "architecture" },
-          { text: "The castle's ________ was built for defense.", answer: "wall" },
-          { text: "A large ________ was used to carry water to the city.", answer: "aqueduct" },
-          { text: "The city has a rich ________ of diverse styles.", answer: "heritage" },
-          { text: "The ________ of the church was painted by hand.", answer: "ceiling" },
-          { text: "They found a hidden ________ beneath the old house.", answer: "chamber" },
-          { text: "The palace was the ________ of the royal family.", answer: "residence" },
-          { text: "Modern ________ helps us understand old buildings.", answer: "technology" }
+          { text: "Urban ________ involves the social and physical repair of cities.", answer: "revitalization" },
+          { text: "Gentrification can ________ local residents and alter social dynamics.", answer: "displace" },
+          { text: "Sustainable ________ development focuses on long-term ecological health.", answer: "urban" },
+          { text: "Adaptive ________ involves repurposing old buildings for new uses.", answer: "reuse" },
+          { text: "Public ________ should be accessible and inclusive for all citizens.", answer: "spaces" },
+          { text: "The ________ of urban services requires innovative smart technology.", answer: "optimization" },
+          { text: "Community ________ is essential for the success of revitalization projects.", answer: "engagement" },
+          { text: "The ________ of green areas can improve urban air quality.", answer: "expansion" },
+          { text: "Affordable ________ is a major challenge for growing cities.", answer: "housing" },
+          { text: "The ________ of urban policies should be fair and transparent.", answer: "implementation" },
+          { text: "Urban ________ is a major problem for local wildlife and habitats.", answer: "sprawl" },
+          { text: "The ________ of a city depends on the health of its infrastructure.", answer: "integrity" }
         ],
         taskII: [
-          { term: "Gothic", definition: "A style of architecture prevalent in western Europe in the 12th-16th centuries.", key: "a" },
-          { term: "Renaissance", definition: "The period of European history between the 14th and 17th centuries.", key: "b" },
-          { term: "Baroque", definition: "A style of European architecture, music, and art of the 17th and 18th centuries.", key: "c" },
-          { term: "Victorian", definition: "Relating to the reign of Queen Victoria or the period 1837-1901.", key: "d" },
-          { term: "Neoclassical", definition: "The revival of a classical style or treatment in art, literature, or music.", key: "e" }
+          { term: "Revitalization", definition: "The action of imbuing something with new life and vitality.", key: "a" },
+          { term: "Gentrification", definition: "The process of changing the character of a neighborhood.", key: "b" },
+          { term: "Optimization", definition: "The action of making the best or most effective use of a situation.", key: "c" },
+          { term: "Engagement", definition: "The action of engaging or being engaged.", key: "d" },
+          { term: "Infrastructure", definition: "The basic physical and organizational structures and facilities.", key: "e" }
         ],
-        taskIII: ["Ancient ruins", "Cultural heritage site", "Stained glass", "Architectural style"],
-        taskIV: [{ termA: "Restoration", termB: "Demolition" }, { termA: "Traditional", termB: "Contemporary" }],
+        taskIII: ["Urban regeneration", "Gentrification impact", "Smart city design", "Public housing policy"],
+        taskIV: [{ termA: "Compact", termB: "Spread-out" }, { termA: "Interior", termB: "Exterior" }],
         taskV: ["Ornamentation", "Preservation", "Symmetry", "Hierarchy", "Authenticity"]
       }),
-      createVariant(3, "Sustainable Cities", {
+      createVariant(3, "Structural Integrity", {
         taskI: [
-          { text: "Green ________ help cool buildings in the summer.", answer: "roofs" },
-          { text: "Solar ________ are a key source of clean energy.", answer: "panels" },
-          { text: "We need more ________ spaces in the city center.", answer: "pedestrian" },
-          { text: "Efficient ________ transport reduces carbon emissions.", answer: "public" },
-          { text: "Recycling ________ should be accessible to everyone.", answer: "facilities" },
-          { text: "The new park is a ________ for local biodiversity.", answer: "haven" },
-          { text: "They used ________ materials for the new library.", answer: "recycled" },
-          { text: "Urban ________ can help reduce food miles.", answer: "farming" },
-          { text: "The city aims to be ________ neutral by 2040.", answer: "carbon" },
-          { text: "Smart ________ can optimize energy use in the city.", answer: "technology" },
-          { text: "We must ________ the use of single-use plastics.", answer: "reduce" },
-          { text: "Water ________ is a major goal for the desert city.", answer: "conservation" }
+          { text: "Structural ________ is essential for the safety and longevity of buildings.", answer: "integrity" },
+          { text: "Engineering ________ involve various calculations and simulations.", answer: "analyses" },
+          { text: "The ________ of a building must be able to support its weight.", answer: "foundation" },
+          { text: "Seismic ________ are needed to protect buildings from earthquakes.", answer: "safeguards" },
+          { text: "The ________ of materials affects the overall strength of a structure.", answer: "quality" },
+          { text: "Regular ________ is necessary to prevent structural degradation.", answer: "maintenance" },
+          { text: "Modern ________ helps us design and build safer structures.", answer: "technology" },
+          { text: "The ________ of a bridge depends on its design and construction.", answer: "reliability" },
+          { text: "Load ________ is the process of distributing weight throughout a building.", answer: "bearing" },
+          { text: "Innovative materials like ________ and glass are used in modern construction.", answer: "carbon-fiber" },
+          { text: "The ________ of environmental factors should be considered in design.", answer: "impact" },
+          { text: "Structural ________ is a critical part of the construction process.", answer: "testing" }
         ],
         taskII: [
-          { term: "Sustainability", definition: "The ability to be maintained at a certain rate or level.", key: "a" },
-          { term: "Biodiversity", definition: "The variety of life in the world or in a particular habitat.", key: "b" },
-          { term: "Sprawl", definition: "The disorganized and unattractive expansion of an urban area.", key: "c" },
-          { term: "Infrastructure", definition: "The basic physical and organizational structures and facilities.", key: "d" },
-          { term: "Walkability", definition: "A measure of how friendly an area is to walking.", key: "e" }
+          { term: "Integrity", definition: "The state of being whole and undivided.", key: "a" },
+          { term: "Analysis", definition: "Detailed examination of the elements of something.", key: "b" },
+          { term: "Foundation", definition: "The lowest load-bearing part of a building.", key: "c" },
+          { term: "Maintenance", definition: "The process of preserving something.", key: "d" },
+          { term: "Reliability", definition: "The quality of being trustworthy or of performing consistently well.", key: "e" }
         ],
-        taskIII: ["Zero-waste city", "Eco-friendly design", "Urban regeneration", "Vertical forest"],
-        taskIV: [{ termA: "Renewable", termB: "Finite" }, { termA: "Compact", termB: "Spread out" }],
+        taskIII: ["Structural engineering", "Seismic design", "Material strength", "Building safety code"],
+        taskIV: [{ termA: "Tensile", termB: "Compressive" }, { termA: "Solid", termB: "Hollow" }],
         taskV: ["Resilience", "Equitability", "Density", "Integration", "Permeability"]
       })
     ]
   },
   {
     id: "ethics",
-    title: "THEME 20: PHILOSOPHY & ETHICS",
+    title: "THEME 20: ETHICAL PHILOSOPHY",
     category: "Science",
-    description: "Moral reasoning, logical paradoxes, human values, and existential questions.",
+    description: "Utilitarianism, existentialism, and the ethics of artificial intelligence.",
     icon: "Brain",
     variants: [
-      createVariant(1, "Moral Dilemmas", {
+      createVariant(1, "Utilitarianism & Duty", {
         taskI: [
-          { text: "He faced a difficult ________ between duty and family.", answer: "dilemma" },
-          { text: "Maintaining professional ________ is vital for a judge.", answer: "integrity" },
-          { text: "The random act of ________ touched the hearts of many.", answer: "altruism" },
-          { text: "Your ________ should guide your actions in life.", answer: "conscience" },
-          { text: "Every choice has a significant ________ in the long run.", answer: "consequence" },
-          { text: "Is truth ________ or does it depend on the person?", answer: "subjective" },
-          { text: "We have a moral ________ to help those in need.", answer: "obligation" },
-          { text: "Honesty is considered a fundamental human ________.", answer: "virtue" },
-          { text: "The ________ of the theory was logically flawed.", answer: "premise" },
-          { text: "Existential ________ is a common feeling in modern life.", answer: "dread" },
-          { text: "He lived his life according to very strict ________.", answer: "principles" },
-          { text: "Justice should be ________ and fair for everyone.", answer: "impartial" }
+          { text: "Utilitarianism is an ethical theory that focuses on maximizing ________.", answer: "happiness" },
+          { text: "Deontology ________ the importance of moral duty and rules.", answer: "emphasizes" },
+          { text: "The ________ of an action is determined by its consequences.", answer: "morality" },
+          { text: "Ethical ________ often arise in the conflict between duty and consequence.", answer: "dilemmas" },
+          { text: "The ________ of human life is a central theme in moral philosophy.", answer: "sanctity" },
+          { text: "Justice should be ________ and fair for all individuals.", answer: "impartial" },
+          { text: "The ________ between self-interest and the common good is a major focus of ethics.", answer: "interaction" },
+          { text: "Moral ________ involves being honest and responsible in your choices.", answer: "integrity" },
+          { text: "The ________ of ethical guidelines is necessary for a healthy society.", answer: "maintenance" },
+          { text: "Philosophical ________ inform our understanding of right and wrong.", answer: "theories" },
+          { text: "The ________ of an action depends on its context and intent.", answer: "quality" },
+          { text: "Public ________ is essential to drive the ethical development of society.", answer: "engagement" }
         ],
         taskII: [
-          { term: "Logic", definition: "Reasoning conducted or assessed according to strict principles of validity.", key: "a" },
-          { term: "Ethics", definition: "Moral principles that govern a person's behavior.", key: "b" },
+          { term: "Utilitarianism", definition: "The doctrine that actions are right if they are useful or for the benefit of a majority.", key: "a" },
+          { term: "Deontology", definition: "The study of the nature of duty and obligation.", key: "b" },
           { term: "Morality", definition: "Principles concerning the distinction between right and wrong.", key: "c" },
-          { term: "Altruism", definition: "The belief in or practice of selfless concern for others.", key: "d" },
-          { term: "Paradox", definition: "A seemingly absurd or self-contradictory statement.", key: "e" }
+          { term: "Integrity", definition: "The quality of being honest and having strong moral principles.", key: "d" },
+          { term: "Engagement", definition: "The action of engaging or being engaged.", key: "e" }
         ],
-        taskIII: ["Moral compass", "Common good", "Ethical dilemma", "Free will"],
-        taskIV: [{ termA: "Objective", termB: "Subjective" }, { termA: "Good", termB: "Evil" }],
+        taskIII: ["Utilitarian calculus", "Moral dilemma", "Ethical framework", "Categorical imperative"],
+        taskIV: [{ termA: "Duty", termB: "Desire" }, { termA: "Individual", termB: "Society" }],
         taskV: ["Axiom", "Cognition", "Determinism", "Nihilism", "Pragmatism"]
       }),
-      createVariant(2, "Knowledge & Reality", {
+      createVariant(2, "Existential Ethics", {
         taskI: [
-          { text: "Empiricism relies on ________ and sensory experience.", answer: "observation" },
-          { text: "He questioned the very ________ of the physical world.", answer: "reality" },
-          { text: "Rationalism holds that ________ is the primary source of knowledge.", answer: "reason" },
-          { text: "The ________ of the mind is a mystery to scientists.", answer: "consciousness" },
-          { text: "She prefers a ________ approach to solving problems.", answer: "pragmatic" },
-          { text: "The ________ of the universe is still unknown.", answer: "origin" },
-          { text: "He spent years studying the ________ of existence.", answer: "meaning" },
-          { text: "Logic helps us ________ between valid and invalid arguments.", answer: "distinguish" },
-          { text: "The ________ of the soul is a common religious belief.", answer: "immortality" },
-          { text: "We must ________ our assumptions about the world.", answer: "challenge" },
-          { text: "A ________ is a set of ideas that explain something.", answer: "theory" },
-          { text: "The ________ of information can be very complex.", answer: "processing" }
+          { text: "Existentialism emphasizes individual freedom and ________.", answer: "responsibility" },
+          { text: "We are all responsible for ________ our own meaning and purpose.", answer: "creating" },
+          { text: "The ________ of choice can be a significant source of anxiety.", answer: "burden" },
+          { text: "Authenticity involves being ________ and true to one's own values.", answer: "genuine" },
+          { text: "The ________ of human existence is a mystery for many.", answer: "nature" },
+          { text: "Sartre argued that humans are ________ to be free.", answer: "condemned" },
+          { text: "The ________ between the self and others is a key theme in existentialism.", answer: "interaction" },
+          { text: "Living ________ involves making choices that reflect your true self.", answer: "authentically" },
+          { text: "The ________ of the absurd can lead to a sense of freedom.", answer: "discovery" },
+          { text: "Existential ________ is a common feeling in modern life.", answer: "dread" },
+          { text: "We must ________ the uncertainty of the future.", answer: "accept" },
+          { text: "The ________ of the individual is a central focus of existential ethics.", answer: "discovery" }
         ],
         taskII: [
-          { term: "Epistemology", definition: "The theory of knowledge, especially with regard to its methods, validity, and scope.", key: "a" },
-          { term: "Metaphysics", definition: "The branch of philosophy that deals with the first principles of things.", key: "b" },
-          { term: "Skepticism", definition: "The theory that certain knowledge is impossible.", key: "c" },
-          { term: "Rationalism", definition: "The theory that reason rather than experience is the foundation of certainty in knowledge.", key: "d" },
-          { term: "Empiricism", definition: "The theory that all knowledge is derived from sense-experience.", key: "e" }
+          { term: "Responsibility", definition: "The state or fact of having a duty to deal with something.", key: "a" },
+          { term: "Authenticity", definition: "The quality of being authentic.", key: "b" },
+          { term: "Condemned", definition: "Sentenced to a particular punishment.", key: "c" },
+          { term: "Absurd", definition: "Wildly unreasonable, illogical, or inappropriate.", key: "d" },
+          { term: "Discovery", definition: "The action or process of discovering.", key: "e" }
         ],
-        taskIII: ["Absolute truth", "Human nature", "Tabula rasa", "Thought experiment"],
-        taskIV: [{ termA: "Physical", termB: "Metaphysical" }, { termA: "Finite", termB: "Infinite" }],
+        taskIII: ["Existential dread", "Freedom of choice", "Sense of purpose", "Self-actualization"],
+        taskIV: [{ termA: "Subjective", termB: "Objective" }, { termA: "Existence", termB: "Essence" }],
         taskV: ["Dualism", "Monism", "Syllogism", "Phenomenology", "Existentialism"]
       }),
-      createVariant(3, "Existentialism", {
+      createVariant(3, "The Ethics of AI", {
         taskI: [
-          { text: "The feeling of ________ can be a source of freedom.", answer: "absurdity" },
-          { text: "We are all responsible for ________ our own meaning.", answer: "creating" },
-          { text: "She loves the ________ of the deep forest.", answer: "solitude" },
-          { text: "Existentialism focuses on the ________ individual.", answer: "subjective" },
-          { text: "Life is a ________ that we must choose to walk.", answer: "path" },
-          { text: "The ________ of the self is a key theme in his work.", answer: "discovery" },
-          { text: "We must live ________ and true to ourselves.", answer: "authentically" },
-          { text: "The ________ of choice can be very heavy.", answer: "burden" },
-          { text: "He found ________ in the beauty of the stars.", answer: "peace" },
-          { text: "Human ________ is both a gift and a curse.", answer: "existence" },
-          { text: "We should ________ the limits of our knowledge.", answer: "accept" },
-          { text: "The ________ of the future is always present.", answer: "uncertainty" }
+          { text: "The ethics of AI involves the study of the ________ implications of artificial intelligence.", answer: "moral" },
+          { text: "Transparency in how algorithms ________ is necessary for accountability.", answer: "operate" },
+          { text: "The ________ of algorithmic bias is a major concern.", answer: "presence" },
+          { text: "Safeguards must be ________ to ensure that AI operates safely.", answer: "implemented" },
+          { text: "The ________ of user data should be transparent and ethical.", answer: "management" },
+          { text: "Artificial Intelligence ________ significant questions about bias and privacy.", answer: "poses" },
+          { text: "Ethical ________ are necessary to guide the development of AI.", answer: "frameworks" },
+          { text: "The ________ of AI into everyday life is happening rapidly.", answer: "integration" },
+          { text: "Successful AI development requires a ________ understanding of ethics.", answer: "comprehensive" },
+          { text: "The ________ of AI on employment is a major topic of debate.", answer: "impact" },
+          { text: "Public ________ is essential to drive the ethical development of AI.", answer: "engagement" },
+          { text: "The ________ of the digital landscape is constantly evolving.", answer: "architecture" }
         ],
         taskII: [
-          { term: "Existentialism", definition: "A philosophical theory that emphasizes the existence of the individual person as a free and responsible agent.", key: "a" },
-          { term: "Absurdism", definition: "The belief that human beings exist in a purposeless, chaotic universe.", key: "b" },
-          { term: "Nihilism", definition: "The rejection of all religious and moral principles.", key: "c" },
-          { term: "Authenticity", definition: "The quality of being authentic.", key: "d" },
-          { term: "Solitude", definition: "The state or situation of being alone.", key: "e" }
+          { term: "Transparency", definition: "The quality of being done in an open way.", key: "a" },
+          { term: "Accountability", definition: "The fact or condition of being accountable.", key: "b" },
+          { term: "Implementation", definition: "The process of putting a decision or plan into effect.", key: "c" },
+          { term: "Integrity", definition: "The quality of being honest and having strong moral principles.", key: "d" },
+          { term: "Architecture", definition: "The complex or carefully designed structure of something.", key: "e" }
         ],
-        taskIII: ["Sense of self", "Existential crisis", "Free agency", "Leap of faith"],
-        taskIV: [{ termA: "Being", termB: "Nothingness" }, { termA: "Essence", termB: "Existence" }],
+        taskIII: ["Algorithmic ethics", "Data privacy legislation", "AI governance model", "Machine bias"],
+        taskIV: [{ termA: "Autonomous", termB: "Controlled" }, { termA: "Digital", termB: "Human" }],
         taskV: ["Aesthetics", "Anguish", "Duality", "Transcendent", "Immanence"]
       })
     ]
